@@ -1,0 +1,769 @@
+{
+  "langs": { "cs": "CZ", "en": "EN" },
+  "header": {
+    "logo": { "aria": "Home", "alt": "EUTERPE Logo" },
+    "nav": { "aria": "Main navigation", "mobileAria": "Main navigation (mobile)" },
+    "burger": { "aria": "Open menu" }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "events": "Events",
+    "studio": "Studio",
+    "gallery": "Gallery",
+    "about": "About&nbsp;Us"
+  },
+  "hero": {
+    "title": "We provide event organization<br>from concept to execution.",
+    "subtitle": "With us, it’s more than an event.",
+    "desc": "Professional event and music agency.<br>We specialize in concerts,<br>corporate and private events."
+  },
+  "events": {
+    "title": "Events",
+    "cta": { "open": "Open details", "more": "More" },
+    "items": {
+      "hudba": {
+        "alt": "Music in the Dark",
+        "name": "Music in the Dark",
+        "teaser": "A unique project where you perceive music differently – with eyes closed!",
+        "desc": "An immersive concert in darkness. The power of sound and voice without visual distraction."
+      },
+      "andersen": {
+        "alt": "Andersen Fairy Tales",
+        "name": "Andersen Fairy Tales",
+        "teaser": "Revived stories of H. C. Andersen in a musical and visual form!",
+        "desc": "Orchestra, storytelling and scenic visuals in one performance."
+      },
+      "princ": {
+        "alt": "The Little Prince 2025",
+        "name": "The Little Prince 2025",
+        "teaser": "EUTERPE Orchestra, Alim Shah & Louise Hedde, live painting and the voice of Jan Čenský.",
+        "desc": "Music • Word • Image — a timeless story in a unique artistic concept."
+      }
+    }
+  },
+
+
+  "t404": {
+    "metaTitle": "Preparations underway — we’ll raise the curtain soon",
+    "lang": { "aria": "Language" },
+    "title": "Preparations Underway",
+    "lead": "Behind the curtain we’re finishing the scene. The music is tuning, the lights are ready — we’ll raise the curtain and unveil something special very soon.",
+    "actions": { "aria": "Quick links" },
+    "btn": {
+      "home": "Home",
+      "homeAria": "Back to home",
+      "events": "Events",
+      "eventsAria": "Open events",
+      "contact": "Contact",
+      "contactAria": "Contact us"
+    },
+    "note": "If you’re looking for a specific event, go back to the homepage and try opening it again."
+  },
+
+  "services": {
+    "title": "Services",
+    "subtitle": "Through creative opportunities we craft unique events.",
+    "cards": {
+      "koncerty": { "aria": "Concerts", "title": "Concerts", "kicker": "Elevate Your Style", "desc": "Concerts of classical and modern music for a perfect experience." },
+      "team":     { "aria": "Teambuilding", "title": "Teambuilding", "kicker": "Personal Style", "desc": "Creative teambuilding activities to strengthen relationships in your team." },
+      "decor":    { "aria": "Event decoration", "title": "Event decoration", "kicker": "eye-catching", "desc": "From elegant table arrangements to scenography and light effects." }
+    }
+  },
+
+  "andersenPage": {
+    "title": "Andersen Fairy Tales",
+    "subtitle": "A literary–musical performance inspired by the fairy tales of Hans Christian Andersen",
+    "left": {
+      "quote1": "“My fairy tales are meant for adults, not only for children. Adults will understand them perfectly.”",
+      "lead": "Welcome Christmas with the beloved heroes of Hans Christian Andersen’s fairy tales.",
+      "p1": {
+        "before": "And in 2025 we also commemorate 220 years since the birth of the world-famous Danish writer. The literary-musical performance based on",
+        "accent": "Hans Christian Andersen’s fairy tales is a kaleidoscope of the author’s finest works,",
+        "after": "accompanied by carefully curated pieces of world classical music. The performance is complemented by the brilliant painter and Antarctic traveler German Grott, who paints magical illustrations live on stage, projected onto a large screen."
+      },
+      "p2": {
+        "before": "The literary passages will be performed by the renowned, award-winning actor",
+        "accent": "Igor Orozovič."
+      },
+      "p3": {
+        "before": "Performed by the orchestra of the",
+        "accent": "Pardubice Chamber Philharmonic",
+        "after": "under the baton of the internationally acclaimed conductor",
+        "Alim": "Alim Shakh",
+        "program": "in the program features musical works by Czech and international composers:",
+        "autors": "Dvořák, Janáček, Nielsen, Grieg, Tchaikovsky, Anderson.",
+        "hudba": "HuMusic combined with the spoken word of the literary work forms a cohesive performance."
+      },
+      "p5": {
+        "second": "Andersen’s extraordinary imagination shines through in his tales and stories-touching and instructive, sad and merry-where it is equally important to be faithful and brave, honest and kind, to see beauty, and not to fear the passing of loved ones."
+      },
+      "quote2": "Andersen’s fairy tales form a shared cultural code for half of humanity. Many generations have grown up with them and interest in them does not fade-quite the opposite. The program consists of excerpts from popular tales as well as lesser-known stories by this exceptional Danish author. The concert-performance will captivate not only children but also adult audiences.",
+      "quote5": "The Program consists of samples of popular fairy tales, as well as little-known stories of this exceptional Danish author. The concert performance will interest not only children, but also an adult audience."
+    },
+    "what": {
+      "title": "What Awaits You",
+      "item1": "Magical Christmas spirit",
+      "item2": "7 enchanting fairy tales",
+      "item3": "Classical and popular music",
+      "item4": "Special guest Jan Jareš",
+      "item5": "Wonders and magic"
+    },
+    "who": {
+      "title": "Featuring:",
+      "item1": "Actor Igor Orozovič",
+      "item2": "Conductor Alim Shakh",
+      "item3": "Graphic artist German Grott",
+      "item4": "Pardubice Chamber Philharmonic"
+    },
+    "frame": {
+      "title": "Event Information",
+      "dateLabel": "Date",
+      "dateValue": "22.12.2025",
+      "timeLabel": "Time",
+      "timeValue": "19:00",
+      "placeLabel": "Venue",
+      "placeValue": "Divadlo Hybernia",
+      "cta": "Buy tickets",
+      "payNote": "Secure payment • Instant confirmation"
+    }
+  },
+  "andersenbtn": {
+    "more": {
+      "open": "More",
+      "close": "Less"
+    }
+  },
+  "pagePartners": {
+    "partners": {
+      "title": "Partners"
+    }
+  },
+
+  "next": {
+    "title": "Upcoming Event",
+    "name": "Andersen Fairy Tales",
+    "desc": "Revived stories of H. C. Andersen in a musical and visual form!",
+    "cta": "Buy tickets",
+    "info": {
+      "aria": "Event information",
+      "title": "Event information",
+      "dateLabel": "Date:",
+      "dateValue": "22.12.2025",
+      "timeLabel": "Time:",
+      "timeValue": "19:00",
+      "placeLabel": "Venue:",
+      "placeValue": "Divadlo Hybernia"
+    }
+  },
+  "footer": {
+    "brand": { "title": "EUTERPE", "desc": "Organization of cultural and corporate events" },
+    "social": { "aria": "Social networks", "fb": "Facebook", "ig": "Instagram" },
+    "links": { "title": "Links", "home": "Home", "services": "Services", "events": "Events", "about": "About&nbsp;Us" },
+    "contact": {
+      "title": "Contacts",
+      "address": "Doležalova 1046/22, Praha 9",
+      "phone": "+420&nbsp;775&nbsp;066&nbsp;858",
+      "email": "info@euterpe.cz",
+      "icLabel": "Reg. No.",
+      "icValue": "49 111 29"
+    },
+    "news": {
+      "title": "Stay in the loop",
+      "desc": "Get exclusive access to news",
+      "emailLabel": "Your e-mail",
+      "placeholder": "Your e-mail",
+      "submit": "Subscribe"
+    },
+    "madeBy": "Created by&nbsp;<a href=\"https://cyber-on.net\" target=\"_blank\" rel=\"noopener\">CyberON</a>",
+    "copy": { "prefix": "© 2025 EUTERPE. All rights reserved.", "privacy": "Privacy&nbsp;Policy" }
+  },
+  "modal": {
+    "title": "Complete subscription",
+    "closeAria": "Close",
+    "step1": {
+      "emailLabel": "E-mail",
+      "emailPh": "your@email.com",
+      "phoneLabel": "Phone (optional)",
+      "phonePh": "+420…",
+      "captchaLabel": "Captcha",
+      "captchaText": "I'm not a robot",
+      "sendCode": "Send code",
+      "help": "We'll send a verification code to your email."
+    },
+    "step2": {
+      "codeLabel": "Verification code",
+      "codePh": "123456",
+      "confirm": "Confirm",
+      "resend": "Resend",
+      "help": "Check your inbox. The code is valid for 10 minutes."
+    },
+    "misc": { "msg": "" }
+  },
+  "servicesPage": {
+    "title": "Services",
+    "subtitle": "We provide comprehensive delivery — from concept to execution. Event organization, design, technical support, decorations, and tailored solutions for your brand. All with attention to detail and a high standard of quality.",
+    "listAria": "List of services",
+    "cards": {
+      "koncerty": {
+        "aria": "Concerts",
+        "title": "Concerts",
+        "kicker": "Elevate Your Style",
+        "desc": "We create unique concerts built on original ideas, artistic excellence, and a meaningful mission."
+      },
+      "vecirky": {
+        "aria": "Corporate Parties",
+        "title": "Corporate Parties",
+        "kicker": "Party Perfection",
+        "desc": "We craft events signed with elegance and originality, blending aesthetics, atmosphere and detail."
+      },
+      "teambuilding": {
+        "aria": "Teambuilding",
+        "title": "Teambuilding",
+        "kicker": "Personal Style",
+        "desc": "We help strengthen team spirit through emotions, collaboration, creativity and leadership."
+      },
+      "dekorace": {
+        "aria": "Event Decorations",
+        "title": "Event Decorations",
+        "kicker": "eye-catching",
+        "desc": "Our team of artists and decorators creates striking decorations, from press walls to 3D installations."
+      }
+    }
+  },
+  "pageEvents": {
+    "title": "Events",
+    "sub": "Discover our events full of emotion and music.<br>Get your tickets in time.",
+    "cta": { "buy": "Buy ticket" },
+    "items": {
+      "princ": {
+        "alt": "The Little Prince 2025",
+        "name": "The Little Prince 2025",
+        "desc": "A literary-musical performance based on Antoine de Saint-Exupéry’s allegorical tale.",
+        "href": "/vstupenky/maly_princ-2025",
+        "aria": "The Little Prince 2025 — buy ticket"
+      },
+      "andersen": {
+        "alt": "Andersen Fairy Tales",
+        "name": "Andersen Fairy Tales",
+        "desc": "Revived stories of H. C. Andersen in a musical and visual form!",
+        "href": "/vstupenky/andersen",
+        "aria": "Andersen Fairy Tales — buy ticket"
+      },
+      "tma": {
+        "alt": "Music in the Dark",
+        "name": "Music in the Dark",
+        "desc": "A unique project where you perceive music differently with eyes closed!",
+        "href": "/vstupenky/hudba-ve-tme",
+        "aria": "Music in the Dark — buy ticket"
+      }
+    },
+    "partners": { "title": "Partners" }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "aria": {
+      "openFilter": "Open filter",
+      "grid": "Photo gallery"
+    },
+    "filter": {
+      "current": "All",
+      "options": {
+        "vse": "All",
+        "koncerty": "Concerts",
+        "vecirky": "Corporate events",
+        "teambuilding": "Teambuilding",
+        "divadlo": "Theatre",
+        "workshop": "Workshop"
+      }
+    },
+    "items": {
+      "gal01": { "alt": "Symphonic concert — stage detail" },
+      "gal02": { "alt": "Music–theatre performance" },
+      "gal03": { "alt": "Corporate party — light show" },
+      "gal04": { "alt": "Teambuilding — creative workshop" },
+      "gal05": { "alt": "Theatre scene — rehearsal" },
+      "gal06": { "alt": "Workshop — working with colors" },
+      "gal07": { "alt": "DJ set at an event" },
+      "gal08": { "alt": "Chamber concert — violin" }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "EUTERPE Artists Agency",
+    "lead": "brings original events combining creativity, modern technology and precise execution. We turn every project into an authentic experience that leaves a lasting impression.",
+    "cards": {
+      "aria": "Our values and strengths",
+      "exp": {
+        "title": "Experience",
+        "desc": "20+ years of cultural and corporate event experience."
+      },
+      "idea": {
+        "title": "Creativity",
+        "desc": "Innovative and original concepts for every event."
+      },
+      "tech": {
+        "title": "Professionalism",
+        "desc": "Reliability and a professional attitude to every project."
+      },
+      "detail": {
+        "title": "Innovation in Details",
+        "desc": "A tailored approach using the latest technologies."
+      }
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "members": [
+      { "alt": "Name 1", "name": "Name 1", "role": "Artistic Director" },
+      { "alt": "Name 2", "name": "Name 2", "role": "Producer" },
+      { "alt": "Name 3", "name": "Name 3", "role": "PR & Marketing" }
+    ]
+  },
+
+  "princbtn": {
+  "more": { "open": "More", "close": "Less" }
+},
+
+  "contact": {
+    "title": "Contact details",
+    "sub": "Have a question or want to plan an event? Get in touch",
+    "listAria": "Contact information",
+    "companyName": "EUTERPE Artists Agency",
+    "icLabel": "Company ID:",
+    "icValue": "28474945",
+    "addressLabel": "Address:",
+    "addressValue": "Doležalova 1046/22, 198 00 Prague 9",
+    "phoneLabel": "Phone:",
+    "phoneValue": "+420 775 066 858",
+    "emailLabel": "E-mail:",
+    "emailValue": "info@euterpe.cz",
+    "mapTitle": "Map — EUTERPE Artists Agency",
+    "form": {
+      "aria": "Contact form",
+      "nameLabel": "Name",
+      "namePh": "Your name",
+      "phoneLabel": "Phone",
+      "phonePh": "+420…",
+      "emailLabel": "E-mail",
+      "emailPh": "your@email.com",
+      "messageLabel": "Message",
+      "messagePh": "How can we help?",
+      "submit": "Send",
+      "statusIdle": "",
+      "statusSending": "Sending…",
+      "statusOk": "Thanks! Your message has been sent.",
+      "statusErr": "Sending failed. Please try again."
+    }
+  },
+  "concerts": {
+    "head": {
+      "title": "Concerts",
+      "subtitle": "We create unique concerts and take pride in every project. Each performance is an original idea, top-level mastery of the performers, creative dramaturgy, educational purpose, and always a cultural event.",
+      "cta": "Order",
+      "ctaAria": "Open concert inquiry form"
+    },
+    "types": {
+      "aria": "Types of concerts",
+      "items": {
+        "divadlo":   { "label": "Theatrical", "alt1": "Theatrical" },
+        "tematicke": { "label": "Thematic",   "alt1": "Thematic" },
+        "hudebni":   { "label": "Musical",    "alt1": "Musical" }
+      }
+    },
+    "modal": {
+      "title": "Order a concert",
+      "hint": "Send us an inquiry — we will get back to you as soon as possible.",
+      "closeAria": "Close",
+      "form": {
+        "nameLabel": "Name",
+        "namePh": "Your name",
+        "phoneLabel": "Phone (optional)",
+        "phonePh": "+420…",
+        "emailLabel": "E-mail",
+        "emailPh": "your@email.com",
+        "messageLabel": "Message",
+        "messagePh": "Briefly describe your event, date, venue…",
+        "submit": "Send",
+        "statusIdle": "",
+        "statusSending": "Sending…",
+        "statusOk": "Thanks! Your message has been sent.",
+        "statusErr": "Sending failed. Please try again."
+      }
+    }
+  },
+  "parties": {
+    "head": {
+      "title": "Corporate Parties",
+      "subtitle": "We believe every event should be unique. We don’t use templates. We offer tailored solutions based on your goals and vision. We study your brand and audience and create an event that becomes a true occasion.",
+      "cta": "Order",
+      "ctaAria": "Open corporate party inquiry form"
+    },
+    "types": {
+      "aria": "Party types",
+      "items": {
+        "programy": { "label": "Programs", "alt1": "Programs" },
+        "prostory": { "label": "Venues",   "alt1": "Venues" },
+        "catering": { "label": "Catering", "alt1": "Catering" }
+      }
+    },
+    "modal": {
+      "title": "Order a corporate party",
+      "hint": "Send us an inquiry — we will get back to you as soon as possible.",
+      "closeAria": "Close",
+      "form": {
+        "nameLabel": "Name",
+        "namePh": "Your name",
+        "phoneLabel": "Phone (optional)",
+        "phonePh": "+420…",
+        "emailLabel": "E-mail",
+        "emailPh": "your@email.com",
+        "messageLabel": "Message",
+        "messagePh": "Briefly describe the event, date, venue…",
+        "submit": "Send",
+        "statusIdle": "",
+        "statusSending": "Sending…",
+        "statusOk": "Thanks! Your message has been sent.",
+        "statusErr": "Sending failed. Please try again."
+      }
+    }
+  },
+  "teambuilding": {
+    "head": {
+      "title": "Teambuilding",
+      "subtitle": "Do you need a team that can handle anything? Want to boost team spirit? We connect people through shared emotions. Our programs develop communication, leadership and creativity, turning common goals into a real event.",
+      "cta": "Order",
+      "ctaAria": "Open teambuilding inquiry form"
+    },
+    "types": {
+      "aria": "Types of teambuilding",
+      "items": {
+        "programy": { "label": "Programs", "alt1": "Programs" },
+        "questy":   { "label": "Quests",   "alt1": "Quests" },
+        "sport":    { "label": "Sport",    "alt1": "Sport" },
+        "prostory": { "label": "Venues",   "alt1": "Venues" }
+      }
+    },
+    "modal": {
+      "title": "Order a teambuilding",
+      "hint": "Send us an inquiry — we will get back to you as soon as possible.",
+      "closeAria": "Close",
+      "form": {
+        "nameLabel": "Name",
+        "namePh": "Your name",
+        "phoneLabel": "Phone (optional)",
+        "phonePh": "+420…",
+        "emailLabel": "E-mail",
+        "emailPh": "your@email.com",
+        "messageLabel": "Message",
+        "messagePh": "Briefly describe your goal, team size, date, venue…",
+        "submit": "Send",
+        "statusIdle": "",
+        "statusSending": "Sending…",
+        "statusOk": "Thanks! Your message has been sent.",
+        "statusErr": "Sending failed. Please try again."
+      }
+    }
+  },
+  "decorations": {
+    "head": {
+      "title": "Event Decorations",
+      "subtitle": "Our team includes top artists and decorators. We bring any vision to life — from elegant press walls to reality-bending 3D décor. Floristry, photo walls, installations and interactive projections — we turn any space into an experience.",
+      "cta": "Order",
+      "ctaAria": "Open decorations inquiry form"
+    },
+    "types": {
+      "aria": "Types of decorations",
+      "items": {
+        "dekorace":  { "label": "Decorations", "alt1": "Decorations" },
+        "fotosteny": { "label": "Photo walls", "alt1": "Photo walls" },
+        "foristika": { "label": "Floristry",   "alt1": "Floristry" },
+        "kostymy":   { "label": "Costumes",    "alt1": "Costumes" }
+      }
+    },
+    "modal": {
+      "title": "Order decorations",
+      "hint": "Send us an inquiry — we will get back to you as soon as possible.",
+      "closeAria": "Close",
+      "form": {
+        "nameLabel": "Name",
+        "namePh": "Your name",
+        "phoneLabel": "Phone (optional)",
+        "phonePh": "+420…",
+        "emailLabel": "E-mail",
+        "emailPh": "your@email.com",
+        "messageLabel": "Message",
+        "messagePh": "Briefly describe the decorations, date, venue…",
+        "submit": "Send",
+        "statusIdle": "",
+        "statusSending": "Sending…",
+        "statusOk": "Thanks! Your message has been sent.",
+        "statusErr": "Sending failed. Please try again."
+      }
+    }
+  },
+  "decor": {
+    "modal": {
+      "title": "Order Decorations",
+      "hint": "Send us an inquiry — we will get back to you as soon as possible.",
+      "form": {
+        "nameLabel": "Name",
+        "namePh": "Your name",
+        "phoneLabel": "Phone (optional)",
+        "phonePh": "+420…",
+        "emailLabel": "E-mail",
+        "emailPh": "your@email.com",
+        "messageLabel": "Message",
+        "messagePh": "Briefly describe your event, date, venue…",
+        "captchaAria": "reCAPTCHA verification",
+        "submit": "Send",
+        "statusIdle": "",
+        "statusSending": "Sending…",
+        "statusOk": "Thanks! Your message has been sent.",
+        "statusErr": "Sending failed. Please try again."
+      }
+    }
+  },
+  "princPage": {
+    "title": "The Little Prince",
+    "subtitle": "A literary–musical performance inspired by Antoine de Saint-Exupéry’s allegorical tale",
+    "left": {
+      "quote1": "“One sees clearly only with the heart. What is essential is invisible to the eye.”",
+      "lead": "The Little Prince in a new artistic interpretation",
+      "p1": {
+        "before": "A unique literary–musical performance inspired by the timeless story",
+        "accent": "The Little Prince by Antoine de Saint-Exupéry",
+        "after": "takes you back to a world where we rediscover joy, friendship and the beauty hidden in little things."
+      },
+      "p2": {
+        "before": "Unforgettable passages come to life on stage, performed by the charismatic",
+        "accent": "Jan Čenský",
+        "after": ", whose voice and interpretation open the door to childlike imagination and profound life wisdom."
+      },
+      "p3": {
+        "before": "The musical atmosphere is created by masterpieces of great composers –",
+        "accent": "Bach, Dvořák, Smetana, Saint-Saëns, Ravel, Debussy, Bizet",
+        "after": "– performed by a symphony orchestra under the baton of the internationally acclaimed conductor Alim Shah and French conductor Louis Hedde."
+      },
+      "p4": {
+        "before": "Before your eyes,",
+        "accent": "the poetic illustrations of Exupéry himself",
+        "after": "are reborn — the brilliant painter and traveler German Grott brings them to canvas live during the performance."
+      },
+      "quote2": "This evening is an invitation for those who long to “see with the heart” again.",
+      "quote3": "“You become responsible, forever, for what you have tamed.”"
+    },
+    "what": {
+      "title": "What Awaits You?",
+      "item1": "Actor Jan Čenský",
+      "item2": "Graphic artist German Grott",
+      "item3": "Conductor Alim Shah",
+      "item4": "Conductor Louis Hedde",
+      "item5": "EUTERPE Orchestra",
+      "item6": "Duration: 90 minutes"
+    },
+    "frame": {
+      "title": "Event Information",
+      "dateLabel": "Date",
+      "dateValue": "Nov 12, 2025",
+      "timeLabel": "Time",
+      "timeValue": "7:00 PM",
+      "placeLabel": "Venue",
+      "placeValue": "Divadlo Hybernia",
+      "cta": "Buy tickets",
+      "payNote": "Secure payment • Instant confirmation"
+    }
+  },
+  "studio": {
+    "hero": {
+      "music": "MUSIC",
+      "title": "EUTERPE STUDIO",
+      "video": "VIDEO"
+    },
+    "services": {
+      "kicker": "Services",
+      "substuio": "WE WORK WITH CONCERTS, THEATRE PERFORMANCES, CULTURAL EVENTS, ARTISTS’ PORTFOLIOS AND WITH AUDIO & MUSIC PRODUCTION."
+    },
+    "flow": {
+      "title": "Workflow with EUTERPE STUDIO",
+      "steps": [
+        { "label": "Inquiry" },
+        { "label": "Planning" },
+        { "label": "Pricing proposal" },
+        { "label": "Concepts" },
+        { "label": "Coordination" },
+        { "label": "Filming" },
+        { "label": "Editing & delivery" }
+  ]
+},
+"cta": {
+  "title": "Send a request",
+  "text": "Tell us briefly about your project. We will get back to you with a proposal and a price estimate.",
+  "button": "Send a request",
+  "modalTitle": "Send a request",
+  "modalSubtitle": "Please share a few details about you and your project. We will get back to you as soon as possible.",
+  "form": {
+    "name": {
+      "label": "Name and surname",
+      "placeholder": "How should we call you?"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "you@email.com"
+    },
+    "phone": {
+      "label": "Phone (optional)",
+      "placeholder": "+420 …"
+    },
+    "project": {
+      "label": "Project description",
+      "placeholder": "What kind of event or project are you planning, when and where?"
+    },
+    "submit": "Send request",
+    "note": "By submitting the form you agree that we may use your contact details to respond to you."
+  }
+}
+  },
+  "cookies": {
+    "hero": {
+      "badge": "Cookie information",
+      "title": "Cookies",
+      "subtitle": "This page explains how EUTERPE STUDIO uses cookies and similar technologies for website operation, traffic measurement and personalised advertising (Google Ads, Sklik, Meta, etc.)."
+    },
+    "whatAre": {
+      "title": "1. What are cookies",
+      "text": "Cookies are small text files stored on your device (computer, phone, tablet). They allow the website to recognise your device, remember certain preferences and understand how the website is used. Some cookies are essential for the site to function properly, others are used for analytics and marketing."
+    },
+    "types": {
+      "title": "2. What types of cookies we use",
+      "necessaryTitle": "Necessary (technical) cookies",
+      "necessaryIntro": "These cookies are required for the basic functions of the website and cannot be switched off. They ensure for example:",
+      "necessaryList1": "display and navigation of the website,",
+      "necessaryList2": "protection of forms and security against misuse,",
+      "necessaryList3": "remembering basic technical settings.",
+      "necessaryNote": "Necessary cookies do not store information that would on its own identify a specific person.",
+      "analyticsTitle": "Analytics cookies",
+      "analyticsIntro": "Analytics cookies help us understand how the website is used – they anonymously measure traffic, track the number of page views and general user behaviour. This allows us to improve the site and make it clearer.",
+      "analyticsGA": "Google Analytics (GA4) stores anonymised statistical data – for example, which page visitors came from, which content is most frequently viewed or how long they stay on the site. IP addresses are processed in an anonymised form.",
+      "analyticsSklik": "Seznam – Sklik conversion tracking is used to evaluate the performance of campaigns from the Sklik advertising network.",
+      "marketingTitle": "Marketing cookies",
+      "marketingIntro": "We use marketing cookies to display more relevant ads (remarketing / retargeting) and to evaluate the effectiveness of advertising campaigns.",
+      "marketingText2": "We do not create our own detailed profile of individual users based on these cookies; they are used within anonymised advertising audiences provided by Google, Seznam and Meta."
+    },
+    "consentMode": {
+      "title": "3. Google Consent Mode (v2)",
+      "text": "Our website uses Google Consent Mode v2. This means that if a visitor does not consent to analytics or marketing cookies, Google tools (such as Google Analytics, Google Ads) adjust their behaviour so that they do not use personalised cookies and work only with aggregated, anonymised signals."
+    },
+    "sharing": {
+      "title": "4. Who we share cookie data with",
+      "intro": "For the above purposes, cookie data may be processed by the following partners:",
+      "list1": "Google Ireland Ltd. (Google Analytics, Google Ads)",
+      "list2": "Seznam.cz, a.s. (Sklik)",
+      "list3": "Meta Platforms Ireland Ltd. (Facebook/Instagram)",
+      "list4": "other analytics and advertising providers we may use in the future",
+      "note": "We never sell personal data to third parties."
+    },
+    "manage": {
+      "title": "5. How you can manage cookies",
+      "text1": "You can change or withdraw your consent to the use of individual categories of cookies at any time. On our website there is a control element (e.g. “Cookie settings”) in the footer where you can:",
+      "list1": "accept all cookies,",
+      "list2": "reject marketing and/or analytics cookies,",
+      "list3": "customise your settings.",
+      "text2": "You can also manage cookies directly in your browser, where you can delete stored cookies or disable them entirely. In that case, however, some parts of the website may not function properly."
+    },
+    "contact": {
+      "title": "6. Contact",
+      "text": "If you have any questions regarding the use of cookies or personal data protection, you can contact us at:",
+      "emailLabel": "E-mail:"
+    },
+    "footerNote": "This cookie information may be updated from time to time to reflect changes in the technologies we use or in legal requirements."
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "subtitle": "This page explains how EUTERPE STUDIO processes personal data of website visitors and clients in accordance with the GDPR."
+    },
+    "controller": {
+      "title": "1. Data controller",
+      "textIntro": "The data controller is:",
+      "name": "EUTERPE STUDIO",
+      "emailLabel": "E-mail:"
+    },
+    "data": {
+      "title": "2. What personal data we process",
+      "formsTitle": "Data from contact forms",
+      "formsList1": "name and surname,",
+      "formsList2": "e-mail address,",
+      "formsList3": "phone number (if you provide it),",
+      "formsList4": "content of your message / project description,",
+      "formsList5": "any additional information you voluntarily provide.",
+      "techTitle": "Technical and analytics data",
+      "techList1": "IP address (anonymised where possible),",
+      "techList2": "type of device and browser,",
+      "techList3": "information about website visits (Google Analytics, Sklik etc.),",
+      "techList4": "cookies – see the separate “Cookies” page for details."
+    },
+    "purposes": {
+      "title": "3. Purposes of personal data processing",
+      "intro": "We process your personal data only for the following purposes:",
+      "list1": "handling your enquiry or request sent via form or e-mail,",
+      "list2": "preparing an offer and further communication regarding cooperation,",
+      "list3": "maintaining internal records of clients and projects,",
+      "list4": "statistical evaluation of website traffic and optimisation of the site,",
+      "list5": "marketing campaigns (Google Ads, Sklik, Meta) based on your cookie consent."
+    },
+    "legalBasis": {
+      "title": "4. Legal basis for processing",
+      "intro": "We process personal data on the basis of:",
+      "list1": "Art. 6(1)(b) GDPR – performance of a contract and steps taken prior to entering into a contract (enquiries, orders, contractual communication),",
+      "list2": "Art. 6(1)(f) GDPR – legitimate interest (traffic analysis, site security, basic marketing),",
+      "list3": "Art. 6(1)(a) GDPR – consent (in particular for marketing cookies and personalised advertising)."
+    },
+    "recipients": {
+      "title": "5. Who has access to the data",
+      "intro": "Your personal data may be accessed by:",
+      "list1": "the controller (EUTERPE STUDIO) and its internal collaborators,",
+      "list2": "providers of IT and hosting services,",
+      "list3": "providers of analytics and marketing tools:",
+      "sub1": "Google Ireland Ltd. (Google Analytics, Google Ads),",
+      "sub2": "Seznam.cz, a.s. (Sklik),",
+      "sub3": "Meta Platforms Ireland Ltd. (Facebook/Instagram).",
+      "note": "All partners are contractually bound to protect personal data and comply with GDPR."
+    },
+    "retention": {
+      "title": "6. Data retention period",
+      "intro": "We store personal data only for as long as necessary:",
+      "list1": "contact forms and e-mail communication: typically 12 months from the last contact,",
+      "list2": "data required for contract performance and accounting: for the periods required by law (usually 5–10 years),",
+      "list3": "cookies and analytics data: according to the settings of each tool (see “Cookies”)."
+    },
+    "rights": {
+      "title": "7. Your rights under GDPR",
+      "intro": "In connection with personal data processing you have the following rights:",
+      "list1": "right of access to your personal data,",
+      "list2": "right to rectification of inaccurate or outdated data,",
+      "list3": "right to erasure (“right to be forgotten”) where no legal grounds exist for further processing,",
+      "list4": "right to restriction of processing,",
+      "list5": "right to data portability,",
+      "list6": "right to object to processing based on legitimate interest,",
+      "list7": "right to withdraw your consent at any time (for processing based on consent).",
+      "contactText": "You can exercise your rights by contacting us via e-mail:",
+      "supervisorText": "If you believe that we are processing your data in breach of data protection laws, you have the right to lodge a complaint with the supervisory authority:",
+      "supervisorName": "Office for Personal Data Protection (Úřad pro ochranu osobních údajů, www.uoou.cz)."
+    },
+    "security": {
+      "title": "8. Data security",
+      "text": "We protect personal data using organisational and technical measures. We use encrypted connections (HTTPS), secure e-mail servers and limited access only for authorised persons."
+    },
+    "cookiesSection": {
+      "title": "9. Cookies and online identifiers",
+      "text": "Information about the use of cookies, tracking codes and similar technologies can be found on the separate “Cookies” page."
+    },
+    "contact": {
+      "title": "10. Contact details",
+      "intro": "If you have any questions regarding personal data protection, you can contact us at:",
+      "emailLabel": "E-mail:"
+    },
+    "footerNote": "This Privacy Policy may be updated from time to time, for example when legal requirements or the scope of services change."
+  }
+}

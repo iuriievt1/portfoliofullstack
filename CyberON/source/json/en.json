@@ -1,0 +1,382 @@
+{
+  "services": {
+    "card1": { "title": "EVENT PRODUCTION" },
+    "card2": { "title": "VIDEO PRODUCTION" },
+    "card3": { "title": "DESIGN & IT" },
+    "card4": { "title": "MARKETING" },
+     "button": {
+      "title": "Explore"
+    },
+    "cta": "MAKE A REQUEST",
+
+    "hero": {
+      "title": "Full Service Production Company",
+      "subtitle": "Explore our services and discover how we can take your story to the next level"
+    },
+
+    "events": {
+      "title": "EVENT PRODUCTION",
+      "description": "We provide comprehensive, end-to-end event production for product launches, immersive experiences, large-scale conferences, and nearly any type of event you might need, handling everything from planning to execution. We can develop a concept from the ground up or take your existing idea and turn it into a clear, effective, and commercially successful experience. Our team manages creative direction, stage design, vendor coordination, and full technical production. We also handle product integration to make sure every element works together smoothly and supports your objectives",
+      "menu": {
+        "liveHybrid": "Product Launch",
+        "corporate": "Shows & Theatre",
+        "brandActivations": "Summits & Conferences"
+      },
+      "step": {
+        "liveHybrid": {
+          "title": "Product Launch",
+          "text": "Launch events that showcase your product uniquely and powerfully, creating a natural, impactful and special reveal"
+        },
+        "corporate": {
+          "title": "Shows & Theatre",
+          "text": "Immersive performances that blend storytelling, direction, and stage technology. Creative, atmospheric, unforgettable"
+        },
+        "brandActivations": {
+          "title": "Summits & Conferences",
+          "text": "Large-scale events with seamless organisation, premium stage design, full technical setup and flawless execution"
+        }
+      }
+    },
+
+    "video": {
+      "title": "VIDEO PRODUCTION",
+      "description": "Full-cycle video production across a wide range of formats. Our work combines clear creative direction, structured production workflows, and reliable post-production. We create professional music videos, brand and product content with precise messaging, clean corporate and event coverage, as well as short-form and long-form content for social media and online platforms - all aligned with your communication goals and visual identity",
+      "menu": {
+        "commercial": "Music Videos",
+        "social": "Advertising",
+        "aftermovies": "Commercial Shoots",
+        "product": "Concert Videos",
+        "content": "Content Creation"
+      },
+      "step": {
+        "commercial": {
+          "title": "Music Videos",
+          "text": "High-quality videos for artists that bring songs to life with visuals, storytelling and professional production"
+        },
+        "social": {
+          "title": "Advertising",
+          "text": "Brand and product videos delivering clear message, creative approach, boosting attention and sales"
+        },
+        "aftermovies": {
+          "title": "Commercial Shoots",
+          "text": "Event recap videos of conferences, corporate events and production where you need a clean and professional footage"
+        },
+        "product": {
+          "title": "Concert Videos",
+          "text": "Dynamic and creative stage and live-show recordings with strong editing and atmosphere delivery"
+        },
+        "content": {
+          "title": "Content Creation",
+          "text": "Short-form and long-form content for social media and online platforms - structured, consistent, creative and relevant"
+        }
+      }
+    },
+
+    "design": {
+      "title": "DESIGN & IT",
+      "description": "Visual communication and development services, covering brand identity from scratch, re-branding, campaign design, visual systems, and cohesive brand elements that clearly represent your brand. We design and maintain websites and web applications across both frontend and backend, ensuring performance, reliability, and scalability. In addition, we develop custom digital tools and applications personalised to your product, workflow, or internal operational needs",
+      "menu": {
+        "brandIdentity": "Brand Identity",
+        "websitesApps": "Web Development",
+        "uxui": "Applications"
+      },
+      "step": {
+        "brandIdentity": {
+          "title": "Brand Identity",
+          "text": "Logos, visual systems and brand elements that express your brand"
+        },
+        "websitesApps": {
+          "title": "Web Development",
+          "text": "We build and maintain websites and web apps, from frontend to backend"
+        },
+        "uxui": {
+          "title": "Applications",
+          "text": "Custom digital solutions and apps build around your product or internal needs"
+        }
+      }
+    },
+
+    "marketing": {
+      "title": "MARKETING",
+      "description": "Brand positioning and content services, covering strategy, creative concepts, production, and targeted communication designed to elevate your brand and drive measurable growth. We support personal brands - including creators, bloggers, and public figures - with structured marketing, content strategy, collaborations with brands and other creators. In addition, we maintain and grow social platforms through consistent daily content, scheduled posting, visual development, and ongoing communication management for an active and cohesive online presence",
+      "menu": {
+        "strategy": "Comprehensive Services",
+        "performance": "Personal Brands",
+        "content": "Maintaining Platforms"
+      },
+      "step": {
+        "strategy": {
+          "title": "Comprehensive Services",
+          "text": "Strategy, fresh ideas, production and targeting to elevate your brand and move it to the next level"
+        },
+        "performance": {
+          "title": "Personal Brands",
+          "text": "Marketing, content strategy and high-quality production for creators, bloggers and public figures"
+        },
+        "content": {
+          "title": "Maintaining Platforms",
+          "text": "Daily content, posting, structured content plan, visuals, and communication that keeps your social platforms active and consistent"
+        }
+      }
+    }
+  },
+
+  "footer": {
+    "nav": {
+      "title": "Navigation",
+      "services": "Services",
+      "about": "About",
+      "contacts": "Contacts"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Hradec 25, 281 63 Stříbrná Skalice"
+    },
+    "form": {
+      "title": "Consultation?",
+      "placeholder": "you@example.com",
+      "ariaLabel": "Request Consultation",
+      "success": "Thank you. We will contact you soon.",
+      "error": "Please enter a valid email.",
+      "sending": "Sending request..."
+    },
+    "copyright": {
+      "text": "© 2025 CyberON. All Rights Reserved."
+    }
+  },
+
+  "modal": {
+    "contact": {
+      "title": "LET’S TALK ABOUT YOUR PROJECT",
+      "subtitle": "Leave your contacts and we’ll get back to you with next steps"
+    },
+    "form": {
+      "name": "Name*",
+      "phone": "Phone*",
+      "email": "Email*",
+      "message": "Message*",
+      "service": "Service*",
+      "robot": "I am not a robot",
+      "submit": "Send request"
+    },
+    "success": {
+      "title": "Thank you",
+      "subtitle": "We’ll contact you as soon as possible.",
+      "button": "Close"
+    }
+  },
+
+  "projects": {
+  "viewServices": "View services",
+
+  "sentences": {
+    "title": "Sentences",
+    "subtitle": "Client, Sentences",
+    "short": "On 23 November 2024, the premiere of SENTENCES - a wordless immersive performance, first of its kind in the Czech Republic and Europe - took place at the UNESCO Kaiserstein Palace in Prague. The performance introduced a new artistic perspective, exploring the paradoxes and contradictions of the modern world, the topics people think about but rarely discuss openly.",
+    "more": "The story followed a protagonist moving through symbolic rooms, confronting social norms, class divides, rejection, and isolation. Every movement is part of a space, each scene is a separate room with its own theme, mood, and meaning. The event ran across five time slots between 17:00 and 22:00, each limited to 20–25 guests to preserve intimacy, with a total capacity of 150. The evening began with a lounge reception at 17:00 featuring refreshments, DJs, and entertainment from the hosts, offering guests a relaxed social space before and after the performance."
+  },
+
+  "ursuna": {
+    "title": "Ursuuna",
+    "subtitle": "Client, Ursuuna",
+    "short": "is a indigenous contemporary jewelry brand focused on clean, sculptural design with an emphasis on texture, form, and craftsmanship. Their pieces combine modern minimalism with subtle references to archival objects, resulting in jewelry that feels distinctive, durable, and intentionally designed.",
+    "more_before": "We created a full visual campaign for",
+    "more_after": ", including complete art direction. The campaign highlighted the brand’s materials, shapes, and design approach through a structured, modern aesthetic that reflects their identity and product philosophy."
+  },
+
+  "bloggerfest": {
+    "title": "Blogger Fest",
+    "subtitle": "Client, Blogger Fest",
+    "short": "Blogger Fest is an event for bloggers, digital creators, entrepreneurs, but also anyone who enjoys energetic, social experiences. The festival brings together content makers, business owners, and guests who want to network, learn, and connect. Throughout the day, visitors can explore photo zones, attend lectures, join mini-consultations, visit the market and food court, and meet their favorite creators in person.",
+    "more": "The event is designed not just for watching but for active participation. Creators get visibility and new opportunities, entrepreneurs access potential partners and clients, and guests enjoy music, light-show, cocktails, and a lively atmosphere that continues into the night. Blogger Fest aims to create a practical, engaging space where people come together to share ideas and enjoy a memorable day."
+  },
+
+  "vogue": {
+    "title": "VOGUE",
+    "subtitle": "Client, VOGUE",
+    "shortPart1": "for",
+    "shortPart2": "- is a young Ukrainian art director, performative artist, and photographer who came to the Czech Republic after the war limited her ability to create. Known for merging fashion with social topics, she gained attention during Paris Fashion Week, where she appeared outside the Rick Owens and Acne Studios shows wearing a collaborative piece with Czech designer David Altner - a light skirt-and-hoodie set with the message “Write anything on me.”",
+    "more": "The performance, which led to security escorting her away from one of the venues, highlighted the impact of her work and quickly spread online. For this project, our cameraman and photographer created the full visual concept and captured the key moments that shaped the narrative. Their work became the foundation of the story published in Vogue, presenting Hahlushka’s creative statement and its context through strong, documentary-style imagery."
+  },
+
+  "autokarlin": {
+    "title": "Automyčka Karlín",
+    "subtitle": "Client, Automyčka Karlín",
+    "short": "Automyčka Karlín is a car-wash service located in Prague’s Karlín district. Unlike automated drive-through washes, it offers hand washing, ensuring gentler treatment of your car’s paint and a detailed interior clean. The service caters to drivers who value careful, attentive care over quick, impersonal washes.",
+    "more": "Earlier in 2025, Automyčka Karlín got a new owner, and we led a full rebranding and brand-identity overhaul. The new visual identity, refreshed messaging, and updated brand presence reflect a modern, professional, and customer-focused approach, emphasizing quality service and a welcoming experience for every client."
+  },
+
+  "euroleague": {
+    "title": "ELF",
+    "subtitle": "Client, European League of Football",
+    "short": "The Prague Lions are a Czech American-football team founded in 1991, and since 2023 they have competed in the European League of Football (ELF), representing the Czech Republic at the highest European level.",
+    "more": "After a restructuring and new leadership, the 2025 season saw them relocate their home games to Viktoria Žižkov Stadium, with renewed ambition, a strengthened roster and increased professionalism. Our head of video production covered match photography, game-day and video-shoots. Through his images and footage he helped bring their on-field action capturing key moments and building the team’s presence across social platforms."
+  },
+
+  "kristina": {
+    "title": "@kristina.talklog",
+    "subtitle": "Client, @kristina.talklog",
+    "short": "is a Prague-based blogger and influencer. Shares lifestyle content, personal growth insights, and high-quality brand collaborations. Explores personal development, the enjoyment of everyday life, and the relationship between the self and the world. Promotes an active lifestyle, with a strong emphasis on boxing and overall movement through active lifestyle and self discovery.",
+    "more": "We support Kristina with personal brand development and content strategy, helping her communicate more effectively across social media platforms and maximize the value of her blog. We enable her to grow her audience, strengthen her online presence, and monetize her content through collaborations and partnerships."
+  },
+
+  "slugger": {
+    "title": "Slugger Fight Club",
+    "subtitle": "Client, Slugger Fight Club",
+    "short": "Slugger Fight Club is a modern fight and martial-arts gym based in Prague. It offers a variety of training formats: boxing, Muay Thai, BJJ, judo, group classes and individual sessions - from beginners to advanced.",
+    "more": "We collaborated with Slugger Fight Club on an offline marketing integration at our Blogger Fest, creating a live-fight segment featuring bloggers. This activation brought the gym’s energy and martial-arts experience directly to festival-goers, connecting the brand with a new audience in a fun and memorable way.",
+    "button_more": "Read More",
+    "button_less": "Read Less"
+  }
+},
+"projectsGrid": {
+  "heroTitle": "RECENT PROJECTS",
+  "cards": {
+    "sentences": {
+      "title": "SENTENCES",
+      "desc": "IMMERSIVE PERFORMANCE END-TO-END EVENT & PERFORMANCE PRODUCTION"
+    },
+    "ursuuna": {
+      "title": "URSUUNA",
+      "desc": "FASHION BRAND CAMPAIGN ART-DIRECTION, MEDIA PRODUCTION"
+    },
+    "bloggerfest": {
+      "title": "BLOGGER FEST",
+      "desc": "IN-HOUSE PROJECT END-TO-END EVENT PRODUCTION"
+    },
+    "vogue": {
+      "title": "VOGUE",
+      "desc": "@hahlushka FOR VOGUE ARTICLE MEDIA REPORTAGE"
+    },
+    "autokarlin": {
+      "title": "AUTOMYČKA KARLÍN",
+      "desc": "PRAGUE BASED CAR-WASH BRAND IDENTITY"
+    },
+    "euroleague": {
+      "title": "EUROPEAN LEAGUE OF FOOTBALL",
+      "desc": "PRAGUE LIONS MATCH REPORTAGE"
+    },
+    "kristina": {
+      "title": "@KRISTINA.TALKBLOG",
+      "desc": "PERSONAL BRAND MARKETING, PERSONAL BRAND DEVELOPMENT"
+    },
+    "slugger": {
+      "title": "SLUGGER FIGHT CLUB",
+      "desc": "PRAGUE FOUNDED FIGHT CLUB OFFLINE MARKETING, FIGHT INTEGRATION AT BLOGGER-FEST"
+    }
+  }
+},
+"projectsRequest": {
+  "title": "Project Request",
+  "subtitle": "For Project:",
+  "text": "Leave your contact and a short note - we will get back to you.",
+  "placeholderName": "Your Name*",
+  "placeholderEmail": "Your Email*",
+  "placeholderMessage": "Tell us briefly what you need*",
+  "button": "Send Request"
+},
+  "cookies": {
+    "title": "COOKIES",
+    "description": "We use cookies to improve your browsing experience, analyse traffic and ensure the website runs securely. You can accept all cookies or allow only essential ones.",
+    "link": "Learn more about cookies",
+    "essentials": "ESSENTIAL ONLY",
+    "accept": "ACCEPT ALL"
+  },
+
+  "privacy": {
+    "metaTitle": "CyberON – Privacy & Cookies",
+    "title": "PRIVACY & COOKIES",
+    "subtitle": "This page explains how CyberON processes personal data and uses cookies on cyber-on.net and related project pages.",
+    "lastUpdatedLabel": "Last updated:",
+    "lastUpdatedDate": "December 8, 2025",
+
+    "sections": {
+      "overview": {
+        "heading": "1. OVERVIEW",
+        "body1": "This Privacy & Cookies Policy describes how CyberON s.r.o. (“CyberON”, “we”, “us”) collects, uses, stores and protects personal data in connection with our website, marketing, client projects and communication.",
+        "body2": "We process personal data in accordance with applicable data-protection legislation, in particular the General Data Protection Regulation (GDPR) and relevant Czech law.",
+        "body3": "This document focuses especially on the use of cookies and similar technologies on our website and explains how you can manage your preferences."
+      },
+      "controller": {
+        "heading": "2. DATA CONTROLLER",
+        "body": "The controller of your personal data is:",
+        "cardTitle": "CYBERON S.R.O.",
+        "company": "Company ID (IČ): 23263211",
+        "address": "Address: Hradec 25, 281 63 Stříbrná Skalice, Czech Republic",
+        "email": "E-mail: info@cyber-on.net",
+        "phone": "Phone: +420 777 956 775",
+        "web": "Website: cyber-on.net"
+      },
+      "data": {
+        "heading": "3. WHAT DATA WE PROCESS",
+        "body1": "The scope of data we process depends on how you interact with us and our website. Typically, it includes:",
+        "item1": "Identification and contact details – such as your name, e-mail, phone number, company and role, if you provide them in a form or communication.",
+        "item2": "Communication content – messages you send us via forms, e-mail or other channels, including project briefs and notes.",
+        "item3": "Technical and analytical data – IP address, browser type, device information, approximate location (city/country), pages visited and interactions with the website, collected via cookies and similar technologies.",
+        "item4": "Contractual and billing data – if you become our client or supplier, we may process data necessary to perform the contract (billing details, contract history, project information)."
+      },
+      "purposes": {
+        "heading": "4. PURPOSES & LEGAL BASES",
+        "body1": "We process personal data only when we have a valid legal basis and a clear purpose. The main purposes are:",
+        "item1": "Website operation and security – necessary cookies and technical data required to display the site correctly, maintain performance and protect against abuse (legitimate interest / necessity for service).",
+        "item2": "Analytics and improvement – optional cookies to understand how visitors use the site and to refine content, structure and performance (your consent).",
+        "item3": "Communication and project requests – processing your contact details and messages to respond to your inquiries, prepare offers and manage cooperation (performance of a contract or steps prior to entering into a contract).",
+        "item4": "Marketing communication – where permitted, we may send you relevant information about our services, events or projects (consent or legitimate interest, depending on the situation and applicable law)."
+      },
+      "cookies": {
+        "heading": "5. COOKIES & SIMILAR TECHNOLOGIES",
+        "body1": "Cookies are small text files stored on your device when you visit our website. They help us ensure basic functionality, security and a better user experience.",
+        "body2": "We typically use the following categories of cookies:",
+        "item1": "Essential / necessary cookies – required for the website to function properly (e.g., security, cookie banner settings, technical operation). These cannot be disabled via our banner.",
+        "item2": "Analytical / performance cookies – help us understand how visitors use the website, which pages are visited most and how we can improve the structure and content.",
+        "item3": "Functional or preference cookies – remember your choices (such as language settings) to make your experience more comfortable.",
+        "body3": "Non-essential cookies (such as analytics) are used only based on your consent, which you can give or refuse via the cookie banner. You can also change your browser settings to manage or block cookies."
+      },
+      "banner": {
+        "heading": "6. COOKIE BANNER & PREFERENCES",
+        "body1": "When you first visit our website, you will see a cookie banner. You can:",
+        "item1": "Accept all cookies – including analytical cookies for better statistics and optimisation.",
+        "item2": "Allow only essential cookies – the website will function, but some measurement and optimisation features may be limited.",
+        "body2": "Your choice is stored in your browser using a technical cookie. If you clear cookies or use another browser or device, the banner may be shown again."
+      },
+      "retention": {
+        "heading": "7. DATA RETENTION",
+        "body1": "We retain personal data only for as long as necessary for the purposes for which it was collected, or for the period required by law.",
+        "body2": "The specific retention period depends on the type of data and context (e.g., project documentation, contracts, accounting records). After the relevant period expires, data is securely deleted or anonymised."
+      },
+      "sharing": {
+        "heading": "8. SHARING PERSONAL DATA",
+        "body1": "We do not sell your personal data. However, in some cases we may share it with:",
+        "item1": "Trusted service providers – such as hosting providers, analytics tools, e-mail and communication platforms, who process data on our behalf and under a data-processing agreement.",
+        "item2": "Professional advisors – such as accountants or legal advisors, where necessary to comply with legal obligations or to defend our rights.",
+        "item3": "Public authorities – where we are legally obliged to disclose certain data (for example, to tax or supervisory authorities, courts or law enforcement).",
+        "body2": "If data is transferred outside the EU/EEA, we will ensure an appropriate level of protection in accordance with GDPR (e.g., standard contractual clauses or equivalent safeguards)."
+      },
+      "rights": {
+        "heading": "9. YOUR RIGHTS",
+        "body1": "As a data subject, you have a number of rights under GDPR. In particular:",
+        "item1": "Right of access – to obtain confirmation whether we process your data and, if so, information about the processing and a copy of the data.",
+        "item2": "Right to rectification – to have inaccurate or incomplete personal data corrected.",
+        "item3": "Right to erasure – in certain cases, to have your personal data deleted.",
+        "item4": "Right to restriction of processing – in specific situations, to limit how we use your data.",
+        "item5": "Right to object – in particular where processing is based on legitimate interest or for direct marketing.",
+        "item6": "Right to data portability – for data processed by automated means based on your consent or contract, to receive it in a structured, commonly used, machine-readable format.",
+        "item7": "Right to withdraw consent – where processing is based on consent, you may withdraw it at any time, without affecting the lawfulness of processing before withdrawal.",
+        "body2": "You can exercise your rights by contacting us at info@cyber-on.net. We may need to verify your identity before fulfilling certain requests.",
+        "body3": "If you believe your rights have been violated, you also have the right to lodge a complaint with the Office for Personal Data Protection (Úřad pro ochranu osobních údajů) or another competent supervisory authority."
+      },
+      "changes": {
+        "heading": "10. CHANGES TO THIS POLICY",
+        "body1": "We may update this Privacy & Cookies Policy from time to time to reflect changes in our processing activities, legal requirements or website features.",
+        "body2": "The current version is always available on this page. If the changes are significant, we may also inform you in another appropriate way (for example via a notice on the website).",
+        "disclaimer": "This document is intended to provide transparent information about how we handle personal data and cookies. It does not constitute legal advice."
+      }
+    },
+
+    "footer": {
+      "copyright": "© CyberON s.r.o. All rights reserved."
+    }
+  }
+}
+
+

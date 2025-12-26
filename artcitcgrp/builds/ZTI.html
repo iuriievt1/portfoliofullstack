@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZTI</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <nav class="nav">
+        <a href="/index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="/services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="/portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="/aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="/contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<main>
+  <section class="zti">
+    <div class="container">
+
+      <!-- Заголовок + описание -->
+      <div class="zti__intro">
+        <h1 class="zti__title" data-i18n="zti.title">ZTI</h1>
+
+        <div class="zti__intro-layout">
+          <div class="zti__text">
+            <p class="zti__paragraph" data-i18n="zti.text.main">
+              Navrhujeme a realizujeme vnitřní rozvody vody a kanalizace, koupelny na klíč a ochranu proti únikům. Tiché stoupačky, správné spády, tlakové zkoušky i revize.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co děláme -->
+      <section class="zti__services">
+        <h2 class="zti__subtitle" data-i18n="zti.services.title">Co děláme</h2>
+
+        <div class="zti-services">
+          <article class="zti-card">
+            <h3 class="zti-card__title" data-i18n="zti.services.card1.title">Projekt a rozvody</h3>
+            <ul class="zti-card__list">
+              <li class="zti-card__item" data-i18n="zti.services.card1.item1">Projekt ZTI (stoupačky, trasy, dimenze, spády).</li>
+              <li class="zti-card__item" data-i18n="zti.services.card1.item2">Rozvody studené a teplé vody včetně cirkulace.</li>
+            </ul>
+          </article>
+
+          <article class="zti-card">
+            <h3 class="zti-card__title" data-i18n="zti.services.card2.title">Kanalizace a koupelny</h3>
+            <ul class="zti-card__list">
+              <li class="zti-card__item" data-i18n="zti.services.card2.item1">Kanalizační rozvody a zvuková izolace stoupaček.</li>
+              <li class="zti-card__item" data-i18n="zti.services.card2.item2">Koupelny na klíč: sanita a instalace.</li>
+            </ul>
+          </article>
+
+          <article class="zti-card">
+            <h3 class="zti-card__title" data-i18n="zti.services.card3.title">Ochrana a zkoušky</h3>
+            <ul class="zti-card__list">
+              <li class="zti-card__item" data-i18n="zti.services.card3.item1">Ochrana proti únikům, příprava pro filtry.</li>
+              <li class="zti-card__item" data-i18n="zti.services.card3.item2">Zkoušky, protokoly a předání systému.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Výhody pro klienty -->
+      <section class="zti__benefits">
+        <h2 class="zti__subtitle" data-i18n="zti.benefits.title">Výhody pro klienty</h2>
+
+        <div class="zti-benefits">
+          <article class="zti-benefit">
+            <p class="zti-benefit__text" data-i18n="zti.benefits.item1">Tichý provoz a čisté detaily.</p>
+          </article>
+
+          <article class="zti-benefit">
+            <p class="zti-benefit__text" data-i18n="zti.benefits.item2">Stabilní tlak vody v systému.</p>
+          </article>
+
+          <article class="zti-benefit">
+            <p class="zti-benefit__text" data-i18n="zti.benefits.item3">Ochrana proti únikům a škodám.</p>
+          </article>
+
+          <article class="zti-benefit">
+            <p class="zti-benefit__text" data-i18n="zti.benefits.item4">Připraveno na servis a úpravy.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA: консультация -->
+      <div class="about-cta zti__cta">
+        <h3 class="about-cta__title" data-i18n="zti.cta.title">Získat Konzultaci</h3>
+        <a href="/estimate.html" class="about-cta__btn" data-i18n="fitout.cta.button">Spočítejte Cenu</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- Левая колонка: бренд + соцсети -->
+    <div class="footer__col footer__col--brand">
+      <p class="footer__logo" data-i18n="footer.company">Arctic Group s.r.o.</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/arcticstudio_cz?igsh=MzVyNzkxdTUzN2Rj" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="/404.html" class="footer__social-link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" class="footer__social-icon">
+        </a>
+        <a href="/404.html" class="footer__social-link" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="footer__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Центр: ссылки по сайту -->
+    <div class="footer__col footer__col--nav">
+      <h3 class="footer__title" data-i18n="footer.navTitle">Navigace</h3>
+
+      <nav class="footer__nav">
+        <a href="/index.html" class="footer__link" data-i18n="nav.home">Úvod</a>
+        <a href="/services.html" class="footer__link" data-i18n="nav.services">Služby</a>
+        <a href="/aboutus.html" class="footer__link" data-i18n="nav.about">O nás</a>
+        <a href="/contact.html" class="footer__link" data-i18n="nav.contact">Kontakty</a>
+      </nav>
+    </div>
+
+    <!-- Контакты -->
+    <div class="footer__col footer__col--contacts">
+      <h3 class="footer__title" data-i18n="footer.contactTitle">Kontakt</h3>
+
+      <p class="footer__line">
+        <span class="footer__label">Construction &amp; Turnkey:</span>
+        <a href="tel:+420777956775" class="footer__value">+420 777 956 775</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label">Design &amp; Architecture:</span>
+        <a href="tel:+420778025205" class="footer__value">+420 778 025 205</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.emailLabel">E-mail:</span>
+        <a href="mailto:info@arcticgrp.com" class="footer__value" data-i18n="footer.email">info@arcticgrp.com</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.addressLabel">Adresa:</span>
+        <a href="https://maps.google.com/?q=Dostalov%C3%A9+1283%2F8,+Praha+5" target="_blank" rel="noopener noreferrer" class="footer__value" data-i18n="footer.address">Dostalové 1283/8, Praha 5</a>
+      </p>
+    </div>
+
+    <!-- Справа: форма для e-mail -->
+    <div class="footer__col footer__col--form">
+      <h3 class="footer__title" data-i18n="footer.form.title">Získejte konzultaci</h3>
+
+      <form class="footer-form" id="footer-form">
+        <div class="footer-form__row">
+          <input type="email" class="footer-form__input" name="email" placeholder="Email" required>
+          <button type="submit" class="footer-form__button" aria-label="Odeslat e-mail">→</button>
+        </div>
+      </form>
+      <p class="footer-form__message" data-i18n="footer.form.success">Ozveme se vám do 24 hodin.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <a href="https://cyber-on.net" target="_blank" rel="noopener noreferrer" class="footer__bottom-link">
+        <span class="footer__bottom-made" data-i18n="footer.madeByPrefix">Vyrobeno</span>
+        <span class="footer__bottom-brand">CyberON</span>
+      </a>
+      <a href="404.html" class="footer__bottom-link footer__bottom-link--right" data-i18n="footer.rights">Všechna Práva Vyhrazena</a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

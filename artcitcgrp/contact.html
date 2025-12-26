@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact-Arctic</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+ <main>
+  <section class="contact">
+    <div class="container">
+      <h1 class="contact__title" data-i18n="contact.title">Spojte se s námi</h1>
+
+      <div class="contact__content">
+        <!-- Слева: галерея -->
+        <div class="contact__gallery" aria-hidden="true">
+          <!-- Слайды будут созданы через JS -->
+        </div>
+
+        <!-- Справа: форма -->
+        <div class="contact__form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-email" data-i18n="contact.form.emailLabel">E-mail</label>
+              <input id="contact-email" type="email" name="email" class="contact-form__input" required placeholder="email@domena.cz">
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-phone" data-i18n="contact.form.phoneLabel">Telefon</label>
+              <input id="contact-phone" type="tel" name="phone" class="contact-form__input" required placeholder="+420 000 000 000">
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-name" data-i18n="contact.form.nameLabel">Jméno</label>
+              <input id="contact-name" type="text" name="name" class="contact-form__input" required placeholder="Vaše jméno">
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-company" data-i18n="contact.form.companyLabel">Společnost (volitelné)</label>
+              <input id="contact-company" type="text" name="company" class="contact-form__input" placeholder="Název společnosti">
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-service" data-i18n="contact.form.serviceLabel">Služba</label>
+              <select id="contact-service" name="service" class="contact-form__select" required>
+                <option value="" disabled selected hidden data-i18n="contact.form.servicePlaceholder">Vyberte službu</option>
+                <option value="construction" data-i18n="contact.form.serviceConstruction">Stavebnictví</option>
+                <option value="design" data-i18n="contact.form.serviceDesign">Design &amp; Architektura</option>
+                <option value="turnkey" data-i18n="contact.form.serviceTurnkey">Projekty na Klíč</option>
+              </select>
+            </div>
+
+            <!-- Подуслуги для строительства -->
+            <div class="contact-form__field contact-form__field--subservices" id="contact-subservices">
+              <p class="contact-form__label" data-i18n="contact.form.subservicesLabel">Upřesnění v rámci stavebnictví (volitelné)</p>
+
+              <label class="contact-form__checkbox">
+                <input type="checkbox" name="subservices" value="ventilation">
+                <span data-i18n="contact.form.subVentilation">Ventilace &amp; Klimatizace</span>
+              </label>
+
+              <label class="contact-form__checkbox">
+                <input type="checkbox" name="subservices" value="water">
+                <span data-i18n="contact.form.subWater">Voda &amp; Sanitární Instalace</span>
+              </label>
+
+              <label class="contact-form__checkbox">
+                <input type="checkbox" name="subservices" value="electro">
+                <span data-i18n="contact.form.subElectro">Elektroinstalace</span>
+              </label>
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-message" data-i18n="contact.form.messageLabel">Zpráva</label>
+              <textarea id="contact-message" name="message" class="contact-form__textarea" rows="3" placeholder="Stručně popište svůj požadavek"></textarea>
+            </div>
+
+            <div class="contact-form__checks">
+              <label class="contact-form__checkbox">
+                <input type="checkbox" name="notRobot" required>
+                <span data-i18n="contact.form.notRobot">Nejsem robot</span>
+              </label>
+
+              <label class="contact-form__checkbox">
+                <input type="checkbox" name="privacy" required>
+                <span data-i18n="contact.form.privacy">Souhlasím se zpracováním osobních údajů.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="contact-form__submit" data-i18n="contact.form.submit">Odeslat</button>
+
+            <p class="contact-form__message" id="contact-form-message"></p>
+
+            <!-- скрытые тексты для сообщений (для переводов) -->
+            <p id="contact-msg-required" hidden data-i18n="contact.form.required">Vyplňte prosím všechna povinná pole.</p>
+            <p id="contact-msg-success" hidden data-i18n="contact.form.success">Děkujeme, vaše zpráva byla odeslána.</p>
+            <p id="contact-msg-error" hidden data-i18n="contact.form.error">Něco se pokazilo, zkuste to prosím znovu.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Карта -->
+      <div class="contact__map-block">
+        <h2 class="contact__map-title" data-i18n="contact.mapTitle">Kde nás najdete</h2>
+
+        <div class="contact__map">
+          <iframe src="https://www.google.com/maps?q=Dostalov%C3%A9+1283%2F8,+Praha+5&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Dostalové 1283/8, Praha 5"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- Левая колонка: бренд + соцсети -->
+    <div class="footer__col footer__col--brand">
+      <p class="footer__logo" data-i18n="footer.company">Arctic Group s.r.o.</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/arcticstudio_cz?igsh=MzVyNzkxdTUzN2Rj" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="footer__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Центр: ссылки по сайту -->
+    <div class="footer__col footer__col--nav">
+      <h3 class="footer__title" data-i18n="footer.navTitle">Navigace</h3>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__link" data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="footer__link" data-i18n="nav.services">Služby</a>
+        <a href="aboutus.html" class="footer__link" data-i18n="nav.about">O nás</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav.contact">Kontakty</a>
+      </nav>
+    </div>
+
+    <!-- Контакты -->
+    <div class="footer__col footer__col--contacts">
+      <h3 class="footer__title" data-i18n="footer.contactTitle">Kontakt</h3>
+
+      <p class="footer__line">
+        <span class="footer__label">Construction &amp; Turnkey:</span>
+        <a href="tel:+420777956775" class="footer__value">+420 777 956 775</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label">Design &amp; Architecture:</span>
+        <a href="tel:+420778025205" class="footer__value">+420 778 025 205</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.emailLabel">E-mail:</span>
+        <a href="mailto:info@arcticgrp.com" class="footer__value" data-i18n="footer.email">info@arcticgrp.com</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.addressLabel">Adresa:</span>
+        <a href="https://maps.google.com/?q=Dostalov%C3%A9+1283%2F8,+Praha+5" target="_blank" rel="noopener noreferrer" class="footer__value" data-i18n="footer.address">Dostalové 1283/8, Praha 5</a>
+      </p>
+    </div>
+
+    <!-- Справа: форма для e-mail -->
+    <div class="footer__col footer__col--form">
+      <h3 class="footer__title" data-i18n="footer.form.title">Získejte konzultaci</h3>
+
+      <form class="footer-form" id="footer-form">
+        <div class="footer-form__row">
+          <input type="email" class="footer-form__input" name="email" placeholder="Email" required>
+          <button type="submit" class="footer-form__button" aria-label="Odeslat e-mail">→</button>
+        </div>
+      </form>
+      <p class="footer-form__message" data-i18n="footer.form.success">Ozveme se vám do 24 hodin.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <a href="https://cyber-on.net" target="_blank" rel="noopener noreferrer" class="footer__bottom-link">
+        <span class="footer__bottom-made" data-i18n="footer.madeByPrefix">Vyrobeno</span>
+        <span class="footer__bottom-brand">CyberON</span>
+      </a>
+      <a href="404.html" class="footer__bottom-link footer__bottom-link--right" data-i18n="footer.rights">Všechna Práva Vyhrazena</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+  <script src="/source/js/contact.js"></script>
+  <script src="/source/js/contact-gallery.js"></script>
+</body>
+</html>

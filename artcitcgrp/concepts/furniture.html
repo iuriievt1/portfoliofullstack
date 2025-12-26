@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Furniture Design</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="/index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <nav class="nav">
+        <a href="/index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="/services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="/portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="/aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="/contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<main>
+  <section class="architecture">
+    <div class="container">
+
+      <div class="architecture__intro">
+        <h1 class="architecture__title" data-i18n="furniture.title">
+          Design Nábytku
+        </h1>
+        <p class="architecture__subtitle" data-i18n="furniture.subtitle">
+          Návrh nábytku na míru – od prvního skici až po hotový kus v interiéru.
+        </p>
+      </div>
+
+      <div class="architecture__list">
+
+        <!-- 01 -->
+        <section class="architecture-item">
+          <div class="architecture-item__text">
+            <span class="architecture-item__number">01.</span>
+            <h2 class="architecture-item__title" data-i18n="furniture.items.1.title">
+              Nábytek na Míru vašemu Prostorou
+            </h2>
+            <p class="architecture-item__text" data-i18n="furniture.items.1.text">
+              Navrhujeme nábytek podle konkrétního prostoru, dispozice a způsobu používání – žádné kompromisy, vše přesně na míru vám.
+            </p>
+          </div>
+
+          <div class="architecture-item__image">
+            <div class="architecture-image-wrap">
+              <img src="/assets/photo/24.jpg" alt="Nábytek na míru do interiéru" class="architecture-image">
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 -->
+        <section class="architecture-item architecture-item--reverse">
+          <div class="architecture-item__text">
+            <span class="architecture-item__number">02.</span>
+            <h2 class="architecture-item__title" data-i18n="furniture.items.2.title">
+              Ergonomie a Každodenní Funkčnost
+            </h2>
+            <p class="architecture-item__text" data-i18n="furniture.items.2.text">
+              Myslíme na pohodlí, úložné prostory i logiku pohybu v interiéru, aby se nábytek dobře používal každý den, ne jen hezky vypadal.
+            </p>
+          </div>
+
+          <div class="architecture-item__image">
+            <div class="architecture-image-wrap">
+              <img src="/assets/photo/10.jpg" alt="Ergonomický nábytek v interiéru" class="architecture-image">
+            </div>
+          </div>
+        </section>
+
+        <!-- 03 -->
+        <section class="architecture-item">
+          <div class="architecture-item__text">
+            <span class="architecture-item__number">03.</span>
+            <h2 class="architecture-item__title" data-i18n="furniture.items.3.title">
+              Materiály, Povrchy a Detaily
+            </h2>
+            <p class="architecture-item__text" data-i18n="furniture.items.3.text">
+              Volíme kvalitní materiály, povrchové úpravy a kování tak, aby nábytek vydržel, snadno se udržoval a zapadl do celkového stylu interiéru.
+            </p>
+          </div>
+
+          <div class="architecture-item__image">
+            <div class="architecture-image-wrap">
+              <img src="/assets/photo/48.jpg" alt="Detail kvalitního nábytku" class="architecture-image">
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="about-cta architecture__cta">
+        <h3 class="about-cta__title" data-i18n="furniture.cta.title">
+          Chcete nábytek navržený přímo pro vás?
+        </h3>
+        <a href="/estimate.html" class="about-cta__btn" data-i18n="fitout.cta.button">
+          Spočítejte Cenu
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- Левая колонка: бренд + соцсети -->
+    <div class="footer__col footer__col--brand">
+      <p class="footer__logo" data-i18n="footer.company">Arctic Group s.r.o.</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/arcticstudio_cz?igsh=MzVyNzkxdTUzN2Rj" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="/404.html" class="footer__social-link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" class="footer__social-icon">
+        </a>
+        <a href="/404.html" class="footer__social-link" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="footer__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Центр: ссылки по сайту -->
+    <div class="footer__col footer__col--nav">
+      <h3 class="footer__title" data-i18n="footer.navTitle">Navigace</h3>
+
+      <nav class="footer__nav">
+        <a href="/index.html" class="footer__link" data-i18n="nav.home">Úvod</a>
+        <a href="/services.html" class="footer__link" data-i18n="nav.services">Služby</a>
+        <a href="/aboutus.html" class="footer__link" data-i18n="nav.about">O nás</a>
+        <a href="/contact.html" class="footer__link" data-i18n="nav.contact">Kontakty</a>
+      </nav>
+    </div>
+
+    <!-- Контакты -->
+    <div class="footer__col footer__col--contacts">
+      <h3 class="footer__title" data-i18n="footer.contactTitle">Kontakt</h3>
+
+      <p class="footer__line">
+        <span class="footer__label">Construction &amp; Turnkey:</span>
+        <a href="tel:+420777956775" class="footer__value">+420 777 956 775</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label">Design &amp; Architecture:</span>
+        <a href="tel:+420778025205" class="footer__value">+420 778 025 205</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.emailLabel">E-mail:</span>
+        <a href="mailto:info@arcticgrp.com" class="footer__value" data-i18n="footer.email">info@arcticgrp.com</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.addressLabel">Adresa:</span>
+        <a href="https://maps.google.com/?q=Dostalov%C3%A9+1283%2F8,+Praha+5" target="_blank" rel="noopener noreferrer" class="footer__value" data-i18n="footer.address">Dostalové 1283/8, Praha 5</a>
+      </p>
+    </div>
+
+    <!-- Справа: форма для e-mail -->
+    <div class="footer__col footer__col--form">
+      <h3 class="footer__title" data-i18n="footer.form.title">Získejte konzultaci</h3>
+
+      <form class="footer-form" id="footer-form">
+        <div class="footer-form__row">
+          <input type="email" class="footer-form__input" name="email" placeholder="Email" required>
+          <button type="submit" class="footer-form__button" aria-label="Odeslat e-mail">→</button>
+        </div>
+      </form>
+      <p class="footer-form__message" data-i18n="footer.form.success">Ozveme se vám do 24 hodin.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <a href="https://cyber-on.net" target="_blank" rel="noopener noreferrer" class="footer__bottom-link">
+        <span class="footer__bottom-made" data-i18n="footer.madeByPrefix">Vyrobeno</span>
+        <span class="footer__bottom-brand">CyberON</span>
+      </a>
+      <a href="404.html" class="footer__bottom-link footer__bottom-link--right" data-i18n="footer.rights">Všechna Práva Vyhrazena</a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

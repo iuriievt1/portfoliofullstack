@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 | Arctic Group</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+  <link rel="stylesheet" href="/source/style/404.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <div class="lang">
+        <button class="lang__current" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page">
+      <div class="container">
+        <div class="error-page__inner">
+
+          <!-- Фон-стройка -->
+          <div class="error-page__background" aria-hidden="true">
+            <div class="error-page__block error-page__block--1"></div>
+            <div class="error-page__block error-page__block--2"></div>
+            <div class="error-page__block error-page__block--3"></div>
+            <div class="error-page__block error-page__block--4"></div>
+            <div class="error-page__block error-page__block--5"></div>
+          </div>
+
+          <!-- Контент -->
+          <div class="error-page__content">
+            <p class="error-page__label" data-i18n="error404.label">Stránka ve výstavbě</p>
+
+            <h1 class="error-page__title" data-i18n="error404.title">404</h1>
+
+            <p class="error-page__text" data-i18n="error404.text">
+              Na této adrese pro vás právě stavíme něco nového. Zatím můžete přejít na úvodní stránku nebo si projít naše služby.
+            </p>
+
+            <div class="error-page__actions">
+              <a href="index.html" class="error-page__btn error-page__btn--primary" data-i18n="error404.btn.home">
+                Zpět na úvod
+              </a>
+              <a href="services.html" class="error-page__btn error-page__btn--secondary" data-i18n="error404.btn.services">
+                Na služby
+              </a>
+            </div>
+
+            <p class="error-page__tagline" data-i18n="error404.tagline">
+              I když tato stránka je ještě ve výstavbě, o váš projekt se postaráme už teď.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

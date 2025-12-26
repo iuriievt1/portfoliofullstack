@@ -1,0 +1,266 @@
+/* ====== 404 Construction Page ====== */
+
+.error-page {
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #ffffff;
+	color: #000000;
+	overflow: hidden;
+}
+
+/* Внутренний контейнер с центровкой контента */
+
+.error-page__inner {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 420px;
+}
+
+/* Фон-стройка из блоков */
+
+.error-page__background {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	z-index: 0;
+	opacity: 0.45;
+}
+
+/* Базовый стиль "куба" */
+
+.error-page__block {
+	position: absolute;
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Кубы в шахматном порядке */
+
+.error-page__block--1 {
+	width: 140px;
+	height: 140px;
+	top: 8%;
+	left: 5%;
+	transform: rotate(-4deg);
+}
+
+.error-page__block--2 {
+	width: 180px;
+	height: 120px;
+	top: 24%;
+	right: 10%;
+	transform: rotate(3deg);
+}
+
+.error-page__block--3 {
+	width: 160px;
+	height: 160px;
+	bottom: 16%;
+	left: 18%;
+	transform: rotate(2deg);
+}
+
+.error-page__block--4 {
+	width: 120px;
+	height: 160px;
+	bottom: 10%;
+	right: 22%;
+	transform: rotate(-3deg);
+}
+
+.error-page__block--5 {
+	width: 220px;
+	height: 80px;
+	bottom: 30%;
+	right: 4%;
+	transform: rotate(1deg);
+}
+
+/* Контент 404 */
+
+.error-page__content {
+	position: relative;
+	z-index: 2;
+	max-width: 520px;
+}
+
+/* Текст */
+
+.error-page__label {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+
+.error-page__title {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 72px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.error-page__text {
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+/* Кнопки */
+
+.error-page__actions {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.error-page__btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+	padding-right: 28px;
+	padding-bottom: 10px;
+	padding-left: 28px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 999px;
+	cursor: pointer;
+	text-decoration: none;
+	transition-property: color, background-color, border-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+	border-width: 1px;
+	border-style: solid;
+}
+
+/* Primary */
+
+.error-page__btn--primary {
+	background-color: #000000;
+	color: #ffffff;
+	border-color: #000000;
+}
+
+.error-page__btn--primary:hover,
+.error-page__btn--primary:focus-visible {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/* Secondary */
+
+.error-page__btn--secondary {
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+}
+
+.error-page__btn--secondary:hover,
+.error-page__btn--secondary:focus-visible {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/* Подпись */
+
+.error-page__tagline {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	opacity: 0.85;
+	max-width: 380px;
+}
+
+/* Адаптив */
+
+@media (max-width: 900px) {
+	.error-page {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+
+	.error-page__inner {
+		min-height: auto;
+	}
+
+	.error-page__title {
+		font-size: 56px;
+	}
+
+	.error-page__background {
+		opacity: 0.35;
+	}
+}
+
+@media (max-width: 768px) {
+	.error-page {
+		padding-top: 56px;
+		padding-bottom: 56px;
+	}
+
+	.error-page__title {
+		font-size: 48px;
+	}
+
+	.error-page__block--1,
+	.error-page__block--2,
+	.error-page__block--3,
+	.error-page__block--4,
+	.error-page__block--5 {
+		transform: scale(0.8);
+	}
+}
+
+@media (max-width: 480px) {
+	.error-page {
+		padding-top: 40px;
+		padding-bottom: 48px;
+	}
+
+	.error-page__title {
+		font-size: 40px;
+	}
+
+	.error-page__actions {
+		gap: 12px;
+	}
+
+	.error-page__btn {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.error-page__background {
+		opacity: 0.28;
+	}
+
+	.error-page__block--1,
+	.error-page__block--2,
+	.error-page__block--3,
+	.error-page__block--4,
+	.error-page__block--5 {
+		transform: scale(0.7);
+	}
+}

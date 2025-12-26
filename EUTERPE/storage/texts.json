@@ -1,0 +1,972 @@
+{
+  "hero.title": {
+    "cs": "Zajišťujeme organizaci akcí<br>od návrhu až po realizaci.",
+    "en": "We organize your events<br>from concept to final execution."
+  },
+  "hero.subtitle": {
+    "cs": "S námi se váš event stane událostí.",
+    "en": "With us, your event becomes a true experience."
+  },
+  "hero.desc": {
+    "cs": "Profesionální eventová a hudební agentura.<br>Specializujeme se na organizaci koncertů,<br>firemních akcí a soukromých událostí.",
+    "en": "A professional event and music agency.<br>We specialize in organizing concerts,<br>corporate events and private occasions."
+  },
+
+  "events.title": {
+    "cs": "Akce",
+    "en": "Events"
+  },
+
+  "events.hudba.name": {
+    "cs": "Hudba ve tmě",
+    "en": "Music in the Dark"
+  },
+  "events.hudba.desc": {
+    "cs": "Unikátní hudební zážitek, kde se soustředíte jen na zvuk – v úplné tmě.",
+    "en": "A unique musical experience where you focus only on sound – in complete darkness."
+  },
+  "events.hudba.teaser": {
+    "cs": "Unikátní projekt, kde hudbu vnímáte jinak – se zavřenýma očima!",
+    "en": "A unique project where you perceive music differently – with your eyes closed!"
+  },
+
+  "events.andersen.name": {
+    "cs": "Andersenovy pohádky",
+    "en": "Andersen’s Fairy Tales"
+  },
+  "events.andersen.desc": {
+    "cs": "Oživlé příběhy H. Ch. Andersena v hudebním, vizuálním a divadelním provedení.",
+    "en": "The stories of H. C. Andersen brought to life through music, visuals and theatre."
+  },
+  "events.andersen.teaser": {
+    "cs": "Oživlé příběhy H. Ch. Andersena v hudebním a vizuálním provedení!",
+    "en": "The stories of H. C. Andersen brought to life with music and visuals!"
+  },
+
+  "events.princ.name": {
+    "cs": "Malý Princ 2025",
+    "en": "The Little Prince 2025"
+  },
+  "events.princ.desc": {
+    "cs": "Hudebně-vizuální show inspirovaná Malým Princem s orchestrem EUTERPE a speciálními hosty.",
+    "en": "A music and visual show inspired by The Little Prince with the EUTERPE orchestra and special guests."
+  },
+  "events.princ.teaser": {
+    "cs": "Orchestr EUTERPE, Alim Šach a Louise Hedde, živá malba a hlas Jana Čenského.",
+    "en": "EUTERPE Orchestra, Alim Šach & Louise Hedde, live painting and the voice of Jan Čenský."
+  },
+
+  "services.title": {
+    "cs": "Služby",
+    "en": "Services"
+  },
+  "services.subtitle": {
+    "cs": "Pomocí kreativních příležitostí vytváříme jedinečné akce.",
+    "en": "Through creative opportunities, we create truly unique events."
+  },
+
+  "services.koncerty.title": {
+    "cs": "Koncerty",
+    "en": "Concerts"
+  },
+  "services.koncerty.kicker": {
+    "cs": "Elevate Your Style",
+    "en": "Elevate Your Style"
+  },
+  "services.koncerty.desc": {
+    "cs": "Tvoříme jedinečné koncerty s&nbsp;originální myšlenkou a&nbsp;uměleckým posláním.",
+    "en": "We create unique concerts with an original concept and artistic message."
+  },
+
+  "services.vecirky.title": {
+    "cs": "Firemní večírky",
+    "en": "Corporate Parties"
+  },
+  "services.vecirky.kicker": {
+    "cs": "Party Perfection",
+    "en": "Party Perfection"
+  },
+  "services.vecirky.desc": {
+    "cs": "Tvoříme eventy s&nbsp;podpisem elegance a&nbsp;originality. Kombinujeme estetiku, atmosféru a&nbsp;detaily.",
+    "en": "We create events signed by elegance and originality, combining aesthetics, atmosphere and details."
+  },
+
+  "services.teambuilding.title": {
+    "cs": "Teambuilding",
+    "en": "Teambuilding"
+  },
+  "services.teambuilding.kicker": {
+    "cs": "Personal Style",
+    "en": "Personal Style"
+  },
+  "services.teambuilding.desc": {
+    "cs": "Pomáháme posilovat firemního ducha prostřednictvím emocí, spolupráce, kreativity a&nbsp;leadershipu.",
+    "en": "We help strengthen team spirit through emotions, collaboration, creativity and leadership."
+  },
+
+  "services.dekorace.title": {
+    "cs": "Dekorace akcí",
+    "en": "Event Decorations"
+  },
+  "services.dekorace.kicker": {
+    "cs": "eye-catching",
+    "en": "eye-catching"
+  },
+  "services.dekorace.desc": {
+    "cs": "Náš tým umělců a&nbsp;dekoratérů tvoří působivé dekorace, od presswallů po 3D instalace.",
+    "en": "Our team of artists and decorators creates impressive decorations, from press walls to 3D installations."
+  },
+
+  "next.title": {
+    "cs": "Nejbližší Akce",
+    "en": "Upcoming Event"
+  },
+  "next.name": {
+    "cs": "Andersenovy pohádky",
+    "en": "Andersen’s Fairy Tales"
+  },
+  "next.desc": {
+    "cs": "Oživlé příběhy H. Ch. Andersena v hudebním a vizuálním provedení!",
+    "en": "The stories of H. C. Andersen brought to life with music and visuals!"
+  },
+  "next.info.title": {
+    "cs": "Informace o akci",
+    "en": "Event Information"
+  },
+  "next.date": {
+    "cs": "22. 12. 2025",
+    "en": "22 Dec 2025"
+  },
+  "next.time": {
+    "cs": "19:00",
+    "en": "19:00"
+  },
+  "next.place": {
+    "cs": "Divadlo Hybernia",
+    "en": "Hybernia Theatre"
+  },
+
+  "teambuilding.head.title": {
+    "cs": "Teambuilding",
+    "en": "Teambuilding"
+  },
+  "teambuilding.head.subtitle": {
+    "cs": "Potřebujete tým, se kterým zvládnete cokoli? Chcete posílit firemního ducha? Umíme spojit lidi společnými emocemi. Naše týmové programy rozvíjejí komunikaci, leadership i kreativitu a mění společné cíle ve skutečnou událost.",
+    "en": "Do you need a team that can handle anything? Want to strengthen company spirit? We unite people through shared emotions. Our team-building programs develop communication, leadership and creativity, turning shared goals into real experiences."
+  },
+  "teambuilding.head.cta": {
+    "cs": "Objednat",
+    "en": "Order"
+  },
+  "teambuilding.types.items.programy.label": {
+    "cs": "Programy",
+    "en": "Programs"
+  },
+  "teambuilding.types.items.questy.label": {
+    "cs": "Questy",
+    "en": "Quests"
+  },
+  "teambuilding.types.items.sport.label": {
+    "cs": "Sport",
+    "en": "Sport"
+  },
+  "teambuilding.types.items.prostory.label": {
+    "cs": "Prostory",
+    "en": "Spaces"
+  },
+  "servicesPage.title": {
+    "cs": "Služby",
+    "en": "Services"
+  },
+  "servicesPage.subtitle": {
+    "cs": "Nabízíme komplexní zajištění – od nápadu až po realizaci. Organizace akcí, design, technické zázemí, dekorace a individuální řešení na míru vaší značce. To vše s důrazem na detail a vysoký standard kvality.",
+    "en": "We offer complete service – from concept to execution. Event organization, design, technical support, decoration and tailored solutions for your brand. All with attention to detail and high quality standards."
+  },
+
+  "servicesPage.cards.koncerty.title": {
+    "cs": "Koncerty",
+    "en": "Concerts"
+  },
+  "servicesPage.cards.koncerty.kicker": {
+    "cs": "Elevate Your Style",
+    "en": "Elevate Your Style"
+  },
+  "servicesPage.cards.koncerty.desc": {
+    "cs": "Tvoříme jedinečné koncerty s&nbsp;originální myšlenkou a&nbsp;uměleckým posláním.",
+    "en": "We create unique concerts with an original concept and an artistic mission."
+  },
+
+  "servicesPage.cards.vecirky.title": {
+    "cs": "Firemní večírky",
+    "en": "Corporate Parties"
+  },
+  "servicesPage.cards.vecirky.kicker": {
+    "cs": "Party Perfection",
+    "en": "Party Perfection"
+  },
+  "servicesPage.cards.vecirky.desc": {
+    "cs": "Tvoříme eventy s&nbsp;podpisem elegance a&nbsp;originality. Kombinujeme estetiku, atmosféru a&nbsp;detaily.",
+    "en": "We create events marked by elegance and originality. We combine aesthetics, atmosphere and attention to detail."
+  },
+
+  "servicesPage.cards.teambuilding.title": {
+    "cs": "Teambuilding",
+    "en": "Teambuilding"
+  },
+  "servicesPage.cards.teambuilding.kicker": {
+    "cs": "Personal Style",
+    "en": "Personal Style"
+  },
+  "servicesPage.cards.teambuilding.desc": {
+    "cs": "Pomáháme posilovat firemního ducha prostřednictvím emocí, spolupráce, kreativity a&nbsp;leadershipu.",
+    "en": "We help strengthen team spirit through emotions, cooperation, creativity and leadership."
+  },
+
+  "servicesPage.cards.dekorace.title": {
+    "cs": "Dekorace akcí",
+    "en": "Event Decorations"
+  },
+  "servicesPage.cards.dekorace.kicker": {
+    "cs": "eye-catching",
+    "en": "eye-catching"
+  },
+  "servicesPage.cards.dekorace.desc": {
+    "cs": "Náš tým umělců a&nbsp;dekoratérů tvoří působivé dekorace, od presswallů po 3D instalace.",
+    "en": "Our team of artists and decorators create impressive decorations, from press walls to 3D installations."
+  },
+  "princPage.title": {
+    "cs": "Malý princ",
+    "en": "The Little Prince"
+  },
+  "princPage.subtitle": {
+    "cs": "Literárně-hudební představení na motivy alegorického příběhu-pohádky Antoine de Saint-Exupéry",
+    "en": "A literary-musical performance inspired by the allegorical tale by Antoine de Saint-Exupéry"
+  },
+
+  "princPage.left.quote1": {
+    "cs": "„Dobře vidíme jen srdcem. To podstatné očima neuvidíš.“",
+    "en": "“One sees clearly only with the heart. What is essential is invisible to the eye.”"
+  },
+
+  "princPage.left.lead": {
+    "cs": "Malý princ v novém uměleckém pojetí",
+    "en": "The Little Prince in a new artistic vision"
+  },
+
+  "princPage.left.p1.before": {
+    "cs": "Jedinečné literárně-hudební představení inspirované nesmrtelným příběhem",
+    "en": "A unique literary-musical performance inspired by the timeless story"
+  },
+  "princPage.left.p1.accent": {
+    "cs": "Antoina de Saint-Exupéryho Malý princ",
+    "en": "of Antoine de Saint-Exupéry’s The Little Prince"
+  },
+  "princPage.left.p1.after": {
+    "cs": "vás zavede zpět do světa, kde je možné znovu objevovat radost, přátelství a krásu skrytou v maličkostech.",
+    "en": "takes you back into a world where you can rediscover joy, friendship and the beauty hidden in small things."
+  },
+
+  "princPage.left.p2.before": {
+    "cs": "Na jevišti ožijí nezapomenutelné úryvky z knihy v podání charismatického",
+    "en": "Unforgettable scenes from the book come to life on stage, performed by the charismatic"
+  },
+  "princPage.left.p2.accent": {
+    "cs": "Jana Čenského",
+    "en": "Jan Čenský"
+  },
+  "princPage.left.p2.after": {
+    "cs": ", jehož hlas a interpretace otevřou dveře do světa dětské fantazie i hluboké životní moudrosti.",
+    "en": "whose voice and interpretation open the door to the world of childhood imagination and deep life wisdom."
+  },
+
+  "princbtn.more.open": {
+    "cs": "Více",
+    "en": "More"
+  },
+  "princbtn.more.close": {
+    "cs": "Méně",
+    "en": "Less"
+  },
+
+  "princPage.left.p3.before": {
+    "cs": "Hudební atmosféru vytvoří mistrovská díla velikánů –",
+    "en": "The musical atmosphere is created by masterpieces of great composers –"
+  },
+  "princPage.left.p3.accent": {
+    "cs": "Bacha, Dvořáka, Smetany, Saint-Saënse, Ravela, Debussyho, Bizeta",
+    "en": "Bach, Dvořák, Smetana, Saint-Saëns, Ravel, Debussy, Bizet"
+  },
+  "princPage.left.p3.after": {
+    "cs": "– v podání symfonického orchestru pod taktovkou Alima Šacha a Louise Heddeho.",
+    "en": "– performed by the symphonic orchestra led by Alim Šach and Louis Hedde."
+  },
+
+  "princPage.left.p4.before": {
+    "cs": "Na scéně se před vašima očima znovu zrodí",
+    "en": "Before your eyes, there will be reborn"
+  },
+  "princPage.left.p4.accent": {
+    "cs": "poetické ilustrace samotného Exupéryho",
+    "en": "the poetic illustrations by Exupéry himself"
+  },
+  "princPage.left.p4.after": {
+    "cs": "– malíř German Grott je přenese na plátno přímo během představení.",
+    "en": "– artist German Grott brings them to life on canvas during the performance."
+  },
+
+  "princPage.left.quote2": {
+    "cs": "Tento večer je pozvánkou pro ty, kteří se touží znovu „dívat srdcem“. ",
+    "en": "This evening invites those who long to “see with the heart” again."
+  },
+
+  "princPage.left.quote3": {
+    "cs": "„Navždy jsi zodpovědný za to, co sis ochočil“.",
+    "en": "“You become responsible, forever, for what you have tamed.”"
+  },
+
+  "princPage.what.title": {
+    "cs": "Co Vás Čeká?",
+    "en": "What Awaits You?"
+  },
+  "princPage.what.item1": {
+    "cs": "Herec Jan Čenský",
+    "en": "Actor Jan Čenský"
+  },
+  "princPage.what.item2": {
+    "cs": "Grafický umělec German Grott",
+    "en": "Graphic artist German Grott"
+  },
+  "princPage.what.item3": {
+    "cs": "Dirigent Alim Šach",
+    "en": "Conductor Alim Šach"
+  },
+  "princPage.what.item4": {
+    "cs": "Dirigent Louis Hedde",
+    "en": "Conductor Louis Hedde"
+  },
+  "princPage.what.item5": {
+    "cs": "Orchestr EUTERPE",
+    "en": "EUTERPE Orchestra"
+  },
+  "princPage.what.item6": {
+    "cs": "Délka představení: 90 min",
+    "en": "Duration: 90 min"
+  },
+
+  "princPage.frame.title": {
+    "cs": "Informace o Akci",
+    "en": "Event Information"
+  },
+  "princPage.frame.dateLabel": {
+    "cs": "Datum",
+    "en": "Date"
+  },
+  "princPage.frame.dateValue": {
+    "cs": "12. 11. 2025",
+    "en": "12 Nov 2025"
+  },
+  "princPage.frame.timeLabel": {
+    "cs": "Čas",
+    "en": "Time"
+  },
+  "princPage.frame.timeValue": {
+    "cs": "19:00",
+    "en": "19:00"
+  },
+  "princPage.frame.placeLabel": {
+    "cs": "Místo",
+    "en": "Place"
+  },
+  "princPage.frame.placeValue": {
+    "cs": "Divadlo Hybernia",
+    "en": "Hybernia Theatre"
+  },
+  "princPage.frame.cta": {
+    "cs": "Koupit vstupenky",
+    "en": "Buy Tickets"
+  },
+  "princPage.frame.payNote": {
+    "cs": "Bezpečná platba • Okamžité potvrzení",
+    "en": "Secure payment • Instant confirmation"
+  },
+
+  "pageEvents.partners.title": {
+    "cs": "Partneři",
+    "en": "Partners"
+  },
+  "gallery.title": {
+    "cs": "Galerie",
+    "en": "Gallery"
+  },
+  "gallery.aria.grid": {
+    "cs": "Fotogalerie",
+    "en": "Photo Gallery"
+  },
+
+  "gallery.items.gal01.alt": {
+    "cs": "Symfonický koncert — detail pódia",
+    "en": "Symphonic concert — stage detail"
+  },
+  "gallery.items.gal02.alt": {
+    "cs": "Hudebně-divadelní vystoupení",
+    "en": "Music-theatre performance"
+  },
+  "gallery.items.gal03.alt": {
+    "cs": "Firemní večírek — světelná show",
+    "en": "Corporate party — light show"
+  },
+  "gallery.items.gal04.alt": {
+    "cs": "Teambuilding — kreativní workshop",
+    "en": "Teambuilding — creative workshop"
+  },
+  "gallery.items.gal05.alt": {
+    "cs": "Divadelní scéna — zkouška",
+    "en": "Theatre stage — rehearsal"
+  },
+  "gallery.items.gal06.alt": {
+    "cs": "Workshop — práce s barvami",
+    "en": "Workshop — working with colors"
+  },
+  "gallery.items.gal07.alt": {
+    "cs": "DJ set na eventu",
+    "en": "DJ set at the event"
+  },
+  "gallery.items.gal08.alt": {
+    "cs": "Komorní koncert",
+    "en": "Chamber concert"
+  },
+  "pageEvents.title": {
+    "cs": "Akce",
+    "en": "Events"
+  },
+  "pageEvents.sub": {
+    "cs": "Objevte naše akce plné emocí a hudby.<br>Zajistěte si vstupenky včas.",
+    "en": "Discover our events full of emotions and music.<br>Get your tickets in time."
+  },
+  "pageEvents.cta.buy": {
+    "cs": "Koupit lístek",
+    "en": "Buy ticket"
+  },
+  "pageEvents.items.princ.alt": {
+    "cs": "Malý Princ 2025",
+    "en": "The Little Prince 2025"
+  },
+  "pageEvents.items.princ.aria": {
+    "cs": "Malý Princ 2025 — koupit lístek",
+    "en": "The Little Prince 2025 — buy ticket"
+  },
+
+  "pageEvents.items.princ.name": {
+    "cs": "MALÝ PRINC 2025",
+    "en": "THE LITTLE PRINCE 2025"
+  },
+  "pageEvents.items.princ.desc": {
+    "cs": "Literárně-hudební představení na motivy alegorického příběhu-pohádky Antoine de Saint-Exupéry.",
+    "en": "A literary-musical performance inspired by the allegorical fairy-tale by Antoine de Saint-Exupéry."
+  },
+
+  "pageEvents.items.princ.name_caption": {
+    "cs": "Malý Princ 2025",
+    "en": "The Little Prince 2025"
+  },
+  "pageEvents.items.princ.desc_caption": {
+    "cs": "Literárně-hudební představení na motivy alegorického příběhu-pohádky Antoine de Saint-Exupéry.",
+    "en": "A literary-musical performance inspired by the allegorical fairy-tale by Antoine de Saint-Exupéry."
+  },
+  "pageEvents.items.andersen.alt": {
+    "cs": "Andersenovy pohádky",
+    "en": "Andersen's Fairy Tales"
+  },
+  "pageEvents.items.andersen.aria": {
+    "cs": "Andersenovy pohádky — koupit lístek",
+    "en": "Andersen's Fairy Tales — buy ticket"
+  },
+
+  "pageEvents.items.andersen.name": {
+    "cs": "ANDERSENOVY POHÁDKY",
+    "en": "ANDERSEN’S FAIRY TALES"
+  },
+  "pageEvents.items.andersen.desc": {
+    "cs": "Oživlé příběhy H. Ch. Andersena v hudebním a vizuálním provedení!",
+    "en": "The stories of H. Ch. Andersen brought to life with music and visuals!"
+  },
+
+  "pageEvents.items.andersen.name_caption": {
+    "cs": "Andersenovy pohádky",
+    "en": "Andersen's Fairy Tales"
+  },
+  "pageEvents.items.andersen.desc_caption": {
+    "cs": "Oživlé příběhy H. Ch. Andersena v hudebním a vizuálním provedení!",
+    "en": "The stories of H. Ch. Andersen brought to life with music and visuals!"
+  },
+  "pageEvents.items.tma.alt": {
+    "cs": "Hudba ve tmě",
+    "en": "Music in the Dark"
+  },
+  "pageEvents.items.tma.aria": {
+    "cs": "Hudba ve tmě — koupit lístek",
+    "en": "Music in the Dark — buy ticket"
+  },
+
+  "pageEvents.items.tma.name": {
+    "cs": "HUDBA VE TMĚ",
+    "en": "MUSIC IN THE DARK"
+  },
+  "pageEvents.items.tma.desc": {
+    "cs": "Unikátní projekt, kde hudbu vnímáte jinak se zavřenýma očima!",
+    "en": "A unique project where you perceive music differently — with your eyes closed!"
+  },
+
+  "pageEvents.items.tma.name_caption": {
+    "cs": "Hudba ve tmě",
+    "en": "Music in the Dark"
+  },
+  "pageEvents.items.tma.desc_caption": {
+    "cs": "Unikátní projekt, kde hudbu vnímáte jinak se zavřenýma očima!",
+    "en": "A unique project where you perceive music differently — with your eyes closed!"
+  },
+  "decorations.head.title": {
+    "cs": "Dekorace akcí",
+    "en": "Event Decorations"
+  },
+  "decorations.head.subtitle": {
+    "cs": "V našem týmu jsou špičkoví umělci a dekoratéři. Realizujeme jakoukoli představu – od elegantních presswallů po 3D dekorace měnící realitu. Floristika, fotostěny, instalace i interaktivní projekce – proměníme každý prostor v zážitek.",
+    "en": "Our team consists of top artists and decorators. We realize any vision — from elegant press walls to reality-bending 3D installations. Floristry, photo walls, installations and interactive projections — we transform any space into an experience."
+  },
+  "decorations.head.cta": {
+    "cs": "Objednat",
+    "en": "Order"
+  },
+  "decorations.head.ctaAria": {
+    "cs": "Otevřít poptávkový formulář pro dekorace",
+    "en": "Open request form for decorations"
+  },
+  "decorations.types.aria": {
+    "cs": "Typy dekorací",
+    "en": "Types of decorations"
+  },
+  "decorations.types.items.dekorace.label": {
+    "cs": "Dekorace",
+    "en": "Decorations"
+  },
+  "decorations.types.items.fotosteny.label": {
+    "cs": "Fotostěny",
+    "en": "Photo Walls"
+  },
+  "decorations.types.items.foristika.label": {
+    "cs": "Floristika",
+    "en": "Floristics"
+  },
+  "decorations.types.items.foristika.alt1": {
+    "cs": "Floristika — dekorace",
+    "en": "Floristics — decorations"
+  },
+  "decorations.types.items.kostymy.label": {
+    "cs": "Kostýmy",
+    "en": "Costumes"
+  },
+  "decorations.types.items.kostymy.alt1": {
+    "cs": "Kostýmy — umělecké zázemí",
+    "en": "Costumes — artistic support"
+  },
+  "parties.head.title": {
+    "cs": "Firemní večírky",
+    "en": "Corporate Parties"
+  },
+  "parties.head.subtitle": {
+    "cs": "Jsme přesvědčeni, že každá akce má být jedinečná. Nepoužíváme šablony. Nabízíme individuální řešení podle vašich cílů a vize. Prostudujeme váš brand i publikum a vytvoříme event, který se stane skutečnou událostí.",
+    "en": "We believe every event should be unique. We don’t use templates. We provide tailored solutions based on your goals and vision. We study your brand and audience and create an event that becomes a true experience."
+  },
+  "parties.head.cta": {
+    "cs": "Objednat",
+    "en": "Order"
+  },
+  "parties.head.ctaAria": {
+    "cs": "Otevřít poptávkový formulář pro firemní večírky",
+    "en": "Open request form for corporate parties"
+  },
+  "parties.types.aria": {
+    "cs": "Typy večírků",
+    "en": "Types of corporate parties"
+  },
+  "parties.types.items.programy.label": {
+    "cs": "Programy",
+    "en": "Programs"
+  },
+  "parties.types.items.programy.alt1": {
+    "cs": "Programy — firemní večírky",
+    "en": "Programs — corporate parties"
+  },
+  "parties.types.items.prostory.label": {
+    "cs": "Prostory",
+    "en": "Venues"
+  },
+  "parties.types.items.prostory.alt1": {
+    "cs": "Prostory — firemní večírky",
+    "en": "Venues — corporate parties"
+  },
+  "parties.types.items.catering.label": {
+    "cs": "Catering",
+    "en": "Catering"
+  },
+  "parties.types.items.catering.alt1": {
+    "cs": "Catering — firemní večírky",
+    "en": "Catering — corporate parties"
+  },
+  "concerts.head.title": {
+    "cs": "Koncerty",
+    "en": "Concerts"
+  },
+  "concerts.head.subtitle": {
+    "cs": "Vytváříme jedinečné koncerty a jsme hrdí na každý náš projekt. Každé naše vystoupení je originální myšlenkou, nejvyšším mistrovstvím interpretů, kreativním dramaturgickým pojetím, vzdělávacím posláním a vždy kulturní událostí.",
+    "en": "We create unique concerts and are proud of every project. Each performance is an original idea, top artistic mastery, creative dramaturgy, educational purpose and always a cultural event."
+  },
+  "concerts.head.cta": {
+    "cs": "Objednat",
+    "en": "Order"
+  },
+  "concerts.head.ctaAria": {
+    "cs": "Otevřít poptávkový formulář pro koncerty",
+    "en": "Open request form for concerts"
+  },
+  "concerts.types.aria": {
+    "cs": "Typy koncertů",
+    "en": "Types of concerts"
+  },
+  "concerts.types.items.divadlo.label": {
+    "cs": "Divadelní",
+    "en": "Theatrical"
+  },
+  "concerts.types.items.divadlo.alt1": {
+    "cs": "Divadelní koncert",
+    "en": "Theatrical concert"
+  },
+  "concerts.types.items.tematicke.label": {
+    "cs": "Tematické",
+    "en": "Thematic"
+  },
+  "concerts.types.items.tematicke.alt1": {
+    "cs": "Tematický koncert",
+    "en": "Thematic concert"
+  },
+  "concerts.types.items.hudebni.label": {
+    "cs": "Hudební",
+    "en": "Musical"
+  },
+  "concerts.types.items.hudebni.alt1": {
+    "cs": "Hudební koncert",
+    "en": "Musical concert"
+  },
+  "andersenPage.title": {
+    "cs": "Andersenovy pohádky",
+    "en": "Andersen’s Fairy Tales"
+  },
+  "andersenPage.subtitle": {
+    "cs": "Literárně-hudební představení na motivy pohádek Hanse Christiana Andersena",
+    "en": "A literary-music performance inspired by the fairy tales of Hans Christian Andersen"
+  },
+  "andersenPage.left.quote1": {
+    "cs": "„Mé pohádky jsou určeny dospělým, nejen dětem. Dokonale je pochopí jen dospělí.“",
+    "en": "“My fairy tales are meant for adults, not just children. Only adults can truly understand them.”"
+  },
+  "andersenPage.left.lead": {
+    "cs": "Přivítejte Vánoce s oblíbenými hrdiny pohádek Hanse Christiana Andersena.",
+    "en": "Celebrate Christmas with the beloved heroes of Hans Christian Andersen’s fairy tales."
+  },
+  "andersenPage.left.p1.before": {
+    "cs": "A ještě v roce 2025 si připomeneme 220 let od narození světoznámého dánského spisovatele. Literárně-hudební představení na motivy pohádek",
+    "en": "And in 2025, we commemorate 220 years since the birth of the world-famous Danish writer. The literary-music performance inspired by the fairy tales of"
+  },
+  "andersenPage.left.p1.accent": {
+    "cs": "Hanse Christiana Andersena je kaleidoskopem z nejlepších děl autora,",
+    "en": "Hans Christian Andersen is a kaleidoscope of the author’s greatest works,"
+  },
+  "andersenPage.left.p1.after": {
+    "cs": "doprovázených dramaturgicky pečlivě vybranými díly světové klasiky. Zároveň představení doplňuje geniální malíř German Grott, který přímo na scéně maluje ilustrace.",
+    "en": "accompanied by carefully selected pieces of world classical music. The performance is enriched by the brilliant painter German Grott, who paints live on stage."
+  },
+  "andersenPage.left.p2.before": {
+    "cs": "Literární pasáže přednese známý a oceňovaný činoherní herec",
+    "en": "The literary passages will be performed by the renowned and award-winning actor"
+  },
+  "andersenPage.left.p2.accent": {
+    "cs": "Igor Orozovič.",
+    "en": "Igor Orozovič."
+  },
+  "andersenbtn.more.open": {
+    "cs": "Více",
+    "en": "More"
+  },
+  "andersenbtn.more.close": {
+    "cs": "Méně",
+    "en": "Less"
+  },
+  "andersenPage.left.p3.before": {
+    "cs": "V provedení orchestru",
+    "en": "Performed by the orchestra"
+  },
+  "andersenPage.left.p3.accent": {
+    "cs": "Komorní filharmonie Pardubice",
+    "en": "Chamber Philharmonic Pardubice"
+  },
+  "andersenPage.left.p3.after": {
+    "cs": "pod taktovkou světově uznávaného dirigenta",
+    "en": "under the baton of the world-renowned conductor"
+  },
+  "andersenPage.left.p3.Alim": {
+    "cs": "Alima Šacha",
+    "en": "Alim Šach"
+  },
+  "andersenPage.left.p3.program": {
+    "cs": "v programu zazní hudební díla českých i zahraničních skladatelů:",
+    "en": "the program will include works by Czech and international composers:"
+  },
+  "andersenPage.left.p3.autors": {
+    "cs": "Dvořáka, Janáčka, Nielsena, Griega, Čajkovského, Andersona.",
+    "en": "Dvořák, Janáček, Nielsen, Grieg, Tchaikovsky, Anderson."
+  },
+  "andersenPage.left.p3.hudba": {
+    "cs": "Hudba v kombinaci s mluveným slovem literárního díla vytvoří celistvý útvar představení.",
+    "en": "The music combined with spoken word creates a unified artistic performance."
+  },
+  "andersenPage.left.p5.second": {
+    "cs": "Andersenova neobyčejná fantazie se uplatnila v jeho pohádkách a příbězích – dojemných i poučných, smutných i veselých, ve kterých je stejně důležité být věrným a odvážným.",
+    "en": "Andersen’s extraordinary imagination flourished in his tales — touching, wise, sad, and joyful — teaching loyalty, bravery, and kindness."
+  },
+  "andersenPage.left.quote2": {
+    "cs": "Andersenovy pohádky tvoří společný kulturní kód dobré poloviny lidstva. Vyrůstalo s nimi mnoho generací.",
+    "en": "Andersen’s fairy tales form a cultural code shared by half of humanity. Generations have grown up with them."
+  },
+  "andersenPage.left.quote5": {
+    "cs": "Program se skládá z ukázek populárních i méně známých příběhů tohoto výjimečného autora.",
+    "en": "The program consists of excerpts from both the well-known and lesser-known stories of this exceptional author."
+  },
+  "andersenPage.who.title": {
+    "cs": "V představení účinkují:",
+    "en": "Featuring in the performance:"
+  },
+  "andersenPage.who.item1": {
+    "cs": "Herec Igor Orozovič",
+    "en": "Actor Igor Orozovič"
+  },
+  "andersenPage.who.item2": {
+    "cs": "Dirigent Alim Šach",
+    "en": "Conductor Alim Šach"
+  },
+  "andersenPage.who.item3": {
+    "cs": "Grafický umělec German Grott",
+    "en": "Graphic artist German Grott"
+  },
+  "andersenPage.who.item4": {
+    "cs": "Komorní filharmonie Pardubice",
+    "en": "Chamber Philharmonic Pardubice"
+  },
+  "andersenPage.what.title": {
+    "cs": "Co Vás čeká?",
+    "en": "What Awaits You?"
+  },
+  "andersenPage.what.item1": {
+    "cs": "Magický duch Vánoc",
+    "en": "Magical Christmas atmosphere"
+  },
+  "andersenPage.what.item2": {
+    "cs": "7 kouzelných pohádek",
+    "en": "7 magical fairy tales"
+  },
+  "andersenPage.what.item3": {
+    "cs": "Vážná a populární hudba",
+    "en": "Classical and popular music"
+  },
+  "andersenPage.what.item4": {
+    "cs": "Specialní host Jan Jareš",
+    "en": "Special guest Jan Jareš"
+  },
+  "andersenPage.what.item5": {
+    "cs": "Zázraky a kouzla",
+    "en": "Wonders and magic"
+  },
+  "andersenPage.frame.title": {
+    "cs": "Informace o Akci",
+    "en": "Event Information"
+  },
+  "andersenPage.frame.dateLabel": {
+    "cs": "Datum",
+    "en": "Date"
+  },
+  "andersenPage.frame.dateValue": {
+    "cs": "22. 12. 2025",
+    "en": "22 Dec 2025"
+  },
+  "andersenPage.frame.timeLabel": {
+    "cs": "Čas",
+    "en": "Time"
+  },
+  "andersenPage.frame.timeValue": {
+    "cs": "19:00",
+    "en": "19:00"
+  },
+  "andersenPage.frame.placeLabel": {
+    "cs": "Místo",
+    "en": "Place"
+  },
+  "andersenPage.frame.placeValue": {
+    "cs": "Divadlo Hybernia",
+    "en": "Hybernia Theatre"
+  },
+  "andersenPage.frame.cta": {
+    "cs": "Koupit vstupenky",
+    "en": "Buy Tickets"
+  },
+  "andersenPage.frame.payNote": {
+    "cs": "Bezpečná platba • Okamžité potvrzení",
+    "en": "Secure payment • Instant confirmation"
+  },
+  "pagePartners.partners.title": {
+    "cs": "Partneři",
+    "en": "Partners"
+  },
+  "about.title": {
+    "cs": "O Nás",
+    "en": "About Us"
+  },
+  "about.subtitle": {
+    "cs": "EUTERPE Artists Agency",
+    "en": "EUTERPE Artists Agency"
+  },
+  "about.lead": {
+    "cs": "přináší originální eventy, kde se propojuje kreativita, moderní technologie a precizní realizace. Každý projekt proměňujeme v autentický zážitek, který zanechá dojem.",
+    "en": "brings original events where creativity, modern technology and precise execution meet. Every project becomes an authentic experience that leaves a mark."
+  },
+  "about.cards.aria": {
+    "cs": "Naše hodnoty a přednosti",
+    "en": "Our values and strengths"
+  },
+  "about.cards.exp.title": {
+    "cs": "Zkušenosti",
+    "en": "Experience"
+  },
+  "about.cards.exp.desc": {
+    "cs": "Více než 20 let zkušeností s organizací akcí.",
+    "en": "More than 20 years of experience in event organization."
+  },
+  "about.cards.idea.title": {
+    "cs": "Kreativita",
+    "en": "Creativity"
+  },
+  "about.cards.idea.desc": {
+    "cs": "Inovativní přístupy a originální koncepty pro každou akci.",
+    "en": "Innovative approaches and original concepts for every event."
+  },
+  "about.cards.tech.title": {
+    "cs": "Profesionalita",
+    "en": "Professionalism"
+  },
+  "about.cards.tech.desc": {
+    "cs": "Spolehlivost a profesionální přístup ke každému projektu.",
+    "en": "Reliability and a professional attitude to every project."
+  },
+  "about.cards.detail.title": {
+    "cs": "Inovace v Detailech",
+    "en": "Innovation in Details"
+  },
+  "about.cards.detail.desc": {
+    "cs": "Individuální přístup a využití nejnovějších technologií.",
+    "en": "Individual approach and use of the latest technologies."
+  },
+  "contact.title": {
+    "cs": "Kontaktní údaje",
+    "en": "Contact Information"
+  },
+  "contact.sub": {
+    "cs": "Máte dotaz nebo chcete naplánovat akci? Ozvěte se nám",
+    "en": "Do you have a question or want to plan an event? Contact us"
+  },
+  "contact.listAria": {
+    "cs": "Kontaktní informace",
+    "en": "Contact information"
+  },
+  "contact.companyName": {
+    "cs": "EUTERPE Artists Agency",
+    "en": "EUTERPE Artists Agency"
+  },
+  "contact.icLabel": {
+    "cs": "IČ:",
+    "en": "Company ID:"
+  },
+  "contact.icValue": {
+    "cs": "28474945",
+    "en": "28474945"
+  },
+  "contact.addressLabel": {
+    "cs": "Adresa:",
+    "en": "Address:"
+  },
+  "contact.addressValue": {
+    "cs": "Doležalova 1046/22, 198 00 Praha 9",
+    "en": "Doležalova 1046/22, 198 00 Prague 9"
+  },
+  "contact.phoneLabel": {
+    "cs": "Telefon:",
+    "en": "Phone:"
+  },
+  "contact.phoneValue": {
+    "cs": "+420 775 066 858",
+    "en": "+420 775 066 858"
+  },
+  "contact.emailLabel": {
+    "cs": "E-mail:",
+    "en": "Email:"
+  },
+  "contact.emailValue": {
+    "cs": "info@euterpe.cz",
+    "en": "info@euterpe.cz"
+  },
+  "contact.mapTitle": {
+    "cs": "Mapa — EUTERPE Artists Agency",
+    "en": "Map — EUTERPE Artists Agency"
+  },
+  "contact.form.aria": {
+    "cs": "Kontaktní formulář",
+    "en": "Contact form"
+  },
+  "contact.form.nameLabel": {
+    "cs": "Jméno",
+    "en": "Name"
+  },
+  "contact.form.namePh": {
+    "cs": "Vaše jméno",
+    "en": "Your name"
+  },
+  "contact.form.phoneLabel": {
+    "cs": "Telefon",
+    "en": "Phone"
+  },
+  "contact.form.phonePh": {
+    "cs": "+420…",
+    "en": "+420…"
+  },
+  "contact.form.emailLabel": {
+    "cs": "E-mail",
+    "en": "E-mail"
+  },
+  "contact.form.emailPh": {
+    "cs": "vas@email.cz",
+    "en": "your@email.com"
+  },
+  "contact.form.messageLabel": {
+    "cs": "Zpráva",
+    "en": "Message"
+  },
+  "contact.form.messagePh": {
+    "cs": "Jak vám můžeme pomoci?",
+    "en": "How can we help you?"
+  },
+  "contact.form.submit": {
+    "cs": "Odeslat",
+    "en": "Send"
+  },
+  "contact.form.statusIdle": {
+    "cs": "",
+    "en": ""
+  }
+}

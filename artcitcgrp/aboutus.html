@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About-Arctic</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<main>
+  <section class="about">
+    <div class="container">
+      <div class="about__intro">
+        <h1 class="about__title" data-i18n="about.title">
+          Tým špičkových odborníků. Každý dělá přesně to, v čem je nejlepší
+        </h1>
+
+        <p class="about__text" data-i18n="about.text">
+          Jsme spojením úzce zaměřených profesionálů pod jedním vedením. Každý má jasně danou odpovědnost: projekt, profese, smart technologie, nábytek, čištění i logistika. Díky dlouholetým zkušenostem fungujeme jako sehraný tým - navrhneme, zrealizujeme, vybavíme, uklidíme a předáme vám interiér připravený k nastěhování.
+        </p>
+      </div>
+
+      <div class="about__why">
+        <h2 class="about__why-title" data-i18n="about.why.title">
+          Proč je to s námi snadné
+        </h2>
+
+        <div class="about__cards">
+          <article class="about-card">
+            <p class="about-card__text" data-i18n="about.why.item1">
+              Jedna Smlouva a Jasný Harmonogram
+            </p>
+          </article>
+
+          <article class="about-card">
+            <p class="about-card__text" data-i18n="about.why.item2">
+              Transparentní Rozpočty a Kontrola Kvality
+            </p>
+          </article>
+
+          <article class="about-card">
+            <p class="about-card__text" data-i18n="about.why.item3">
+              Termíny bez Kompromisů
+            </p>
+          </article>
+
+          <article class="about-card">
+            <p class="about-card__text" data-i18n="about.why.item4">
+              Servis i po Předání
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="about-cta">
+        <h3 class="about-cta__title" data-i18n="about.cta.title">
+          Získat Konzultaci
+        </h3>
+
+        <a href="contact.html" class="about-cta__btn" data-i18n="about.cta.button">
+          Získat Konzultaci
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Modal: Získat konzultaci -->
+<div class="modal" id="consultation-modal" aria-hidden="true">
+  <div class="modal__overlay" data-modal-close></div>
+
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="consultation-modal-title">
+    <button class="modal__close" type="button" aria-label="Zavřít" data-modal-close>×</button>
+
+    <h3 class="modal__title" id="consultation-modal-title" data-i18n="about.modal.title">
+      Získat konzultaci
+    </h3>
+
+    <form class="modal-form" id="consultation-form">
+      <label class="modal-form__field">
+        <span class="modal-form__label" data-i18n="about.modal.phoneLabel">Telefon</span>
+        <input
+          type="tel"
+          class="modal-form__input"
+          name="phone"
+          required
+          placeholder="+420 000 000 000">
+      </label>
+
+      <label class="modal-form__field">
+        <span class="modal-form__label" data-i18n="about.modal.emailLabel">E-mail</span>
+        <input
+          type="email"
+          class="modal-form__input"
+          name="email"
+          required
+          placeholder="email@domena.cz">
+      </label>
+
+      <fieldset class="modal-form__fieldset">
+        <legend class="modal-form__label" data-i18n="about.modal.topicLabel">Téma</legend>
+
+        <label class="modal-form__radio">
+          <input type="radio" name="topic" value="construction" required>
+          <span data-i18n="about.modal.topic1">Rekonstrukce / výstavba</span>
+        </label>
+
+        <label class="modal-form__radio">
+          <input type="radio" name="topic" value="design">
+          <span data-i18n="about.modal.topic2">Design &amp; architektura</span>
+        </label>
+
+        <label class="modal-form__radio">
+          <input type="radio" name="topic" value="turnkey">
+          <span data-i18n="about.modal.topic3">Projekty na klíč</span>
+        </label>
+
+        <label class="modal-form__radio">
+          <input type="radio" name="topic" value="other">
+          <span data-i18n="about.modal.topic4">Jiné téma</span>
+        </label>
+      </fieldset>
+
+      <label class="modal-form__field modal-form__field--other" id="modal-other-topic-wrapper">
+        <span class="modal-form__label" data-i18n="about.modal.otherPlaceholder">Stručně popište své téma</span>
+        <textarea
+          class="modal-form__textarea"
+          name="otherTopic"
+          rows="3"></textarea>
+      </label>
+
+      <button type="submit" class="modal-form__submit" data-i18n="about.modal.submit">
+        Odeslat
+      </button>
+
+      <p class="modal-form__message" id="modal-form-message"></p>
+
+      <!-- Скрытые тексты для сообщений (i18n заполнит, JS только читает) -->
+      <p id="modal-msg-required" hidden data-i18n="about.modal.required">
+        Vyplňte prosím všechna povinná pole.
+      </p>
+      <p id="modal-msg-success" hidden data-i18n="about.modal.success">
+        Děkujeme, brzy se vám ozveme.
+      </p>
+      <p id="modal-msg-error" hidden data-i18n="about.modal.error">
+        Něco se pokazilo, zkuste to prosím znovu.
+      </p>
+    </form>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- Левая колонка: бренд + соцсети -->
+    <div class="footer__col footer__col--brand">
+      <p class="footer__logo" data-i18n="footer.company">Arctic Group s.r.o.</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/arcticstudio_cz?igsh=MzVyNzkxdTUzN2Rj" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="footer__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Центр: ссылки по сайту -->
+    <div class="footer__col footer__col--nav">
+      <h3 class="footer__title" data-i18n="footer.navTitle">Navigace</h3>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__link" data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="footer__link" data-i18n="nav.services">Služby</a>
+        <a href="aboutus.html" class="footer__link" data-i18n="nav.about">O nás</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav.contact">Kontakty</a>
+      </nav>
+    </div>
+
+    <!-- Контакты -->
+    <div class="footer__col footer__col--contacts">
+      <h3 class="footer__title" data-i18n="footer.contactTitle">Kontakt</h3>
+
+      <p class="footer__line">
+        <span class="footer__label">Construction &amp; Turnkey:</span>
+        <a href="tel:+420777956775" class="footer__value">+420 777 956 775</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label">Design &amp; Architecture:</span>
+        <a href="tel:+420778025205" class="footer__value">+420 778 025 205</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.emailLabel">E-mail:</span>
+        <a href="mailto:info@arcticgrp.com" class="footer__value" data-i18n="footer.email">info@arcticgrp.com</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.addressLabel">Adresa:</span>
+        <a href="https://maps.google.com/?q=Dostalov%C3%A9+1283%2F8,+Praha+5" target="_blank" rel="noopener noreferrer" class="footer__value" data-i18n="footer.address">Dostalové 1283/8, Praha 5</a>
+      </p>
+    </div>
+
+    <!-- Справа: форма для e-mail -->
+    <div class="footer__col footer__col--form">
+      <h3 class="footer__title" data-i18n="footer.form.title">Získejte konzultaci</h3>
+
+      <form class="footer-form" id="footer-form">
+        <div class="footer-form__row">
+          <input type="email" class="footer-form__input" name="email" placeholder="Email" required>
+          <button type="submit" class="footer-form__button" aria-label="Odeslat e-mail">→</button>
+        </div>
+      </form>
+      <p class="footer-form__message" data-i18n="footer.form.success">Ozveme se vám do 24 hodin.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <a href="https://cyber-on.net" target="_blank" rel="noopener noreferrer" class="footer__bottom-link">
+        <span class="footer__bottom-made" data-i18n="footer.madeByPrefix">Vyrobeno</span>
+        <span class="footer__bottom-brand">CyberON</span>
+      </a>
+      <a href="404.html" class="footer__bottom-link footer__bottom-link--right" data-i18n="footer.rights">Všechna Práva Vyhrazena</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

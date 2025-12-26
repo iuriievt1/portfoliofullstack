@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Zásady ochrany osobních údajů – EUTERPE STUDIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/source/style/style.css">
+  <style>
+    :root {
+      --bg: #090909;
+      --card-bg: #141414;
+      --accent: #d64218;
+      --text-main: #f5f5f5;
+      --text-muted: #b5b5b5;
+      --border-subtle: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #181818 0, #090909 55%, #050505 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: 24px;
+      border: 1px solid var(--border-subtle);
+      padding: 32px 24px 32px;
+      box-shadow: 0 28px 80px rgba(0,0,0,0.7);
+      backdrop-filter: blur(14px);
+    }
+    header {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    h2 {
+      margin: 26px 0 8px;
+      font-size: 20px;
+      color: var(--text-main);
+    }
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 16px;
+      color: var(--text-main);
+    }
+    p {
+      margin: 0 0 10px 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    ul {
+      margin: 4px 0 12px 20px;
+      padding: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    li { margin-bottom: 4px; }
+    strong { color: #ffffff; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .box {
+      border-radius: 18px;
+      border: 1px solid var(--border-subtle);
+      padding: 14px 14px 10px;
+      background: rgba(0,0,0,0.35);
+      margin: 14px 0 6px;
+    }
+    .footer-note {
+      margin-top: 24px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 12px;
+      color: #7a7a7a;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+		<div class="header-inner">
+			<a href="/" class="logo" aria-label="Home" data-transition data-i18n-attr="aria-label:header.logo.aria">
+				<img src="/assets/logo/WebLogo.png" alt="Logo" data-i18n-attr="alt:header.logo.alt" />
+			</a>
+
+			<nav class="nav-inline" role="navigation" aria-label="Main" data-i18n-attr="aria-label:header.nav.aria">
+				<ul class="nav-list">
+					<li><a href="index.html" data-i18n="nav.home" data-transition>Úvod</a></li>
+          <li><a href="services.html" data-i18n="nav.services" data-transition>Služby</a></li>
+					<li><a href="events.html" data-i18n="nav.events" data-transition>Akce</a></li>
+          <li><a href="studio.html" data-i18n="nav.studio" data-transition>Studio</a></li>
+					<li><a href="galerie.html" data-i18n="nav.gallery" data-transition>Galerie</a></li>
+					<li><a href="about.html" data-i18n="nav.about" data-transition>O&nbsp;nás</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-right">
+				<button class="lang-switch" data-lang="cs" aria-label="Čeština" data-i18n="langs.cs">CZ</button>
+				<button class="lang-switch" data-lang="en" aria-label="English" data-i18n="langs.en">EN</button>
+
+				<button class="burger" id="burger"
+					aria-expanded="false"
+					aria-label="Open menu"
+					data-i18n-attr="aria-label:header.burger.aria">
+					<span class="burger-lines">
+						<i></i><i></i><i></i><i></i>
+					</span>
+				</button>
+			</div>
+		</div>
+
+		<!-- Мобильное выпадающее меню -->
+		<nav class="nav-drop" id="nav-drop" role="navigation" aria-label="Main mobile" data-i18n-attr="aria-label:header.nav.mobileAria">
+			<ul class="nav-list">
+				<li><a href="index.html" data-i18n="nav.home" data-transition>Úvod</a></li>
+        <li><a href="services.html" data-i18n="nav.services" data-transition>Služby</a></li>
+				<li><a href="events.html" data-i18n="nav.events" data-transition>Akce</a></li>
+        <li><a href="studio.html" data-i18n="nav.studio" data-transition>Studio</a></li>
+				<li><a href="galerie.html" data-i18n="nav.gallery" data-transition>Galerie</a></li>
+				<li><a href="about.html" data-i18n="nav.about" data-transition>O&nbsp;nás</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="container">
+    <header>
+      <h1 data-i18n="privacy.hero.title">Zásady ochrany osobních údajů</h1>
+      <p class="subtitle" data-i18n="privacy.hero.subtitle">
+        Tato stránka vysvětluje, jak EUTERPE STUDIO zpracovává osobní údaje návštěvníků webu
+        a zákazníků v souladu s Nařízením GDPR.
+      </p>
+    </header>
+
+    <section>
+      <h2 data-i18n="privacy.controller.title">1. Správce osobních údajů</h2>
+      <p data-i18n="privacy.controller.textIntro">
+        Správcem osobních údajů je:
+      </p>
+      <p>
+        <strong data-i18n="privacy.controller.name">EUTERPE STUDIO</strong><br>
+        <span data-i18n="privacy.controller.emailLabel">E-mail:</span>
+        <a href="mailto:info@euterpe.cz">info@euterpe.cz</a>
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.data.title">2. Jaké osobní údaje zpracováváme</h2>
+      <div class="box">
+        <h3 data-i18n="privacy.data.formsTitle">Údaje z kontaktních formulářů</h3>
+        <ul>
+          <li data-i18n="privacy.data.formsList1">jméno a příjmení,</li>
+          <li data-i18n="privacy.data.formsList2">e-mailová adresa,</li>
+          <li data-i18n="privacy.data.formsList3">telefonní číslo (pokud jej uvedete),</li>
+          <li data-i18n="privacy.data.formsList4">obsah zprávy / popis projektu,</li>
+          <li data-i18n="privacy.data.formsList5">případné další údaje, které dobrovolně uvedete.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3 data-i18n="privacy.data.techTitle">Technická a analytická data</h3>
+        <ul>
+          <li data-i18n="privacy.data.techList1">IP adresa (v anonymizované podobě, pokud je to možné),</li>
+          <li data-i18n="privacy.data.techList2">typ zařízení a prohlížeče,</li>
+          <li data-i18n="privacy.data.techList3">informace o návštěvě webu (Google Analytics, Sklik apod.),</li>
+          <li data-i18n="privacy.data.techList4">cookies – podrobněji viz stránka „Cookies“.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.purposes.title">3. Účely zpracování osobních údajů</h2>
+      <p data-i18n="privacy.purposes.intro">Vaše osobní údaje zpracováváme pouze pro tyto účely:</p>
+      <ul>
+        <li data-i18n="privacy.purposes.list1">vyřízení vaší poptávky nebo dotazu zaslaného přes formulář či e-mail,</li>
+        <li data-i18n="privacy.purposes.list2">příprava nabídky a následná komunikace ohledně spolupráce,</li>
+        <li data-i18n="privacy.purposes.list3">vedení interní evidence klientů a zakázek,</li>
+        <li data-i18n="privacy.purposes.list4">statistické vyhodnocování návštěvnosti webu a optimalizace webu,</li>
+        <li data-i18n="privacy.purposes.list5">marketingové kampaně (Google Ads, Sklik, Meta) na základě souhlasu s cookies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.legalBasis.title">4. Právní základ zpracování</h2>
+      <p data-i18n="privacy.legalBasis.intro">Osobní údaje zpracováváme na základě:</p>
+      <ul>
+        <li data-i18n="privacy.legalBasis.list1"><strong>čl. 6 odst. 1 písm. b) GDPR</strong> – plnění smlouvy a jednání před jejím uzavřením (poptávky, objednávky, smluvní komunikace),</li>
+        <li data-i18n="privacy.legalBasis.list2"><strong>čl. 6 odst. 1 písm. f) GDPR</strong> – oprávněný zájem (analýza návštěvnosti, ochrana webu, základní marketing),</li>
+        <li data-i18n="privacy.legalBasis.list3"><strong>čl. 6 odst. 1 písm. a) GDPR</strong> – souhlas (zejména u marketingových cookies a personalizovaných reklam).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.recipients.title">5. Kdo má k údajům přístup</h2>
+      <p data-i18n="privacy.recipients.intro">
+        K vašim osobním údajům mohou mít přístup:
+      </p>
+      <ul>
+        <li data-i18n="privacy.recipients.list1">správce (EUTERPE STUDIO) a jeho interní spolupracovníci,</li>
+        <li data-i18n="privacy.recipients.list2">poskytovatelé IT a hostingových služeb,</li>
+        <li data-i18n="privacy.recipients.list3">poskytovatelé analytických a marketingových nástrojů:
+          <ul>
+            <li data-i18n="privacy.recipients.sub1">Google Ireland Ltd. (Google Analytics, Google Ads),</li>
+            <li data-i18n="privacy.recipients.sub2">Seznam.cz, a.s. (Sklik),</li>
+            <li data-i18n="privacy.recipients.sub3">Meta Platforms Ireland Ltd. (Facebook/Instagram).</li>
+          </ul>
+        </li>
+      </ul>
+      <p data-i18n="privacy.recipients.note">
+        Všichni partneři jsou smluvně zavázáni k ochraně osobních údajů a dodržování GDPR.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.retention.title">6. Doba uchovávání osobních údajů</h2>
+      <p data-i18n="privacy.retention.intro">Osobní údaje uchováváme pouze po dobu nezbytně nutnou:</p>
+      <ul>
+        <li data-i18n="privacy.retention.list1">kontaktní formuláře a e-mailová komunikace: obvykle 12 měsíců od posledního kontaktu,</li>
+        <li data-i18n="privacy.retention.list2">údaje nutné pro plnění smlouvy a účetnictví: dle zákonných lhůt (typicky 5–10 let),</li>
+        <li data-i18n="privacy.retention.list3">cookies a analytická data: dle nastavené doby u jednotlivých nástrojů (viz „Cookies“).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.rights.title">7. Vaše práva podle GDPR</h2>
+      <p data-i18n="privacy.rights.intro">V souvislosti se zpracováním osobních údajů máte tato práva:</p>
+      <ul>
+        <li data-i18n="privacy.rights.list1">právo na přístup k osobním údajům,</li>
+        <li data-i18n="privacy.rights.list2">právo na opravu nepřesných nebo neaktuálních údajů,</li>
+        <li data-i18n="privacy.rights.list3">právo na výmaz („právo být zapomenut“), pokud nejsou dány zákonné důvody pro další zpracování,</li>
+        <li data-i18n="privacy.rights.list4">právo na omezení zpracování,</li>
+        <li data-i18n="privacy.rights.list5">právo na přenositelnost údajů,</li>
+        <li data-i18n="privacy.rights.list6">právo vznést námitku proti zpracování založenému na oprávněném zájmu,</li>
+        <li data-i18n="privacy.rights.list7">právo kdykoli odvolat souhlas se zpracováním (u zpracování založeného na souhlasu).</li>
+      </ul>
+      <p data-i18n="privacy.rights.contactText">
+        Svá práva můžete uplatnit prostřednictvím e-mailu
+        <a href="mailto:info@euterpe.cz">info@euterpe.cz</a>.
+      </p>
+      <p data-i18n="privacy.rights.supervisorText">
+        Pokud se domníváte, že s vašimi údaji zacházíme v rozporu s právními předpisy, máte právo
+        podat stížnost u dozorového úřadu: <strong>Úřad pro ochranu osobních údajů</strong>
+        (www.uoou.cz).
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.security.title">8. Zabezpečení osobních údajů</h2>
+      <p data-i18n="privacy.security.text">
+        Osobní údaje chráníme pomocí organizačních a technických opatření. Používáme šifrované
+        spojení (HTTPS), zabezpečené e-mailové servery a omezený přístup pouze pro oprávněné osoby.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.cookiesSection.title">9. Cookies a online identifikátory</h2>
+      <p data-i18n="privacy.cookiesSection.text">
+        Informace o používání cookies, měřicích kódů a podobných technologií najdete
+        na samostatné stránce <a href="cookie.html">Cookies</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="privacy.contact.title">10. Kontaktní údaje</h2>
+      <p data-i18n="privacy.contact.intro">
+        V případě jakýchkoli dotazů ohledně ochrany osobních údajů nás můžete kontaktovat na:
+      </p>
+      <p>
+        <span data-i18n="privacy.contact.emailLabel">E-mail:</span>
+        <a href="mailto:info@euterpe.cz">info@euterpe.cz</a>
+      </p>
+    </section>
+
+    <p class="footer-note" data-i18n="privacy.footerNote">
+      Tyto zásady ochrany osobních údajů mohou být průběžně aktualizovány, například při změně
+      právních požadavků nebo rozsahu poskytovaných služeb.
+    </p>
+  </div>
+<script src="/source/js/main.js" defer></script>
+<script src="/source/js/translate.js" defer></script>
+</body>
+</html>

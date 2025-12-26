@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/logo/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/favicon-192x192.png">
+  <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.ico">
+  <title>Veltora — Konzultační společnost</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+            <img src="/assets/logo/VeltoraLogo.png" alt="Veltora" />
+        </a>
+      </div>
+
+      <!-- Burger -->
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav -->
+      <nav class="nav" id="nav">
+        <a href="index.html" data-i18n="nav_home">Domů</a>
+        <a href="about.html" data-i18n="nav_about">Váš Štít</a>
+        <a href="services.html" data-i18n="nav_services">Naše Křídla</a>
+        <a href="contact.html" data-i18n="nav_contact">Kontakt</a>
+        <div class="lang-switcher">
+          <select id="languageSwitcher">
+            <option value="cs">CZ</option>
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__container">
+      <h1 class="hero__title" data-i18n="hero_title">Podnikání je boj. Nemusíte v něm být sami</h1>
+      <p class="hero__subtitle" data-i18n="hero_subtitle">VELTORA. Poskytujeme Vám Křídla, Abyste se Mohli Soustředit na Vítězství</p>
+      <a href="contact.html" class="btn btn--primary hero__cta" data-i18n="hero_cta">Získat strategickou výhodu</a>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="container problem__container">
+      <h2 class="problem__heading" data-i18n="home_problem_title">Byrokracie, Finance, Provoz. Zloději Vaší Vize</h2>
+      <p class="problem__text" data-i18n="home_problem_text">Papíry, Faktury a Neplánované Opravy Berou to Nejcennější - Soustředění</p>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="solution">
+    <div class="container solution__container">
+      <h2 class="solution__heading" data-i18n="home_solution_title">My jsme Váš Štít. Integrovaná Opora pro Váš Byznys</h2>
+      <p class="solution__text" data-i18n="home_solution_text">VELTORA Nespojuje Služby. Sjednocujeme Síly!</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container services__container">
+      <h2 class="services__heading" data-i18n="home_services_title">Kompletní Arzenál pro Každou Fázi Vašeho Podnikání</h2>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">🚀</span></div>
+          <h3 class="service-card__title" data-i18n="home_services_card1_title">Vzlet</h3>
+          <p class="service-card__text" data-i18n="home_services_card1_text">Od Nápadu k Fungující Firmě!</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">✈️</span></div>
+          <h3 class="service-card__title" data-i18n="home_services_card2_title">Letová Hladina</h3>
+          <p class="service-card__text" data-i18n="home_services_card2_text">Udržujte Kurz a Rychlost!</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon-wrap"><span class="service-card__icon">🏁</span></div>
+          <h3 class="service-card__title" data-i18n="home_services_card3_title">Pevná Zem</h3>
+          <p class="service-card__text" data-i18n="home_services_card3_text">Vaše Zázemí, Naše Starost!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="about-teaser">
+    <div class="container about-teaser__container">
+      <h2 class="about-teaser__heading" data-i18n="home_about_title">Seznamte se se Strážci Vašeho Růstu</h2>
+      <p class="about-teaser__text" data-i18n="home_about_text">Za Jménem VELTORA Stojí Tým Expertů!</p>
+      <a href="about.html" class="btn btn--outline about-teaser__cta" data-i18n="home_about_cta">Poznejte Náš Tým</a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <div class="container cta__container">
+      <div class="cta__text-block">
+        <h2 class="cta__title" data-i18n="home_cta_title">Jste Připraveni Převzít Kontrolu?</h2>
+        <p class="cta__text" data-i18n="home_cta_text">Přestaňte Bojovat na Všech Frontách Sami!</p>
+      </div>
+      <a href="contact.html" class="btn btn--light cta__button" data-i18n="home_cta_button">Domluvit si Strategickou Poradu</a>
+    </div>
+  </section>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Veltora</p>
+    </div>
+  </footer>
+  
+<div id="va-toggle">💬</div>
+
+<div id="va-widget" class="hidden">
+  <div class="va-header">
+    <div class="va-title">
+      <span class="va-name">Veltora Assistant</span>
+      <div id="va-crumbs" class="va-crumbs">Menu</div>
+    </div>
+    <button id="va-close" aria-label="Close">×</button>
+  </div>
+
+  <div id="va-messages" class="va-messages"></div>
+
+  <div id="va-footer">
+    <div id="va-options" class="va-options">
+      <!-- Primary group -->
+      <div class="va-group">
+        <div id="va-primary-title" class="va-group-title">Recommended</div>
+        <div id="va-primary" class="va-list"></div>
+      </div>
+      <!-- Suggested group -->
+      <div class="va-group">
+        <div id="va-suggest-title" class="va-group-title">More topics</div>
+        <div id="va-suggest" class="va-list"></div>
+      </div>
+      <!-- Actions -->
+      <div class="va-actions">
+        <button id="va-back" class="va-action">🔙</button>
+        <button id="va-restart" class="va-action">🔄</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Scripts -->
+  <script src="/src/js/i18n.js"></script>
+  <script src="/src/js/main.js"></script>
+  <script src="/src/js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+{
+  "nav_home": {
+    "cs": "Domů",
+    "ru": "Главная",
+    "en": "Home"
+  },
+  "nav_about": {
+    "cs": "Váš Štít",
+    "ru": "Ваш Щит",
+    "en": "Your Shield"
+  },
+  "nav_services": {
+    "cs": "Naše Křídla",
+    "ru": "Наши Крылья",
+    "en": "Our Wings"
+  },
+  "nav_contact": {
+    "cs": "Kontakt",
+    "ru": "Контакты",
+    "en": "Contact"
+  },
+
+  "hero_title": {
+    "cs": "Podnikání je boj. Nemusíte v Něm Být Sami",
+    "ru": "Бизнес - Борьба. Не Обязательно Быть Одному",
+    "en": "Business is a Battle. You Don't Have to Fight It Alone"
+  },
+  "hero_subtitle": {
+    "cs": "VELTORA - Poskytujeme Vám Křídla, Abyste se Mohli Soustředit na Vítězství",
+    "ru": "VELTORA - Даём Вам Крылья, Чтобы Сосредоточиться на Победе",
+    "en": "VELTORA - We Give You Wings So You Can Focus on Winning"
+  },
+  "hero_cta": {
+    "cs": "Získat Strategickou Výhodu",
+    "ru": "Получить Стратегическое Преимущество",
+    "en": "Gain a Strategic Advantage"
+  },
+
+  "home_problem_title": {
+    "cs": "Byrokracie, Finance, Provoz. Zloději Vaší Vize",
+    "ru": "Бюрократия, Финансы, Операционные Задачи. Воры Вашего Видения",
+    "en": "Bureaucracy, Finances, Operations. Thieves of Your Vision"
+  },
+  "home_problem_text": {
+    "cs": "Papíry, Faktury a Neplánované Opravy Berou to Nejcennější - Soustředění",
+    "ru": "Бумаги, Счета и Внеплановые Ремонты Забирают Самое Ценное - Концентрацию",
+    "en": "Paperwork, Invoices, and Unplanned Repairs Take the Most Valuable Thing - Your Focus"
+  },
+
+  "home_solution_title": {
+    "cs": "My jsme Váš Štít. Integrovaná Opora pro Váš Byznys",
+    "ru": "Мы Ваш Щит. Интегрированная Опора для Вашего Бизнеса",
+    "en": "We are Your Shield. Integrated Support for Your Business"
+  },
+  "home_solution_text": {
+    "cs": "VELTORA Nespojuje Služby. Sjednocujeme Síly!",
+    "ru": "VELTORA не Просто Объединяет Услуги. Мы Объединяем Силы!",
+    "en": "VELTORA Doesn’t Just Combine Services. We Unite Strengths!"
+  },
+
+  "home_services_title": {
+    "cs": "Kompletní Arzenál pro Každou Fázi Vašeho Podnikání",
+    "ru": "Полный Арсенал для Каждого Этапа Вашего Бизнеса",
+    "en": "A Complete Arsenal for Every Stage of Your Business"
+  },
+  "home_services_card1_title": {
+    "cs": "Vzlet",
+    "ru": "Взлёт",
+    "en": "Takeoff"
+  },
+  "home_services_card1_text": {
+    "cs": "Od Nápadu k Fungující Firmě",
+    "ru": "От Идеи к Работающей Компании",
+    "en": "From Idea to a Working Business"
+  },
+  "home_services_card2_title": {
+    "cs": "Letová Hladina",
+    "ru": "Крейсерская Высота",
+    "en": "Cruising Altitude"
+  },
+  "home_services_card2_text": {
+    "cs": "Udržujte Kurz a Rychlost",
+    "ru": "Держите Курс и Скорость",
+    "en": "Stay on Course and Keep the Speed"
+  },
+  "home_services_card3_title": {
+    "cs": "Pevná Zem",
+    "ru": "Твёрдая Земля",
+    "en": "Solid Ground"
+  },
+  "home_services_card3_text": {
+    "cs": "Vaše Zázemí, Naše Starost",
+    "ru": "Ваш Тыл - Наша Забота",
+    "en": "Your Background, Our Concern"
+  },
+
+  "home_about_title": {
+    "cs": "Seznamte se se Strážci Vašeho Růstu",
+    "ru": "Познакомьтесь с Хранителями Вашего Роста",
+    "en": "Meet the Guardians of Your Growth"
+  },
+  "home_about_text": {
+    "cs": "Za Jménem VELTORA Stojí Tým Expertů",
+    "ru": "За Именем VELTORA Стоит Команда Экспертов",
+    "en": "Behind the Name VELTORA Stands a Team of Experts"
+  },
+  "home_about_cta": {
+    "cs": "Poznejte Náš Tým",
+    "ru": "Познакомьтесь с Нашей Командой",
+    "en": "Meet Our Team"
+  },
+
+  "home_cta_title": {
+    "cs": "Jste Připraveni Převzít Kontrolu?",
+    "ru": "Вы Готовы Взять Контроль?",
+    "en": "Are You Ready to Take Control?"
+  },
+  "home_cta_text": {
+    "cs": "Přestaňte Bojovat na Všech Frontách Sami",
+    "ru": "Перестаньте Бороться на Всех Фронтах В Одиночку",
+    "en": "Stop Fighting on All Fronts Alone"
+  },
+  "home_cta_button": {
+    "cs": "Domluvit si Strategickou Poradu",
+    "ru": "Записаться на Стратегическую Консультацию",
+    "en": "Book a Strategic Consultation"
+  },
+  "about_intro_title": {
+    "cs": "Váš Štít v Podnikání",
+    "ru": "Ваш Щит в Бизнесе",
+    "en": "Your Shield in Business"
+  },
+  "about_intro_subtitle": {
+    "cs": "Seznamte se s Týmem, Který Stojí za Veltorou",
+    "ru": "Познакомьтесь с Командой, Стоящей за Veltora",
+    "en": "Meet the Team Behind Veltora"
+  },
+
+  "about_mission_heading": {
+    "cs": "Naše Mise",
+    "ru": "Наша Миссия",
+    "en": "Our Mission"
+  },
+  "about_mission_text": {
+    "cs": "Věříme, že Českým Podnikatelům Nechybí Skvělé Nápady, ale Čas a Energie Věnovat se Jim...",
+    "ru": "Мы Верим, что Чешским Предпринимателям Не Хватает Не Идей, А Времени и Энергии...",
+    "en": "We Believe Czech Entrepreneurs Don’t Lack Ideas, but Time and Energy..."
+  },
+
+  "about_founders_heading": {
+    "cs": "Síla Zakladatelů",
+    "ru": "Сила Основателей",
+    "en": "Strength of the Founders"
+  },
+  "about_founders_intro": {
+    "cs": "Za VELTOROU Stojí Silné Osobnosti!",
+    "ru": "За VELTORA Стоят Сильные Личности!",
+    "en": "Behind VELTORA Stand Strong Personalities!"
+  },
+  "about_founders_value1_title": {
+    "cs": "Odvaha",
+    "ru": "Мужество",
+    "en": "Courage"
+  },
+  "about_founders_value1_text": {
+    "cs": "Nebojíme se Čelit Největším Výzvám!",
+    "ru": "Не боимся сталкиваться с Вызовами!",
+    "en": "We Don't Fear the Biggest Challenges!"
+  },
+  "about_founders_value2_title": {
+    "cs": "Energie",
+    "ru": "Энергия",
+    "en": "Energy"
+  },
+  "about_founders_value2_text": {
+    "cs": "Jsme Hybnou Silou!",
+    "ru": "Мы - Движущая Сила!",
+    "en": "We are the Driving Force!"
+  },
+  "about_founders_value3_title": {
+    "cs": "Preciznost",
+    "ru": "Точность",
+    "en": "Precision"
+  },
+  "about_founders_value3_text": {
+    "cs": "Každé Rozhodnutí Děláme na Maximum!",
+    "ru": "Каждое решение на Максимум!",
+    "en": "We Make Every Decision to the Max!"
+  },
+
+  "about_team_heading": {
+    "cs": "Seznamte se s Našimi Experty",
+    "ru": "Познакомьтесь с Нашими Экспертами",
+    "en": "Meet Our Experts"
+  },
+  "about_team1_name": {
+    "cs": "Jakub Drábek",
+    "ru": "Якуб Драбек",
+    "en": "Jakub Drábek"
+  },
+  "about_team1_role": {
+    "cs": "Právník",
+    "ru": "Юрист",
+    "en": "Lawyer"
+  },
+  "about_team1_superpower": {
+    "cs": "Obránce Vašeho Práva",
+    "ru": "Защитник Ваших Прав",
+    "en": "Defender of Your Rights"
+  },
+
+  "about_team2_name": { "cs": "Jana Nováková", "ru": "Яна Новакова", "en": "Jana Nováková" },
+  "about_team2_role": { "cs": "Daňový Poradce", "ru": "Налоговый Консультант", "en": "Tax Advisor" },
+  "about_team2_superpower": { "cs": "Krotitelka Daní", "ru": "Кротительница Налогов", "en": "Tamer of Taxes" },
+
+  "about_team3_name": { "cs": "Daniel Vratný", "ru": "Даниэль Вратный", "en": "Daniel Vratný" },
+  "about_team3_role": { "cs": "HR manažer", "ru": "HR Менеджер", "en": "HR Manager" },
+  "about_team3_superpower": { "cs": "Architekt Efektivity", "ru": "Архитектор Эффективности", "en": "Architect of Efficiency" },
+
+  "about_team4_name": { "cs": "Martina Gurz", "ru": "Мартинa Гурз", "en": "Martina Gurz" },
+  "about_team4_role": { "cs": "Krizový Manažer", "ru": "Кризисный Менеджер", "en": "Crisis Manager" },
+  "about_team4_superpower": { "cs": "Specialistka na Turbulence", "ru": "Эксперт Турбулентности", "en": "Specialist in Turbulence" },
+
+  "about_cta_title": {
+    "cs": "Chcete, abychom se Stali i Vaším Štítem?",
+    "ru": "Хотите, чтобы Мы Стали и Вашим Щитом?",
+    "en": "Do You Want Us to Become Your Shield Too?"
+  },
+  "about_cta_text": {
+    "cs": "Svěřte Svůj Růst do Našich Rukou. První Konzultace je Zdarma",
+    "ru": "Доверьте Свой Рост в Наши Руки. Первая Консультация Бесплатна",
+    "en": "Entrust Your Growth to Us. The First Consultation is Free"
+  },
+  "about_cta_button": {
+    "cs": "Domluvit si Strategickou Poradu",
+    "ru": "Записаться на Стратегическую Консультацию",
+    "en": "Book a Strategic Consultation"
+  },
+  "services_hero_title": {
+    "cs": "Naše Křídla",
+    "ru": "Наши Крылья",
+    "en": "Our Wings"
+  },
+  "services_hero_subtitle": {
+    "cs": "Od Prvního Vzletu až po Stabilní Růst - Kompletní Podpora Podnikání",
+    "ru": "От Первого Взлёта до Стабильного Роста - Полная Поддержка Бизнеса",
+    "en": "From First Take-Off to Steady Growth - Complete Support for Business"
+  },
+
+  "services_vzlet_title": { "cs": "Vzlet", "ru": "Взлёт", "en": "Take-Off" },
+  "services_vzlet_target": { "cs": "Pro Startující Vizionáře", "ru": "Для Начинающих Визионеров", "en": "For Aspiring Visionaries" },
+  "services_vzlet_promise": {
+    "cs": "Váš Nápad Proměníme v Neprůstřelnou Pevnost",
+    "ru": "Мы Превратим Вашу Идею в Неприступную Крепость",
+    "en": "We Turn Your Idea into an Unbreakable Fortress"
+  },
+  "services_vzlet_item1": { "cs": "Založení s.r.o. na Klíč", "ru": "Регистрация ООО под Ключ", "en": "Turnkey LLC Formation" },
+  "services_vzlet_item2": { "cs": "Smlouvy mezi Společníky", "ru": "Договоры между Партнёрами", "en": "Shareholder Agreements" },
+  "services_vzlet_item3": { "cs": "Registrace Ochranné Známky", "ru": "Регистрация Торговой Марки", "en": "Trademark Registration" },
+  "services_vzlet_item4": { "cs": "Úvodní Daňové Poradenství", "ru": "Первичная Налоговая Консультация", "en": "Initial Tax Consulting" },
+
+  "services_letova_title": { "cs": "Letová Hladina", "ru": "Крейсерский Полёт", "en": "Cruising Altitude" },
+  "services_letova_target": { "cs": "Pro Rostoucí Lídry", "ru": "Для Растущих Лидеров", "en": "For Growing Leaders" },
+  "services_letova_promise": {
+    "cs": "Růst bez Turbulencí - Finance, Právo i HR pod Kontrolou",
+    "ru": "Рост без Тряски - Финансы, Право и HR под Контролем",
+    "en": "Growth without Turbulence - Finances, Law and HR under Control"
+  },
+  "services_letova_item1": { "cs": "Účetnictví a Mzdy", "ru": "Бухгалтерия и Зарплаты", "en": "Accounting and Payroll" },
+  "services_letova_item2": { "cs": "Daňová Optimalizace", "ru": "Налоговая Оптимизация", "en": "Tax Optimization" },
+  "services_letova_item3": { "cs": "Pracovněprávní Poradenství", "ru": "Трудовое Право", "en": "Employment Law Consulting" },
+  "services_letova_item4": { "cs": "Obchodní Smlouvy", "ru": "Коммерческие Договоры", "en": "Business Contracts" },
+  "services_letova_item5": { "cs": "Zajištění Pracovní Síly", "ru": "Обеспечение Персоналом", "en": "Workforce Sourcing" },
+
+  "services_pevna_title": { "cs": "Pevná Zem", "ru": "Твёрдая Земля", "en": "Solid Ground" },
+  "services_pevna_target": { "cs": "Pro Dokonalý Provoz", "ru": "Для Идеальной Работы", "en": "For Flawless Operations" },
+  "services_pevna_promise": {
+    "cs": "Vaše Prostory - Naše Starost. Vy se Soustřeďte na Byznys",
+    "ru": "Ваши Помещения - Наша Забота. Вы Сосредоточьтесь на Бизнесе",
+    "en": "Your Premises - Our Concern. You Focus on Business"
+  },
+  "services_pevna_item1": { "cs": "Úklid Komerčních Prostor", "ru": "Коммерческий Клининг", "en": "Commercial Cleaning" },
+  "services_pevna_item2": { "cs": "Správa a Údržba Budov", "ru": "Фасилити-Менеджмент", "en": "Facility Management" },
+  "services_pevna_item3": { "cs": "Rekonstrukce a Fit-Outy", "ru": "Реконструкции и Fit-Out", "en": "Renovations and Fit-Outs" },
+
+  "services_cta_title": {
+    "cs": "Potřebujete Vlastní Strategickou Podporu?",
+    "ru": "Нужна Стратегическая Поддержка?",
+    "en": "Need Your own Strategic Support?"
+  },
+  "services_cta_text": {
+    "cs": "Svěřte Svůj Růst do Našich Rukou. První Konzultace je Zdarma",
+    "ru": "Доверьте Свой Рост в Наши Руки. Первая Консультация Бесплатна",
+    "en": "Entrust Your Growth to Us. The First Consultation is Free"
+  },
+  "services_cta_button": {
+    "cs": "Domluvit si Strategickou Poradu",
+    "ru": "Записаться на Стратегическую Консультацию",
+    "en": "Book a Strategic Consultation"
+  },
+  "contact_hero_title": {
+    "cs": "Kontaktujte Nás",
+    "ru": "Свяжитесь с Нами",
+    "en": "Contact Us"
+  },
+  "contact_hero_subtitle": {
+    "cs": "Jsme Tu, abychom Vám Pomohli. Ozvěte se Nám Ještě Dnes.",
+    "ru": "Мы Здесь, Чтобы Помочь Вам. Напишите Нам Уже Сегодня.",
+    "en": "We’re Here to Help. Reach Out Today."
+  },
+
+  "contact_form_title": {
+    "cs": "Napište Nám",
+    "ru": "Напишите Нам",
+    "en": "Write to Us"
+  },
+  "contact_form_name": {
+    "cs": "Vaše Jméno",
+    "ru": "Ваше Имя",
+    "en": "Your Name"
+  },
+  "contact_form_email": {
+    "cs": "Váš Email",
+    "ru": "Ваш Email",
+    "en": "Your Email"
+  },
+  "contact_form_subject": {
+    "cs": "Předmět",
+    "ru": "Тема",
+    "en": "Subject"
+  },
+  "contact_form_message": {
+    "cs": "Vaše Zpráva",
+    "ru": "Ваше Сообщение",
+    "en": "Your Message"
+  },
+  "contact_form_button": {
+    "cs": "Odeslat Zprávu",
+    "ru": "Отправить Сообщение",
+    "en": "Send Message"
+  },
+
+  "contact_phone_title": {
+    "cs": "Telefon",
+    "ru": "Телефон",
+    "en": "Phone"
+  },
+  "contact_email_title": {
+    "cs": "Email",
+    "ru": "Email",
+    "en": "Email"
+  },
+  "contact_address_title": {
+    "cs": "Adresa",
+    "ru": "Адрес",
+    "en": "Address"
+  }
+}

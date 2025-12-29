@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services-Construction</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+ <main>
+  <section class="construction">
+    <div class="container">
+
+      <!-- Заголовок + иконки -->
+      <div class="construction__header">
+        <h1 class="construction__title" data-i18n="construction.title">Construction</h1>
+      </div>
+
+      <!-- Преимущества -->
+      <section class="construction__benefits">
+        <h2 class="construction__subtitle" data-i18n="construction.benefits.title">Proč spolupracovat s námi</h2>
+
+        <div class="construction-benefits">
+          <article class="construction-benefit">
+            <h3 class="construction-benefit__title" data-i18n="construction.benefits.item1.title">Komplexní Technická Řešení</h3>
+            <p class="construction-benefit__text" data-i18n="construction.benefits.item1.text">Komplexní dodávky staveb a technologií: TZB, elektro, automatizace, energie, interiéry - bez prostojů.</p>
+          </article>
+
+          <article class="construction-benefit">
+            <h3 class="construction-benefit__title" data-i18n="construction.benefits.item2.title">Transparentní Proces a Termíny</h3>
+            <p class="construction-benefit__text" data-i18n="construction.benefits.item2.text">Jasný harmonogram, otevřená komunikace a průběžná kontrola kvality v každé fázi projektu.</p>
+          </article>
+
+          <article class="construction-benefit">
+            <h3 class="construction-benefit__title" data-i18n="construction.benefits.item3.title">Dlouhodobý Servis</h3>
+            <p class="construction-benefit__text" data-i18n="construction.benefits.item3.text">Postaráme se o záruční i pozáruční servis, pravidelnou údržbu a optimalizaci systémů.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Карточки услуг -->
+      <section class="construction__services">
+        <div class="construction-services">
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.reconstruction.title">Komplexní Rekonstrukce</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/25.jpg" alt="Rekonstrukce" class="construction-card__image">
+            </div>
+            <a href="/builds/reconstruction.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.revitalizace.title">Revitalizace Bytových Domů</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/55.jpg" alt="Revitalizace" class="construction-card__image">
+            </div>
+            <a href="/builds/revitalization.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.technologies.title">Chytré Technologie</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/52.jpg" alt="Technologie" class="construction-card__image">
+            </div>
+            <a href="/builds/technologies.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.facades.title">Fasády a Izolace</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/51.jpg" alt="Fasády" class="construction-card__image">
+            </div>
+            <a href="/builds/facades.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.vzt.title">VZT - Vzduchotechnika</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/53.jpg" alt="Vzduchotechnika" class="construction-card__image">
+            </div>
+            <a href="/builds/VZT.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.zti.title">ZTI - Voda a Kanalizace</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/32.jpg" alt="Kanalizace" class="construction-card__image">
+            </div>
+            <a href="/builds/ZTI.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.elektro.title">Elektroinstalace</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/45.jpg" alt="Elektroinstalace" class="construction-card__image">
+            </div>
+            <a href="/builds/electricalInstallation.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+
+
+          <article class="construction-card">
+            <h2 class="construction-card__title" data-i18n="construction.services.technic.title">Technický Dozor</h2>
+            <div class="construction-card__image-wrap">
+              <img src="/assets/photo/54.jpg" alt="Dozor" class="construction-card__image">
+            </div>
+            <a href="/builds/supervision.html" class="construction-card__btn" data-i18n="construction.services.button">Více</a>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- Как мы работаем -->
+      <section class="construction__process">
+        <h2 class="construction__subtitle" data-i18n="construction.process.title">Jak pracujeme</h2>
+
+        <ol class="construction-process">
+          <li class="construction-process__step" data-i18n="construction.process.step1">Audit</li>
+          <li class="construction-process__step" data-i18n="construction.process.step2">Projekt</li>
+          <li class="construction-process__step" data-i18n="construction.process.step3">Dodávka</li>
+          <li class="construction-process__step" data-i18n="construction.process.step4">Montáž</li>
+          <li class="construction-process__step" data-i18n="construction.process.step6">Předání</li>
+          <li class="construction-process__step" data-i18n="construction.process.step7">Servis</li>
+        </ol>
+      </section>
+
+
+      <!-- FAQ -->
+      <section class="construction__faq">
+        <h2 class="construction__subtitle construction__subtitle--light" data-i18n="construction.faq.title">FAQ - často kladené dotazy</h2>
+
+        <div class="faq">
+          <article class="faq-item">
+            <h3 class="faq-item__question" data-i18n="construction.faq.q1">Jaké jsou obvyklé termíny realizace?</h3>
+            <p class="faq-item__answer" data-i18n="construction.faq.a1">Termín závisí na rozsahu projektu. U menších zakázek jde často o týdny, u komplexních staveb o několik měsíců. Vždy připravíme jasný harmonogram a průběžně vás informujeme o postupu.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-item__question" data-i18n="construction.faq.q2">Jak řešíte hluk a prach během prací?</h3>
+            <p class="faq-item__answer" data-i18n="construction.faq.a2">Používáme moderní technologie, zakrývání a odsávání, aby byl provoz v objektu omezen co nejméně. Práce plánujeme tak, aby dopad na uživatele prostoru byl minimální.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-item__question" data-i18n="construction.faq.q3">Jaké záruky a servis poskytujete?</h3>
+            <p class="faq-item__answer" data-i18n="construction.faq.a3">Na dodané technologie i práce poskytujeme standardní záruku a nabízíme také dlouhodobý servis – pravidelnou údržbu, revize i optimalizaci provozu.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-item__question" data-i18n="construction.faq.q4">Můžete se připojit k již běžícímu projektu?</h3>
+            <p class="faq-item__answer" data-i18n="construction.faq.a4">Ano, umíme navázat na existující dokumentaci i rozpracovanou stavbu. Nejprve provedeme audit stavu a navrhneme optimální postup dokončení.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA как в About: кнопка + модалка -->
+      <div class="about-cta construction__cta">
+        <h3 class="about-cta__title" data-i18n="construction.cta.title">Získat Konzultaci</h3>
+        <a href="contact.html" class="about-cta__btn" data-i18n="construction.cta.button">Získat Konzultaci</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <!-- Левая колонка: бренд + соцсети -->
+    <div class="footer__col footer__col--brand">
+      <p class="footer__logo" data-i18n="footer.company">Arctic Group s.r.o.</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/arcticstudio_cz?igsh=MzVyNzkxdTUzN2Rj" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="footer__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Центр: ссылки по сайту -->
+    <div class="footer__col footer__col--nav">
+      <h3 class="footer__title" data-i18n="footer.navTitle">Navigace</h3>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__link" data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="footer__link" data-i18n="nav.services">Služby</a>
+        <a href="aboutus.html" class="footer__link" data-i18n="nav.about">O nás</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav.contact">Kontakty</a>
+      </nav>
+    </div>
+
+    <!-- Контакты -->
+    <div class="footer__col footer__col--contacts">
+      <h3 class="footer__title" data-i18n="footer.contactTitle">Kontakt</h3>
+
+      <p class="footer__line">
+        <span class="footer__label">Construction &amp; Turnkey:</span>
+        <a href="tel:+420777956775" class="footer__value">+420 777 956 775</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label">Design &amp; Architecture:</span>
+        <a href="tel:+420778025205" class="footer__value">+420 778 025 205</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.emailLabel">E-mail:</span>
+        <a href="mailto:info@arcticgrp.com" class="footer__value" data-i18n="footer.email">info@arcticgrp.com</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.addressLabel">Adresa:</span>
+        <a href="https://maps.google.com/?q=Dostalov%C3%A9+1283%2F8,+Praha+5" target="_blank" rel="noopener noreferrer" class="footer__value" data-i18n="footer.address">Dostalové 1283/8, Praha 5</a>
+      </p>
+    </div>
+
+    <!-- Справа: форма для e-mail -->
+    <div class="footer__col footer__col--form">
+      <h3 class="footer__title" data-i18n="footer.form.title">Získejte konzultaci</h3>
+
+      <form class="footer-form" id="footer-form">
+        <div class="footer-form__row">
+          <input type="email" class="footer-form__input" name="email" placeholder="Email" required>
+          <button type="submit" class="footer-form__button" aria-label="Odeslat e-mail">→</button>
+        </div>
+      </form>
+      <p class="footer-form__message" data-i18n="footer.form.success">Ozveme se vám do 24 hodin.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <a href="https://cyber-on.net" target="_blank" rel="noopener noreferrer" class="footer__bottom-link">
+        <span class="footer__bottom-made" data-i18n="footer.madeByPrefix">Vyrobeno</span>
+        <span class="footer__bottom-brand">CyberON</span>
+      </a>
+      <a href="404.html" class="footer__bottom-link footer__bottom-link--right" data-i18n="footer.rights">Všechna Práva Vyhrazena</a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

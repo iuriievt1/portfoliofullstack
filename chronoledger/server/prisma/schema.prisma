@@ -1,0 +1,112 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  OWNER
+  ADMIN
+  MEMBER
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String?
+  createdAt    DateTime @default(now())
+
+  memberships  OrgMember[]
+  refreshTokens RefreshToken[]
+  events       LedgerEvent[]
+}
+
+model Org {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  name      String
+  createdAt DateTime @default(now())
+
+  members   OrgMember[]
+  branches  Branch[]
+  events    LedgerEvent[]
+  apiKeys   ApiKey[]
+}
+
+model OrgMember {
+  id        String   @id @default(cuid())
+  orgId     String
+  userId    String
+  role      Role     @default(MEMBER)
+  createdAt DateTime @default(now())
+
+  org       Org      @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([orgId, userId])
+}
+
+model Branch {
+  id            String   @id @default(cuid())
+  orgId         String
+  name          String
+  createdAt     DateTime @default(now())
+
+  parentBranchId String?
+  baseEventId     String?   // event id on parent branch to fork from
+  baseHash        String?   // hash of baseEventId (or GENESIS)
+  headHash        String    @default("GENESIS")
+
+  org           Org      @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  parentBranch  Branch?  @relation("BranchParent", fields: [parentBranchId], references: [id], onDelete: SetNull)
+  children      Branch[] @relation("BranchParent")
+  events        LedgerEvent[]
+
+  @@unique([orgId, name])
+}
+
+model LedgerEvent {
+  id        String   @id @default(cuid())
+  orgId     String
+  branchId  String
+  actorId   String
+
+  type      String
+  payload   Json
+  createdAt DateTime @default(now())
+
+  prevHash  String
+  hash      String
+
+  org       Org     @relation(fields: [orgId], references: [id], onDelete: Cascade)
+  branch    Branch  @relation(fields: [branchId], references: [id], onDelete: Cascade)
+  actor     User    @relation(fields: [actorId], references: [id], onDelete: Cascade)
+
+  @@index([orgId, branchId, createdAt])
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+  revokedAt DateTime?
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ApiKey {
+  id        String   @id @default(cuid())
+  orgId     String
+  name      String
+  keyHash   String   @unique
+  createdAt DateTime @default(now())
+  revokedAt DateTime?
+
+  org       Org      @relation(fields: [orgId], references: [id], onDelete: Cascade)
+}

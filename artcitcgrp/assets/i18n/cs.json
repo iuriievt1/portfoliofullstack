@@ -1,0 +1,934 @@
+{
+
+  "nav": {
+    "home": "Úvod",
+    "services": "Služby",
+    "portfolio": "Portfolio",
+    "about": "O Nás",
+    "contact": "Kontakty"
+  },
+  "hero": {
+    "card1": {
+      "title": "Rekonstrukce & Výstavba",
+      "text": "Kompletní rekonstrukce a novostavby bytů, domů i komerčních objektů"
+    },
+    "card2": {
+      "title": "Design & Architektura",
+      "text": "Profesionální návrhy interiérů a exteriérů s důrazem na estetiku a detail"
+    },
+    "card3": {
+      "title": "Projekty na Klíč",
+      "text": "Kompletní realizace stavby od návrhu až po předání na klíč"
+    },
+    "button": "Více"
+  },
+  "footer": {
+    "company": "Arctic Group s.r.o.",
+    "navTitle": "Navigace",
+    "contactTitle": "Kontakt",
+    "emailLabel": "E-mail:",
+    "email": "info@arcticgrp.com",
+    "addressLabel": "Adresa:",
+    "address": "Dostalové 1283/8, Praha 5",
+    "madeByPrefix": "Vytvořeno",
+    "rights": "Všechna Práva Vyhrazena",
+    "form": {
+      "title": "Získejte konzultaci",
+      "success": "Ozveme se vám do 24 hodin."
+    }
+  },
+  "services": {
+    "title": "Služby",
+    "card1": {
+      "title": "Stavebnictví"
+    },
+    "card2": {
+      "title": "Design & Architektura"
+    },
+    "card3": {
+      "title": "Projekty na Klíč"
+    },
+    "button": "Zobrazit Více"
+  },
+
+  "about": {
+    "title": "Tým špičkových odborníků. Každý dělá přesně to, v čem je nejlepší",
+    "text": "Jsme spojením úzce zaměřených profesionálů pod jedním vedením. Každý má jasně danou odpovědnost: projekt, profese, smart technologie, nábytek, čištění i logistiku. Díky dlouholetým zkušenostem fungujeme jako sehraný tým – navrhneme, zrealizujeme, vybavíme, uklidíme a předáme vám interiér připravený k nastěhování.",
+    "why": {
+      "title": "Proč je to s námi snadné",
+      "item1": "Jedna Smlouva a Jasný Harmonogram",
+      "item2": "Transparentní Rozpočty a Kontrola Kvality",
+      "item3": "Termíny bez Kompromisů",
+      "item4": "Servis i po Předání"
+    },
+    "cta": {
+      "title": "Získat Konzultaci",
+      "button": "Získat Konzultaci"
+    },
+    "modal": {
+      "title": "Získat konzultaci",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-mail",
+      "topicLabel": "Téma",
+      "topic1": "Rekonstrukce/výstavba",
+      "topic2": "Design & Architektura",
+      "topic3": "Projekty na Klíč",
+      "topic4": "Jiné Téma",
+      "otherPlaceholder": "Stručně popište své téma",
+      "submit": "Odeslat",
+      "required": "Vyplňte prosím všechna povinná pole.",
+      "success": "Děkujeme, brzy se vám ozveme.",
+      "error": "Něco se pokazilo, zkuste to prosím znovu."
+    }
+  },
+
+  "construction": {
+    "title": "Stavebnictví",
+
+    "tag": {
+      "vzt": "VZT",
+      "zti": "ZTI",
+      "elektro": "Elektroinstalace"
+    },
+
+    "benefits": {
+      "title": "Proč spolupracovat s námi",
+      "item1": {
+        "title": "Komplexní Technická Řešení",
+        "text": "Komplexní dodávky staveb a technologií: TZB, elektro, automatizace, energie, interiéry - bez prostojů."
+      },
+      "item2": {
+        "title": "Transparentní Proces a Termíny",
+        "text": "Jasný harmonogram, otevřená komunikace a průběžná kontrola kvality v každé fázi projektu."
+      },
+      "item3": {
+        "title": "Dlouhodobý Servis",
+        "text": "Postaráme se o záruční i pozáruční servis, pravidelnou údržbu a optimalizaci systémů."
+      }
+    },
+
+    "services": {
+      "vzt": {
+        "title": "VZT - Vzduchotechnika"
+      },
+
+      "revitalizace": {
+        "title": "Revitalizace Bytových Domů"
+      },
+
+      "zti": {
+        "title": "ZTI - Voda a Kanalizace"
+      },
+      "elektro": {
+        "title": "Elektroinstalace"
+      },
+      "priject": {
+        "title": "Projektování"
+      },
+      "reconstruction": {
+        "title":
+        "Komplexní Rekonstrukce"
+      },
+      "facades": {
+        "title":
+        "Fasády a Izolace"
+      },
+      "technologies": {
+        "title":
+        "Chytré Technologie"
+      },
+      "technic": {
+        "title":
+        "Technický Dozor"
+      },
+      "button": "Více"
+    },
+
+    "process": {
+      "title": "Jak pracujeme",
+      "step1": "Audit",
+      "step2": "Projekt",
+      "step3": "Dodávka",
+      "step4": "Montáž",
+      "step5": "Puskouvedení",
+      "step6": "Předání",
+      "step7": "Servis"
+    },
+
+    "faq": {
+      "title": "FAQ - často kladené dotazy",
+      "q1": "Jaké jsou obvyklé termíny realizace?",
+      "a1": "Termín závisí na rozsahu projektu. U menších zakázek jde často o týdny, u komplexních staveb o několik měsíců. Vždy připravíme jasný harmonogram a průběžně vás informujeme o postupu.",
+      "q2": "Jak řešíte hluk a prach během prací?",
+      "a2": "Používáme moderní technologie, zakrývání a odsávání, aby byl provoz v objektu omezen co nejméně. Práce plánujeme tak, aby dopad na uživatele prostoru byl minimální.",
+      "q3": "Jaké záruky a servis poskytujete?",
+      "a3": "Na dodané technologie i práce poskytujeme standardní záruku a nabízíme také dlouhodobý servis – pravidelnou údržbu, revize i optimalizaci provozu.",
+      "q4": "Můžete se připojit k již běžícímu projektu?",
+      "a4": "Ano, umíme navázat na existující dokumentaci i rozpracovanou stavbu. Nejprve provedeme audit stavu a navrhneme optimální postup dokončení."
+    },
+
+    "cta": {
+      "title": "Získat Konzultaci",
+      "button": "Získat Konzultaci"
+    }
+  },
+  "contact": {
+    "title": "Spojte se s Námi",
+
+    "form": {
+      "emailLabel": "E-mail",
+      "phoneLabel": "Telefon",
+      "nameLabel": "Jméno",
+      "companyLabel": "Společnost (volitelné)",
+      "serviceLabel": "Služba",
+
+      "servicePlaceholder": "Vyberte Službu",
+      "serviceConstruction": "Stavebnictví",
+      "serviceDesign": "Design & Architektura",
+      "serviceTurnkey": "Projekty na Klíč",
+
+      "subservicesLabel": "Upřesnění v rámci stavebnictví (volitelné)",
+      "subVentilation": "Ventilace & Klimatizace",
+      "subWater": "Voda & Sanitární Instalace",
+      "subElectro": "Elektroinstalace",
+
+      "messageLabel": "Zpráva",
+      "notRobot": "Nejsem robot",
+      "privacy": "Souhlasím se zpracováním osobních údajů.",
+      "submit": "Odeslat",
+
+      "required": "Vyplňte prosím všechna povinná pole.",
+      "success": "Děkujeme, vaše zpráva byla odeslána.",
+      "error": "Něco se pokazilo, zkuste to prosím znovu."
+    },
+
+    "mapTitle": "Kde nás najdete"
+  },
+
+  "vzt": {
+    "title": "VZT",
+
+    "text": {
+      "main": "Zajistíme čerstvý vzduch a stabilní teplotu bez průvanu a hluku. Navrhujeme a instalujeme centrální větrání, klimatizaci a rekuperaci pro byty, domy i komerční prostory, včetně vyvážení systému a chytré regulace podle CO₂ a vlhkosti."
+    },
+
+    "services": {
+      "title": "Co děláme",
+
+      "card1": {
+        "title": "Analýza a Návrh",
+        "item1": "Audit a výpočet vzduchových výkonů podle jednotlivých místností.",
+        "item2": "Projekt VZT (trasování, dimenzování, tlumení hluku, vyvážení systému)."
+      },
+
+      "card2": {
+        "title": "Dodávka a Montáž",
+        "item1": "Výběr a dodávka zařízení (VZT jednotky, fan coily, split jednotky, rekuperace).",
+        "item2": "Montáž vzduchovodů a izolací, uvedení do provozu, měření a vyvážení."
+      },
+
+      "card3": {
+        "title": "Chytré Řízení a Servis",
+        "item1": "Integrace se smart home (řízení podle CO₂, vlhkosti a teploty).",
+        "item2": "Servis a pravidelná profesionální údržba systému pro dlouhodobý bezchybný provoz."
+      }
+    },
+
+    "benefits": {
+      "title": "Výhody pro Klienty",
+      "item1": "Tichý Provoz bez Nadměrného Hluku.",
+      "item2": "Rovnoměrné Větrání bez Průvanu.",
+      "item3": "Komfortní a Vyvážené Klima Uvnitř.",
+      "item4": "Úspora Nákladů na Vytápění i Chlazení."
+    },
+
+    "cta": {
+      "title": "Získat Konzultaci",
+      "button": "Spočítejte Cenu"
+    }
+  },
+  "zti": {
+    "title": "ZTI",
+
+    "text": {
+      "main": "Navrhujeme a realizujeme vnitřní rozvody vody a kanalizace, koupelny na klíč a ochranu proti únikům. Tiché stoupačky, správné spády, tlakové zkoušky i revize."
+    },
+
+    "services": {
+      "title": "Co děláme",
+
+      "card1": {
+        "title": "Projekt a Rozvody",
+        "item1": "Projekt ZTI (stoupačky, trasy, dimenze, spády).",
+        "item2": "Rozvody studené a teplé vody včetně cirkulace."
+      },
+
+      "card2": {
+        "title": "Kanalizace a Koupelny",
+        "item1": "Kanalizační rozvody a zvuková izolace stoupaček.",
+        "item2": "Koupelny na klíč: sanita a instalace."
+      },
+
+      "card3": {
+        "title": "Ochrana a Zkoušky",
+        "item1": "Ochrana proti únikům, příprava pro filtry.",
+        "item2": "Zkoušky, protokoly a předání systému."
+      }
+    },
+
+    "benefits": {
+      "title": "Výhody pro klienty",
+      "item1": "Tichý Provoz a Čisté Detaily.",
+      "item2": "Stabilní Tlak Vody v Systému.",
+      "item3": "Ochrana Proti Únikům a Škodám.",
+      "item4": "Připraveno na Servis a Úpravy."
+    },
+
+    "cta": {
+      "title": "Získat Konzultaci",
+      "button": "Spočítejte Cenu"
+    }
+  },
+  "elektro": {
+    "title": "Elektroinstalace",
+
+    "text": {
+      "main": "Kompletní silnoproud i slaboproud, rozvaděče, světla, zásuvky, datové rozvody i smart home. Přepěťová ochrana, uzemnění, revize, příprava pro nabíjení EV a budoucí rozšíření."
+    },
+
+    "services": {
+      "title": "Co děláme",
+
+      "card1": {
+        "title": "Projekt a Napájení",
+        "item1": "Projekt elektro: přívod, rozvaděče, okruhy.",
+        "item2": "Příprava pro budoucí rozšíření a vyšší zatížení."
+      },
+
+      "card2": {
+        "title": "Osvětlení a Zásuvkové Okruhy",
+        "item1": "Osvětlení: scénáře a stmívání.",
+        "item2": "Silové rozvody: zásuvky a spotřebiče."
+      },
+
+      "card3": {
+        "title": "Slaboproud a Smart Home",
+        "item1": "Slaboproud: data, Wi-Fi, CCTV, zabezpečení.",
+        "item2": "Ochrana, uzemnění, smart home, revize."
+      }
+    },
+
+    "benefits": {
+      "title": "Výhody pro klienty",
+      "item1": "Bezpečný a Spolehlivý Systém.",
+      "item2": "Pohodlné Ovládání.",
+      "item3": "Čisté Stěny bez Přepínačů.",
+      "item4": "Připraveno na Nové Technologie."
+    },
+
+    "cta": {
+      "title": "Získat Konzultaci",
+      "button": "Spočítejte Cenu"
+    }
+  },
+  "design": {
+    "title": "Design & Architektura",
+    "subtitle": "Pozvedněte svůj prostor s Arctic - předním pražským studiem interiérového designu!",
+
+    "cards": {
+      "interior": {
+        "title": "Interiérový Design"
+      },
+      "architecture": {
+        "title": "Architektura"
+      },
+      "fitout": {
+          "title": "Fit-Out Interiérů"
+        },
+        "furniture": {
+          "title": "Design a Výroba Nábytku"
+        },
+      "button": "Více"
+    },
+
+    "faq": {
+      "title": "FAQ - často kladené dotazy",
+
+      "q1": "Jak probíhá první konzultace?",
+      "a1": "Nejprve si vyslechneme vaše potřeby, rozpočet a styl. Poté připravíme návrh rozsahu prací a orientační harmonogram.",
+
+      "q2": "Pracujete i s existujícím nábytkem?",
+      "a2": "Ano, dokážeme zakomponovat váš stávající nábytek a doplnit jej o nové prvky tak, aby prostor působil jednotně.",
+
+      "q3": "Jak se řeší rozpočet u designu a architektury?",
+      "a3": "Rozpočet nastavujeme transparentně předem. Připravíme několik variant a průběžně vás informujeme o všech změnách.",
+
+      "q4": "Můžete zajistit i kompletní realizaci?",
+      "a4": "Ano, od návrhu přes výrobu nábytku, stavební práce až po styling prostoru. Přebíráme zodpovědnost za celý proces."
+    },
+
+    "cta": {
+      "title": "Získat Konzultaci",
+      "button": "Získat Konzultaci"
+    }
+  },
+  "interior": {
+    "title": "Interiérový Design",
+    "subtitle": "Proměňte svůj prostor s našimi komplexními službami interiérového designu!",
+
+    "items": {
+      "1": {
+        "title": "Vize a Konceptuální Design",
+        "text": "Představte si prostor, který skutečně odráží, kým jste."
+      },
+      "2": {
+        "title": "Odborné Plánování Prostoru",
+        "text": "Maximalizujte potenciál svého prostoru díky našim precizním plánovacím službám."
+      },
+      "3": {
+        "title": "Inovativní Interiérová Architektura",
+        "text": "Pozvedněte svůj interiér pomocí jedinečných architektonických prvků navržených tak, aby zapůsobily."
+      },
+      "4": {
+        "title": "Pečlivě Vybraný Nábytek a jeho Přizpůsobení",
+        "text": "Objevte pečlivě sestavenou kolekci výjimečného nábytku, která dokonale ladí s vaší designovou vizí."
+      },
+      "5": {
+        "title": "Prémiový Výběr Materiálů",
+        "text": "Materiály, které si zvolíte, mohou proměnit celkovou atmosféru vašeho prostoru."
+      },
+      "6": {
+        "title": "Barevná Paleta a Návrh Osvětlení",
+        "text": "Objevte proměňující sílu barev a osvětlení díky našim odborným designovým službám!"
+      }
+    },
+
+    "cta": {
+      "title": "Připraveni vytvořit prostor, který bude skutečně odrážet vás?",
+      "button": "Spočítejte Cenu"
+    }
+  },
+  "architecture": {
+    "title": "Architektura",
+    "subtitle": "Proměňte svůj projekt pomocí našich komplexních architektonických služeb.",
+
+    "items": {
+      "1": {
+        "title": "Architektonický Design",
+        "text": "V Arctic Group netvoříme jen budovy - pomáháme vašim představám získat konkrétní a realizovatelnou podobu."
+      },
+      "2": {
+        "title": "Komplexní Řízení Projektu",
+        "text": "Koordinujeme profesanty, harmonogram i rozpočet tak, abyste se v průběhu stavby mohli soustředit na podstatné věci - bez zbytečného stresu."
+      },
+      "3": {
+        "title": "Inovace a Udržitelnost",
+        "text": "Věříme, že architektura může formovat lepší budoucnost - proto pracujeme s chytrými řešeními, udržitelnými materiály a dlouhodobou funkčností."
+      }
+    },
+
+    "cta": {
+      "title": "Připraveni vidět svou architektonickou vizi v realitě?",
+      "button": "Spočítejte Cenu"
+    }
+  },
+  "error404": {
+  "label": "Stránka ve výstavbě",
+  "title": "404",
+  "text": "Na této adrese pro vás právě stavíme něco nového. Zatím můžete přejít na úvodní stránku nebo si projít naše služby.",
+  "btn": {
+    "home": "Zpět na úvod",
+    "services": "Na služby"
+  },
+  "tagline": "I když je tato stránka ještě ve výstavbě, o váš projekt se postaráme už teď."
+  },
+
+"projektovani": {
+  "title": "Projektování",
+  "text": {
+    "main": "Navrhujeme kompletní projektovou dokumentaci pro technická zařízení budov – VZT, ZTI a elektroinstalace. Postaráme se o koncepci, výpočty, výkresy i koordinaci s architekturou a statikou."
+  },
+  "services": {
+    "title": "Co děláme",
+    "card1": {
+      "title": "Koncepce a Studie",
+      "item1": "Analýza objektu a požadavků investora.",
+      "item2": "Návrh řešení VZT, ZTI a elektro."
+    },
+    "card2": {
+      "title": "Projektová Dokumentace",
+      "item1": "Výpočty, výkresy, technické zprávy.",
+      "item2": "Specifikace materiálů a technologií."
+    },
+    "card3": {
+      "title": "Koordinace a Autorský Dozor",
+      "item1": "Koordinace profesí a architektury.",
+      "item2": "Autorský dozor na stavbě."
+    }
+  },
+  "benefits": {
+    "title": "Výhody pro klienty",
+    "item1": "Přehledná Dokumentace pro Realizaci.",
+    "item2": "Méně Chyb a Kolizí na Stavbě.",
+    "item3": "Optimalizace Nákladů v Projektu.",
+    "item4": "Soulad s Normami a Předpisy."
+  },
+  "cta": {
+    "title": "Získat Konzultaci k Projektu",
+    "button": "Spočítejte Cenu"
+  }
+},
+"reconstruction": {
+  "title": "Komplexní Rekonstrukce",
+  "text": {
+    "main": "Rekonstruujeme byty, domy i komerční prostory - od stavebních úprav přes technické instalace až po finální detaily interiéru. Zajistíme koordinaci všech profesí, harmonogram prací i čisté předání prostoru připraveného k užívání."
+  },
+  "services": {
+    "title": "Co děláme",
+    "card1": {
+      "title": "Bytové Rekonstrukce",
+      "item1": "Rekonstrukce bytů, domů i komerčních prostor.",
+      "item2": "Citlivé řešení v obývaných domech."
+    },
+    "card2": {
+      "title": "Rodinné Domy a Vily",
+      "item1": "Modernizace technologií a interiéru.",
+      "item2": "Zateplení, fasády, výměna oken."
+    },
+    "card3": {
+      "title": "Komerční Prostory",
+      "item1": "Úpravy kanceláří a obchodů na míru.",
+      "item2": "Rychlá realizace s ohledem na provoz a klienty."
+    }
+  },
+  "benefits": {
+    "title": "Výhody pro klienty",
+    "item1": "Jeden Tým pro Projekt i Realizaci.",
+    "item2": "Jasný Harmonogram.",
+    "item3": "Kontrola Rozpočtu.",
+    "item4": "Čistá Stavba a Pečlivé Předání."
+  },
+  "cta": {
+    "title": "Plánujete Rekonstrukci?",
+    "button": "Spočítejte Cenu"
+  }
+},
+"fasady": {
+  "title": "Fasády a Izolace",
+  "text": {
+    "main": "Navrhujeme a realizujeme zateplení fasád, opravy plášťů budov a izolační systémy, které zlepší energetickou náročnost domu a prodlouží jeho životnost. Řešíme detaily, napojení a povrchy tak, aby fasáda dobře vypadala a dlouhodobě fungovala."
+  },
+  "services": {
+    "title": "Co děláme",
+    "card1": {
+      "title": "Fasády a Zateplení",
+      "item1": "Kontrola a návrh zateplení fasády.",
+      "item2": "Realizace zateplení a finálních povrchů."
+    },
+    "card2": {
+      "title": "Střechy a Izolační Systémy",
+      "item1": "Tepelné a hydroizolační vrstvy střech a teras.",
+      "item2": "Opravy a sanace poškozených částí."
+    },
+    "card3": {
+      "title": "Opravy a Detaily Pláště",
+      "item1": "Detailní řešení oken, dveří a balkonů.",
+      "item2": "Řešení detailů kolem oken, dveří, balkonů a atik."
+    }
+  },
+  "benefits": {
+    "title": "Výhody pro klienty",
+    "item1": "Nižší Náklady na Vytápění a Chlazení.",
+    "item2": "Stabilní Vnitřní Klima bez Přehřívání.",
+    "item3": "Delší Životnost Pláště Budovy.",
+    "item4": "Čistý Vzhled a Precizní Detaily."
+  },
+  "cta": {
+    "title": "Řešíte Fasádu nebo Zateplení?",
+    "button": "Spočítejte Cenu"
+  }
+},
+"chytre": {
+  "title": "Chytré Technologie",
+  "text": {
+    "main": "Propojujeme technická zařízení budovy s chytrým řízením – osvětlení, vytápění, chlazení, VZT, zabezpečení i stínění v jednom systému. Navrhujeme scénáře, ovládání přes mobil a automatizaci podle času, přítomnosti a hodnot z čidel."
+  },
+  "services": {
+    "title": "Co děláme",
+    "card1": {
+      "title": "Smart Home a Scénáře",
+      "item1": "Scénáře a automatizace na jedno tlačítko.",
+      "item2": "Ovládání světel, topení a audia z mobilu."
+    },
+    "card2": {
+      "title": "Integrace Technologií",
+      "item1": "Propojení všech technologií do jednoho systému.",
+      "item2": "Automatizace dle CO₂, teploty a pohybu."
+    },
+    "card3": {
+      "title": "Bezpečnost a Dohled",
+      "item1": "Kamerové systémy a čidla bezpečnosti.",
+      "item2": "Vzdálený dohled a notifikace do mobilu."
+    }
+  },
+  "benefits": {
+    "title": "Výhody pro klienty",
+    "item1": "Vyšší Komfort díky Automatizaci.",
+    "item2": "Úspora Energie díky Chytrému Řízení.",
+    "item3": "Přehled a Ovládání Domu odkudkoli.",
+    "item4": "Připraveno na Budoucí Technologie."
+  },
+  "cta": {
+    "title": "Chcete, aby váš dům myslel za vás?",
+    "button": "Spočítejte Cenu"
+  }
+},
+"dozor": {
+  "title": "Technický Dozor",
+  "text": {
+    "main": "Zastupujeme investora na stavbě - hlídáme kvalitu, termíny i rozpočet. Kontrolujeme provádění prací podle projektu, norem a smlouvy, upozorňujeme na rizika a dohlížíme na odstranění vad a nedodělků před předáním stavby."
+  },
+  "services": {
+    "title": "Co děláme",
+    "card1": {
+      "title": "Kontrola Kvality a Souladu",
+      "item1": "Pravidelné kontroly stavby a prováděných prací.",
+      "item2": "Kontrola souladu s projektem a rozpočtem."
+    },
+    "card2": {
+      "title": "Koordinace a Komunikace",
+      "item1": "Účast na kontrolních dnech a jednáních na stavbě.",
+      "item2": "Komunikace mezi investorem a dodavatelem."
+    },
+    "card3": {
+      "title": "Předání a Dokumentace",
+      "item1": "Dohled nad kvalitou před předáním stavby.",
+      "item2": "Podpora při dokumentaci."
+    }
+  },
+  "benefits": {
+    "title": "Výhody pro klienty",
+    "item1": "Jistota, že Stavba Odpovídá Projektu.",
+    "item2": "Kontrola Kvality a Rozpočtu.",
+    "item3": "Méně Rizik a Chyb.",
+    "item4": "Zastoupení Investora na Stavbě."
+  },
+  "cta": {
+    "title": "Potřebujete Technický Dozor Investora?",
+    "button": "Spočítejte Cenu"
+  }
+},
+  "fitout": {
+    "title": "Fit-Out Interiérů",
+    "subtitle": "Kompletní fit-out interiérů od prvního návrhu až po poslední detail.",
+    "items": {
+      "1": {
+        "title": "Kompletní Fit-Out na Klíč",
+        "text": "Postaráme se o celý interiér - stavební úpravy, povrchy, nábytek i technologie tak, aby byl prostor připraven k okamžitému používání."
+      },
+      "2": {
+        "title": "Koordinace Řemesel a Dodavatelů",
+        "text": "Řídíme všechna řemesla, harmonogram i logistiku, aby práce probíhaly plynule, bez prostojů a zbytečného stresu pro vás."
+      },
+      "3": {
+        "title": "Prémiové Materiály a Detaily",
+        "text": "Volíme kvalitní materiály a pečlivě řešíme detaily, aby interiér dobře vypadal, dlouho vydržel a snadno se udržoval."
+      }
+    },
+    "cta": {
+      "title": "Připraveni na fit-out vašeho interiéru?",
+      "button": "Spočítejte Cenu"
+    }
+  },
+  "furniture": {
+  "title": "Design a Výroba Nábytku",
+  "subtitle": "Návrh nábytku na míru – od prvního skici až po hotový kus v interiéru.",
+
+  "items": {
+    "1": {
+      "title": "Nábytek na Míru vašemu Prostorou",
+      "text": "Navrhujeme nábytek podle konkrétního prostoru, dispozice a způsobu používání – žádné kompromisy, vše přesně na míru vám."
+    },
+    "2": {
+      "title": "Ergonomie a Každodenní Funkčnost",
+      "text": "Myslíme na pohodlí, úložné prostory i logiku pohybu v interiéru, aby se nábytek dobře používal každý den, ne jen hezky vypadal."
+    },
+    "3": {
+      "title": "Materiály, Povrchy a Detaily",
+      "text": "Volíme kvalitní materiály, povrchové úpravy a kování tak, aby nábytek vydržel, snadno se udržoval a zapadl do celkového stylu interiéru."
+    }
+  },
+
+  "cta": {
+    "title": "Chcete nábytek navržený přímo pro vás?",
+    "button": "Spočítejte Cenu"
+  }
+},
+"estimate": {
+      "title": "Spočítejte cenu designového projektu",
+      "stepLabel": "Krok",
+
+      "step1": {
+        "question": "Pro jaký typ prostoru potřebujete návrh?",
+        "villa": "Vila",
+        "apartment": "Byt",
+        "office": "Kancelář",
+        "restaurant": "Restaurace",
+        "shop": "Obchod",
+        "beauty": "Beauty salon"
+      },
+
+      "step2": {
+        "question": "Jaká je celková plocha prostoru (v m²)?"
+      },
+
+      "step3": {
+        "question": "Jaký interiérový styl preferujete?",
+        "modern": "Modern",
+        "neoclassic": "Neoklasika",
+        "american": "Americký styl",
+        "french": "Francouzský styl",
+        "minimal": "Minimalismus"
+      },
+
+      "step4": {
+        "question": "Kdy chcete projekt zahájit?",
+        "asap": "Co nejdříve",
+        "week": "Za týden",
+        "month": "Za měsíc",
+        "six": "Za půl roku"
+      },
+
+      "step5": {
+        "question": "Uveďte město, kde se nemovitost nachází",
+        "prague": "Praha",
+        "brno": "Brno",
+        "ostrava": "Ostrava",
+        "other": "Jiné"
+      },
+
+      "nav": {
+        "back": "Zpět",
+        "next": "Další"
+      },
+
+      "contact": {
+        "title": "Zanechte na sebe kontakt, náš manažer se vám brzy ozve",
+        "nameLabel": "Vaše jméno",
+        "phoneLabel": "Telefon",
+        "messageLabel": "Zpráva",
+        "submit": "Odeslat poptávku"
+      },
+
+      "error": {
+        "title": "Chyba!",
+        "required": "Vyplňte prosím povinné pole."
+      }
+    },
+    "turnkey": {
+      "title": "Projekty na klíč",
+      "tag": {
+        "design": "Design & Architektura",
+        "build": "Stavebnictví",
+        "tech": "Technologie"
+      },
+      "lede": "Od prvního nápadu až po předání klíčů – jeden tým, jedna zodpovědnost a jasný výsledek. Postaráme se o koordinaci všech profesí, rozpočtu i harmonogramu.",
+      "bullets": {
+        "1": "Jeden partner pro návrh, realizaci i technologie.",
+        "2": "Transparentní rozpočet a kontrolovaný harmonogram.",
+        "3": "Minimální zátěž pro vás - řešíme detaily i koordinaci za vás.",
+        "4": "Přestěhování bez stresu - postaráme se o logistiku, stěhováky i finální úklid."
+      },
+      "process": {
+        "title": "Jak probíhá projekt na klíč"
+      },
+      "gallery": {
+        "title": "Ukázky projektů na klíč",
+        "card1": {
+          "tag": "Rezidenční",
+          "title": "Byt 3+kk, Praha 2"
+        },
+        "card2": {
+          "tag": "Komerční",
+          "title": "Tower Park, Praha 3"
+        },
+        "card3": {
+          "tag": "Rezidenční",
+          "title": "Byt 2+kk, Praha 14"
+        }
+      },
+      "faq": {
+        "title": "FAQ - často kladené dotazy",
+        "q1": "Jak dlouho trvá projekt na klíč?",
+        "a1": "Záleží na rozsahu - menší interiéry v řádu týdnů, větší projekty v řádu několika měsíců. Vždy připravíme realistický harmonogram.",
+        "q2": "Můžu se zapojit jen v některých fázích?",
+        "a2": "Ano, společně si nastavíme míru vaší účasti - od plně delegovaného projektu až po detailní schvalování jednotlivých kroků.",
+        "q3": "Jak je řešená kontrola kvality?",
+        "a3": "Pravidelně kontrolujeme provedené práce, technologie i detaily interiéru. V případě potřeby navrhujeme úpravy ještě během realizace.",
+        "q4": "Umíte pracovat i v běžícím provozu?",
+        "a4": "Ano, projekty plánujeme tak, aby byl provoz omezen co nejméně – etapizací prací, večerními či víkendovými harmonogramy."
+      },
+      "cta": {
+        "title": "Přemýšlíte o projektu na klíč?",
+        "button": "Spočítejte Cenu"
+      }
+    },
+    "revitalizace": {
+      "title": "Revitalizace Bytových Domů",
+  "text": {
+    "main": "Revitalizujeme bytové a činžovní domy - od společných prostor až po technické zázemí. Zajistíme návrh, povolení i samotnou realizaci tak, aby byl dům bezpečný, funkční a připravený na další desítky let."
+  },
+  "services": {
+    "title": "Co děláme",
+    "card1": {
+      "title": "Společné Prostory",
+      "item1": "Rekonstrukce vstupů a společných prostor.",
+      "item2": "Úpravy sklepů a venkovních ploch."
+    },
+    "card2": {
+      "title": "Výtahy a Bezbariérovost",
+      "item1": "Modernizace výtahů a šachet.",
+      "item2": "Bezbariérové přístupy a rampy."
+    },
+    "card3": {
+      "title": "Projekt a Povolení",
+      "item1": "Architektonické návrhy a dokumentace.",
+      "item2": "Stavební povolení a jednání s úřady."
+    }
+  },
+  "benefits": {
+    "title": "Výhody pro klienty",
+    "item1": "Vyšší Komfort a Bezpečnost Obyvatel.",
+    "item2": "Zajištění Dotací.",
+    "item3": "Zvýšení Hodnoty Domu a Bytů.",
+    "item4": "Jeden Dodavatel a Jasný Rozpočet."
+  },
+  "cta": {
+    "title": "Plánujete revitalizaci bytového domu?",
+    "button": "Spočítejte Cenu"
+  }
+},
+"portfolio": {
+  "title": "Portfólio",
+  "subtitle": "Výběr realizací od bytových interiérů přes rodinné domy až po komerční prostory. Otevřete projekt a prohlédněte si více fotografií.",
+
+  "card1": {
+    "title": "Loft Apartman, Praha 12"
+  },
+  "card2": {
+    "title": "Tower Park, Praha 3"
+  },
+  "card3": {
+    "title": "Byt 3+kk, Praha 14"
+  },
+  "card4": {
+    "title": "Kancelář Pure, Praha 1"
+  },
+  "card5": {
+    "title": "Vila, Nymburk"
+  },
+  "card6": {
+    "title": "Byt 1+kk, Praha 10"
+  },
+
+  "card": {
+    "button": "Více"
+  },
+
+  "cta": {
+    "title": "Chcete Být Naším Klientem?",
+    "button": "Domluvte Konzultaci"
+  }
+},
+  "project": {
+    "vanguard_lofts": {
+      "label": "REZIDENČNÍ PROJEKT: Vanguard Lofts",
+      "title": "Loft Apartman",
+      "meta": {
+        "location": "Praha 12, Modřany",
+        "area": "96 m²",
+        "year": "2023"
+      },
+      "cta": {
+        "title": "Chcete podobný projekt?",
+        "text": "Ozvěte se nám a připravíme pro vás návrh interiéru přesně na míru.",
+        "btn_contact": "Spojit se s námi",
+        "btn_estimate": "Spočítat projekt"
+      },
+      "related": {
+        "heading": "Další projekty",
+        "vrsovice": {
+          "title": "Byt 1+kk, Vršovice",
+          "meta": "Praha 10 · 28 m²"
+        },
+        "kyje": {
+          "title": "Byt 3+kk, Kyje",
+          "meta": "Praha 14 · 68 m²"
+        },
+        "park": {
+          "title": "Tower Park, Žižkov",
+          "meta": "Praha 3 · Bar"
+        },
+        "vila": {
+          "title": "Vila",
+          "meta": "Nymburk · 154 m²"
+        },
+        "loft": {
+          "title": "Loft Apartman, Modřany",
+          "meta": "Praha 12 · 96 m²"
+        },
+        "pure": {
+          "title": "Pure, Nové Město",
+          "meta": "Praha 1 · Kancelář"
+        }
+      }
+    },
+    "tower_park": {
+      "label": "KOMERČNÍ PROJEKT: Tower Park",
+      "title": "Mimichef Bistro",
+      "meta": {
+        "location": "Praha 3, Žižkov",
+        "type": "Bistro",
+        "year": "2021"
+      }
+    },
+    "kyje_apartment": {
+      "label": "REZIDENČNÍ PROJEKT",
+      "title": "Byt 3+kk",
+      "meta": {
+        "location": "Praha 14, Kyje",
+        "area": "68 m²",
+        "year": "2024"
+      }
+    },
+    "pure_office": {
+      "label": "KOMERČNÍ PROJEKT: Kancelář Pure",
+      "title": "PURE MODEL Management",
+      "meta": {
+        "location": "Praha 1, Nové Město",
+        "type": "Kancelář",
+        "year": "2020"
+      }
+    },
+    "vila_nymburk": {
+      "label": "REZIDENČNÍ PROJEKT: Vila v Nymburku",
+      "title": "Vila",
+      "meta": {
+        "location": "Nymburk",
+        "area": "154 m²",
+        "year": "2023"
+      }
+    },
+    "vodarna_apartment": {
+      "label": "REZIDENČNÍ PROJEKT: Vodárna",
+      "title": "Byt 1+kk",
+      "meta": {
+        "location": "Praha 10, Vršovice",
+        "area": "28 m²",
+        "year": "2024"
+      }
+    }
+  }
+}
+
+

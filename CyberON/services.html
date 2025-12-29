@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CyberON - Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="/assets/logo/web_favicon.png"/>
+
+  <link rel="stylesheet" href="/source/style/style.css" />
+  <link rel="stylesheet" href="/source/style/services.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <!-- LOGO (CENTERED, LINK TO INDEX) -->
+      <a href="index.html" class="logo" aria-label="CyberON — Home">
+        <!-- поменяешь src на свой логотип -->
+        <img src="/assets/logo/Web_logo.png" alt="CyberON logo" />
+      </a>
+
+      <!-- LANGUAGE SWITCHER (RIGHT SIDE) -->
+      <div class="lang-switcher" data-lang="en">
+        <button class="lang-switcher__toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-switcher__current">EN</span>
+          <span class="lang-switcher__icon">▾</span>
+        </button>
+        <ul class="lang-switcher__menu" aria-label="Select language">
+          <li>
+            <button class="lang-switcher__option" type="button" data-lang="en">
+              EN
+            </button>
+          </li>
+          <li>
+            <button class="lang-switcher__option" type="button" data-lang="cs">
+              CZ
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+<main class="services-page">
+  <!-- HERO
+  <section class="services-hero">
+    <div class="services-hero__inner">
+      <h1 class="services-hero__title" data-i18n="services.hero.title">
+        Full Service Production Company
+      </h1>
+      <p class="services-hero__subtitle" data-i18n="services.hero.subtitle">
+        Explore our services and discover how we can take your story to the next level
+      </p>
+    </div>
+  </section>
+-->
+  <!-- СЛЕВА МЕНЮ, СПРАВА СЕКЦИИ -->
+  <section class="services-layout">
+
+    <!-- ЛЕВАЯ КОЛОНКА: МЕНЮ КАТЕГОРИЙ -->
+    <aside class="services-sidebar">
+      <nav class="services-nav">
+
+        <!-- Event Production (активная по умолчанию) -->
+        <div class="services-nav__item is-active" data-target="service-events">
+          <div class="services-nav__label" data-i18n="services.events.title">
+            Event Production
+          </div>
+          <ul class="services-nav__sub">
+            <li data-i18n="services.events.menu.liveHybrid">Product launch</li>
+            <li data-i18n="services.events.menu.corporate">Performances</li>
+            <li data-i18n="services.events.menu.brandActivations">Summits &amp; conferences</li>
+          </ul>
+        </div>
+
+        <!-- Video Production -->
+        <div class="services-nav__item" data-target="service-video">
+          <div data-service="video" class="services-nav__label" data-i18n="services.video.title">
+            Video Production
+          </div>
+          <ul class="services-nav__sub">
+            <li data-i18n="services.video.menu.commercial">Music videos</li>
+            <li data-i18n="services.video.menu.social">Advertising</li>
+            <li data-i18n="services.video.menu.aftermovies">Commercial shoots</li>
+            <li data-i18n="services.video.menu.product">Concert videos</li>
+            <li data-i18n="services.video.menu.content">Content creation</li>
+          </ul>
+        </div>
+
+        <!-- Design & IT -->
+        <div class="services-nav__item" data-target="service-design">
+          <div class="services-nav__label" data-i18n="services.design.title">
+            Design &amp; IT
+          </div>
+          <ul class="services-nav__sub">
+            <li data-i18n="services.design.menu.brandIdentity">Brand identity</li>
+            <li data-i18n="services.design.menu.websitesApps">Web development</li>
+            <li data-i18n="services.design.menu.uxui">Applications</li>
+          </ul>
+        </div>
+
+        <!-- Marketing -->
+        <div class="services-nav__item" data-target="service-marketing">
+          <div class="services-nav__label" data-i18n="services.marketing.title">
+            Marketing
+          </div>
+          <ul class="services-nav__sub">
+            <li data-i18n="services.marketing.menu.strategy">Comprehensive services</li>
+            <li data-i18n="services.marketing.menu.performance">Personal brands</li>
+            <li data-i18n="services.marketing.menu.content">Maintaining platforms</li>
+          </ul>
+        </div>
+
+      </nav>
+    </aside>
+
+    <!-- ПРАВАЯ КОЛОНКА: КОНТЕНТ КАТЕГОРИЙ -->
+    <div class="services-sections">
+
+      <!-- ================== EVENT PRODUCTION ================== -->
+      <section class="service-section" id="service-events" data-service="events">
+        <div class="service-section__inner">
+
+          <div class="service-section__top">
+            <div class="service-section__media" data-contact-trigger data-service="events">
+              <img src="/assets/photo/services/events.JPEG" alt="Event Production">
+            </div>
+
+            <div class="service-section__intro">
+              <h2 class="service-section__title" data-i18n="services.events.title">
+                Event Production
+              </h2>
+              <p class="service-section__text" data-i18n="services.events.description">
+                We provide comprehensive, end-to-end event production for product launches, immersive experiences, large-scale conferences, and nearly any type of event you might need, handling everything from planning to execution. We can develop a concept from the ground up or take your existing idea and turn it into a clear, effective, and commercially successful experience. Our team manages creative direction, stage design, vendor coordination, and full technical production. We also handle product integration to make sure every element works together smoothly and supports your objectives
+              </p>
+            </div>
+          </div>
+
+          <!-- подкатегории -->
+          <div class="service-section__grid">
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.events.step.liveHybrid.title">
+                Product Launch
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.events.step.liveHybrid.text">
+                Launch events that showcase your product uniquely and powerfully, creating a natural, impactful and special reveal
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.events.step.corporate.title">
+                Shows &amp; Theatre
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.events.step.corporate.text">
+                Immersive performances that blend storytelling, direction, and stage technology. Creative, atmospheric, unforgettable
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.events.step.brandActivations.title">
+                Summits &amp; Conferences
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.events.step.brandActivations.text">
+                Large-scale events with seamless organisation, premium stage design, full technical setup and flawless execution
+              </p>
+            </article>
+
+          </div>
+
+          <!-- кнопка вызвать модалку -->
+          <button
+            class="service-section__cta js-service-contact"
+            data-service="events"
+            data-section="Event Production"
+            type="button"
+          >
+            <span data-i18n="services.cta">MAKE A REQUEST</span>
+          </button>
+
+        </div>
+      </section>
+
+      <!-- ================== VIDEO PRODUCTION ================== -->
+      <section class="service-section" id="service-video" data-service="video">
+        <div class="service-section__inner">
+
+          <div class="service-section__top">
+            <div class="service-section__media" data-contact-trigger data-service="video">
+              <img src="/assets/photo/services/video_prod.JPEG" alt="Video Production">
+            </div>
+
+            <div class="service-section__intro">
+              <h2 class="service-section__title" data-i18n="services.video.title">
+                Video Production
+              </h2>
+              <p class="service-section__text" data-i18n="services.video.description">
+                Full-cycle video production across a wide range of formats. Our work combines clear creative direction, structured production workflows, and reliable post-production. We create professional music videos, brand and product content with precise messaging, clean corporate and event coverage, as well as short-form and long-form content for social media and online platforms - all aligned with your communication goals and visual identity
+              </p>
+            </div>
+          </div>
+
+          <div class="service-section__grid">
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.video.step.commercial.title">
+                Music Videos
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.video.step.commercial.text">
+                High-quality videos for artists that bring songs to life with visuals, storytelling and professional production
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.video.step.social.title">
+                Advertising
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.video.step.social.text">
+                Brand and product videos delivering clear message, creative approach, boosting attention and sales
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.video.step.aftermovies.title">
+                Commercial Shoots
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.video.step.aftermovies.text">
+                Event recap videos of conferences, corporate events and production where you need a clean and professional footage
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.video.step.product.title">
+                Concert Videos
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.video.step.product.text">
+                Dynamic and creative stage and live-show recordings with strong editing and atmosphere delivery
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.video.step.content.title">
+                Content Creation
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.video.step.content.text">
+                Short-form and long-form content for social media and online platforms - structured, consistent, creative and relevant
+              </p>
+            </article>
+          </div>
+
+          <button
+            class="service-section__cta js-service-contact"
+            data-service="video"
+            data-section="Video Production"
+            type="button"
+          >
+            <span data-i18n="services.cta">MAKE A REQUEST</span>
+          </button>
+
+        </div>
+      </section>
+
+      <!-- ================== DESIGN & IT ================== -->
+      <section class="service-section" id="service-design" data-service="design">
+        <div class="service-section__inner">
+
+          <div class="service-section__top">
+            <div class="service-section__media" data-contact-trigger data-service="design">
+              <img src="/assets/photo/services/digital.JPEG" alt="Design &amp; IT">
+            </div>
+
+            <div class="service-section__intro">
+              <h2 class="service-section__title" data-i18n="services.design.title">
+                Design &amp; IT
+              </h2>
+              <p class="service-section__text" data-i18n="services.design.description">
+                Visual communication and development services, covering brand identity from scratch, re-branding, campaign design, visual systems, and cohesive brand elements that clearly represent your brand. We design and maintain websites and web applications across both frontend and backend, ensuring performance, reliability, and scalability. In addition, we develop custom digital tools and applications personalised to your product, workflow, or internal operational needs
+              </p>
+            </div>
+          </div>
+
+          <div class="service-section__grid">
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.design.step.brandIdentity.title">
+                Brand Identity
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.design.step.brandIdentity.text">
+                Logos, visual systems and brand elements that express your brand
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.design.step.websitesApps.title">
+                Web Development
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.design.step.websitesApps.text">
+                We build and maintain websites and web apps, from frontend to backend
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.design.step.uxui.title">
+                Applications
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.design.step.uxui.text">
+                Custom digital solutions and apps build around your product or internal needs
+              </p>
+            </article>
+          </div>
+
+          <button
+            class="service-section__cta js-service-contact"
+            data-service="design"
+            data-section="Design & IT"
+            type="button"
+          >
+            <span data-i18n="services.cta">MAKE A REQUEST</span>
+          </button>
+
+        </div>
+      </section>
+
+      <!-- ================== MARKETING ================== -->
+      <section class="service-section" id="service-marketing" data-service="marketing">
+        <div class="service-section__inner">
+
+          <div class="service-section__top">
+            <div class="service-section__media" data-contact-trigger data-service="marketing">
+              <img src="/assets/photo/services/marketing_prod.JPEG" alt="Marketing">
+            </div>
+
+            <div class="service-section__intro">
+              <h2 class="service-section__title" data-i18n="services.marketing.title">
+                Marketing
+              </h2>
+              <p class="service-section__text" data-i18n="services.marketing.description">
+                Brand positioning and content services, covering strategy, creative concepts, production, and targeted communication designed to elevate your brand and drive measurable growth. We support personal brands - including creators, bloggers, and public figures - with structured marketing, content strategy, collaborations with brands and other creators. In addition, we maintain and grow social platforms through consistent daily content, scheduled posting, visual development, and ongoing communication management for an active and cohesive online presence
+              </p>
+            </div>
+          </div>
+
+          <div class="service-section__grid">
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.marketing.step.strategy.title">
+                Comprehensive Services
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.marketing.step.strategy.text">
+                Strategy, fresh ideas, production and targeting to elevate your brand and move it to the next level
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.marketing.step.performance.title">
+                Personal Brands
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.marketing.step.performance.text">
+                Marketing, content strategy and high-quality production for creators, bloggers and public figures
+              </p>
+            </article>
+
+            <article class="service-highlight">
+              <h3 class="service-highlight__title" data-i18n="services.marketing.step.content.title">
+                Maintaining Platforms
+              </h3>
+              <p class="service-highlight__text" data-i18n="services.marketing.step.content.text">
+                Daily content, posting, structured content plan, visuals, and communication that keeps your social platforms active and consistent
+              </p>
+            </article>
+          </div>
+
+          <button
+            class="service-section__cta js-service-contact"
+            data-service="marketing"
+            data-section="Marketing"
+            type="button"
+          >
+            <span data-i18n="services.cta">MAKE A REQUEST</span>
+          </button>
+
+        </div>
+      </section>
+
+    </div>
+  </section>
+</main>
+
+
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <!-- BRAND: логотип + соцсети -->
+    <div class="footer-col footer-col--brand">
+      <div class="footer-logo-wrap">
+        <img src="/assets/logo/footer_logo.png" alt="CyberON Production" class="footer-logo" />
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/cyberon_prod?igsh=bXMyZ29xaGt5dHpq" class="footer-social__link" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" class="footer-social__link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+
+    <!-- CONTACT -->
+    <div class="footer-col footer-col--contact">
+      <div class="footer-title" data-i18n="footer.contact.title">
+        Contact
+      </div>
+      <div class="footer-contact">
+        <!-- телефон и email можно не переводить -->
+        <a href="tel:+420777956775" class="footer-link">+420 777 956 775</a>
+        <a href="mailto:info@cyber-on.net" class="footer-link">info@cyber-on.net</a>
+        <a
+          href="https://maps.google.com/?q=Hradec+25%2C+281+63+St%C5%99%C3%ADbrn%C3%A1+Skalice"
+          target="_blank"
+          rel="noopener"
+          class="footer-link"
+          data-i18n="footer.contact.address">
+          Hradec 25, 281 63 Stříbrná Skalice
+        </a>
+      </div>
+    </div>
+
+    <!-- CONSULTATION FORM -->
+    <div class="footer-col footer-col--form">
+      <div class="footer-title" data-i18n="footer.form.title">
+        Consultation?
+      </div>
+
+      <form
+        id="footer-consult-form"
+        class="footer-form"
+        autocomplete="off"
+        novalidate>
+
+        <div class="footer-form__row">
+          <input
+            type="email"
+            name="email"
+            class="footer-form__input"
+            placeholder="you@example.com"
+            data-i18n-placeholder="footer.form.placeholder"
+            required/>
+          <button
+            type="submit"
+            class="footer-form__btn"
+            aria-label="Request consultation"
+            data-i18n-aria-label="footer.form.ariaLabel">
+            →
+          </button>
+        </div>
+        <p class="footer-form__message" id="footer-consult-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <a href="privacy.html" class="footer-copy footer-copy__link" data-i18n="footer.copyright.text">
+      © 2025 CyberON. All Rights Reserved.
+    </a>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="/source/js/main.js" defer></script>
+  <script src="/source/js/services.js" defer></script>
+
+  <!-- CONTACT MODAL -->
+<div class="contact-modal" id="contact-modal" aria-hidden="true">
+  <div class="contact-modal__backdrop"></div>
+
+  <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+
+    <button type="button" class="contact-modal__close" aria-label="Close">×</button>
+
+    <div class="contact-modal__header">
+      <h2 id="contact-modal-title" data-i18n="modal.contact.title">LET’S TALK ABOUT YOUR PROJECT</h2>
+      <p class="contact-modal__subtitle" data-i18n="modal.contact.subtitle">
+        Leave your contacts and we’ll get back to you with next steps.
+      </p>
+      <p class="contact-modal__context" id="contact-modal-context">
+        <!-- JS вставляет название услуги -->
+      </p>
+    </div>
+
+    <form id="contact-modal-form" class="contact-modal__form" novalidate>
+
+      <input type="hidden" name="clickedService" id="contact-modal-service">
+      <input type="hidden" name="clickedSection" id="contact-modal-section">
+
+      <div class="contact-modal__row">
+        <input type="text" name="name" placeholder="Name*" required data-i18n-placeholder="modal.form.name">
+      </div>
+
+      <div class="contact-modal__row contact-modal__row--two">
+        <input type="tel" name="phone" placeholder="Phone*" required data-i18n-placeholder="modal.form.phone">
+        <input type="email" name="email" placeholder="Email*" required data-i18n-placeholder="modal.form.email">
+      </div>
+
+      <div class="contact-modal__row">
+        <select name="service" required data-i18n-select="modal.form.select">
+          <option value="" data-i18n="modal.form.service">Service*</option>
+          <option value="Event Production" data-i18n="services.events.title"></option>
+          <option value="Video Production" data-i18n="services.video.title"></option>
+          <option value="Design & IT" data-i18n="services.design.title"></option>
+          <option value="Marketing Services" data-i18n="services.marketing.title"></option>
+        </select>
+      </div>
+
+      <div class="contact-modal__row">
+        <textarea name="message" rows="4" required placeholder="Message*" data-i18n-placeholder="modal.form.message"></textarea>
+      </div>
+
+      <div class="contact-modal__row contact-modal__row--checkbox">
+        <label class="contact-modal__checkbox">
+          <input type="checkbox" name="human" required>
+          <span data-i18n="modal.form.robot">I am not a robot</span>
+        </label>
+      </div>
+
+      <div class="contact-modal__row contact-modal__row--actions">
+        <button type="submit" class="contact-modal__submit" data-i18n="modal.form.submit">
+          Send request
+        </button>
+      </div>
+
+      <p class="contact-modal__message" id="contact-modal-message"></p>
+    </form>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="contact-modal contact-modal--success" id="contact-success-modal" aria-hidden="true">
+  <div class="contact-modal__backdrop"></div>
+
+  <div class="contact-modal__dialog contact-modal__dialog--success" role="dialog" aria-modal="true" aria-labelledby="contact-success-title">
+
+    <button type="button" class="contact-modal__close contact-success__close" aria-label="Close">×</button>
+
+    <div class="contact-modal__header contact-modal__header--center">
+      <h2 id="contact-success-title" data-i18n="modal.success.title">Thank you</h2>
+      <p class="contact-modal__subtitle" data-i18n="modal.success.subtitle">
+        We’ll contact you as soon as possible.
+      </p>
+    </div>
+
+    <div class="contact-modal__row contact-modal__row--actions">
+      <button type="button" class="contact-modal__submit contact-success__button" data-i18n="modal.success.button">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

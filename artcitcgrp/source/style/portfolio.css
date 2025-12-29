@@ -1,0 +1,356 @@
+/* ====== PROJECT BASE ====== */
+
+.project {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ====== HERO ====== */
+
+.project-hero {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  max-height: 640px;
+  overflow: hidden;
+}
+
+.project-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+}
+
+.project-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center; /* NEW: центр по горизонтали */
+}
+
+.project-hero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: #ffffff;
+  transform: translateY(-6%); /* подгони, чтобы текст лег ровно на ТВ */
+  text-align: center;         /* NEW: центрируем текст */
+}
+
+.project-hero__label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.project-hero__title {
+  margin: 0 0 16px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.project-hero__meta {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.project-hero__meta span + span::before {
+  content: "•";
+  margin: 0 10px;
+}
+
+/* ====== GALLERY 1–2–1–МОЗАИКА ====== */
+
+.project-gallery {
+  padding: 40px 0 30px;
+  background-color: #fafafa;
+}
+
+.project-gallery__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* общие настройки для строк */
+.project-gallery__row img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* 1 большая */
+.project-gallery__row--full img {
+  max-height: 640px;
+}
+
+/* 2 рядом */
+.project-gallery__row--two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-gallery__row--two img {
+  max-height: 590px;
+}
+
+/* МОЗАИКА: слева 2 в столбик, справа 1 высокая */
+.project-gallery__row--mosaic {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+/* левая колонка — две фотки в столбик */
+.project-gallery__col--stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+
+}
+
+.project-gallery__col--stack img {
+  height: 360px;
+}
+
+/* правая — одна высокая, по высоте как две слева с отступами */
+.project-gallery__col--tall img {
+  height: 748px;
+}
+
+.project-gallery__row img:hover {
+  transform: scale(1.03);
+}
+
+/* ====== CTA ====== */
+
+.project-cta {
+  padding: 64px 0;
+  background: #f2f2f2; /* отличаем секцию от белого фона */
+}
+
+.project-cta__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 32px 28px;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-cta__text h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.project-cta__text p {
+  margin: 0;
+  font-size: 15px;
+  color: #555555;
+}
+
+/* базовый стиль CTA-кнопок */
+
+.project-cta__actions {
+  display: flex;
+  justify-content: center;   /* ЦЕНТР по горизонтали */
+  align-items: center;       /* выравниваем по вертикали */
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.project-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease, color 0.25s ease,
+    transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+
+/* основная кнопка — чёрный крупный акцент */
+.project-cta__btn--primary {
+  background-color: #111111;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.project-cta__btn--primary:hover {
+  background-color: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.32);
+}
+
+/* вторичная — светлая, но заметная */
+.project-cta__btn--ghost {
+  background-color: #f7f7f7;
+  color: #111111;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.project-cta__btn--ghost:hover {
+  background-color: #ececec;
+  transform: translateY(-1px);
+}
+
+/* адаптив */
+
+@media (max-width: 768px) {
+  .project-cta__inner {
+    padding: 24px 20px 22px;
+    border-radius: 22px;
+  }
+
+  .project-cta__text h2 {
+    font-size: 22px;
+  }
+}
+
+/* ====== DALŠÍ PROJEKTY ====== */
+
+.project-related {
+  padding: 20px 0 60px;
+  background-color: #ffffff;
+}
+
+.project-related__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.project-related__inner h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+}
+
+.project-related__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card__body {
+  padding: 14px 16px 16px;
+}
+
+.project-card__body h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.project-card__body p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* ====== ADAPTIVE ====== */
+
+@media (max-width: 960px) {
+  .project-hero {
+    min-height: 420px;
+  }
+
+  .project-hero__title {
+    font-size: 32px;
+  }
+
+  .project-related__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero {
+    min-height: 380px;
+  }
+
+  .project-hero__inner {
+    padding-inline: 16px;
+    transform: translateY(0);
+  }
+
+  .project-gallery__inner,
+  .project-cta__inner,
+  .project-related__inner {
+    padding-inline: 16px;
+  }
+
+  .project-gallery__row--two,
+  .project-gallery__row--mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .project-related__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .project-hero {
+    min-height: 340px;
+  }
+
+  .project-hero__title {
+    font-size: 26px;
+  }
+}

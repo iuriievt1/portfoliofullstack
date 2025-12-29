@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="privacy.metaTitle">CyberON – Privacy & Cookies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/source/style/style.css">
+
+  <style>
+    @font-face {
+      font-family: 'DrukWide';
+      src: url('/assets/fonts/DrukWide/DrukWideBold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Helony';
+      src: url('/assets/fonts/Helony/Helony.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --bg-main: #2c2a2b;
+      --accent: #621fff;
+      --text-main: #e5e5e1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Helony', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .privacy-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .privacy-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    .privacy-hero {
+      margin-bottom: 32px;
+      border-bottom: 1px solid rgba(229, 229, 225, 0.15);
+      padding-bottom: 20px;
+    }
+
+    .privacy-hero__label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin: 0 0 10px;
+    }
+
+    .privacy-hero__title {
+      margin: 0 0 10px;
+      font-family: 'DrukWide', sans-serif;
+      font-size: 26px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .privacy-hero__subtitle {
+      margin: 0 0 12px;
+      font-size: 14px;
+      opacity: 0.9;
+      max-width: 640px;
+    }
+
+    .privacy-hero__meta {
+      margin: 0;
+      font-size: 11.5px;
+      opacity: 0.7;
+    }
+
+    .privacy-hero__meta span {
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    .privacy-section {
+      margin-bottom: 32px;
+    }
+
+    .privacy-section__title {
+      margin: 0 0 10px;
+      font-family: 'DrukWide', sans-serif;
+      font-size: 15px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .privacy-section__text {
+      margin: 0 0 10px;
+      font-size: 13px;
+      line-height: 1.6;
+      opacity: 0.96;
+    }
+
+    .privacy-section__list {
+      margin: 6px 0 10px 18px;
+      padding: 0;
+      font-size: 13px;
+      line-height: 1.6;
+      opacity: 0.96;
+    }
+
+    .privacy-section__list li {
+      margin-bottom: 4px;
+    }
+
+    .privacy-columns {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 32px;
+      margin-top: 10px;
+    }
+
+    .privacy-card {
+      border: 1px solid rgba(229, 229, 225, 0.18);
+      border-radius: 18px;
+      padding: 16px 18px 18px;
+      background: rgba(12, 12, 12, 0.3);
+      backdrop-filter: blur(14px);
+    }
+
+    .privacy-card__title {
+      margin: 0 0 8px;
+      font-family: 'DrukWide', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .privacy-card__item {
+      margin: 0 0 4px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .privacy-card__item span {
+      opacity: 0.7;
+    }
+
+    .privacy-note {
+      margin-top: 8px;
+      font-size: 11.5px;
+      opacity: 0.65;
+    }
+
+    .privacy-footer {
+      margin-top: auto;
+      border-top: 1px solid rgba(229, 229, 225, 0.12);
+    }
+
+    .privacy-footer__inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 14px 24px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 11.5px;
+      opacity: 0.75;
+    }
+
+    .privacy-footer__brand {
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-family: 'DrukWide', sans-serif;
+      font-size: 11px;
+    }
+
+    .privacy-footer__links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 768px) {
+      .privacy-wrapper {
+        padding: 40px 18px 52px;
+      }
+
+      .privacy-hero__title {
+        font-size: 22px;
+        letter-spacing: 0.14em;
+      }
+
+      .privacy-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .privacy-footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .privacy-wrapper {
+        padding: 32px 14px 44px;
+      }
+
+      .privacy-hero__title {
+        font-size: 20px;
+        letter-spacing: 0.12em;
+      }
+
+      .privacy-section__title {
+        font-size: 14px;
+        letter-spacing: 0.16em;
+      }
+
+      .privacy-card {
+        padding: 14px 14px 16px;
+        border-radius: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo" aria-label="CyberON - Home">
+        <img src="/assets/logo/Web_logo.png" alt="CyberON logo" />
+      </a>
+      <!-- LANGUAGE SWITCHER -->
+      <div class="lang-switcher" data-lang="en">
+        <button class="lang-switcher__toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-switcher__current">EN</span>
+          <span class="lang-switcher__icon">▾</span>
+        </button>
+        <ul class="lang-switcher__menu" aria-label="Select language">
+          <li>
+            <button class="lang-switcher__option" type="button" data-lang="en">
+              EN
+            </button>
+          </li>
+          <li>
+            <button class="lang-switcher__option" type="button" data-lang="cs">
+              CZ
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="privacy-page">
+    <main class="privacy-wrapper">
+      <header class="privacy-hero">
+        <h1 class="privacy-hero__title" data-i18n="privacy.title">
+          PRIVACY & COOKIES
+        </h1>
+        <p class="privacy-hero__subtitle" data-i18n="privacy.subtitle">
+          This page explains how CyberON processes personal data and uses cookies on cyber-on.net and related project pages.
+        </p>
+        <p class="privacy-hero__meta">
+          <span data-i18n="privacy.lastUpdatedLabel">Last updated:</span>
+          <span data-i18n="privacy.lastUpdatedDate">December 8, 2025</span>
+        </p>
+      </header>
+
+      <!-- 1. OVERVIEW -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.overview.heading">
+          1. OVERVIEW
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.overview.body1">
+          This Privacy & Cookies Policy describes how CyberON s.r.o. (“CyberON”, “we”, “us”) collects, uses, stores and protects personal data in connection with our website, marketing, client projects and communication.
+        </p>
+        <p class="privacy-section__text" data-i18n="privacy.sections.overview.body2">
+          We process personal data in accordance with applicable data-protection legislation, in particular the General Data Protection Regulation (GDPR) and relevant Czech law.
+        </p>
+        <p class="privacy-section__text" data-i18n="privacy.sections.overview.body3">
+          This document focuses especially on the use of cookies and similar technologies on our website and explains how you can manage your preferences.
+        </p>
+      </section>
+
+      <!-- 2. DATA CONTROLLER -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.controller.heading">
+          2. DATA CONTROLLER
+        </h2>
+
+        <div class="privacy-columns">
+          <div>
+            <p class="privacy-section__text" data-i18n="privacy.sections.controller.body">
+              The controller of your personal data is:
+            </p>
+            <div class="privacy-card">
+              <p class="privacy-card__title" data-i18n="privacy.sections.controller.cardTitle">
+                CYBERON S.R.O.
+              </p>
+              <p class="privacy-card__item" data-i18n="privacy.sections.controller.company">
+                Company ID (IČ): 23263211
+              </p>
+              <p class="privacy-card__item" data-i18n="privacy.sections.controller.address">
+                Address: Hradec 25, 281 63 Stříbrná Skalice, Czech Republic
+              </p>
+              <p class="privacy-card__item" data-i18n="privacy.sections.controller.email">
+                E-mail: info@cyber-on.net
+              </p>
+              <p class="privacy-card__item" data-i18n="privacy.sections.controller.phone">
+                Phone: +420 777 956 775
+              </p>
+              <p class="privacy-card__item" data-i18n="privacy.sections.controller.web">
+                Website: cyber-on.net
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. WHAT DATA WE PROCESS -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.data.heading">
+          3. WHAT DATA WE PROCESS
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.data.body1">
+          The scope of data we process depends on how you interact with us and our website. Typically, it includes:
+        </p>
+        <ul class="privacy-section__list">
+          <li data-i18n="privacy.sections.data.item1">
+            Identification and contact details – such as your name, e-mail, phone number, company and role, if you provide them in a form or communication.
+          </li>
+          <li data-i18n="privacy.sections.data.item2">
+            Communication content – messages you send us via forms, e-mail or other channels, including project briefs and notes.
+          </li>
+          <li data-i18n="privacy.sections.data.item3">
+            Technical and analytical data – IP address, browser type, device information, approximate location (city/country), pages visited and interactions with the website, collected via cookies and similar technologies.
+          </li>
+          <li data-i18n="privacy.sections.data.item4">
+            Contractual and billing data – if you become our client or supplier, we may process data necessary to perform the contract (billing details, contract history, project information).
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. PURPOSES & LEGAL BASES -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.purposes.heading">
+          4. PURPOSES & LEGAL BASES
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.purposes.body1">
+          We process personal data only when we have a valid legal basis and a clear purpose. The main purposes are:
+        </p>
+        <ul class="privacy-section__list">
+          <li data-i18n="privacy.sections.purposes.item1">
+            Website operation and security – necessary cookies and technical data required to display the site correctly, maintain performance and protect against abuse (legitimate interest / necessity for service).
+          </li>
+          <li data-i18n="privacy.sections.purposes.item2">
+            Analytics and improvement – optional cookies to understand how visitors use the site and to refine content, structure and performance (your consent).
+          </li>
+          <li data-i18n="privacy.sections.purposes.item3">
+            Communication and project requests – processing your contact details and messages to respond to your inquiries, prepare offers and manage cooperation (performance of a contract or steps prior to entering into a contract).
+          </li>
+          <li data-i18n="privacy.sections.purposes.item4">
+            Marketing communication – where permitted, we may send you relevant information about our services, events or projects (consent or legitimate interest, depending on the situation and applicable law).
+          </li>
+        </ul>
+      </section>
+
+      <!-- 5. COOKIES -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.cookies.heading">
+          5. COOKIES & SIMILAR TECHNOLOGIES
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.cookies.body1">
+          Cookies are small text files stored on your device when you visit our website. They help us ensure basic functionality, security and a better user experience.
+        </p>
+        <p class="privacy-section__text" data-i18n="privacy.sections.cookies.body2">
+          We typically use the following categories of cookies:
+        </p>
+        <ul class="privacy-section__list">
+          <li data-i18n="privacy.sections.cookies.item1">
+            Essential / necessary cookies – required for the website to function properly (e.g., security, cookie banner settings, technical operation). These cannot be disabled via our banner.
+          </li>
+          <li data-i18n="privacy.sections.cookies.item2">
+            Analytical / performance cookies – help us understand how visitors use the website, which pages are visited most and how we can improve the structure and content.
+          </li>
+          <li data-i18n="privacy.sections.cookies.item3">
+            Functional or preference cookies – remember your choices (such as language settings) to make your experience more comfortable.
+          </li>
+        </ul>
+        <p class="privacy-section__text" data-i18n="privacy.sections.cookies.body3">
+          Non-essential cookies (such as analytics) are used only based on your consent, which you can give or refuse via the cookie banner. You can also change your browser settings to manage or block cookies.
+        </p>
+      </section>
+
+      <!-- 6. COOKIE BANNER & PREFERENCES -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.banner.heading">
+          6. COOKIE BANNER & PREFERENCES
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.banner.body1">
+          When you first visit our website, you will see a cookie banner. You can:
+        </p>
+        <ul class="privacy-section__list">
+          <li data-i18n="privacy.sections.banner.item1">
+            Accept all cookies – including analytical cookies for better statistics and optimisation.
+          </li>
+          <li data-i18n="privacy.sections.banner.item2">
+            Allow only essential cookies – the website will function, but some measurement and optimisation features may be limited.
+          </li>
+        </ul>
+        <p class="privacy-section__text" data-i18n="privacy.sections.banner.body2">
+          Your choice is stored in your browser using a technical cookie. If you clear cookies or use another browser or device, the banner may be shown again.
+        </p>
+      </section>
+
+      <!-- 7. DATA RETENTION -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.retention.heading">
+          7. DATA RETENTION
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.retention.body1">
+          We retain personal data only for as long as necessary for the purposes for which it was collected, or for the period required by law.
+        </p>
+        <p class="privacy-section__text" data-i18n="privacy.sections.retention.body2">
+          The specific retention period depends on the type of data and context (e.g., project documentation, contracts, accounting records). After the relevant period expires, data is securely deleted or anonymised.
+        </p>
+      </section>
+
+      <!-- 8. SHARING DATA -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.sharing.heading">
+          8. SHARING PERSONAL DATA
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.sharing.body1">
+          We do not sell your personal data. However, in some cases we may share it with:
+        </p>
+        <ul class="privacy-section__list">
+          <li data-i18n="privacy.sections.sharing.item1">
+            Trusted service providers – such as hosting providers, analytics tools, e-mail and communication platforms, who process data on our behalf and under a data-processing agreement.
+          </li>
+          <li data-i18n="privacy.sections.sharing.item2">
+            Professional advisors – such as accountants or legal advisors, where necessary to comply with legal obligations or to defend our rights.
+          </li>
+          <li data-i18n="privacy.sections.sharing.item3">
+            Public authorities – where we are legally obliged to disclose certain data (for example, to tax or supervisory authorities, courts or law enforcement).
+          </li>
+        </ul>
+        <p class="privacy-section__text" data-i18n="privacy.sections.sharing.body2">
+          If data is transferred outside the EU/EEA, we will ensure an appropriate level of protection in accordance with GDPR (e.g., standard contractual clauses or equivalent safeguards).
+        </p>
+      </section>
+
+      <!-- 9. YOUR RIGHTS -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.rights.heading">
+          9. YOUR RIGHTS
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.rights.body1">
+          As a data subject, you have a number of rights under GDPR. In particular:
+        </p>
+        <ul class="privacy-section__list">
+          <li data-i18n="privacy.sections.rights.item1">
+            Right of access – to obtain confirmation whether we process your data and, if so, information about the processing and a copy of the data.
+          </li>
+          <li data-i18n="privacy.sections.rights.item2">
+            Right to rectification – to have inaccurate or incomplete personal data corrected.
+          </li>
+          <li data-i18n="privacy.sections.rights.item3">
+            Right to erasure – in certain cases, to have your personal data deleted.
+          </li>
+          <li data-i18n="privacy.sections.rights.item4">
+            Right to restriction of processing – in specific situations, to limit how we use your data.
+          </li>
+          <li data-i18n="privacy.sections.rights.item5">
+            Right to object – in particular where processing is based on legitimate interest or for direct marketing.
+          </li>
+          <li data-i18n="privacy.sections.rights.item6">
+            Right to data portability – for data processed by automated means based on your consent or contract, to receive it in a structured, commonly used, machine-readable format.
+          </li>
+          <li data-i18n="privacy.sections.rights.item7">
+            Right to withdraw consent – where processing is based on consent, you may withdraw it at any time, without affecting the lawfulness of processing before withdrawal.
+          </li>
+        </ul>
+        <p class="privacy-section__text" data-i18n="privacy.sections.rights.body2">
+          You can exercise your rights by contacting us at info@cyber-on.net. We may need to verify your identity before fulfilling certain requests.
+        </p>
+        <p class="privacy-section__text" data-i18n="privacy.sections.rights.body3">
+          If you believe your rights have been violated, you also have the right to lodge a complaint with the Office for Personal Data Protection (Úřad pro ochranu osobních údajů) or another competent supervisory authority.
+        </p>
+      </section>
+
+      <!-- 10. CHANGES TO THIS POLICY -->
+      <section class="privacy-section">
+        <h2 class="privacy-section__title" data-i18n="privacy.sections.changes.heading">
+          10. CHANGES TO THIS POLICY
+        </h2>
+        <p class="privacy-section__text" data-i18n="privacy.sections.changes.body1">
+          We may update this Privacy & Cookies Policy from time to time to reflect changes in our processing activities, legal requirements or website features.
+        </p>
+        <p class="privacy-section__text" data-i18n="privacy.sections.changes.body2">
+          The current version is always available on this page. If the changes are significant, we may also inform you in another appropriate way (for example via a notice on the website).
+        </p>
+        <p class="privacy-note" data-i18n="privacy.sections.changes.disclaimer">
+          This document is intended to provide transparent information about how we handle personal data and cookies. It does not constitute legal advice.
+        </p>
+      </section>
+    </main>
+
+    <footer class="privacy-footer">
+      <div class="privacy-footer__inner">
+        <div class="privacy-footer__brand">
+          CYBERON
+        </div>
+        <div class="privacy-footer__links">
+          <span data-i18n="privacy.footer.copyright">
+            © CyberON s.r.o. All rights reserved.
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

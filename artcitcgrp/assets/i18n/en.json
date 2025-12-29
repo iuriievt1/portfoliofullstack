@@ -1,0 +1,930 @@
+{
+
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "card1": {
+      "title": "Rebuild & Construction",
+      "text": "Complete reconstruction and construction of homes and businesses"
+    },
+    "card2": {
+      "title": "Design & Architecture",
+      "text": "Professional interior and exterior design with a focus on aesthetics and detail"
+    },
+    "card3": {
+      "title": "Turnkey Projects",
+      "text": "Complete project delivery from design to final handover"
+    },
+    "button": "More"
+  },
+  "footer": {
+    "company": "Arctic Group s.r.o.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "emailLabel": "E-mail:",
+    "email": "info@arcticgrp.com",
+    "addressLabel": "Address:",
+    "address": "Dostalové 1283/8, Prague 5",
+    "madeByPrefix": "Made by",
+    "rights": "All Rights Reserved",
+    "form": {
+      "title": "Get a consultation",
+      "success": "We will contact you within 24 hours."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "card1": {
+      "title": "Construction"
+    },
+    "card2": {
+      "title": "Design & Architecture"
+    },
+    "card3": {
+      "title": "Turnkey Projects"
+    },
+    "button": "See More"
+  },
+  "about": {
+    "title": "A collective of specialists delivering true turnkey projects",
+    "text": "We are a team of narrowly focused professionals working under one roof. Each expert owns a dedicated domain: design, engineering, finishing, furnishing, smart systems, cleaning, and logistics. With years of handson experience, we operate as a perfectly coordinated unit: we design, build, equip, connect, clean, and hand over a movein ready space - just like checking into a hotel.",
+    "why": {
+      "title": "Why it feels effortless",
+      "item1": "One Contract and Clear Timeline",
+      "item2": "Transparent Estimates and Quality Control",
+      "item3": "Reliable Deadlines",
+      "item4": "Afterhandover Support"
+    },
+    "cta": {
+      "title": "Book a Consultation",
+      "button": "Book a Consultation"
+    },
+      "modal": {
+        "title": "Get a consultation",
+        "phoneLabel": "Phone",
+        "emailLabel": "E-mail",
+        "topicLabel": "Topic",
+        "topic1": "Reconstruction/Construction",
+        "topic2": "Design & Architecture",
+        "topic3": "Turnkey Projects",
+        "topic4": "Other Topic",
+        "otherPlaceholder": "Briefly describe your topic",
+        "submit": "Send",
+        "required": "Please fill in all required fields.",
+        "success": "Thank you, we will contact you soon.",
+        "error": "Something went wrong, please try again."
+      }
+    },
+  "construction": {
+    "title": "Construction",
+
+    "tag": {
+      "vzt": "HVAC",
+      "zti": "Water & Sanitary",
+      "elektro": "Electrical"
+    },
+
+    "benefits": {
+      "title": "Why work with us",
+      "item1": {
+        "title": "Integrated Technical Solutions",
+        "text": "Integrated construction & tech: HVAC, electrical, automation, interiors - no downtime."
+      },
+      "item2": {
+        "title": "Transparent Process and Timelines",
+        "text": "A clear schedule, open communication and continuous quality control at every stage of the project."
+      },
+      "item3": {
+        "title": "Long-Term Service",
+        "text": "We provide warranty and post-warranty service, regular maintenance and system optimisation."
+      }
+    },
+
+    "services": {
+      "vzt": {
+        "title": "HVAC - Ventilation Systems"
+      },
+
+      "revitalizace": {
+        "title": "Revitalization of Apartment Buildings"
+      },
+
+      "zti": {
+        "title": "ZTI - Water & Sewer"
+      },
+      "elektro": {
+        "title": "Electrical Installation"
+      },
+      "priject": {
+        "title":
+        "Project Design"
+       },
+       "reconstruction": {
+        "title":
+        "Complex Reconstruction"
+      },
+      "facades": {
+        "title":
+        "Facades & Insulation"
+      },
+      "technologies": {
+        "title":
+        "Smart Technologies"
+      },
+      "technic": {
+        "title":
+        "Technical Supervision"
+      },
+      "button": "See More"
+    },
+
+    "process": {
+      "title": "How we work",
+      "step1": "Audit",
+      "step2": "Design",
+      "step3": "Supply",
+      "step4": "Installation",
+      "step5": "Commissioning",
+      "step6": "Handover",
+      "step7": "Service"
+    },
+
+    "faq": {
+      "title": "FAQ – frequently asked questions",
+      "q1": "What are the typical project timelines?",
+      "a1": "The schedule depends on the scope of the project. Smaller jobs usually take a few weeks, complex buildings several months. We always prepare a clear timeline and keep you updated on progress.",
+      "q2": "How do you deal with noise and dust during works?",
+      "a2": "We use modern equipment, coverings and extraction to minimise disruption. We also plan work phases so that the impact on people using the building is as small as possible.",
+      "q3": "What warranties and service do you provide?",
+      "a3": "We provide standard warranties on supplied equipment and installation works, and we also offer long-term service – regular maintenance, inspections and performance optimisation.",
+      "q4": "Can you join an already running project?",
+      "a4": "Yes, we can take over existing documentation and a project that is already under construction. We start with an audit of the current state and propose an optimal completion plan."
+    },
+
+    "cta": {
+      "title": "Get a Consultation",
+      "button": "Get a Consultation"
+    }
+  },
+  "contact": {
+    "title": "Get in touch with us",
+
+    "form": {
+      "emailLabel": "E-mail",
+      "phoneLabel": "Phone",
+      "nameLabel": "Name",
+      "companyLabel": "Company (optional)",
+      "serviceLabel": "Service",
+
+      "servicePlaceholder": "Select a Service",
+      "serviceConstruction": "Construction",
+      "serviceDesign": "Design & Architecture",
+      "serviceTurnkey": "Turnkey Projects",
+
+      "subservicesLabel": "Details within construction (optional)",
+      "subVentilation": "Ventilation & Air Conditioning",
+      "subWater": "Water & Sanitary Installations",
+      "subElectro": "Electrical Installation",
+
+      "messageLabel": "Message",
+      "notRobot": "I am not a robot",
+      "privacy": "I agree with the processing of my personal data.",
+      "submit": "Send",
+
+      "required": "Please fill in all required fields.",
+      "success": "Thank you, your message has been sent.",
+      "error": "Something went wrong, please try again."
+    },
+
+    "mapTitle": "Where to find us"
+  },
+  "vzt": {
+    "title": "HVAC & Ventilation",
+
+    "text": {
+      "main": "Breathe fresh, quiet, energyefficient air. We design and install central ventilation, airconditioning and heatrecoveryfor homes and commercial spaces. We finetune the system, choose lownoise units and set up smart control with CO₂/humiditybased scenarios."
+    },
+
+    "services": {
+      "title": "What we do",
+
+      "card1": {
+        "title": "Analysis and Design",
+        "item1": "Audit and calculation of airflows for individual rooms.",
+        "item2": "HVAC design (routing, sizing, noise attenuation and system balancing)."
+      },
+
+      "card2": {
+        "title": "Supply and Installation",
+        "item1": "Selection and delivery of equipment (air handling units, fan coils, split units, heat recovery units).",
+        "item2": "Installation of ductwork and insulation, commissioning, measurement and balancing."
+      },
+
+      "card3": {
+        "title": "Smart Control and Service",
+        "item1": "Integration with smart home systems (control by CO₂, humidity and temperature).",
+        "item2": "Service and regular professional maintenance for long-term reliable operation."
+      }
+    },
+
+    "benefits": {
+      "title": "Client Benefits",
+      "item1": "Quiet Operation Without Noise.",
+      "item2": "Even Airflow Without Draughts.",
+      "item3": "Balanced Indoor Climate.",
+      "item4": "Reduced Energy Costs."
+    },
+
+    "cta": {
+      "title": "Get a Consultation",
+      "button": "Calculate the Cost"
+    }
+  },
+  "zti": {
+    "title": "Water Supply, Drainage & Sanitary",
+
+    "text": {
+      "main": "We design and install internal water and sewer systems, turnkey bathrooms, and leak protection. Quiet risers, proper slopes, pressure tests, and inspections."
+    },
+
+    "services": {
+      "title": "What we do",
+
+      "card1": {
+        "title": "Design and Pipework",
+        "item1": "ZTI design (risers, routes, pipe sizing, slopes).",
+        "item2": "Hot & cold water with recirculation."
+      },
+
+      "card2": {
+        "title": "Sewer and bathrooms",
+        "item1": "Sewer systems and acoustic insulation of risers.",
+        "item2": "Turnkey bathrooms: fixtures & installation."
+      },
+
+      "card3": {
+        "title": "Protection and tests",
+        "item1": "Leak protection; filter/treatment prep.",
+        "item2": "Pressure tests, hidden-works docs, handover."
+      }
+    },
+
+    "benefits": {
+      "title": "Client benefits",
+      "item1": "Quiet operation and clean detailing.",
+      "item2": "Stable water pressure in the system.",
+      "item3": "Protection against leaks and damage.",
+      "item4": "Ready for future service and upgrades."
+    },
+
+    "cta": {
+      "title": "Get a Consultation",
+      "button": "Calculate the Cost"
+    }
+  },
+  "elektro": {
+    "title": "Electrical installation",
+
+    "text": {
+      "main": "Power and lowvoltage done safe, scalable and neat. We deliver distribution boards, lighting design, outlets and appliance feeds, EV charging readiness, data/CCTV/alarm/entry systems and smart home integration."
+    },
+
+    "services": {
+      "title": "What we do",
+
+      "card1": {
+        "title": "Design and Power Supply",
+        "item1": "Electrical design: supply, boards, circuits.",
+        "item2": "Provision for future expansion and higher loads."
+      },
+
+      "card2": {
+        "title": "Lighting and Socket Circuits",
+        "item1": "Lighting: scenes and dimming.",
+        "item2": "Power circuits: sockets and appliance connections."
+      },
+
+      "card3": {
+        "title": "Low-Voltage and Smart Home",
+        "item1": "Low-voltage: data, Wi-Fi, CCTV and security.",
+        "item2": "Protection, grounding, smart systems."
+      }
+    },
+
+    "benefits": {
+      "title": "Client benefits",
+      "item1": "Safe and Reliable Electrical System.",
+      "item2": "Comfortable and Intuitive Control.",
+      "item3": "Clean Walls without Switches.",
+      "item4": "Ready for Future Tech."
+    },
+
+    "cta": {
+      "title": "Get a Consultation",
+      "button": "Calculate the Cost"
+    }
+  },
+  "design": {
+    "title": "Design & Architecture",
+    "subtitle": "Elevate your space with Arctic - Prague’s premier interior design studio!",
+
+    "cards": {
+      "interior": {
+        "title": "Interior Design"
+      },
+      "architecture": {
+        "title": "Architecture"
+      },
+       "fitout": {
+          "title": "Interior Fit-Out"
+        },
+        "furniture": {
+          "title": "Design and Furniture Production"
+        },
+      "button": "See More"
+    },
+
+    "faq": {
+      "title": "FAQ - frequently asked questions",
+
+      "q1": "What happens during the first consultation?",
+      "a1": "First we listen to your needs, budget and preferred style. Then we prepare a proposal for the scope of work and an indicative schedule.",
+
+      "q2": "Do you work with existing furniture?",
+      "a2": "Yes, we can incorporate your existing furniture and complement it with new pieces so the space feels cohesive.",
+
+      "q3": "How do you handle budget for design and architecture?",
+      "a3": "We set the budget transparently in advance, prepare several options and keep you informed about any changes during the project.",
+
+      "q4": "Can you provide full turnkey implementation?",
+      "a4": "Yes, from concept and design through custom furniture, construction works and final styling. We take responsibility for the entire process."
+    },
+
+    "cta": {
+      "title": "Get a Consultation",
+      "button": "Get a Consultation"
+    }
+  },
+  "interior": {
+    "title": "Interior Design",
+    "subtitle": "Transform your space with our comprehensive interior design services!",
+
+    "items": {
+      "1": {
+        "title": "Visionary Conceptual Design",
+        "text": "Imagine a space that truly embodies who you are."
+      },
+      "2": {
+        "title": "Expert Space Planning",
+        "text": "Maximize the potential of your space with our meticulous planning services."
+      },
+      "3": {
+        "title": "Innovative Interior Architecture",
+        "text": "Elevate your interior with unique architectural elements designed to impress."
+      },
+      "4": {
+        "title": "Curated Furniture Selection and Customization",
+        "text": "Discover a curated collection of exquisite furniture that perfectly aligns with your design vision."
+      },
+      "5": {
+        "title": "Premium Material Selection",
+        "text": "The materials you choose can transform the entire atmosphere of your space."
+      },
+      "6": {
+        "title": "Color Palette and Lighting Design",
+        "text": "Unlock the transformative power of colors and lighting with our expert design services!"
+      }
+    },
+
+    "cta": {
+      "title": "Ready to create a space that truly reflects you?",
+      "button": "Calculate the Cost"
+    }
+  },
+  "architecture": {
+    "title": "Architecture",
+    "subtitle": "Transform your project with our comprehensive architectural services.",
+
+    "items": {
+      "1": {
+        "title": "Architectural Design",
+        "text": "At Arctic Group, we don’t just create buildings - we bring your ideas to life in a clear, buildable form."
+      },
+      "2": {
+        "title": "Comprehensive Project Management",
+        "text": "We coordinate specialists, timelines and budget so you can stay focused on what matters most, without unnecessary stress."
+      },
+      "3": {
+        "title": "Innovation and Sustainability",
+        "text": "We believe architecture can shape a better future - that’s why we work with smart solutions, sustainable materials and long-term performance in mind."
+      }
+    },
+
+    "cta": {
+      "title": "Ready to see your architectural vision become reality?",
+      "button": "Calculate the Cost"
+    }
+  },
+  "error404": {
+  "label": "Page under construction",
+  "title": "404",
+  "text": "We are building something new at this address. In the meantime, you can return to the homepage or explore our services.",
+  "btn": {
+    "home": "Back to homepage",
+    "services": "View services"
+  },
+  "tagline": "Even if this page is still under construction, your project is already in good hands."
+},
+"projektovani": {
+  "title": "Project Design",
+  "text": {
+    "main": "We prepare complete design documentation for building technical systems - HVAC, plumbing and electrical installations. We take care of the concept, calculations, drawings and coordination with architecture and structural engineering."
+  },
+  "services": {
+    "title": "What we do",
+    "card1": {
+      "title": "Concept & Feasibility Study",
+      "item1": "Analysis of the building and client requirements.",
+      "item2": "Concept design of MEP systems."
+    },
+    "card2": {
+      "title": "Design Documentation",
+      "item1": "Calculations, drawings and technical reports.",
+      "item2": "Specifications of materials and technologies."
+    },
+    "card3": {
+      "title": "Coordination & Author Supervision",
+      "item1": "Coordination of all trades with architecture.",
+      "item2": "Author supervision on site during construction."
+    }
+  },
+  "benefits": {
+    "title": "Benefits for clients",
+    "item1": "Clear site documentation.",
+    "item2": "Fewer construction errors.",
+    "item3": "Optimised design costs.",
+    "item4": "Standards compliance."
+  },
+  "cta": {
+    "title": "Get a Consultation for Your Project",
+    "button": "Calculate the Cost"
+  }
+},
+"reconstruction": {
+  "title": "Complex Reconstruction",
+  "text": {
+    "main": "We renovate apartments, houses and commercial spaces – from structural changes and technical installations to final interior details. We coordinate all trades, manage the schedule and hand over a clean space ready for use."
+  },
+  "services": {
+    "title": "What we do",
+    "card1": {
+      "title": "Apartment & Commercial",
+      "item1": "Renovation of homes and small businesses.",
+      "item2": "Minimal disruption during works."
+    },
+    "card2": {
+      "title": "Family Houses & Villas",
+      "item1": "Modernised systems and interiors.",
+      "item2": "Insulation, façades and window replacement."
+    },
+    "card3": {
+      "title": "Commercial Spaces",
+      "item1": "Tailor-made fit-outs for offices and retail spaces.",
+      "item2": "Fast and efficient execution."
+    }
+  },
+  "benefits": {
+    "title": "Benefits for clients",
+    "item1": "One Team For Design And Build.",
+    "item2": "Clear And Realistic Time Schedule.",
+    "item3": "Transparent Budget Control.",
+    "item4": "Clean Site And Careful Handover."
+  },
+  "cta": {
+    "title": "Planning A Renovation?",
+    "button": "Calculate the Cost"
+  }
+},
+"fasady": {
+  "title": "Facades And Insulation",
+  "text": {
+    "main": "We design and install façade insulation, building envelope repairs and insulation systems that improve the energy performance of the building and extend its lifespan. We carefully handle details, junctions and finishes so that the façade looks great and works reliably in the long term."
+  },
+  "services": {
+    "title": "What We Do",
+    "card1": {
+      "title": "Facades And Insulation",
+      "item1": "Facade insulation design.",
+      "item2": "Insulation and finish works."
+    },
+    "card2": {
+      "title": "Roofs And Insulation Systems",
+      "item1": "Roof and terrace waterproofing.",
+      "item2": "Facade repair and detailing."
+    },
+    "card3": {
+      "title": "Repairs And Envelope Details",
+      "item1": "Windows, doors, balconies detailing.",
+      "item2": "Proper parapet connections."
+    }
+  },
+  "benefits": {
+    "title": "Benefits For Clients",
+    "item1": "Lower Heating And Cooling Costs.",
+    "item2": "Stable Indoor Climate.",
+    "item3": "Longer Building Lifespan.",
+    "item4": "Clean Appearance."
+  },
+  "cta": {
+    "title": "Dealing With Facades Or Insulation?",
+    "button": "Calculate the Cost"
+  }
+},
+"chytre": {
+  "title": "Smart Technologies",
+  "text": {
+    "main": "We connect all building systems into smart control - lighting, heating, cooling, HVAC, security and shading in one platform. We design scenes, mobile control and automation based on time, presence and sensor data."
+  },
+  "services": {
+    "title": "What We Do",
+    "card1": {
+      "title": "Smart Home And Scenes",
+      "item1": "Scenes and automation at the touch of a button.",
+      "item2": "Control lights, heating and audio from your phone."
+    },
+    "card2": {
+      "title": "Technology Integration",
+      "item1": "Link all building systems into one smart solution.",
+      "item2": "Automation by CO₂ and motion."
+    },
+    "card3": {
+      "title": "Security And Monitoring",
+      "item1": "Camera systems and safety sensors.",
+      "item2": "Remote monitoring and alerts to your phone."
+    }
+  },
+  "benefits": {
+    "title": "Benefits For Clients",
+    "item1": "Higher Comfort Thanks To Automation.",
+    "item2": "Energy Savings by Smart Control.",
+    "item3": "Full Control Anywhere.",
+    "item4": "Ready For Future Technologies."
+  },
+  "cta": {
+    "title": "Want Your Home To Think For You?",
+    "button": "Calculate the Cost"
+  }
+},
+"dozor": {
+  "title": "Technical Supervision",
+  "text": {
+    "main": "We represent the investor on site - controlling quality, schedule and budget. We monitor works against the design, standards and contract, highlight risks and ensure defects are removed before handover."
+  },
+  "services": {
+    "title": "What We Do",
+    "card1": {
+      "title": "Quality Control And Compliance",
+      "item1": "Regular inspections of the site and ongoing works.",
+      "item2": "Checking design and budget compliance."
+    },
+    "card2": {
+      "title": "Coordination And Communication",
+      "item1": "Site meetings and progress control.",
+      "item2": "Communication between investor and contractor."
+    },
+    "card3": {
+      "title": "Handover And Documentation",
+      "item1": "Supervision of quality before final handover.",
+      "item2": "Support with handover docs."
+    }
+  },
+  "benefits": {
+    "title": "Benefits For Clients",
+    "item1": "Build Matches Design.",
+    "item2": "Control Of Quality And Budget.",
+    "item3": "Fewer Risks, Errors And Future Claims.",
+    "item4": "Investor Representation On Site."
+  },
+  "cta": {
+    "title": "Need Technical Supervision For Your Project?",
+    "button": "Calculate the Cost"
+  }
+},
+  "fitout": {
+    "title": "Fit-Out Interiors",
+    "subtitle": "Complete interior fit-out from the first concept to the final detail.",
+    "items": {
+      "1": {
+        "title": "Complete Turnkey Fit-Out",
+        "text": "We handle the entire interior - construction works, finishes, furniture and technologies - so the space is ready to use immediately."
+      },
+      "2": {
+        "title": "Trade and Contractor Coordination",
+        "text": "We manage all trades, schedule and logistics to keep the work flowing smoothly, without delays or unnecessary stress for you."
+      },
+      "3": {
+        "title": "Premium Materials and Details",
+        "text": "We select quality materials and carefully resolve details, so the interior looks great, lasts long and is easy to maintain."
+      }
+    },
+    "cta": {
+      "title": "Ready for a fit-out of your interior?",
+      "button": "Calculate the Cost"
+    }
+  },
+  "furniture": {
+  "title": "Design and Furniture Production",
+  "subtitle": "Bespoke furniture design – from the first sketch to a finished piece in your interior.",
+
+  "items": {
+    "1": {
+      "title": "Furniture Tailored to Your Space",
+      "text": "We design furniture based on the actual space, layout and how you live – no compromises, everything made precisely for you."
+    },
+    "2": {
+      "title": "Ergonomics and Everyday Functionality",
+      "text": "We think about comfort, storage and the flow through the interior so the furniture works perfectly every day, not just looks good in photos."
+    },
+    "3": {
+      "title": "Materials, Finishes and Details",
+      "text": "We choose quality materials, finishes and hardware so your furniture lasts, is easy to maintain and fits the overall interior style."
+    }
+  },
+
+  "cta": {
+    "title": "Want furniture designed just for you?",
+    "button": "Calculate the Cost"
+  }
+},
+"estimate": {
+      "title": "Calculate the cost of the design project",
+      "stepLabel": "Step",
+
+      "step1": {
+        "question": "What type of space do you need a design for?",
+        "villa": "Villa",
+        "apartment": "Apartment",
+        "office": "Office",
+        "restaurant": "Restaurant",
+        "shop": "Shop",
+        "beauty": "Beauty Salon"
+      },
+
+      "step2": {
+        "question": "What is total area of the premises (in m²)?"
+      },
+
+      "step3": {
+        "question": "What interior style do you prefer?",
+        "modern": "Modern",
+        "neoclassic": "Neoclassic",
+        "american": "American",
+        "french": "French",
+        "minimal": "Minimalism"
+      },
+
+      "step4": {
+        "question": "When do you want to start the project?",
+        "asap": "As soon as possible",
+        "week": "In a week",
+        "month": "In a month",
+        "six": "In six months"
+      },
+
+      "step5": {
+        "question": "Specify the city where your property is located",
+        "prague": "Prague",
+        "brno": "Brno",
+        "ostrava": "Ostrava",
+        "other": "Other"
+      },
+
+      "nav": {
+        "back": "Back",
+        "next": "Next"
+      },
+
+      "contact": {
+        "title": "Share your contact info, and our manager will be in touch shortly",
+        "nameLabel": "Your name",
+        "phoneLabel": "Telephone",
+        "messageLabel": "Message",
+        "submit": "Send request"
+      },
+
+      "error": {
+        "title": "Error!",
+        "required": "The required field is not filled."
+      }
+    },
+     "turnkey": {
+      "title": "Turnkey Projects",
+      "tag": {
+        "design": "Design & Architecture",
+        "build": "Construction",
+        "tech": "Technologies"
+      },
+      "lede": "From the first idea to handing over the keys - one team, one responsibility and a clear result. We take care of coordinating all trades, budget and schedule.",
+      "bullets": {
+        "1": "One partner for design, execution and technologies.",
+        "2": "Transparent budget and a controlled schedule.",
+        "3": "Minimal workload on your side - we handle details and coordination for you.",
+        "4": "Stress-free moving - we’ll take care of logistics, movers, and final cleaning."
+      },
+      "process": {
+        "title": "How a turnkey project works"
+      },
+      "gallery": {
+        "title": "Examples of turnkey projects",
+        "card1": {
+          "tag": "Residential",
+          "title": "3+kk Apartment, Prague 2"
+        },
+        "card2": {
+          "tag": "Commercial",
+          "title": "Tower Park, Prague 3"
+        },
+        "card3": {
+          "tag": "Residential",
+          "title": "2+kk Apartment, Prague 14"
+        }
+      },
+      "faq": {
+        "title": "FAQ – frequently asked questions",
+        "q1": "How long does a turnkey project take?",
+        "a1": "It depends on the scope – smaller interiors take weeks, larger projects several months. We always prepare a realistic schedule.",
+        "q2": "Can I be involved only in some phases?",
+        "a2": "Yes, together we set the level of your involvement – from a fully delegated project to detailed approval of individual steps.",
+        "q3": "How do you handle quality control?",
+        "a3": "We regularly check completed works, technologies and interior details. When needed, we propose adjustments already during implementation.",
+        "q4": "Can you work while the business is operating?",
+        "a4": "Yes, we plan projects to minimise disruption – by phasing works and scheduling evening or weekend shifts."
+      },
+      "cta": {
+        "title": "Thinking about a turnkey project?",
+        "button": "Calculate the Price"
+      }
+    },
+    "revitalizace": {
+  "title": "Revitalization of Apartment Buildings",
+  "text": {
+    "main": "We revitalize apartment and townhouse buildings - from common areas to technical facilities. We provide design, permitting, and full implementation so that your building is safe, functional, and ready for the next decades."
+  },
+  "services": {
+    "title": "What We Do",
+    "card1": {
+      "title": "Common Areas",
+      "item1": "Renovation of entrances and common areas.",
+      "item2": "Upgrades of basements and outdoor spaces."
+    },
+    "card2": {
+      "title": "Elevators and Accessibility",
+      "item1": "Modernization of elevators and shafts.",
+      "item2": "Barrier-free access and ramps."
+    },
+    "card3": {
+      "title": "Design and Permits",
+      "item1": "Architectural designs and documentation.",
+      "item2": "Building permits and negotiations with authorities."
+    }
+  },
+  "benefits": {
+    "title": "Benefits for clients",
+    "item1": "Greater Comfort and Safety.",
+    "item2": "Securing Grants.",
+    "item3": "Higher Property Value.",
+    "item4": "Single Contractor and Clear Budget."
+  },
+  "cta": {
+    "title": "Planning a Revitalization of an Apartment Building?",
+    "button": "Calculate Price"
+  }
+},
+"portfolio": {
+  "title": "Portfolio",
+  "subtitle": "A selection of projects from residential interiors and family houses to commercial spaces. Open a project and browse more photos.",
+
+  "card1": {
+    "title": "Loft Apartman, Prague 12"
+  },
+  "card2": {
+    "title": "Tower Park, Prague 3"
+  },
+  "card3": {
+    "title": "Flat 3+kk, Praha 14"
+  },
+  "card4": {
+    "title": "Office Pure, Praha 1"
+  },
+  "card5": {
+    "title": "Villa, Nymburk"
+  },
+  "card6": {
+    "title": "Studio Apartment, Praha 10"
+  },
+
+  "card": {
+    "button": "More"
+  },
+
+  "cta": {
+    "title": "Do You Want To Be Our Client?",
+    "button": "Book A Consultation"
+  }
+},
+  "project": {
+    "vanguard_lofts": {
+      "label": "RESIDENTIAL PROJECT: Vanguard Lofts",
+      "title": "Loft Apartman",
+      "meta": {
+        "location": "Prague 12, Modřany",
+        "area": "96 m²",
+        "year": "2023"
+      },
+      "cta": {
+        "title": "Would you like a similar project?",
+        "text": "Get in touch with us and we will prepare a tailor-made interior design just for you.",
+        "btn_contact": "Contact us",
+        "btn_estimate": "Calculate the project"
+      },
+      "related": {
+        "heading": "Other projects",
+        "vrsovice": {
+          "title": "Studio Apartment, Vršovice",
+          "meta": "Prague 10 · 28 m²"
+        },
+        "kyje": {
+          "title": "Flat 3+kk, Kyje",
+          "meta": "Prague 14 · 68 m²"
+        },
+        "park": {
+          "title": "Tower Park, Žižkov",
+          "meta": "Prague 3 · Bar"
+        },
+        "vila": {
+          "title": "Villa",
+          "meta": "Nymburk · 154 m²"
+        },
+        "loft": {
+          "title": "Loft Apartman, Modřany",
+          "meta": "Prague 12 · 96 m²"
+        },
+        "pure": {
+          "title": "Pure, New Town",
+          "meta": "Prague 1 · Office"
+        }
+      }
+    },
+    "tower_park": {
+      "label": "COMMERCIAL PROJECT: Tower Park",
+      "title": "Mimichef Bistro",
+      "meta": {
+        "location": "Prague 3, Žižkov",
+        "type": "Bistro",
+        "year": "2021"
+      }
+    },
+    "kyje_apartment": {
+      "label": "RESIDENTIAL PROJECT",
+      "title": "Flat 3+kk",
+      "meta": {
+        "location": "Prague 14, Kyje",
+        "area": "68 m²",
+        "year": "2024"
+      }
+    },
+    "pure_office": {
+      "label": "COMMERCIAL PROJECT: Pure Office",
+      "title": "PURE MODEL Management",
+      "meta": {
+        "location": "Prague 1, New Town",
+        "type": "Office",
+        "year": "2020"
+      }
+    },
+    "vila_nymburk": {
+      "label": "RESIDENTIAL PROJECT: Villa in Nymburk",
+      "title": "Villa",
+      "meta": {
+        "location": "Nymburk",
+        "area": "154 m²",
+        "year": "2023"
+      }
+    },
+    "vodarna_apartment": {
+      "label": "RESIDENTIAL PROJECT: Vodárna",
+      "title": "Studio Apartment",
+      "meta": {
+        "location": "Prague 10, Vršovice",
+        "area": "28 m²",
+        "year": "2024"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: chronoledger
+      POSTGRES_PASSWORD: chronoledger
+      POSTGRES_DB: chronoledger
+    ports:
+      - "5434:5432"
+    volumes:
+      - chronoledger_pg:/var/lib/postgresql/data
+
+volumes:
+  chronoledger_pg:

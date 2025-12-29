@@ -1,0 +1,32 @@
+{
+"events.hudba.more": "page404.html",
+  "events.andersen.more": "anderson.html",
+  "events.princ.more": "malyprinc.html",
+
+  "services.koncerty.link": "concerts.html",
+  "services.vecirky.link": "corporate.html",
+  "services.teambuilding.link": "teambuilding.html",
+  "services.dekorace.link": "decoration.html",
+
+  "next.tickets": "anderson.html",
+
+  "princPage.frame.ctaLink": "https://booking.hybernia.eu/hybernia/standard/Hall/Index/3562731/BkicVmFVEHeT6NukBmnScA_rov__rov__xcodex_AGA1gFbU4wh5Bp4W2lihXAgJkCIt1Eyi6jLaXg__?",
+  "partners.kudyznudy.link": "https://www.kudyznudy.cz/",
+  "princPage.video": "https://www.youtube-nocookie.com/embed/ZWwuj8f7e_I?rel=0&modestbranding=1&controls=1&playsinline=1",
+
+  "pageEvents.items.princ.link": "malyprinc.html",
+  "pageEvents.items.andersen.link": "anderson.html",
+  "pageEvents.items.tma.link": "page404.html",
+  "pageEvents.buy.link": "malyprinc.html",
+
+  "andersen.video": "https://www.youtube.com/embed/mLaraOcCqd8",
+
+  "andersen.actor.igor": "https://www.igororozovic.cz",
+  "andersen.orchestra": "https://www.kfpar.cz/profil-orchestr",
+  "andersen.conductor.alim": "https://www.alimsach.cz",
+
+  "andersen.ticket": "https://www.ticketportal.cz/event/Nejpodivuhodnejsi-pohadka-je-sam-zivot?idp=120007198",
+
+  "andersen.partner.kudyznudy": "https://www.kudyznudy.cz/"
+
+}

@@ -1,0 +1,565 @@
+
+.estimate {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.estimate__title {
+  margin: 0 0 40px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.estimate__body {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+/* Левая колонка — картинка */
+
+.estimate__media {
+  flex: 0 0 46%;
+}
+
+.estimate__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Правая колонка — шаги */
+
+.estimate__panel {
+  flex: 1 1 0;
+  max-width: 520px;
+}
+
+/* Заголовок шага */
+
+.estimate__step-head {
+  margin-bottom: 24px;
+}
+
+.estimate__step-caption {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.estimate__step-label {
+  color: #b01a1a;
+}
+
+.estimate__step-count {
+  color: #000000;
+}
+
+.estimate__progress {
+  width: 100%;
+  height: 4px;
+  background-color: #e5e5e5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.estimate__progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #7b1111;
+  transition: width 0.25s ease;
+}
+
+/* Шаги */
+
+.estimate-form {
+  margin: 0;
+}
+
+.estimate-step {
+  display: none;
+}
+
+.estimate-step.is-active {
+  display: block;
+}
+
+.estimate-step__question {
+  margin: 0 0 20px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Опции (кнопки) */
+
+.estimate-options {
+  display: grid;
+  gap: 14px;
+}
+
+.estimate-options--grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.estimate-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  padding: 18px 16px;
+  border: 1px solid #dfdfdf;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.estimate-option span {
+  display: block;
+}
+
+.estimate-option:hover {
+  border-color: #000000;
+}
+
+.estimate-option.is-selected {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+/* STEP 2 — площадь */
+
+.estimate-area {
+  margin-top: 10px;
+}
+
+.estimate-area__field {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 18px 22px;
+  background-color: #f5f5f5;
+  border: 1px solid #dfdfdf;
+}
+
+.estimate-area__input {
+  width: 120px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 18px;
+  outline: none;
+}
+
+.estimate-area__input::-webkit-outer-spin-button,
+.estimate-area__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.estimate-area__unit {
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 16px;
+}
+
+/* STEP 3 & 5 — карточки со стилями / городами */
+
+.estimate-options--styles {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.estimate-options--city {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.estimate-style {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfdfdf;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.estimate-style__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.estimate-style__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.estimate-style__label {
+  padding: 10px 8px 12px;
+  text-align: center;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.estimate-style.is-selected {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+  transform: translateY(-2px);
+}
+
+/* Навигация */
+
+.estimate__nav {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.estimate-nav__btn {
+  flex: 1 1 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 0;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.estimate-nav__btn--secondary {
+  background-color: transparent;
+  color: #000000;
+}
+
+.estimate-nav__btn--secondary:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.estimate-nav__btn--primary {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.estimate-nav__btn--primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Контактная форма */
+
+.estimate-contact {
+  margin-top: 60px;
+  max-width: 560px;
+  display: none;
+}
+
+.estimate-contact.is-visible {
+  display: block;
+}
+
+.estimate-contact__title {
+  margin: 0 0 24px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.estimate-contact__field {
+  margin-bottom: 18px;
+}
+
+.estimate-contact__label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 13px;
+}
+
+.estimate-contact__input,
+.estimate-contact__textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 6px 0 8px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  outline: none;
+  resize: vertical;
+}
+
+.estimate-contact__footer {
+  margin-top: 10px;
+}
+
+.estimate-contact__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 32px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.estimate-contact__submit:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Модалка ошибок / сообщений */
+
+.estimate-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.estimate-modal.is-open {
+  display: block;
+}
+
+.estimate-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.estimate-modal__dialog {
+  position: relative;
+  max-width: 420px;
+  margin: 20vh auto 0;
+  background-color: #ffffff;
+  padding: 24px 32px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.estimate-modal__title {
+  margin: 0 0 8px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.estimate-modal__text {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+}
+
+.estimate-modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ====== Адаптив ====== */
+
+@media (max-width: 1024px) {
+  .estimate__body {
+    gap: 40px;
+  }
+
+  .estimate__title {
+    font-size: 30px;
+  }
+
+  .estimate-options--styles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .estimate-options--city {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .estimate__body {
+    flex-direction: column;
+  }
+
+  .estimate__panel {
+    order: 1;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .estimate__media {
+    order: 2;
+    flex: none;
+    max-width: 480px;
+    margin: 24px auto 0;
+  }
+
+  .estimate__image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .estimate {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .estimate__title {
+    font-size: 24px;
+    margin-bottom: 28px;
+    letter-spacing: 0.06em;
+    text-align: left;
+  }
+
+  .estimate__step-caption {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+
+  .estimate-step__question {
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+  }
+
+  .estimate-options--grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .estimate-options--styles,
+  .estimate-options--city {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .estimate-option {
+    min-height: 64px;
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  .estimate-style__label {
+    font-size: 12px;
+    padding: 8px 6px 10px;
+  }
+
+  .estimate__nav {
+    margin-top: 24px;
+  }
+
+  .estimate-nav__btn {
+    padding: 12px 16px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (max-width: 520px) {
+  .estimate__panel,
+  .estimate__media {
+    max-width: 380px;
+  }
+
+  .estimate__title {
+    font-size: 22px;
+  }
+
+  .estimate__body {
+    gap: 20px;
+  }
+
+  .estimate-options--grid,
+  .estimate-options--styles,
+  .estimate-options--city {
+    grid-template-columns: 1fr;
+  }
+
+  .estimate-step__question {
+    font-size: 14px;
+  }
+
+  .estimate-option {
+    min-height: 56px;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .estimate-nav__btn {
+    padding-block: 10px;
+  }
+
+  .estimate-contact__title {
+    font-size: 15px;
+  }
+
+  .estimate-modal__dialog {
+    margin-top: 25vh;
+    max-width: 320px;
+    padding: 20px 22px;
+  }
+
+  .estimate-modal__title {
+    font-size: 16px;
+  }
+
+  .estimate-modal__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .estimate__panel,
+  .estimate__media {
+    max-width: 340px;
+  }
+
+  .estimate__title {
+    font-size: 20px;
+  }
+}

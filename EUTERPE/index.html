@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Home</title>
+	<link rel="stylesheet" href="/source/style/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1118627695944322');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1118627695944322&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D4JGANBC77U10O2JBQHG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-996476518"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-996476518');
+</script>
+
+<!-- Конверсия Google Ads: отправка формы на странице -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var sentOnce = false; // защита от дублей
+    document.querySelectorAll('form').forEach(function(form){
+      form.addEventListener('submit', function () {
+        if (sentOnce) return;
+        sentOnce = true;
+        gtag('event', 'conversion', {
+          'send_to': 'AW-996476518/BSLsCNWL1pUbEOaMlNsD',
+          'value': 1.0,
+          'currency': 'CZK'
+        });
+      });
+    });
+  });
+</script>
+</head>
+<body class="page-enter">
+	<header class="site-header" id="site-header">
+		<div class="header-inner">
+			<a href="/" class="logo" aria-label="Home" data-transition data-i18n-attr="aria-label:header.logo.aria">
+				<img src="/assets/logo/WebLogo.png" alt="Logo" data-i18n-attr="alt:header.logo.alt" />
+			</a>
+
+			<nav class="nav-inline" role="navigation" aria-label="Main" data-i18n-attr="aria-label:header.nav.aria">
+				<ul class="nav-list">
+					<li><a href="index.html" data-i18n="nav.home" data-transition>Úvod</a></li>
+          <li><a href="services.html" data-i18n="nav.services" data-transition>Služby</a></li>
+					<li><a href="events.html" data-i18n="nav.events" data-transition>Akce</a></li>
+          <li><a href="studio.html" data-i18n="nav.studio" data-transition>Studio</a></li>
+					<li><a href="galerie.html" data-i18n="nav.gallery" data-transition>Galerie</a></li>
+					<li><a href="about.html" data-i18n="nav.about" data-transition>O&nbsp;nás</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-right">
+				<button class="lang-switch" data-lang="cs" aria-label="Čeština" data-i18n="langs.cs">CZ</button>
+				<button class="lang-switch" data-lang="en" aria-label="English" data-i18n="langs.en">EN</button>
+
+				<button class="burger" id="burger"
+					aria-expanded="false"
+					aria-label="Open menu"
+					data-i18n-attr="aria-label:header.burger.aria">
+					<span class="burger-lines">
+						<i></i><i></i><i></i><i></i>
+					</span>
+				</button>
+			</div>
+		</div>
+
+		<!-- Мобильное выпадающее меню -->
+		<nav class="nav-drop" id="nav-drop" role="navigation" aria-label="Main mobile" data-i18n-attr="aria-label:header.nav.mobileAria">
+			<ul class="nav-list">
+				<li><a href="index.html" data-i18n="nav.home" data-transition>Úvod</a></li>
+        <li><a href="services.html" data-i18n="nav.services" data-transition>Služby</a></li>
+				<li><a href="events.html" data-i18n="nav.events" data-transition>Akce</a></li>
+        <li><a href="studio.html" data-i18n="nav.studio" data-transition>Studio</a></li>
+				<li><a href="galerie.html" data-i18n="nav.gallery" data-transition>Galerie</a></li>
+				<li><a href="about.html" data-i18n="nav.about" data-transition>O&nbsp;nás</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<main class="hero">
+	<div class="hero-inner reveal">
+		<div class="hero-left">
+			<h1 class="hero-title"
+          data-i18n="hero.title"
+          data-cms-key="hero.title">
+				Zajišťujeme organizaci akcí<br>od návrhu až po realizaci.
+			</h1>
+
+			<h2 class="hero-subtitle"
+          data-i18n="hero.subtitle"
+          data-cms-key="hero.subtitle">
+				S námi se váš event stane událostí.
+			</h2>
+		</div>
+
+		<div class="hero-right">
+			<p class="hero-desc"
+         data-i18n="hero.desc"
+         data-cms-key="hero.desc">
+				Profesionální eventová a hudební agentura.<br>
+				Specializujeme se na organizaci koncertů,<br>
+				firemních akcí a soukromých událostí.
+			</p>
+		</div>
+	</div>
+
+  <!-- AKCE -->
+	<section class="events reveal" id="akce" aria-labelledby="akce-title">
+		<h2 class="events-title"
+        id="akce-title"
+        data-i18n="events.title"
+        data-cms-key="events.title">
+      Akce
+    </h2>
+
+		<div class="events-track" data-pad="110">
+			<!-- BACK (лево) -->
+			<div class="event-item pos-1" data-id="hudba">
+				<article class="event-card">
+					<img class="card-media"
+               src="/assets/photo/Tma.svg"
+               alt="Hudba ve tmě"
+               loading="lazy"
+               data-i18n-attr="alt:events.items.hudba.alt"
+               data-cms-img="events.hudba.img">
+
+					<button class="card-hit"
+                  aria-label="Otevřít detail"
+                  data-i18n-attr="aria-label:events.cta.open"></button>
+
+					<div class="card-overlay">
+						<div class="ovl-body">
+							<h3
+                data-i18n="events.items.hudba.name"
+                data-cms-key="events.hudba.name">
+              </h3>
+							<p
+                data-i18n="events.items.hudba.desc"
+                data-cms-key="events.hudba.desc">
+              </p>
+						</div>
+						<div class="ovl-actions">
+							<a href="page404.html"
+                 class="btn solid"
+                 data-transition
+                 data-i18n="events.cta.more"
+                 data-cms-link="events.hudba.more">
+                Více
+              </a>
+						</div>
+					</div>
+				</article>
+
+				<footer class="caption-out">
+					<h3 class="card-name"
+              data-i18n="events.items.hudba.name"
+              data-cms-key="events.hudba.name">
+            Hudba ve tmě
+          </h3>
+					<p class="card-teaser"
+             data-i18n="events.items.hudba.teaser"
+             data-cms-key="events.hudba.teaser">
+            Unikátní projekt, kde hudbu vnímáte jinak – se zavřenýma očima!
+          </p>
+				</footer>
+			</div>
+
+			<!-- MIDDLE (центр) -->
+			<div class="event-item pos-2" data-id="andersen">
+				<article class="event-card">
+					<img class="card-media"
+               src="/assets/photo/Anderson.svg"
+               alt="Andersenovy pohádky"
+               loading="lazy"
+               data-i18n-attr="alt:events.items.andersen.alt"
+               data-cms-img="events.andersen.img">
+
+					<button class="card-hit"
+                  aria-label="Otevřít detail"
+                  data-i18n-attr="aria-label:events.cta.open"></button>
+
+					<div class="card-overlay">
+						<div class="ovl-body">
+							<h3
+                data-i18n="events.items.andersen.name"
+                data-cms-key="events.andersen.name">
+              </h3>
+							<p
+                data-i18n="events.items.andersen.desc"
+                data-cms-key="events.andersen.desc">
+              </p>
+						</div>
+						<div class="ovl-actions">
+							<a href="anderson.html"
+                 class="btn solid"
+                 data-transition
+                 data-i18n="events.cta.more"
+                 data-cms-link="events.andersen.more">
+                Více
+              </a>
+						</div>
+					</div>
+				</article>
+
+				<footer class="caption-out">
+					<h3 class="card-name"
+              data-i18n="events.items.andersen.name"
+              data-cms-key="events.andersen.name">
+            Andersenovy pohádky
+          </h3>
+					<p class="card-teaser"
+             data-i18n="events.items.andersen.teaser"
+             data-cms-key="events.andersen.teaser">
+            Oživlé příběhy H. Ch. Andersena v hudebním a vizuálním provedení!
+          </p>
+				</footer>
+			</div>
+
+			<!-- FRONT (право) -->
+			<div class="event-item pos-3" data-id="princ">
+				<article class="event-card">
+					<img class="card-media"
+               src="/assets/photo/MalyPrinc.svg"
+               alt="Malý princ 2025"
+               loading="lazy"
+               data-i18n-attr="alt:events.items.princ.alt"
+               data-cms-img="events.princ.img">
+
+					<button class="card-hit"
+                  aria-label="Otevřít detail"
+                  data-i18n-attr="aria-label:events.cta.open"></button>
+
+					<div class="card-overlay">
+						<div class="ovl-body">
+							<h3
+                data-i18n="events.items.princ.name"
+                data-cms-key="events.princ.name">
+              </h3>
+							<p
+                data-i18n="events.items.princ.desc"
+                data-cms-key="events.princ.desc">
+              </p>
+						</div>
+						<div class="ovl-actions">
+							<a href="malyprinc.html"
+                 class="btn solid"
+                 data-transition
+                 data-i18n="events.cta.more"
+                 data-cms-link="events.princ.more">
+                Více
+              </a>
+						</div>
+					</div>
+				</article>
+
+				<footer class="caption-out">
+					<h3 class="card-name"
+              data-i18n="events.items.princ.name"
+              data-cms-key="events.princ.name">
+            Malý Princ 2025
+          </h3>
+					<p class="card-teaser"
+             data-i18n="events.items.princ.teaser"
+             data-cms-key="events.princ.teaser">
+            Orchestr EUTERPE, Alim Šach a Louise Hedde, živá malba a hlas Jana Čenského.
+          </p>
+				</footer>
+			</div>
+		</div>
+	</section>
+
+	<!-- SLUZBY -->
+	<section class="services reveal" id="sluzby" aria-labelledby="sluzby-title">
+		<div class="services-head">
+			<h2 class="services-title"
+          id="sluzby-title"
+          data-i18n="services.title"
+          data-cms-key="services.title">
+        Služby
+      </h2>
+			<p class="services-subtitle"
+         data-i18n="services.subtitle"
+         data-cms-key="services.subtitle">
+				Pomocí kreativních příležitostí vytváříme jedinečné akce.
+			</p>
+		</div>
+
+		<section class="srvp-grid"
+				aria-label="Seznam služeb"
+				data-i18n-attr="aria-label:servicesPage.listAria">
+			<div class="srvp-wrap">
+				<!-- 1) Koncerty -->
+				<a class="srvp-card"
+           href="concerts.html"
+           aria-label="Koncerty"
+           data-i18n-attr="aria-label:servicesPage.cards.koncerty.aria"
+           data-cms-link="services.koncerty.link">
+					<div class="srvp-ico">
+						<img src="/assets/icons/harp.svg" alt="" aria-hidden="true" />
+					</div>
+					<h3 class="srvp-name"
+              data-i18n="servicesPage.cards.koncerty.title"
+              data-cms-key="services.koncerty.title">
+            Koncerty
+          </h3>
+					<p class="srvp-kicker"
+             data-i18n="servicesPage.cards.koncerty.kicker"
+             data-cms-key="services.koncerty.kicker">
+            Elevate Your Style
+          </p>
+					<p class="srvp-desc"
+             data-i18n="servicesPage.cards.koncerty.desc"
+             data-cms-key="services.koncerty.desc">
+						Tvoříme jedinečné koncerty s&nbsp;originální myšlenkou a&nbsp;uměleckým posláním.
+					</p>
+				</a>
+
+				<!-- 2) Firemní večírky -->
+				<a class="srvp-card"
+           href="corporate.html"
+           aria-label="Firemní večírky"
+           data-i18n-attr="aria-label:servicesPage.cards.vecirky.aria"
+           data-cms-link="services.vecirky.link">
+					<div class="srvp-ico">
+						<img src="/assets/icons/happy.svg" alt="" aria-hidden="true" />
+					</div>
+					<h3 class="srvp-name"
+              data-i18n="servicesPage.cards.vecirky.title"
+              data-cms-key="services.vecirky.title">
+            Firemní večírky
+          </h3>
+					<p class="srvp-kicker"
+             data-i18n="servicesPage.cards.vecirky.kicker"
+             data-cms-key="services.vecirky.kicker">
+            Party Perfection
+          </p>
+					<p class="srvp-desc"
+             data-i18n="servicesPage.cards.vecirky.desc"
+             data-cms-key="services.vecirky.desc">
+						Tvoříme eventy s&nbsp;podpisem elegance a&nbsp;originality. Kombinujeme estetiku, atmosféru a&nbsp;detaily.
+					</p>
+				</a>
+
+				<!-- 3) Teambuilding -->
+				<a class="srvp-card"
+           href="teambuilding.html"
+           aria-label="Teambuilding"
+           data-i18n-attr="aria-label:servicesPage.cards.teambuilding.aria"
+           data-cms-link="services.teambuilding.link">
+					<div class="srvp-ico">
+						<img src="/assets/icons/web.svg" alt="" aria-hidden="true" />
+					</div>
+					<h3 class="srvp-name"
+              data-i18n="servicesPage.cards.teambuilding.title"
+              data-cms-key="services.teambuilding.title">
+            Teambuilding
+          </h3>
+					<p class="srvp-kicker"
+             data-i18n="servicesPage.cards.teambuilding.kicker"
+             data-cms-key="services.teambuilding.kicker">
+            Personal Style
+          </p>
+					<p class="srvp-desc"
+             data-i18n="servicesPage.cards.teambuilding.desc"
+             data-cms-key="services.teambuilding.desc">
+						Pomáháme posilovat firemního ducha prostřednictvím emocí, spolupráce, kreativity a&nbsp;leadershipu.
+					</p>
+				</a>
+
+				<!-- 4) Dekorace akcí -->
+				<a class="srvp-card"
+           href="decoration.html"
+           aria-label="Dekorace akcí"
+           data-i18n-attr="aria-label:servicesPage.cards.dekorace.aria"
+           data-cms-link="services.dekorace.link">
+					<div class="srvp-ico">
+						<img src="/assets/icons/shining.svg" alt="" aria-hidden="true" />
+					</div>
+					<h3 class="srvp-name"
+              data-i18n="servicesPage.cards.dekorace.title"
+              data-cms-key="services.dekorace.title">
+            Dekorace akcí
+          </h3>
+					<p class="srvp-kicker"
+             data-i18n="servicesPage.cards.dekorace.kicker"
+             data-cms-key="services.dekorace.kicker">
+            eye-catching
+          </p>
+					<p class="srvp-desc"
+             data-i18n="servicesPage.cards.dekorace.desc"
+             data-cms-key="services.dekorace.desc">
+						Náš tým umělců a&nbsp;dekoratérů tvoří působivé dekorace, od presswallů po 3D instalace.
+					</p>
+				</a>
+			</div>
+		</section>
+	</section>
+
+	<section class="next-banner reveal" aria-labelledby="next-title">
+		<div class="next-inner">
+			<h2 class="next-kicker"
+          id="next-title"
+          data-i18n="next.title"
+          data-cms-key="next.title">
+        Nejbližší Akce
+      </h2>
+
+			<div class="next-left">
+				<h3 class="next-name"
+            data-i18n="next.name"
+            data-cms-key="next.name">
+          Andersenovy pohádky
+        </h3>
+				<p class="next-desc"
+           data-i18n="next.desc"
+           data-cms-key="next.desc">
+					Oživlé příběhy H. Ch. Andersena v hudebním a vizuálním provedení!
+				</p>
+				<a class="next-btn"
+           href="anderson.html"
+           data-transition
+           data-i18n="next.cta"
+           data-cms-link="next.tickets">
+          Zakoupit vstupenky
+        </a>
+			</div>
+
+			<aside class="next-info"
+             aria-label="Informace o akci"
+             data-i18n-attr="aria-label:next.info.aria">
+				<h4 class="info-title"
+            data-i18n="next.info.title"
+            data-cms-key="next.info.title">
+          Informace o akci
+        </h4>
+				<ul class="info-list">
+					<li>
+            <span data-i18n="next.info.dateLabel">Datum:</span>
+            <strong
+              data-i18n="next.info.dateValue"
+              data-cms-key="next.date">
+              22.12.2025
+            </strong>
+          </li>
+					<li>
+            <span data-i18n="next.info.timeLabel">Čas:</span>
+            <strong
+              data-i18n="next.info.timeValue"
+              data-cms-key="next.time">
+              19:00
+            </strong>
+          </li>
+					<li>
+            <span data-i18n="next.info.placeLabel">Místo:</span>
+            <strong
+              data-i18n="next.info.placeValue"
+              data-cms-key="next.place">
+              Divadlo Hybernia
+            </strong>
+          </li>
+				</ul>
+			</aside>
+		</div>
+	</section>
+</main>
+
+
+<!-- ===================== FOOTER (HTML) ===================== -->
+<footer class="site-footer reveal" id="site-footer" aria-labelledby="ft-brand">
+	<div class="footer-top">
+		<!-- 1) Brand -->
+		<section class="ft-col ft-brand" aria-labelledby="ft-brand">
+			<h3 class="ft-title" id="ft-brand" data-i18n="footer.brand.title">EUTERPE</h3>
+			<p class="ft-text" data-i18n="footer.brand.desc">Organizace kulturních a&nbsp;firemních akcí</p>
+
+			<nav class="ft-social" aria-label="Sociální sítě" data-i18n-attr="aria-label:footer.social.aria">
+				<a href="https://www.facebook.com/euterpe.artists/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-social-link" data-i18n-attr="aria-label:footer.social.fb">
+					<img src="/assets/icons/Facebook.svg" alt="" class="ft-social-ico" />
+				</a>
+				<a href="https://www.instagram.com/euterpeartistsagency" target="_blank" rel="noopener" aria-label="Instagram" class="ft-social-link" data-i18n-attr="aria-label:footer.social.ig">
+					<img src="/assets/icons/Instagram.svg" alt="" class="ft-social-ico" />
+				</a>
+			</nav>
+		</section>
+
+		<!-- 2) Linky -->
+		<nav class="ft-col ft-links" aria-labelledby="ft-links">
+			<h3 class="ft-title" id="ft-links" data-i18n="footer.links.title">Linky</h3>
+			<ul class="ft-list">
+				<li><a href="index.html" data-transition data-i18n="footer.links.home">Úvod</a></li>
+				<li><a href="events.html" data-transition data-i18n="footer.links.events">Akce</a></li>
+				<li><a href="about.html" data-transition data-i18n="footer.links.about">O&nbsp;Nás</a></li>
+			</ul>
+		</nav>
+
+		<!-- 3) Kontakty -->
+		<section class="ft-col ft-contact" aria-labelledby="ft-contact">
+			<h3 class="ft-title" id="ft-contact" data-i18n="footer.contact.title">Kontakty</h3>
+			<ul class="ft-contact-list">
+				<li>
+					<img class="ft-ico" src="/assets/icons/Adresa.svg" alt="" />
+					<div>
+						<div class="ft-value" data-i18n="footer.contact.address">Doležalova 1046/22, Praha 9</div>
+					</div>
+				</li>
+				<li>
+					<img class="ft-ico" src="/assets/icons/Phone.svg" alt="" />
+					<div>
+						<a class="ft-value" href="tel:+420775066858" data-i18n="footer.contact.phone">+420&nbsp;775&nbsp;066&nbsp;858</a>
+					</div>
+				</li>
+				<li>
+					<img class="ft-ico" src="/assets/icons/Mail.svg" alt="" />
+					<div>
+						<a class="ft-value" href="mailto:info@euterpe.cz" data-i18n="footer.contact.email">info@euterpe.cz</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<!-- 4) Buďte v Obraze -->
+		<section class="ft-col ft-news" aria-labelledby="ft-news">
+			<h3 class="ft-title" id="ft-news" data-i18n="footer.news.title">Buďte v&nbsp;Obraze</h3>
+			<p class="ft-text" data-i18n="footer.news.desc">Získejte exkluzivní přístup k&nbsp;novinkám</p>
+			<form class="ft-form" id="ft-subscribe">
+				<label class="sr-only" for="ft-email" data-i18n="footer.news.emailLabel">Váš e-mail</label>
+				<input id="ft-email" class="ft-input" type="email" name="email" placeholder="Váš e-mail"
+					required
+					data-i18n-attr="placeholder:footer.news.placeholder" />
+				<button class="ft-btn" type="submit" data-i18n="footer.news.submit">Odebírat</button>
+			</form>
+		</section>
+	</div>
+
+	<hr class="footer-sep" />
+
+	<div class="footer-bottom">
+		<div class="ft-made" data-i18n="footer.madeBy">
+			Vytvořeno společností&nbsp;<a href="https://cyber-on.net/" target="_blank" rel="noopener">CyberON</a>
+		</div>
+		<div class="ft-copy">
+			<span data-i18n="footer.copy.prefix">© 2025 EUTERPE. Všechna práva vyhrazena.</span>
+			<a href="privacy.html" data-transition data-i18n="footer.copy.privacy">Privacy&nbsp;Policy</a>
+		</div>
+	</div>
+</footer>
+
+<!-- Модалка регистрации (2 шага) -->
+<div class="modal" id="subscribe-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="sub-title">
+  <div class="modal-backdrop" data-close="modal"></div>
+  <div class="modal-dialog" role="document">
+    <button class="modal-close" aria-label="Zavřít" data-close="modal" data-i18n-attr="aria-label:modal.closeAria">✕</button>
+
+    <h3 class="modal-title" id="sub-title" data-i18n="modal.title">Dokončit registraci</h3>
+
+    <!-- Шаг 1 -->
+    <form class="modal-form" id="subscribe-form-step1" autocomplete="on">
+      <label>
+        <span data-i18n="modal.step1.emailLabel">E-mail</span>
+        <input type="email" name="email" id="sub-email" placeholder="vas@email.cz" required
+               data-i18n-attr="placeholder:modal.step1.emailPh" />
+      </label>
+      <label>
+        <span data-i18n="modal.step1.phoneLabel">Telefon (volitelné)</span>
+        <input type="tel" name="phone" id="sub-phone" placeholder="+420…" data-i18n-attr="placeholder:modal.step1.phonePh" />
+      </label>
+      <label class="captcha">
+        <span data-i18n="modal.step1.captchaLabel">Captcha</span>
+        <div class="fake-captcha">
+          <input type="checkbox" id="sub-captcha" required />
+          <label for="sub-captcha" data-i18n="modal.step1.captchaText">Nejsem robot</label>
+        </div>
+      </label>
+      <button class="ft-btn modal-submit" type="submit" id="btn-send-code" data-i18n="modal.step1.sendCode">Zaslat kód</button>
+      <p class="sub-help" id="sub-help1" style="margin:8px 0 0 0;font-size:12px;opacity:.7" data-i18n="modal.step1.help">
+        Pošleme ověřovací kód na e-mail.
+      </p>
+    </form>
+
+    <!-- Шаг 2 -->
+    <form class="modal-form" id="subscribe-form-step2" style="display:none">
+      <label>
+        <span data-i18n="modal.step2.codeLabel">Ověřovací kód</span>
+        <input type="text"
+               inputmode="text"
+               pattern="[A-Za-z0-9_-]{6}"
+               maxlength="6"
+               name="code" id="sub-code"
+               placeholder="AB1_x9" required
+               data-i18n-attr="placeholder:modal.step2.codePh" />
+      </label>
+      <div style="display:flex;gap:10px;align-items:center">
+        <button class="ft-btn modal-submit" type="submit" id="btn-verify-code" data-i18n="modal.step2.confirm">Potvrdit</button>
+        <button class="ft-btn" type="button" id="btn-resend" disabled data-i18n="modal.step2.resend">
+          Poslat znovu (<span id="resend-timer">30</span>s)
+        </button>
+      </div>
+      <p class="sub-help" id="sub-help2" style="margin:8px 0 0 0;font-size:12px;opacity:.7" data-i18n="modal.step2.help">
+        Zkontrolujte schránku. Platnost kódu 10 minut.
+      </p>
+    </form>
+
+    <p id="sub-msg" style="margin-top:10px;font-size:14px;" data-i18n="modal.misc.msg"></p>
+  </div>
+</div>
+
+
+<div id="cb-banner" class="cb-banner" role="dialog" aria-live="polite"
+     aria-label="Cookie banner"
+     data-i18n-attr="aria-label" data-i18n="cookie.banner.ariaLabel"
+     style="bottom:0;">
+  <div class="cb-wrap">
+    <div class="cb-text">
+      <span data-i18n="cookie.banner.text.before">
+        Používáme soubory cookie k vylepšení funkčnosti webu a měření návštěvnosti.
+      </span>
+      <span> </span>
+      <span data-i18n="cookie.banner.text.morePrefix">Více v</span>
+      <a href="cookie.html" target="_blank" rel="noopener" data-i18n="cookie.banner.text.policyLink">
+        Zásadách ochrany soukromí
+      </a>
+      <span data-i18n="cookie.banner.text.moreSuffix">.</span>
+    </div>
+    <div class="cb-actions" role="group"
+         aria-label="Možnosti souhlasu"
+         data-i18n-attr="aria-label" data-i18n="cookie.banner.actions.ariaLabel">
+      <button id="cb-decline" class="cb-btn cb-decline" data-i18n="cookie.actions.decline">
+        Odmítnout
+      </button>
+      <button id="cb-settings" class="cb-btn cb-settings" data-i18n="cookie.actions.settings">
+        Nastavení
+      </button>
+      <button id="cb-accept" class="cb-btn cb-accept" data-i18n="cookie.actions.acceptAll">
+        Přijmout vše
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="cb-ovl" class="cb-overlay" aria-hidden="true"></div>
+
+<div id="cb-modal" class="cb-modal" role="dialog" aria-modal="true"
+     aria-labelledby="cb-title">
+  <h3 id="cb-title" data-i18n="cookie.modal.title">Nastavení souborů cookie</h3>
+
+  <div class="cb-row" aria-live="off">
+    <div class="cb-label">
+      <strong data-i18n="cookie.modal.necessary.title">Nezbytné</strong>
+      <span class="cb-small" data-i18n="cookie.modal.necessary.desc">
+        Vždy aktivní. Potřebné pro fungování webu.
+      </span>
+    </div>
+    <div class="cb-switch" aria-hidden="true" title="Always on"
+         data-i18n-attr="title" data-i18n="cookie.modal.necessary.alwaysOnTitle">
+      <input type="checkbox" checked disabled>
+      <span class="cb-slider"></span>
+    </div>
+  </div>
+
+  <div class="cb-row">
+    <div class="cb-label">
+      <strong data-i18n="cookie.modal.analytics.title">Analytické (GA4)</strong>
+      <span class="cb-small" data-i18n="cookie.modal.analytics.desc">
+        Pomáhají nám zlepšovat web.
+      </span>
+    </div>
+    <label class="cb-switch">
+      <input id="cb-analytics" type="checkbox"
+             aria-label="Povolit analytické cookie"
+             data-i18n-attr="aria-label" data-i18n="cookie.modal.analytics.aria">
+      <span class="cb-slider"></span>
+    </label>
+  </div>
+
+  <div class="cb-row">
+    <div class="cb-label">
+      <strong data-i18n="cookie.modal.ads.title">Reklamní a personalizace (Google Ads)</strong>
+      <span class="cb-small" data-i18n="cookie.modal.ads.desc">
+        Pro měření konverzí a personalizaci reklam.
+      </span>
+    </div>
+    <label class="cb-switch">
+      <input id="cb-ads" type="checkbox"
+             aria-label="Povolit reklamní cookie"
+             data-i18n-attr="aria-label" data-i18n="cookie.modal.ads.aria">
+      <span class="cb-slider"></span>
+    </label>
+  </div>
+
+  <div class="cb-btm">
+    <button id="cb-cancel" class="cb-btn cb-decline" data-i18n="cookie.modal.actions.back">
+      Zpět
+    </button>
+    <button id="cb-save" class="cb-btn cb-settings" data-i18n="cookie.modal.actions.save">
+      Uložit volby
+    </button>
+    <button id="cb-accept2" class="cb-btn cb-accept" data-i18n="cookie.modal.actions.acceptAll">
+      Přijmout vše
+    </button>
+  </div>
+</div>
+
+
+<script src="/source/js/main.js" defer></script>
+<script src="/source/js/translate.js" defer></script>
+<script src="/source/js/ragistration.js" defer></script>
+<script src="/source/js/cms-frontend.js" defer></script>
+
+</body>
+</html>

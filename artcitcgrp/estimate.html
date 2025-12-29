@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services-Estimate</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+  <link rel="stylesheet" href="/source/style/estimate.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<main>
+  <section class="estimate">
+    <div class="container">
+
+      <!-- Заголовок страницы -->
+      <h1 class="estimate__title" data-i18n="estimate.title">
+        Calculate the cost of the design project
+      </h1>
+
+      <div class="estimate__body">
+        <!-- Левая колонка: большая картинка -->
+        <div class="estimate__media">
+          <div class="estimate__image" data-estimate-image></div>
+        </div>
+
+        <!-- Правая колонка: шаги -->
+        <div class="estimate__panel">
+          <!-- Шапка шагов -->
+          <div class="estimate__step-head">
+            <div class="estimate__step-caption">
+              <span class="estimate__step-label" data-i18n="estimate.stepLabel">Step</span>
+              <span class="estimate__step-count">
+                <span id="estimate-current-step">1</span>/<span id="estimate-total-steps">5</span>
+              </span>
+            </div>
+
+            <div class="estimate__progress">
+              <div class="estimate__progress-bar" id="estimate-progress-bar"></div>
+            </div>
+          </div>
+
+          <form class="estimate-form" id="estimate-form" novalidate>
+            <!-- STEP 1 -->
+            <div class="estimate-step is-active" data-step="1">
+              <h2 class="estimate-step__question" data-i18n="estimate.step1.question">
+                What type of space do you need a design for?
+              </h2>
+
+              <div class="estimate-options estimate-options--grid">
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step1"
+                        data-value="villa">
+                  <span data-i18n="estimate.step1.villa">Villa</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step1"
+                        data-value="apartment">
+                  <span data-i18n="estimate.step1.apartment">Apartment</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step1"
+                        data-value="office">
+                  <span data-i18n="estimate.step1.office">Office</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step1"
+                        data-value="restaurant">
+                  <span data-i18n="estimate.step1.restaurant">Restaurant</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step1"
+                        data-value="shop">
+                  <span data-i18n="estimate.step1.shop">Shop</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step1"
+                        data-value="beauty">
+                  <span data-i18n="estimate.step1.beauty">Beauty Salon</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="estimate-step" data-step="2">
+              <h2 class="estimate-step__question" data-i18n="estimate.step2.question">
+                What is total area of the premises (in m²)?
+              </h2>
+
+              <div class="estimate-area">
+                <label class="estimate-area__field">
+                  <input id="estimate-area"
+                         type="number"
+                         min="1"
+                         inputmode="decimal"
+                         class="estimate-area__input">
+                  <span class="estimate-area__unit">
+                    m<sup>2</sup>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="estimate-step" data-step="3">
+              <h2 class="estimate-step__question" data-i18n="estimate.step3.question">
+                What interior style do you prefer?
+              </h2>
+
+              <div class="estimate-options estimate-options--styles">
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step3"
+                        data-value="modern">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/01.jpg" alt="Modern">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step3.modern">Modern</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step3"
+                        data-value="neoclassic">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/41.jpg" alt="Neoclassic">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step3.neoclassic">Neoclassic</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step3"
+                        data-value="american">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/42.jpg" alt="American">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step3.american">American</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step3"
+                        data-value="french">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/39.jpg" alt="French">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step3.french">French</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step3"
+                        data-value="minimal">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/24.jpg" alt="Minimalism">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step3.minimal">Minimalism</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="estimate-step" data-step="4">
+              <h2 class="estimate-step__question" data-i18n="estimate.step4.question">
+                When do you want to start the project?
+              </h2>
+
+              <div class="estimate-options estimate-options--grid estimate-options--single-column-m">
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step4"
+                        data-value="asap">
+                  <span data-i18n="estimate.step4.asap">As soon as possible</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step4"
+                        data-value="week">
+                  <span data-i18n="estimate.step4.week">In a week</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step4"
+                        data-value="month">
+                  <span data-i18n="estimate.step4.month">In a month</span>
+                </button>
+
+                <button type="button"
+                        class="estimate-option"
+                        data-group="step4"
+                        data-value="six">
+                  <span data-i18n="estimate.step4.six">In six months</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="estimate-step" data-step="5">
+              <h2 class="estimate-step__question" data-i18n="estimate.step5.question">
+                Specify the city where your property is located
+              </h2>
+
+              <div class="estimate-options estimate-options--styles estimate-options--city">
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step5"
+                        data-value="prague">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/Praha.jpeg" alt="Prague">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step5.prague">Prague</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step5"
+                        data-value="brno">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/Brno.jpeg" alt="Brno">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step5.brno">Brno</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step5"
+                        data-value="ostrava">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/Ostrava.jpeg" alt="Ostrava">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step5.ostrava">Ostrava</div>
+                </button>
+
+                <button type="button"
+                        class="estimate-style"
+                        data-group="step5"
+                        data-value="other">
+                  <div class="estimate-style__image">
+                    <img src="/assets/photo/other.png" alt="Other city">
+                  </div>
+                  <div class="estimate-style__label" data-i18n="estimate.step5.other">Other</div>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Кнопки навигации -->
+          <div class="estimate__nav">
+            <button type="button"
+                    class="estimate-nav__btn estimate-nav__btn--secondary"
+                    id="estimate-prev">
+              <span data-i18n="estimate.nav.back">Back</span>
+            </button>
+
+            <button type="button"
+                    class="estimate-nav__btn estimate-nav__btn--primary"
+                    id="estimate-next">
+              <span data-i18n="estimate.nav.next">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Контактная форма после шагов (появляется на последнем шаге) -->
+      <div class="estimate-contact" id="estimate-contact">
+        <h2 class="estimate-contact__title" data-i18n="estimate.contact.title">
+          Share your contact info, and our manager will be in touch shortly
+        </h2>
+
+        <form class="estimate-contact__form" id="estimate-contact-form">
+          <div class="estimate-contact__field">
+            <label class="estimate-contact__label" for="estimate-name" data-i18n="estimate.contact.nameLabel">
+              Your name
+            </label>
+            <input id="estimate-name"
+                   type="text"
+                   class="estimate-contact__input"
+                   name="name">
+          </div>
+
+          <div class="estimate-contact__field">
+            <label class="estimate-contact__label" for="estimate-phone" data-i18n="estimate.contact.phoneLabel">
+              Telephone
+            </label>
+            <input id="estimate-phone"
+                   type="tel"
+                   class="estimate-contact__input"
+                   name="phone">
+          </div>
+
+          <div class="estimate-contact__field">
+            <label class="estimate-contact__label" for="estimate-message" data-i18n="estimate.contact.messageLabel">
+              Message
+            </label>
+            <textarea id="estimate-message"
+                      class="estimate-contact__textarea"
+                      rows="3"
+                      name="message"></textarea>
+          </div>
+
+          <div class="estimate-contact__footer">
+            <button type="submit"
+                    class="estimate-contact__submit">
+              <span data-i18n="estimate.contact.submit">Send request</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Модалка ошибок -->
+    <div class="estimate-modal" id="estimate-modal" aria-hidden="true">
+      <div class="estimate-modal__backdrop" data-modal-close></div>
+      <div class="estimate-modal__dialog">
+        <button type="button" class="estimate-modal__close" data-modal-close>×</button>
+        <h3 class="estimate-modal__title" data-i18n="estimate.error.title">Error!</h3>
+        <p class="estimate-modal__text" id="estimate-modal-text">
+          The required field is not filled.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+  <script src="/source/js/estimate.js"></script>
+</body>
+</html>

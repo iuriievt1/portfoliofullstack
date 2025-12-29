@@ -1,0 +1,4264 @@
+@font-face {
+  font-family: "IBrand";
+  src: url("/assets/fonts/iBrand/ibrand.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orborn";
+  src: url("/assets/fonts/Orborn/Orborn-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+	font-family: "Clash Display";
+	src: url("../../assets/fonts/ClashDisplay/ClashDisplay-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "IBM Plex Sans";
+	src: url("../../assets/fonts/IBMplexSans/IBMPlexSans-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Outfit";
+	src: url("../../assets/fonts/Outfit/Outfit-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Outfit";
+	src: url("../../assets/fonts/Outfit/Outfit-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Outfit";
+	src: url("../../assets/fonts/Outfit/Outfit-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Nativera";
+	src: url("../../assets/fonts/Nativera/nativera-bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Agency FB Cyrillic";
+	src: url("../../assets/fonts/Agency/agencyfbcyrillic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Evolitta";
+	src: url("../../assets/fonts/Evolitta/Evolitta.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("/assets/fonts/BebasNeue/BebasNeue.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Misron";
+  src: url("/assets/fonts/Misron/Misron.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RulesVariable";
+  src: url("/assets/fonts/RulesVariable/RulesVariable.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====== Cookie banner ====== */
+
+.cookie-banner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.92);
+	color: #ffffff;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.cookie-banner__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+}
+
+.cookie-banner__text {
+	margin: 0;
+	max-width: 640px;
+}
+
+.cookie-banner__actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-shrink: 0;
+}
+
+.cookie-banner__btn {
+	padding-top: 8px;
+	padding-right: 18px;
+	padding-bottom: 8px;
+	padding-left: 18px;
+	border-radius: 999px;
+	border: none;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.cookie-banner__btn:hover,
+.cookie-banner__btn:focus-visible {
+	background-color: #f2f2f2;
+}
+
+.cookie-banner__link {
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.cookie-banner__link:hover {
+	opacity: 1;
+}
+
+.cookie-banner--hidden {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.cookie-banner__inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+
+/* === Base == */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Outfit", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+	font-weight: 400;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+/* Контейнер */
+
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* ====== Header ====== */
+
+.header {
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #ffffff;
+	z-index: 100;
+}
+
+.header__inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	min-height: 80px;
+}
+
+/* Логотип */
+
+/* ССЫЛКА-ЛОГОТИП В ХЕДЕРЕ */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* САМО ИЗОБРАЖЕНИЕ ЛОГОТИПА */
+.logo img {
+  display: block;
+  height: 60px;
+  width: 120px;
+}
+
+/* ТЕЛЕФОНЫ (до 768px) */
+@media (max-width: 768px) {
+  .logo img {
+    height: 30px;
+    width: 90px;
+  }
+}
+
+/* МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) */
+@media (max-width: 480px) {
+  .logo img {
+    height: 26px;
+    width: 82px;
+  }
+}
+
+/* ОЧЕНЬ МАЛЕНЬКИЕ (до 360px) */
+@media (max-width: 360px) {
+  .logo img {
+    height: 24px;
+    width: 76px;
+  }
+}
+
+/* Навигация */
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.nav__link {
+	position: relative;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #000000;
+}
+
+.nav__link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition-property: transform;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.nav__link:hover::after {
+	transform: scaleX(1);
+}
+
+/* Языковое меню */
+
+.lang {
+	position: relative;
+}
+
+.lang__current {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding-top: 8px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+	border-radius: 999px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #ffffff;
+}
+
+.lang__label {
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.lang__icon {
+	font-size: 10px;
+}
+
+.lang__list {
+	position: absolute;
+	top: 110%;
+	right: 0;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 0;
+	padding-right: 0;
+	list-style: none;
+	min-width: 120px;
+	border-radius: 12px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	background-color: #ffffff;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-4px);
+	transition-property: opacity, transform, visibility;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+	z-index: 10;
+}
+
+.lang.is-open .lang__list {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.lang__option {
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+}
+
+.lang__option:hover {
+	background-color: #f5f5f5;
+}
+
+/* Бургер */
+
+.header__burger {
+	display: none;
+	width: 32px;
+	height: 24px;
+	flex-shrink: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	z-index: 20;
+}
+
+.header__burger span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #000000;
+	transition-property: transform, opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.header.is-open .header__burger span:nth-child(1) {
+	transform: translateY(11px) rotate(45deg);
+}
+
+.header.is-open .header__burger span:nth-child(2) {
+	opacity: 0;
+}
+
+.header.is-open .header__burger span:nth-child(3) {
+	transform: translateY(-11px) rotate(-45deg);
+}
+
+.hero {
+	position: relative;
+	height: 700px;
+	color: #ffffff;
+	overflow: hidden;
+}
+
+.hero__background {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.hero__background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* степень затемнения — можешь подвигать 0.3–0.6 */
+  pointer-events: none;
+}
+
+.hero__bg-layer {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	transform: scale(1.05);
+	filter: blur(6px);
+	transition-property: opacity, transform, filter;
+	transition-duration: 1.2s;
+	transition-timing-function: ease;
+}
+
+.hero__bg-layer.is-active {
+	opacity: 1;
+	transform: scale(1);
+	filter: blur(0);
+}
+
+.hero__content {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.hero__cards {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 24px;
+	width: 100%;
+}
+
+.hero-card {
+	flex: 1 1 0;
+	max-width: none;
+	perspective: 1000px;
+}
+
+.hero-card__inner {
+	position: relative;
+	width: 100%;
+	height: 260px;
+	transform-style: preserve-3d;
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+}
+
+.hero-card__face {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+	border-radius: 24px;
+	background-color: rgba(255, 255, 255, 0.08);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	color: #ffffff;
+	backface-visibility: hidden;
+}
+
+.hero-card__face--back {
+	transform: rotateY(180deg);
+}
+
+.hero-card__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+  color: #ffffff;
+}
+
+.hero-card__text {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+  color: #ffffff;
+}
+
+.hero-card__btn {
+	display: inline-block;
+	padding-top: 8px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	border-radius: 8px;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.hero-card__btn:hover,
+.hero-card__btn:focus-visible,
+.hero-card__btn:active {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.hero-card.is-flipped .hero-card__inner {
+	transform: rotateY(180deg);
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+	background-color: #000000;
+	color: #ffffff;
+	padding-top: 56px;
+	padding-bottom: 24px;
+}
+
+.footer__inner {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 56px;
+}
+
+.footer__col {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.footer__col--brand {
+	max-width: 280px;
+}
+
+.footer__col--form {
+	max-width: 340px;
+}
+
+.footer__logo {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Misron", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* Соцсети */
+
+.footer__social {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.footer__social-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 999px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__social-icon {
+	width: 18px;
+	height: 18px;
+	display: block;
+}
+
+/* Заголовки колонок */
+
+.footer__title {
+	margin-top: 0;
+	margin-bottom: 14px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+/* Навигация в футере */
+
+.footer__nav {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.footer__link {
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+}
+
+/* Контакты */
+
+.footer__line {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+}
+
+.footer__label {
+	display: block;
+	opacity: 0.7;
+	margin-bottom: 2px;
+	white-space: normal;
+}
+
+.footer__value {
+	display: inline-block;
+	opacity: 1;
+	text-decoration: none;
+	color: #ffffff;
+	white-space: nowrap;
+}
+
+.footer__value:hover {
+	text-decoration: underline;
+}
+
+/* Форма в футере */
+
+.footer-form {
+	margin-top: 10px;
+}
+
+.footer-form__row {
+	display: flex;
+	align-items: stretch;
+	border-radius: 999px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.06);
+	overflow: hidden;
+}
+
+.footer-form__input {
+	flex: 1 1 auto;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-right: 14px;
+	padding-bottom: 10px;
+	padding-left: 18px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+}
+
+.footer-form__input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__button {
+	flex: 0 0 auto;
+	width: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 18px;
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.footer-form__button:hover,
+.footer-form__button:focus-visible {
+	background-color: #f2f2f2;
+	color: #000000;
+}
+
+.footer-form__message {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	opacity: 0;
+	transform: translateY(4px);
+	transition-property: opacity, transform;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.footer-form__message.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Нижняя полоса */
+
+.footer__bottom {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgba(255, 255, 255, 0.16);
+	margin-top: 32px;
+	padding-top: 10px;
+}
+
+.footer__bottom-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 12px;
+}
+
+.footer__bottom-link {
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.footer__bottom-link:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+/* "Сделано" */
+
+.footer__bottom-made {
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 12px;
+}
+
+/* Бренд CyberON */
+
+.footer__bottom-brand {
+	margin-left: 4px;
+	font-family: "Nativera", "Outfit", system-ui, sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+
+/* ====== Services ====== */
+
+.services {
+	padding-bottom: 100px;
+}
+
+.services__title {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	color: #000000;
+}
+
+.services__cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 40px;
+}
+
+.service-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.service-card__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	color: #000000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.service-card__images {
+	position: relative;
+	border-radius: 24px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	aspect-ratio: 4 / 3;
+	margin-bottom: 20px;
+}
+
+.service-card__image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transform: translateX(20px);
+	transition-property: opacity, transform;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+}
+
+.service-card__image.is-active {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Кнопка See More с анимацией слева направо */
+
+.service-card__btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	align-self: flex-start;
+	padding-top: 20px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	font-family: "Clash Display", "Outfit", system-ui, sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 0;
+	transition-property: color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.service-card__btn::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease;
+	z-index: -1;
+}
+
+.service-card__btn:hover::before,
+.service-card__btn:focus-visible::before,
+.service-card__btn:active::before {
+	transform: translateX(0);
+}
+
+.service-card__btn:hover,
+.service-card__btn:focus-visible,
+.service-card__btn:active {
+	color: #000000;
+}
+
+/* ====== About ====== */
+
+.about {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.about__intro {
+	max-width: 1100px;
+	margin-bottom: 40px;
+}
+
+.about__title {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 34px;
+	font-weight: 600;
+	color: #000000;
+}
+
+.about__text {
+	margin-top: 0;
+	margin-bottom: 14px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+
+/* Почему с нами спокойно */
+
+.about__why {
+	margin-top: 60px;
+}
+
+.about__why-title {
+	margin-top: 0;
+	margin-bottom: 14px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	color: #000000;
+}
+
+.about__cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px;
+	margin-bottom: 40px;
+}
+
+.about-card {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	border-radius: 8px;
+	padding-top: 16px;
+	padding-right: 20px;
+	padding-bottom: 16px;
+	padding-left: 20px;
+	background-color: #ffffff;
+}
+
+.about-card__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* CTA блок */
+
+.about-cta {
+	margin-top: 40px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e5e5e5;
+	text-align: center;
+}
+
+.about-cta__title {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* Кнопка с анимацией слева направо (как на услугах) */
+
+.about-cta__btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 16px;
+	padding-right: 40px;
+	padding-bottom: 16px;
+	padding-left: 40px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 0;
+	transition-property: color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.about-cta__btn::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease;
+	z-index: -1;
+}
+
+.about-cta__btn:hover::before,
+.about-cta__btn:focus-visible::before,
+.about-cta__btn:active::before {
+	transform: translateX(0);
+}
+
+.about-cta__btn:hover,
+.about-cta__btn:focus-visible,
+.about-cta__btn:active {
+	color: #000000;
+}
+
+/* ====== Modal: consultation ====== */
+
+.modal {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+	z-index: 200;
+}
+
+.modal.is-open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal__overlay {
+	position: absolute;
+	inset: 0;
+}
+
+.modal__dialog {
+	position: relative;
+	z-index: 1;
+	max-width: 520px;
+	width: 100%;
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+	border-radius: 24px;
+	background-color: #ffffff;
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.modal__close {
+	position: absolute;
+	top: 14px;
+	right: 18px;
+	font-size: 20px;
+	line-height: 1;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.modal__title {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* Форма в модалке */
+
+.modal-form__field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 14px;
+}
+
+.modal-form__label {
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #000000;
+	margin-bottom: 4px;
+}
+
+.modal-form__input {
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	outline: none;
+}
+
+.modal-form__input::placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-form__input:focus-visible {
+	border-color: #000000;
+}
+
+/* Тема (radio) */
+
+.modal-form__fieldset {
+	margin: 0;
+	margin-bottom: 14px;
+	padding: 0;
+	border: none;
+}
+
+.modal-form__radio {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 6px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.modal-form__radio input[type="radio"] {
+	accent-color: #000000;
+}
+
+/* Поле для своего варианта темы */
+
+.modal-form__field--other {
+	display: none;
+}
+
+.modal-form__textarea {
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	resize: vertical;
+	min-height: 80px;
+	outline: none;
+}
+
+.modal-form__textarea:focus-visible {
+	border-color: #000000;
+}
+
+/* Кнопка отправки (стиль в духе сайта) */
+
+.modal-form__submit {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	padding-top: 12px;
+	padding-right: 28px;
+	padding-bottom: 12px;
+	padding-left: 28px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 0;
+	cursor: pointer;
+	transition-property: color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.modal-form__submit::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease;
+	z-index: -1;
+}
+
+.modal-form__submit:hover::before,
+.modal-form__submit:focus-visible::before,
+.modal-form__submit:active::before {
+	transform: translateX(0);
+}
+
+.modal-form__submit:hover,
+.modal-form__submit:focus-visible,
+.modal-form__submit:active {
+	color: #000000;
+}
+
+/* Сообщение об отправке */
+
+.modal-form__message {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	min-height: 1em;
+}
+
+.modal-form__message.is-success {
+	color: #008000;
+}
+
+.modal-form__message.is-error {
+	color: #cc0000;
+}
+
+/* ====== Contact ====== */
+
+.contact {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.contact__title {
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.contact__content {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	margin-bottom: 60px;
+}
+
+/* Левая колонка: галерея */
+
+.contact__gallery {
+	flex: 1 1 0;
+	position: relative;
+	border-radius: 24px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	aspect-ratio: 4 / 5;
+}
+
+.contact__slide {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
+	transform: scale(1.04);
+	transition-property: opacity, transform;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+}
+
+.contact__slide.is-active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Правая колонка: форма */
+
+.contact__form-wrapper {
+	flex: 1 1 0;
+}
+
+.contact-form__field {
+	margin-bottom: 20px;
+}
+
+.contact-form__label {
+	display: block;
+	margin-bottom: 4px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.contact-form__input,
+.contact-form__select {
+	width: 100%;
+	border: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	padding-top: 6px;
+	padding-right: 0;
+	padding-bottom: 8px;
+	padding-left: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: transparent;
+	outline: none;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form__textarea {
+	width: 100%;
+	border: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	padding-top: 6px;
+	padding-right: 0;
+	padding-bottom: 8px;
+	padding-left: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: transparent;
+	outline: none;
+	resize: vertical;
+	min-height: 80px;
+}
+
+/* Чекбоксы */
+
+.contact-form__checks {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.contact-form__checkbox {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+.contact-form__checkbox input[type="checkbox"] {
+	accent-color: #000000;
+}
+
+/* Подуслуги */
+
+.contact-form__field--subservices {
+	display: none;
+}
+
+.contact-form__field--subservices .contact-form__label {
+	margin-bottom: 8px;
+}
+
+/* Кнопка отправки — в стиле сайта, с анимацией слева направо */
+
+.contact-form__submit {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 12px;
+	padding-right: 36px;
+	padding-bottom: 12px;
+	padding-left: 36px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 0;
+	cursor: pointer;
+	transition-property: color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.contact-form__submit::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease;
+	z-index: -1;
+}
+
+.contact-form__submit:hover::before,
+.contact-form__submit:focus-visible::before,
+.contact-form__submit:active::before {
+	transform: translateX(0);
+}
+
+.contact-form__submit:hover,
+.contact-form__submit:focus-visible,
+.contact-form__submit:active {
+	color: #000000;
+}
+
+/* Сообщение формы */
+
+.contact-form__message {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	min-height: 1em;
+	color: #000000;
+}
+
+.contact-form__message.is-success {
+	color: #008000;
+}
+
+.contact-form__message.is-error {
+	color: #cc0000;
+}
+
+/* Блок с картой */
+
+.contact__map-block {
+	margin-top: 20px;
+}
+
+.contact__map-title {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.contact__map {
+	border-radius: 24px;
+	overflow: hidden;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+}
+
+.contact__map iframe {
+	display: block;
+	width: 100%;
+	height: 320px;
+	border: 0;
+}
+
+/* ====== Construction ====== */
+
+.construction {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+/* Шапка: заголовок + теги */
+
+.construction__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+.construction__title {
+	margin: 0;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+
+/* Общие подзаголовки секций */
+
+.construction__subtitle {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* ===== Преимущества ===== */
+
+.construction__benefits {
+	margin-bottom: 56px;
+}
+
+.construction-benefits {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+	border-radius: 24px;
+	background-color: #f7f7f7;
+}
+
+.construction-benefit {
+	padding-top: 12px;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+}
+
+.construction-benefit__title {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.construction-benefit__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* ===== Карточки услуг ===== */
+
+.construction__services {
+	margin-bottom: 64px;
+}
+
+.construction-services {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.construction-card {
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 18px;
+	padding-right: 18px;
+	padding-bottom: 20px;
+	padding-left: 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	background-color: #ffffff;
+	transition-property: transform, box-shadow;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.construction-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.construction-card__title {
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.construction-card__image-wrap {
+	border-radius: 18px;
+	overflow: hidden;
+}
+
+.construction-card__image {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* Кнопка Více — аккуратный инверт */
+
+.construction-card__btn {
+	margin-top: auto;
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+	padding-right: 28px;
+	padding-bottom: 10px;
+	padding-left: 28px;
+	border-radius: 8px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	cursor: pointer;
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.construction-card__btn:hover,
+.construction-card__btn:focus-visible,
+.construction-card__btn:active {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/* ===== Jak pracujeme ===== */
+
+.construction__process {
+	margin-bottom: 64px;
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+	border-radius: 24px;
+	background-color: #f2f2f2;
+}
+
+/* Лента шагов — таблетки с стрелками, стрелка рядом с текстом */
+
+.construction-process {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 12px;
+	column-gap: 10px;
+}
+
+.construction-process__step {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding-top: 6px;
+	padding-right: 14px;
+	padding-bottom: 6px;
+	padding-left: 14px;
+	border-radius: 999px;
+	background-color: #ffffff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dddddd;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.construction-process__step::after {
+	content: "→";
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+/* у последнего шага стрелку убираем */
+.construction-process__step:last-child::after {
+	content: "";
+}
+
+/* ===== Кейсы / галерея
+
+.construction__cases {
+	margin-bottom: 64px;
+}
+
+.construction-cases {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.construction-case {
+	border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	overflow: hidden;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+
+.construction-case__image-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+
+.construction-case__image {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.construction-case__caption {
+	margin-top: 10px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	margin-left: 14px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+}
+  ===== */
+
+
+
+.construction__faq {
+	margin-bottom: 56px;
+	padding-top: 28px;
+	padding-right: 24px;
+	padding-bottom: 28px;
+	padding-left: 24px;
+	border-radius: 24px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.construction__subtitle--light {
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+
+/* FAQ — аккуратные «строки» с разделителями */
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.faq-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+.faq-item:last-child {
+	border-bottom: none;
+}
+
+.faq-item__question {
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* маленький кружок-метка перед вопросом */
+
+.faq-item__question::before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 999px;
+	background-color: #ffffff;
+	flex-shrink: 0;
+}
+
+.faq-item__answer {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===== CTA внизу ===== */
+
+.construction__cta {
+	margin-top: 24px;
+	text-align: center;
+}
+
+.construction__cta .about-cta__title {
+	margin-bottom: 12px;
+}
+
+.construction__cta .about-cta__btn {
+	display: inline-flex;
+}
+
+/* ====== VZT ====== */
+
+.vzt {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.vzt__title {
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.vzt__intro-layout {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.vzt__text {
+	flex: 1 1 0;
+}
+
+/* Подзаголовки секций */
+
+.vzt__subtitle {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* ===== Co děláme (карточки) ===== */
+
+.vzt__services {
+	margin-bottom: 56px;
+}
+
+.vzt-services {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.vzt-card {
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-color: #ffffff;
+	transition-property: transform, box-shadow;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.vzt-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.vzt-card__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.vzt-card__list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.vzt-card__item {
+	position: relative;
+	padding-left: 16px;
+	margin-bottom: 6px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.vzt-card__item::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* ===== Výhody pro klienty ===== */
+
+.vzt__benefits {
+	margin-bottom: 48px;
+}
+
+.vzt-benefits {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.vzt-benefit {
+	border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 14px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	background-color: #f9f9f9;
+}
+
+.vzt-benefit__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+}
+
+/* CTA снизу */
+
+.vzt__cta {
+	margin-top: 24px;
+}
+
+/* ====== ZTI ====== */
+
+.zti {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.zti__title {
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.zti__intro-layout {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.zti__text {
+	flex: 1 1 0;
+}
+
+.zti__paragraph {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* Подзаголовки секций */
+
+.zti__subtitle {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* ===== Co děláme (карточки) ===== */
+
+.zti__services {
+	margin-bottom: 56px;
+}
+
+.zti-services {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.zti-card {
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-color: #ffffff;
+	transition-property: transform, box-shadow;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.zti-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.zti-card__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.zti-card__list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.zti-card__item {
+	position: relative;
+	padding-left: 16px;
+	margin-bottom: 6px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.zti-card__item::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* ===== Výhody pro klienty ===== */
+
+.zti__benefits {
+	margin-bottom: 48px;
+}
+
+.zti-benefits {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.zti-benefit {
+	border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 14px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	background-color: #f9f9f9;
+}
+
+.zti-benefit__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+}
+
+/* CTA снизу */
+
+.zti__cta {
+	margin-top: 24px;
+}
+
+
+/* ====== Elektroinstalace ====== */
+
+.elektro {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.elektro__title {
+	margin-top: 0;
+	margin-bottom: 24px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.elektro__intro-layout {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.elektro__text {
+	flex: 1 1 0;
+}
+
+.elektro__paragraph {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* Подзаголовки секций */
+
+.elektro__subtitle {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* ===== Co děláme (карточки) ===== */
+
+.elektro__services {
+	margin-bottom: 56px;
+}
+
+.elektro-services {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.elektro-card {
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-color: #ffffff;
+	transition-property: transform, box-shadow;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.elektro-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.elektro-card__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.elektro-card__list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.elektro-card__item {
+	position: relative;
+	padding-left: 16px;
+	margin-bottom: 6px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.elektro-card__item::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/* ===== Výhody pro klienty ===== */
+
+.elektro__benefits {
+	margin-bottom: 48px;
+}
+
+.elektro-benefits {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.elektro-benefit {
+	border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 14px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	background-color: #f9f9f9;
+}
+
+.elektro-benefit__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+}
+
+/* CTA снизу */
+
+.elektro__cta {
+	margin-top: 24px;
+}
+
+
+/* ====== Design & Architektura ====== */
+
+.design {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.design__intro {
+	margin-bottom: 32px;
+}
+
+.design__title {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.design__subtitle {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* Карточки Interior / Architecture */
+
+.design__cards {
+	margin-bottom: 48px;
+}
+
+.design-cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.design-card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.design-card__image-wrap {
+	position: relative;
+	padding-top: 65%;
+	overflow: hidden;
+}
+
+.design-card__image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.02);
+	transition-property: transform;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+}
+
+.design-card:hover .design-card__image {
+	transform: scale(1.08);
+}
+
+.design-card__body {
+	padding-top: 18px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.design-card__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.design-card__btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+	padding-right: 28px;
+	padding-bottom: 10px;
+	padding-left: 28px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: #000000;
+	color: #ffffff;
+	border-radius: 999px;
+	overflow: hidden;
+	z-index: 0;
+	cursor: pointer;
+	transition-property: color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.design-card__btn::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #ffffff;
+	transform: translateX(-100%);
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease;
+	z-index: -1;
+}
+
+.design-card__btn:hover::before,
+.design-card__btn:focus-visible::before,
+.design-card__btn:active::before {
+	transform: translateX(0);
+}
+
+.design-card__btn:hover,
+.design-card__btn:focus-visible,
+.design-card__btn:active {
+	color: #000000;
+}
+
+/* Общие подзаголовки секций (Jak pracujeme / FAQ) */
+
+.design__section-title {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/* Jak pracujeme */
+
+.design__process {
+	margin-bottom: 48px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	border-radius: 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	background-color: #f9f9f9;
+}
+
+.design-process {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.design-process__step {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	border-radius: 999px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+/* FAQ — чёрный блок как у Construction */
+
+.design__faq {
+	margin-bottom: 40px;
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+	border-radius: 24px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.design__faq .design__section-title {
+	margin-top: 0;
+	margin-bottom: 16px;
+	color: #ffffff;
+}
+
+.design__faq .faq-item {
+	border-radius: 16px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.16);
+	padding-top: 12px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	background-color: transparent;
+}
+
+.design__faq .faq-item + .faq-item {
+	margin-top: 10px;
+}
+
+.design__faq .faq-item__question {
+	margin-top: 0;
+	margin-bottom: 6px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.design__faq .faq-item__answer {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA снизу */
+
+.design__cta {
+	margin-top: 16px;
+}
+
+/* ====== Interior Design ====== */
+
+.interior {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.interior__intro {
+	margin-bottom: 60px;
+}
+
+.interior__title {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.interior__subtitle {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+	max-width: 720px;
+}
+
+/* Список блоков 01–06 */
+
+.interior__list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 32px;
+	margin-bottom: 40px;
+}
+
+.interior-item {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.interior-item--reverse {
+	flex-direction: row-reverse;
+}
+
+.interior-item__text {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.interior-item__image {
+	flex: 1 1 0;
+	display: flex;
+}
+
+/* Фото */
+
+.interior-image-wrap {
+	position: relative;
+	border-radius: 24px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+.interior-image-wrap::before {
+	content: "";
+	display: block;
+	padding-top: 70%;
+}
+
+.interior-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.03);
+	transition-property: transform;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+}
+
+.interior-image-wrap:hover .interior-image {
+	transform: scale(1.08);
+}
+
+/* Текстовая часть 01–06 */
+
+.interior-item__number {
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+	opacity: 0.7;
+}
+
+.interior-item__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.interior-item__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* CTA — используем общий .about-cta, центрируем только на Interior */
+
+.interior__cta {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* ====== Architektura ====== */
+
+.architecture {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.architecture__intro {
+	margin-bottom: 60px;
+}
+
+.architecture__title {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.architecture__subtitle {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #000000;
+	max-width: 720px;
+}
+
+/* Список блоков 01–03 */
+
+.architecture__list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 32px;
+	margin-bottom: 40px;
+}
+
+.architecture-item {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.architecture-item--reverse {
+	flex-direction: row-reverse;
+}
+
+.architecture-item__text {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.architecture-item__image {
+	flex: 1 1 0;
+	display: flex;
+}
+
+/* Фото */
+
+.architecture-image-wrap {
+	position: relative;
+	border-radius: 24px;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+.architecture-image-wrap::before {
+	content: "";
+	display: block;
+	padding-top: 70%;
+}
+
+.architecture-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.03);
+	transition-property: transform;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+}
+
+.architecture-image-wrap:hover .architecture-image {
+	transform: scale(1.08);
+}
+
+/* Текст */
+
+.architecture-item__number {
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+	opacity: 0.7;
+}
+
+.architecture-item__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.architecture-item__text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+/* CTA — как на других страницах, по центру */
+
+.architecture__cta {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
+/* ====== Turnkey Projects ====== */
+
+.turnkey {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+/* Интро */
+
+.turnkey__intro {
+  margin-bottom: 48px;
+}
+
+/* Заголовок + теги в одну линию */
+
+.turnkey__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin-bottom: 18px;
+}
+
+.turnkey__title {
+  margin: 0;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.turnkey__tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.turnkey__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #000000;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Текст под заголовком */
+
+.turnkey__layout {
+  max-width: 720px; /* вместо grid, чтобы Safari вообще не чудил */
+}
+
+.turnkey__text {
+  max-width: 640px;
+}
+
+.turnkey__lede {
+  margin: 0 0 16px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.turnkey__bullets {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+/* ====== Процесс (если используешь .turnkey__process / .turnkey-step) ====== */
+
+.turnkey__process {
+  margin-bottom: 60px;
+}
+
+.turnkey-process__head {
+  max-width: 620px;
+}
+
+.turnkey-process__lead {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.turnkey-process__steps {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.turnkey-step {
+  position: relative;
+  padding: 18px 18px 20px;
+  border-radius: 20px;
+  background-color: #fafafa;
+  border: 1px solid #eeeeee;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  min-width: 0; /* важно для Safari */
+}
+
+.turnkey-step__badge {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.turnkey-step__content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.turnkey-step__title {
+  margin: 0 0 6px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.turnkey-step__text {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* ====== Галерея кейсов ====== */
+
+.turnkey__gallery {
+  margin-bottom: 60px;
+}
+
+.turnkey-gallery__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.turnkey-gallery-card {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* блок картинок с фоллбеком для старых Safari */
+
+.turnkey-gallery-card__images {
+  position: relative;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+/* фоллбек высоты (вместо одного только aspect-ratio) */
+.turnkey-gallery-card__images::before {
+  content: "";
+  display: block;
+  padding-top: 75%; /* ≈ 4:3 */
+}
+
+.turnkey-gallery-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.03);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.turnkey-gallery-card__image.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.turnkey-gallery-card__body {
+  padding: 16px 18px 18px;
+}
+
+.turnkey-gallery-card__tag {
+  margin: 0 0 4px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.turnkey-gallery-card__title {
+  margin: 0 0 6px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.turnkey-gallery-card__text {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* ====== FAQ ====== */
+
+.turnkey__faq {
+  margin-bottom: 60px;
+}
+
+.turnkey__faq-inner {
+  border-radius: 24px;
+  padding: 28px 24px 30px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.turnkey__subtitle--light {
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.turnkey__faq-inner .faq {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 32px;
+}
+
+.turnkey__faq-inner .faq-item__question {
+  color: #ffffff;
+}
+
+.turnkey__faq-inner .faq-item__answer {
+  color: #d4d4d4;
+}
+
+/* CTA */
+
+.turnkey__cta {
+  margin-top: 40px;
+}
+
+/* ====== Revitalizace bytových domů ====== */
+
+.revitalizace {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.revitalizace__intro {
+  margin-bottom: 48px;
+}
+
+.revitalizace__title {
+  margin-top: 0;
+	margin-bottom: 24px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.revitalizace__intro-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.revitalizace__text {
+  max-width: 1100px;
+}
+
+.revitalizace__paragraph {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+/* Co děláme */
+
+.revitalizace__services {
+  margin-bottom: 48px;
+}
+
+.revitalizace__subtitle {
+  margin-top: 0;
+	margin-bottom: 20px;
+	font-family: "Clash Display", system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.revitalizace-services {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.revitalizace-card {
+  padding: 20px 20px 22px;
+  border-radius: 20px;
+  border: 1px solid #e4e4e4;
+  background-color: #fafafa;
+}
+
+.revitalizace-card__title {
+  margin-top: 0;
+	margin-bottom: 10px;
+	font-family: "Outfit", -apple-system, system-ui, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.revitalizace-card__list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+.revitalizace-card__item {
+  list-style-type: disc;
+}
+
+/* Výhody */
+
+.revitalizace__benefits {
+  margin-bottom: 48px;
+}
+
+.revitalizace-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px 24px;
+}
+
+.revitalizace-benefit {
+  border-radius: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e5e5e5;
+	padding-top: 14px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	background-color: #f9f9f9;
+}
+
+.revitalizace-benefit__text {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* CTA */
+
+.revitalizace__cta {
+  margin-top: 24px;
+}
+
+
+/* ====== Portfolio ====== */
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.portfolio__intro {
+  margin-bottom: 40px;
+  max-width: 1100px;
+}
+
+.portfolio__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.portfolio__subtitle {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Карточка проекта (теперь это <a>) */
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* видимая рамка по табу */
+.portfolio-card:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 4px;
+  border-radius: 24px;
+}
+
+.portfolio-card__image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.portfolio-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-card__image {
+  transform: scale(1.08);
+}
+
+.portfolio-card__body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portfolio-card__title {
+  margin: 0;
+  font-family: "Outfit", -apple-system, system-ui, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+
+  color: #000000;
+}
+
+/* “кнопка” внутри ссылки — просто бейдж, кликается вся карточка */
+.portfolio-card__btn {
+  align-self: flex-start;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Clash Display", system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  pointer-events: none; /* чтобы не перехватывала клик у <a> */
+}
+
+.portfolio-card:hover .portfolio-card__btn,
+.portfolio-card:focus-visible .portfolio-card__btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ====== Адаптив ====== */
+
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio__title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio__title {
+    font-size: 28px;
+  }
+  .portfolio__subtitle {
+    font-size: 14px;
+  }
+  .portfolio-card__body {
+    padding-inline: 14px;
+  }
+}
+
+
+/* ====== Адаптив Revitalizace ====== */
+
+@media (max-width: 1024px) {
+  .revitalizace-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .revitalizace-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .revitalizace {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .revitalizace__title {
+    font-size: 26px;
+  }
+
+  .revitalizace-services {
+    grid-template-columns: 1fr;
+  }
+
+  .revitalizace-benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .revitalizace__title {
+    font-size: 22px;
+  }
+
+  .revitalizace__subtitle {
+    font-size: 18px;
+  }
+
+  .revitalizace-card {
+    padding-inline: 16px;
+  }
+}
+
+
+/* ====== Адаптив Turnkey ====== */
+
+@media (max-width: 1024px) {
+  .turnkey__layout {
+    max-width: 100%;
+  }
+
+  .turnkey__title {
+    font-size: 34px;
+  }
+
+  .turnkey-process__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .turnkey-gallery__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .turnkey__faq-inner .faq {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .turnkey {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .turnkey__title {
+    font-size: 32px;
+  }
+
+  .turnkey__layout {
+    max-width: 100%;
+  }
+
+  .turnkey-process__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .turnkey-gallery__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .turnkey__faq-inner {
+    /* вместо padding-inline — по-старинке, чтобы Safari не чудил */
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .turnkey__title {
+    font-size: 28px;
+  }
+
+  .turnkey__subtitle {
+    font-size: 20px;
+  }
+
+  .turnkey-step {
+    padding: 16px 14px 18px;
+  }
+
+  .turnkey-gallery-card__body {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .turnkey__faq-inner {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* Адаптив Architektura */
+
+@media (max-width: 900px) {
+	.architecture-item {
+		gap: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.architecture {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.architecture__title {
+		font-size: 32px;
+	}
+
+	.architecture__subtitle {
+		font-size: 16px;
+	}
+
+	.architecture-item,
+	.architecture-item--reverse {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.architecture-item__image,
+	.architecture-item__text {
+		width: 100%;
+	}
+
+	.architecture__cta {
+		margin-top: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	.architecture__title {
+		font-size: 28px;
+	}
+}
+
+
+/* Адаптив Interior Design */
+
+@media (max-width: 900px) {
+	.interior-item {
+		gap: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.interior {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.interior__title {
+		font-size: 32px;
+	}
+
+	.interior__subtitle {
+		font-size: 16px;
+	}
+
+	.interior-item,
+	.interior-item--reverse {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.interior-item__image,
+	.interior-item__text {
+		width: 100%;
+	}
+
+	.interior__cta {
+		margin-top: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	.interior__title {
+		font-size: 28px;
+	}
+}
+
+
+/* Адаптив Design & Architektura */
+
+@media (max-width: 900px) {
+	.design-cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.design-process__step {
+		font-size: 12px;
+		padding-right: 14px;
+		padding-left: 14px;
+	}
+}
+
+@media (max-width: 768px) {
+	.design {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.design__title {
+		font-size: 32px;
+	}
+
+	.design__subtitle {
+		font-size: 16px;
+	}
+
+	.design-cards {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.design__process {
+		padding: 16px;
+	}
+
+	.design__faq {
+		padding-top: 20px;
+		padding-right: 18px;
+		padding-bottom: 20px;
+		padding-left: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.design__title {
+		font-size: 28px;
+	}
+
+	.design-process__step {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+/* ===== Адаптив Elektroinstalace ===== */
+
+@media (max-width: 900px) {
+	.elektro__intro-layout {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.elektro-services {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.elektro-benefits {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.elektro {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.elektro__title {
+		font-size: 32px;
+	}
+
+	.elektro__subtitle {
+		font-size: 22px;
+	}
+
+	.elektro-services {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.elektro-benefits {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 480px) {
+	.elektro__title {
+		font-size: 28px;
+	}
+}
+
+/* ===== Адаптив ZTI ===== */
+
+@media (max-width: 900px) {
+	.zti__intro-layout {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.zti-services {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.zti-benefits {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.zti {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.zti__title {
+		font-size: 32px;
+	}
+
+	.zti__subtitle {
+		font-size: 22px;
+	}
+
+	.zti-services {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.zti-benefits {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 480px) {
+	.zti__title {
+		font-size: 28px;
+	}
+}
+
+
+/* ===== Адаптив VZT ===== */
+
+@media (max-width: 900px) {
+	.vzt__intro-layout {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.vzt-services {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.vzt-benefits {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.vzt {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.vzt__title {
+		font-size: 32px;
+	}
+
+	.vzt__subtitle {
+		font-size: 22px;
+	}
+
+	.vzt-services {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.vzt-benefits {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 480px) {
+	.vzt__title {
+		font-size: 28px;
+	}
+}
+
+
+/* ===== Адаптив Construction ===== */
+
+@media (max-width: 900px) {
+	.construction-benefits {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.construction-services {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.construction-cases {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.construction {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.construction__header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.construction__title {
+		font-size: 32px;
+	}
+
+	.construction__subtitle {
+		font-size: 22px;
+	}
+
+	.construction-benefits {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.construction-services {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	.construction-cases {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	/* Jak pracujeme — на мобилке в колонку */
+	.construction-process {
+		flex-direction: column;
+		align-items: stretch;
+		row-gap: 8px;
+	}
+
+	.construction-process__step {
+		width: 100%;
+		justify-content: space-between;
+		white-space: normal;
+	}
+}
+
+@media (max-width: 480px) {
+	.construction__title {
+		font-size: 28px;
+	}
+}
+
+
+/* Адаптив Contact */
+
+@media (max-width: 900px) {
+	.contact__content {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 32px;
+		margin-bottom: 50px;
+	}
+
+	.contact__gallery,
+	.contact__form-wrapper {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.contact__title {
+		font-size: 32px;
+		margin-bottom: 32px;
+	}
+
+	.contact__content {
+		gap: 24px;
+		margin-bottom: 40px;
+	}
+
+	.contact__map iframe {
+		height: 260px;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact__title {
+		font-size: 28px;
+		margin-bottom: 24px;
+	}
+
+	.contact__gallery {
+		aspect-ratio: auto;
+		height: 260px;
+	}
+
+	.contact__map iframe {
+		height: 220px;
+	}
+}
+
+@media (max-width: 360px) {
+	.contact {
+		padding-top: 32px;
+		padding-bottom: 48px;
+	}
+
+	.contact__title {
+		font-size: 24px;
+	}
+
+	.contact__gallery {
+		height: 220px;
+	}
+
+	.contact__map iframe {
+		height: 200px;
+	}
+}
+
+
+/* Адаптив модалки */
+
+@media (max-width: 480px) {
+	.modal__dialog {
+		padding-top: 20px;
+		padding-right: 16px;
+		padding-bottom: 20px;
+		padding-left: 16px;
+		border-radius: 20px;
+	}
+
+	.modal__title {
+		font-size: 20px;
+	}
+}
+
+
+/* Адаптив About */
+
+@media (max-width: 768px) {
+	.about {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.about__title {
+		font-size: 22px;
+	}
+
+	.about__text {
+		font-size: 14px;
+	}
+
+	.about__cards {
+		grid-template-columns: 1fr;
+	}
+  .about__why-title {
+    font-size: 22px;
+  }
+
+  .about-card__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+	.about__title {
+		font-size: 18px;
+	}
+
+	.about__text {
+		font-size: 12px;
+	}
+
+  .about__why-title {
+    font-size: 18px;
+  }
+
+  .about-card__text {
+    font-size: 14px;
+  }
+
+	.about-cta__title {
+		font-size: 24px;
+	}
+
+	.about-cta__btn {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+/* Адаптив services */
+
+@media (max-width: 1024px) {
+	.services__cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 768px) {
+	.services {
+		padding-top: 40px;
+		padding-bottom: 60px;
+	}
+
+	.services__title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		font-size: 32px;
+	}
+
+	.services__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.services__title {
+		font-size: 28px;
+	}
+
+	.service-card__title {
+		font-size: 26px;
+	}
+
+	.service-card__btn {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Адаптив footer */
+
+@media (max-width: 900px) {
+	.footer__inner {
+		gap: 32px;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	.footer__inner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+	}
+
+	.footer__col--brand,
+	.footer__col--nav,
+	.footer__col--contacts,
+	.footer__col--form {
+		max-width: none;
+		width: 100%;
+	}
+
+	.footer__bottom-inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		padding-top: 32px;
+		padding-bottom: 16px;
+	}
+
+	.footer__line {
+		font-size: 13px;
+	}
+}
+
+/* ====== Адаптивность ====*/
+
+/* Hero — медиазапросы */
+
+/* до 900px — чуть меньше расстояние между карточками */
+@media (max-width: 900px) {
+	.hero__cards {
+		gap: 20px;
+	}
+}
+
+/* до 768px — адаптация под планшет и телефон:
+   - секция по высоте под контент (не фикс 700px)
+   - карточки уходят в колонку
+*/
+@media (max-width: 768px) {
+	.hero {
+		height: auto;
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+
+	.hero__content {
+		height: auto;
+		align-items: stretch;
+		justify-content: center;
+	}
+
+	.hero__cards {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.hero-card {
+		flex: none;
+		width: 100%;
+	}
+
+	.hero-card__inner {
+		height: auto;
+		min-height: 220px;
+	}
+}
+
+/* до 480px — чуть компактнее на очень маленьких экранах */
+@media (max-width: 480px) {
+	.hero {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.hero-card__inner {
+		min-height: 200px;
+	}
+}
+
+@media (max-width: 900px) {
+	.nav {
+		gap: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__inner {
+		min-height: 64px;
+	}
+
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-top: 16px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		background-color: #ffffff;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #e5e5e5;
+		transform-origin: top;
+		transform: scaleY(0);
+		opacity: 0;
+		pointer-events: none;
+		transition-property: transform, opacity;
+		transition-duration: 0.2s;
+		transition-timing-function: ease;
+	}
+
+	.header.is-open .nav {
+		transform: scaleY(1);
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.header__burger {
+		display: inline-flex;
+	}
+
+	.lang {
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.nav__link {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 360px) {
+	.header__inner {
+		gap: 12px;
+	}
+
+}

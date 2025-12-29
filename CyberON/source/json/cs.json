@@ -1,0 +1,379 @@
+{
+  "services": {
+    "card1": { "title": "EVENT PRODUKCE" },
+    "card2": { "title": "VIDEO PRODUKCE" },
+    "card3": { "title": "DESIGN & IT" },
+    "card4": { "title": "MARKETING" },
+    "button": {
+      "title": "Prozkoumat"
+    },
+    "cta": "ZASLAT POPTÁVKU",
+
+    "hero": {
+      "title": "Full Service Produkční Společnost",
+      "subtitle": "Prozkoumejte naše služby a zjistěte, jak můžeme váš příběh posunout na další úroveň"
+    },
+    "events": {
+      "title": "EVENT PRODUKCE",
+      "description": "Zajišťujeme kompletní eventovou produkci od A do Z, od produktových launchů a imerzivních zážitků až po rozsáhlé konference a téměř jakýkoli typ akce, který potřebujete. Postaráme se o vše od plánování až po samotnou realizaci. Můžeme vytvořit koncept od základu nebo převzít váš nápad a přetvořit jej v jasný, efektivní a komerčně úspěšný zážitek. Náš tým se stará o kreativní směřování, scénografii, koordinaci dodavatelů a kompletní technickou produkci. Zajišťujeme také produktovou integraci, aby všechny prvky hladce spolupracovaly a podporovaly vaše cíle",
+      "menu": {
+        "liveHybrid": "Uvedení Produktu",
+        "corporate": "Show & Divadlo",
+        "brandActivations": "Summity & Konference"
+      },
+      "step": {
+        "liveHybrid": {
+          "title": "Uvedení Produktu",
+          "text": "Launch eventy, které představí váš produkt jedinečně a silně a vytvoří přirozené, působivé a výjimečné odhalení"
+        },
+        "corporate": {
+          "title": "Show & Divadlo",
+          "text": "Pohlcující vystoupení, která propojují storytelling, režii a jevištní technologie. Kreativní, atmosférická, nezapomenutelná"
+        },
+        "brandActivations": {
+          "title": "Summity & Konference",
+          "text": "Velké eventy s bezchybnou organizací, prémiovým stage designem, kompletním technickým zázemím a perfektní realizací"
+        }
+      }
+    },
+
+
+    "video": {
+      "title": "VIDEO PRODUKCE",
+      "description": "Kompletní video produkce napříč širokou škálou formátů. Naše práce spojuje jasný kreativní směr, strukturované produkční procesy a spolehlivou postprodukci. Tvoříme profesionální hudební videa, brandový a produktový obsah s přesným sdělením, čisté korporátní a eventové záznamy, stejně jako krátký i dlouhý obsah pro sociální sítě a online platformy – vše plně v souladu s vašimi komunikačními cíli a vizuální identitou",
+      "menu": {
+        "commercial": "Videoklipy",
+        "social": "Reklamy",
+        "aftermovies": "Komerční Natáčení",
+        "product": "Koncertní Videa",
+        "content": "Tvorba Obsahu"
+      },
+      "step": {
+        "commercial": {
+          "title": "Videoklipy",
+          "text": "Vysoce kvalitní videa pro umělce, která oživují skladby pomocí vizuálů, storytellingu a profesionální produkce"
+        },
+        "social": {
+          "title": "Reklamy",
+          "text": "Brandová a produktová videa, která přinášejí jasné sdělení, kreativní přístup a zvyšují pozornost i prodeje"
+        },
+        "aftermovies": {
+          "title": "Komerční Natáčení",
+          "text": "Rekapitulační videa z konferencí, firemních akcí a produkcí, kde potřebujete čistý a profesionální materiál"
+        },
+        "product": {
+          "title": "Koncertní Videa",
+          "text": "Dynamické a kreativní záznamy jevištních a live vystoupení se silným střihem a atmosférou"
+        },
+        "content": {
+          "title": "Tvorba Obsahu",
+          "text": "Krátký i dlouhý obsah pro sociální sítě a online platformy - strukturovaný, konzistentní, kreativní a relevantní"
+        }
+      }
+    },
+
+    "design": {
+      "title": "DESIGN & IT",
+      "description": "Vizuální komunikace a vývojové služby zahrnující tvorbu brand identity od základu, re-branding, návrh kampaní, vizuální systémy a jednotné prvky, které jasně reprezentují vaši značku. Navrhujeme a spravujeme webové stránky a webové aplikace na úrovni frontendu i backendu, s důrazem na výkon, spolehlivost a škálovatelnost. K tomu vyvíjíme také vlastní digitální nástroje a aplikace přizpůsobené vašemu produktu, pracovním procesům nebo interním provozním potřebám",
+      "menu": {
+        "brandIdentity": "Brand Identita",
+        "websitesApps": "Web Vývoj",
+        "uxui": "Aplikace"
+      },
+      "step": {
+        "brandIdentity": {
+          "title": "Brand Identita",
+          "text": "Loga, vizuální systémy a brandové prvky, které vyjadřují vaši značku"
+        },
+        "websitesApps": {
+          "title": "Web Vývoj",
+          "text": "Vytváříme a spravujeme weby a webové aplikace, od frontendu po backend"
+        },
+        "uxui": {
+          "title": "Aplikace",
+          "text": "Vlastní digitální řešení a aplikace přesně pro váš produkt nebo interní potřeby"
+        }
+      }
+    },
+
+    "marketing": {
+      "title": "MARKETING",
+      "description": "Pozicování značky a obsahové služby zahrnující strategii, kreativní koncepty, produkci a cílenou komunikaci navrženou tak, aby pozvedla vaši značku a podpořila měřitelný růst. Podporujeme osobní značky – včetně tvůrců, blogerů a veřejně známých osob – prostřednictvím strukturovaného marketingu, obsahové strategie a spoluprací se značkami i dalšími tvůrci. K tomu spravujeme a rozvíjíme sociální platformy pomocí konzistentního denního obsahu, plánovaného publikování, vizuálního rozvoje a průběžné komunikace, aby byl váš online profil aktivní a jednotný",
+      "menu": {
+        "strategy": "Komplexní Služby",
+        "performance": "Osobní Značky",
+        "content": "Správa Platforem"
+      },
+      "step": {
+        "strategy": {
+          "title": "Komplexní Služby",
+          "text": "Strategie, čerstvé nápady, produkce a targeting, které posunou vaši značku na vyšší úroveň"
+        },
+        "performance": {
+          "title": "Osobní Značky",
+          "text": "Marketing, obsahová strategie a produkce pro tvůrce, bloggery a veřejně známé osobnosti"
+        },
+        "content": {
+          "title": "Správa Platforem",
+          "text": "Denní obsah, publikování, strukturovaný plán, vizuály a komunikace, které udržují vaše sítě aktivní a konzistentní"
+        }
+      }
+    }
+  },
+
+  "footer": {
+    "nav": {
+      "title": "Navigace",
+      "services": "Služby",
+      "about": "O Nás",
+      "contacts": "Kontakty"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "address": "Hradec 25, 281 63 Stříbrná Skalice"
+    },
+    "form": {
+      "title": "Konzultace?",
+      "placeholder": "vas@email.cz",
+      "ariaLabel": "Zažádat o Konzultaci",
+      "success": "Děkujeme, brzy se vám ozveme.",
+      "error": "Zadejte platný e-mail.",
+      "sending": "Odesílám požadavek..."
+    },
+    "copyright": {
+      "text": "© 2025 CyberON. Všechna Práva Vyhrazena."
+    }
+  },
+  "modal": {
+    "contact": {
+      "title": "POJĎME PROBRAT VÁŠ PROJEKT",
+      "subtitle": "Zanechte nám své kontakty a brzy se vám ozveme"
+    },
+    "form": {
+      "name": "Jméno*",
+      "phone": "Telefon*",
+      "email": "E-mail*",
+      "message": "Zpráva*",
+      "service": "Služba*",
+      "robot": "Nejsem robot",
+      "submit": "Odeslat"
+    },
+    "success": {
+      "title": "Děkujeme",
+      "subtitle": "Ozveme se vám co nejdříve.",
+      "button": "Zavřít"
+    }
+  },
+
+"projects": {
+  "viewServices": "Služby",
+
+  "sentences": {
+    "title": "Sentences",
+    "subtitle": "Klient, Sentences",
+    "short": "23. listopadu 2024 proběhla v pražském paláci Kaiserstein (UNESCO) premiéra představení SENTENCES – beze slov vedené immersivní performance, první svého druhu v České republice i Evropě. Performance přinesla nový umělecký pohled na paradoxy a rozpory současného světa, na témata, o kterých lidé přemýšlí, ale jen zřídka o nich otevřeně mluví.",
+    "more": "Příběh sleduje hlavní postavu, která prochází symbolickými místnostmi a naráží na společenské normy, třídní rozdíly, odmítnutí a izolaci. Každý pohyb je součástí prostoru, každá scéna je samostatná místnost s vlastním tématem, náladou a významem. Akce probíhala v pěti časových slotech mezi 17:00 a 22:00, každý pro 20–25 hostů, aby se zachovala intimní atmosféra (celková kapacita 150 osob). Večer začínal lounge recepcí v 17:00 s občerstvením, DJ sety a hostiteli, kteří vytvářeli prostor pro setkávání před i po performance."
+  },
+
+  "ursuna": {
+    "title": "Ursuuna",
+    "subtitle": "Klient, Ursuuna",
+    "short": "je současná značka autorských šperků s důrazem na čistý, sochařský design, texturu, tvar a řemeslné zpracování. Kombinuje moderní minimalismus s jemnými odkazy na archivní objekty a vytváří tak šperky, které působí jedinečně, odolně a promyšleně.",
+    "more_before": "Pro",
+    "more_after": "jsme připravili kompletní vizuální kampaň včetně plného art direction. Kampaň zvýraznila materiály, tvary a přístup značky skrze strukturovanou, moderní estetiku, která odpovídá její identitě a filozofii produktu."
+  },
+
+  "bloggerfest": {
+    "title": "Blogger Fest",
+    "subtitle": "Klient, Blogger Fest",
+    "short": "Blogger Fest je akce pro bloggery, digitální tvůrce, podnikatele, ale i pro všechny, kdo mají rádi energické společenské události. Festival propojuje tvůrce obsahu, majitele firem i hosty, kteří chtějí networkovat, učit se a potkávat nové lidi. Během dne mohou návštěvníci procházet foto zóny, přednášky, mini konzultace, market, food court a setkávat se se svými oblíbenými tvůrci osobně.",
+    "more": "Event je postavený tak, aby se lidé jen nedívali, ale aktivně zapojili. Tvůrci získávají viditelnost a nové příležitosti, podnikatelé přístup k potenciálním partnerům a klientům a hosté si užívají hudbu, světelnou show, koktejly a večerní atmosféru, která pokračuje až do noci. Cílem Blogger Festu je vytvořit praktický, živý prostor, kde se spojují nápady, obsah a zábava v jeden zapamatovatelný den."
+  },
+
+  "vogue": {
+    "title": "VOGUE",
+    "subtitle": "Klient, VOGUE",
+    "shortPart1": "pro",
+    "shortPart2": "- je mladá ukrajinská art directorka, performativní umělkyně a fotografka, která přišla do České republiky poté, co jí válka zásadně omezila možnosti tvorby. Je známá pro propojování módy se společenskými tématy. Získala pozornost během Paris Fashion Weeku, kde se objevila před přehlídkami Rick Owens a Acne Studios v kolaboraci s českým designérem Davidem Altnerem – v lehké soupravě sukně a mikiny s nápisem „Write anything on me“.",
+    "more": "Performance, během které ji bezpečnostní služba vyvedla od jednoho z venue, se rychle rozšířila online a ukázala sílu jejího uměleckého gesta. Náš kameraman a fotograf pro tento projekt vytvořili kompletní vizuální koncept a zachytili klíčové momenty, na kterých se později vystavěl příběh publikovaný ve Vogue. Výsledkem je vizuální reportáž, která zachycuje jak emoci, tak kontext celého performance."
+  },
+
+  "autokarlin": {
+    "title": "Automyčka Karlín",
+    "subtitle": "Klient, Automyčka Karlín",
+    "short": "Automyčka Karlín je ruční myčka aut v pražském Karlíně. Na rozdíl od automatických myček nabízí ruční mytí, šetrnější přístup k laku a detailní čištění interiéru. Služby jsou určené pro řidiče, kteří dávají přednost pečlivé, osobní péči před rychlým, neosobním přístupem.",
+    "more": "Začátkem roku 2025 získala Automyčka Karlín nového majitele a my jsme vedli kompletní rebranding a redesign vizuální identity. Nový vizuální styl, messaging a brand presence odráží moderní, profesionální a zákaznicky orientovaný přístup, který staví na kvalitě služeb a příjemné zkušenosti pro každého klienta."
+  },
+
+  "euroleague": {
+    "title": "ELF",
+    "subtitle": "Klient, European League of Football",
+    "short": "Prague Lions jsou český tým amerického fotbalu založený v roce 1991. Od roku 2023 nastupují v European League of Football (ELF) a reprezentují Českou republiku na nejvyšší evropské úrovni.",
+    "more": "Po restrukturalizaci a změně vedení vstoupili Lions do sezóny 2025 s novou ambicí, posíleným týmem a vyšší profesionalitou. Domácí zápasy přesunuli na stadion Viktoria Žižkov. Náš head of video production zajišťoval zápasovou fotografii, game-day obsah i video natáčení. Prostřednictvím fotek a videí pomohl přenést dění na hřišti na sociální sítě a posílit vizuální identitu týmu."
+  },
+
+  "kristina": {
+    "title": "@kristina.talklog",
+    "subtitle": "Klient, @kristina.talklog",
+    "short": "je pražská bloggerka a influencerka. Sdílí lifestyle obsah, tipy na osobní rozvoj a vysoce kvalitní spolupráce se značkami. Věnuje se tématům sebepoznání, radosti z každodennosti a vztahu mezi člověkem a okolním světem. Podporuje aktivní životní styl se silným důrazem na box a celkový pohyb.",
+    "more": "Kristině pomáháme s rozvojem osobní značky a obsahovou strategií – aby komunikovala konzistentněji napříč sociálními sítěmi a zároveň zvyšovala hodnotu svého blogu. Podporujeme ji v růstu komunity, budování online přítomnosti a monetizaci obsahu skrze dlouhodobé spolupráce a partnerství."
+  },
+
+  "slugger": {
+    "title": "Slugger Fight Club",
+    "subtitle": "Klient, Slugger Fight Club",
+    "short": "Slugger Fight Club je moderní gym zaměřený na bojové sporty se sídlem v Praze. Nabízí box, Muay Thai, BJJ, judo, skupinové tréninky i individuální lekce – jak pro začátečníky, tak pro pokročilé.",
+    "more": "Se Slugger Fight Clubem jsme spolupracovali na offline marketingové integraci v rámci našeho Blogger Festu – připravili jsme live fight segment s účastí bloggerů. Díky tomu se energie gymu a atmosféra bojových sportů přenesla přímo na festival, kde značka oslovila nové publikum zábavnou a zapamatovatelnou formou.",
+    "button_more": "Číst Více",
+    "button_less": "Skrýt"
+  }
+},
+"projectsGrid": {
+  "heroTitle": "NEDÁVNÉ PROJEKTY",
+  "cards": {
+    "sentences": {
+      "title": "SENTENCES",
+      "desc": "IMERZIVNÍ PERFORMANCE, KOMPLETNÍ EVENTOVÁ A SCÉNICKÁ PRODUKCE"
+    },
+    "ursuuna": {
+      "title": "URSUUNA",
+      "desc": "KAMPAŇ MÓDNÍ ZNAČKY ART-DIRECTION, MEDIÁLNÍ PRODUKCE"
+    },
+    "bloggerfest": {
+      "title": "BLOGGER FEST",
+      "desc": "INTERNÍ PROJEKT END-TO-END PRODUKCE EVENTU"
+    },
+    "vogue": {
+      "title": "VOGUE",
+      "desc": "@hahlushka PRO VOGUE ČLÁNKOVÁ MEDIÁLNÍ REPORTÁŽ"
+    },
+    "autokarlin": {
+      "title": "AUTOMYČKA KARLÍN",
+      "desc": "IDENTITA ZNAČKY PRAŽSKÉ AUTOMYČKY"
+    },
+    "euroleague": {
+      "title": "EUROPEAN LEAGUE OF FOOTBALL",
+      "desc": "REPORTÁŽ ZE ZÁPASU PRAGUE LIONS"
+    },
+    "kristina": {
+      "title": "@KRISTINA.TALKBLOG",
+      "desc": "MARKETING OSOBNÍ ZNAČKY, ROZVOJ OSOBNÍ ZNAČKY"
+    },
+    "slugger": {
+      "title": "SLUGGER FIGHT CLUB",
+      "desc": "PRAŽSKÝ FIGHT CLUB OFFLINE MARKETING, FIGHT INTEGRACE NA BLOGGER-FESTU"
+    }
+  }
+},
+
+"projectsRequest": {
+  "title": "Poptávka Projektu",
+  "subtitle": "Pro Projekt:",
+  "text": "Zanechte nám kontakt a krátkou zprávu - brzy se vám ozveme.",
+  "placeholderName": "Vaše Jméno*",
+  "placeholderEmail": "Váš Email*",
+  "placeholderMessage": "Stručně napište, s čím potřebujete pomoci*",
+  "button": "Odeslat"
+},
+  "cookies": {
+    "title": "COOKIES",
+    "description": "Používáme soubory cookies ke zlepšení vašeho prohlížení webu, analýze provozu a zajištění bezpečného chodu stránek. Můžete povolit všechny cookies nebo jen nezbytné.",
+    "link": "Více informací o cookies",
+    "essentials": "POUZE NEZBYTNÉ",
+    "accept": "POVOLIT VŠE"
+  },
+  "privacy": {
+    "metaTitle": "CyberON - Ochrana osobních údajů a cookies",
+    "title": "OCHRANA ÚDAJŮ & COOKIES",
+    "subtitle": "Tato stránka vysvětluje, jak CyberON zpracovává osobní údaje a používá cookies na webu cyber-on.net a souvisejících projektových stránkách.",
+    "lastUpdatedLabel": "Poslední aktualizace:",
+    "lastUpdatedDate": "8. prosince 2025",
+
+    "sections": {
+      "overview": {
+        "heading": "1. PŘEHLED",
+        "body1": "Tato Zásady ochrany osobních údajů a cookies popisují, jak CyberON s.r.o. („CyberON“, „my“) shromažďuje, používá, uchovává a chrání osobní údaje v souvislosti s naším webem, marketingem, klientskými projekty a komunikací.",
+        "body2": "Osobní údaje zpracováváme v souladu s platnými právními předpisy na ochranu osobních údajů, zejména s Obecným nařízením o ochraně osobních údajů (GDPR) a příslušnými českými zákony.",
+        "body3": "Tento dokument se zvláště zaměřuje na používání cookies a podobných technologií na našem webu a vysvětluje, jak můžete spravovat své preference."
+      },
+      "controller": {
+        "heading": "2. SPRÁVCE ÚDAJŮ",
+        "body": "Správcem vašich osobních údajů je:",
+        "cardTitle": "CYBERON S.R.O.",
+        "company": "IČ: 23263211",
+        "address": "Adresa: Hradec 25, 281 63 Stříbrná Skalice, Česká republika",
+        "email": "E-mail: info@cyber-on.net",
+        "phone": "Telefon: +420 777 956 775",
+        "web": "Web: cyber-on.net"
+      },
+      "data": {
+        "heading": "3. JAKÉ ÚDAJE ZPRACOVÁVÁME",
+        "body1": "Rozsah údajů, které zpracováváme, závisí na tom, jak s námi a s naším webem komunikujete. Typicky zahrnuje:",
+        "item1": "Identifikační a kontaktní údaje – například vaše jméno, e-mail, telefonní číslo, společnost a pozici, pokud je uvedete ve formuláři nebo komunikaci.",
+        "item2": "Obsah komunikace – zprávy, které nám posíláte prostřednictvím formulářů, e-mailu nebo jiných kanálů, včetně projektových zadání a poznámek.",
+        "item3": "Technická a analytická data – IP adresa, typ prohlížeče, informace o zařízení, přibližná poloha (město / stát), navštívené stránky a interakce s webem, shromažďované pomocí cookies a podobných technologií.",
+        "item4": "Smluvní a fakturační údaje – pokud se stanete naším klientem nebo dodavatelem, můžeme zpracovávat údaje nezbytné pro plnění smlouvy (fakturační údaje, historie smluv, informace o projektech)."
+      },
+      "purposes": {
+        "heading": "4. ÚČELY A PRÁVNÍ ZÁKLADY",
+        "body1": "Osobní údaje zpracováváme pouze tehdy, pokud k tomu máme platný právní základ a jasný účel. Hlavní účely jsou:",
+        "item1": "Provoz a bezpečnost webu – nezbytné cookies a technická data potřebná k správnému zobrazení webu, udržení výkonu a ochraně před zneužitím (oprávněný zájem / nezbytnost pro poskytování služby).",
+        "item2": "Analytika a zlepšování – volitelné cookies, které nám pomáhají porozumět tomu, jak návštěvníci web používají, a optimalizovat obsah, strukturu a výkon (váš souhlas).",
+        "item3": "Komunikace a poptávky projektů – zpracování vašich kontaktních údajů a zpráv za účelem odpovědi na dotazy, přípravy nabídek a řízení spolupráce (plnění smlouvy nebo opatření přijatá před jejím uzavřením).",
+        "item4": "Marketingová komunikace – v případech, kdy je to dovoleno, vám můžeme zasílat relevantní informace o našich službách, akcích nebo projektech (souhlas nebo oprávněný zájem v závislosti na situaci a právních předpisech)."
+      },
+      "cookies": {
+        "heading": "5. COOKIES A PODOBNÉ TECHNOLOGIE",
+        "body1": "Cookies jsou malé textové soubory ukládané do vašeho zařízení při návštěvě našeho webu. Pomáhají nám zajistit základní funkčnost, bezpečnost a lepší uživatelský komfort.",
+        "body2": "Typicky používáme tyto kategorie cookies:",
+        "item1": "Nezbytné / technické cookies – nutné pro správné fungování webu (např. zabezpečení, nastavení cookie lišty, technický provoz). Tyto cookies nelze prostřednictvím našeho banneru vypnout.",
+        "item2": "Analytické / výkonnostní cookies – pomáhají nám pochopit, jak návštěvníci web používají, které stránky jsou nejnavštěvovanější a jak můžeme vylepšit strukturu a obsah.",
+        "item3": "Funkční nebo preferenční cookies – pamatují si vaše volby (například jazykové nastavení) a zpříjemňují používání webu.",
+        "body3": "Nepovinné cookies (například analytické) používáme pouze na základě vašeho souhlasu, který můžete udělit nebo odmítnout prostřednictvím cookie banneru. Nastavení cookies můžete upravit také přímo ve svém prohlížeči."
+      },
+      "banner": {
+        "heading": "6. COOKIE LIŠTA A NASTAVENÍ",
+        "body1": "Při první návštěvě našeho webu se zobrazí cookie lišta, ve které můžete:",
+        "item1": "Přijmout všechny cookies – včetně analytických cookies pro lepší statistiky a optimalizaci.",
+        "item2": "Povolit pouze nezbytné cookies – web bude fungovat, ale měření a optimalizační funkce mohou být omezené.",
+        "body2": "Vaše volba je uložena v prohlížeči pomocí technického cookie souboru. Pokud cookies vymažete nebo použijete jiný prohlížeč či zařízení, banner se může zobrazit znovu."
+      },
+      "retention": {
+        "heading": "7. DOBA UCHOVÁVÁNÍ ÚDAJŮ",
+        "body1": "Osobní údaje uchováváme pouze po dobu nezbytnou pro účely, pro které byly shromážděny, nebo po dobu, kterou vyžaduje zákon.",
+        "body2": "Konkrétní doba uchovávání závisí na typu údajů a kontextu (např. projektová dokumentace, smlouvy, účetní doklady). Po uplynutí příslušné doby jsou údaje bezpečně vymazány nebo anonymizovány."
+      },
+      "sharing": {
+        "heading": "8. SDÍLENÍ OSOBNÍCH ÚDAJŮ",
+        "body1": "Vaše osobní údaje neprodáváme. V některých případech je však můžeme sdílet s:",
+        "item1": "Důvěryhodnými poskytovateli služeb – například poskytovateli hostingu, analytickými nástroji, e-mailovými a komunikačními platformami, kteří údaje zpracovávají naším jménem na základě smlouvy o zpracování.",
+        "item2": "Odbornými poradci – jako jsou účetní nebo právní poradci, pokud je to nutné pro splnění právních povinností nebo ochranu našich práv.",
+        "item3": "Orgány veřejné moci – pokud máme zákonnou povinnost určité údaje zpřístupnit (například finančním úřadům, dozorovým orgánům, soudům nebo orgánům činným v trestním řízení).",
+        "body2": "Pokud jsou údaje předávány mimo EU / EHP, zajistíme odpovídající úroveň ochrany v souladu s GDPR (např. standardní smluvní doložky nebo rovnocenná opatření)."
+      },
+      "rights": {
+        "heading": "9. VAŠE PRÁVA",
+        "body1": "Jako subjekt údajů máte podle GDPR řadu práv. Zejména:",
+        "item1": "Právo na přístup – získat potvrzení, zda vaše údaje zpracováváme, a pokud ano, informace o zpracování a kopii údajů.",
+        "item2": "Právo na opravu – nechat opravit nepřesné nebo neúplné osobní údaje.",
+        "item3": "Právo na výmaz – v určitých případech požadovat vymazání osobních údajů.",
+        "item4": "Právo na omezení zpracování – v konkrétních situacích omezit způsob, jakým vaše údaje používáme.",
+        "item5": "Právo vznést námitku – zejména pokud je zpracování založeno na oprávněném zájmu nebo pro účely přímého marketingu.",
+        "item6": "Právo na přenositelnost údajů – u údajů zpracovávaných automatizovaně na základě souhlasu nebo smlouvy získat je ve strukturovaném, běžně používaném a strojově čitelném formátu.",
+        "item7": "Právo odvolat souhlas – pokud je zpracování založeno na souhlasu, můžete jej kdykoli odvolat, aniž by to mělo vliv na zákonnost zpracování před odvoláním.",
+        "body2": "Svých práv můžete využít kontaktováním nás na info@cyber-on.net. Před vyřízením některých žádostí můžeme potřebovat ověřit vaši totožnost.",
+        "body3": "Pokud se domníváte, že došlo k porušení vašich práv, máte také právo podat stížnost u Úřadu pro ochranu osobních údajů nebo jiného příslušného dozorového orgánu."
+      },
+      "changes": {
+        "heading": "10. ZMĚNY TĚCHTO ZÁSAD",
+        "body1": "Tyto Zásady ochrany osobních údajů a cookies můžeme čas od času aktualizovat, aby odrážely změny v našich zpracovatelských činnostech, právních požadavcích nebo funkcích webu.",
+        "body2": "Aktuální verze je vždy dostupná na této stránce. V případě podstatných změn vás můžeme informovat také jiným vhodným způsobem (například oznámením na webu).",
+        "disclaimer": "Tento dokument slouží k transparentnímu vysvětlení, jak nakládáme s osobními údaji a cookies. Nejedná se o právní poradenství."
+      }
+    },
+
+    "footer": {
+      "copyright": "© CyberON s.r.o. Všechna práva vyhrazena."
+    }
+  }
+}

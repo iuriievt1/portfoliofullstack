@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arctic-Home</title>
+  <link rel="stylesheet" href="/source/style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="/assets/logo/Logo.svg" alt="Arctic Group">
+      </a>
+
+
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link"data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="nav__link"data-i18n="nav.services">Služby</a>
+        <a href="portfolio.html" class="nav__link"data-i18n="nav.portfolio">Portfolio</a>
+        <a href="aboutus.html" class="nav__link"data-i18n="nav.about">O Nás</a>
+        <a href="contact.html" class="nav__link"data-i18n="nav.contact">Kontakty</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang__current" type="button"aria-haspopup="true"aria-expanded="false">
+          <span class="lang__label" data-current-lang>CZ</span>
+          <span class="lang__icon">▾</span>
+        </button>
+
+        <ul class="lang__list">
+          <li>
+            <button class="lang__option" type="button" data-lang="cs">CZ</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="en">EN</button>
+          </li>
+          <li>
+            <button class="lang__option" type="button" data-lang="ru">RU</button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__burger" type="button" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+   <main>
+    <section class="hero">
+      <div class="hero__background" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <div class="hero__cards">
+          <article class="hero-card" data-hero-card>
+            <div class="hero-card__inner">
+              <div class="hero-card__face hero-card__face--front">
+                <h2 class="hero-card__title" data-i18n="hero.card1.title">
+                  Rekonstrukce & Výstavba
+                </h2>
+              </div>
+
+              <div class="hero-card__face hero-card__face--back">
+                <p class="hero-card__text" data-i18n="hero.card1.text">
+                  Kompletní rekonstrukce a novostavby bytů, domů i komerčních objektů
+                </p>
+                <a href="construction.html"class="hero-card__btn"data-i18n="hero.button">Více</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-card" data-hero-card>
+            <div class="hero-card__inner">
+              <div class="hero-card__face hero-card__face--front">
+                <h2 class="hero-card__title" data-i18n="hero.card2.title">
+                  Design & Architektura
+                </h2>
+              </div>
+
+              <div class="hero-card__face hero-card__face--back">
+                <p class="hero-card__text" data-i18n="hero.card2.text">
+                  Profesionální návrhy interiérů a exteriérů s důrazem na estetiku a detail
+                </p>
+                <a href="design.html"class="hero-card__btn"data-i18n="hero.button">Více</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-card" data-hero-card>
+            <div class="hero-card__inner">
+              <div class="hero-card__face hero-card__face--front">
+                <h2 class="hero-card__title" data-i18n="hero.card3.title">
+                  Projekty na Klíč
+                </h2>
+              </div>
+
+              <div class="hero-card__face hero-card__face--back">
+                <p class="hero-card__text" data-i18n="hero.card3.text">
+                  Kompletní realizace stavby od návrhu až po předání na klíč
+                </p>
+                <a href="turnkey.html" class="hero-card__btn" data-i18n="hero.button">Více</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+  <div class="footer__inner container">
+    <!-- Левая колонка: бренд + соцсети -->
+    <div class="footer__col footer__col--brand">
+      <p class="footer__logo" data-i18n="footer.company">Arctic Group s.r.o.</p>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com/arcticstudio_cz?igsh=MzVyNzkxdTUzN2Rj" class="footer__social-link" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" class="footer__social-icon">
+        </a>
+        <a href="404.html" class="footer__social-link" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="footer__social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Центр: ссылки по сайту -->
+    <div class="footer__col footer__col--nav">
+      <h3 class="footer__title" data-i18n="footer.navTitle">Navigace</h3>
+
+      <nav class="footer__nav">
+        <a href="index.html" class="footer__link" data-i18n="nav.home">Úvod</a>
+        <a href="services.html" class="footer__link" data-i18n="nav.services">Služby</a>
+        <a href="aboutus.html" class="footer__link" data-i18n="nav.about">O nás</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav.contact">Kontakty</a>
+      </nav>
+    </div>
+
+    <!-- Контакты -->
+    <div class="footer__col footer__col--contacts">
+      <h3 class="footer__title" data-i18n="footer.contactTitle">Kontakt</h3>
+
+      <p class="footer__line">
+        <span class="footer__label">Construction &amp; Turnkey:</span>
+        <a href="tel:+420777956775" class="footer__value">+420 777 956 775</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label">Design &amp; Architecture:</span>
+        <a href="tel:+420778025205" class="footer__value">+420 778 025 205</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.emailLabel">E-mail:</span>
+        <a href="mailto:info@arcticgrp.com" class="footer__value" data-i18n="footer.email">info@arcticgrp.com</a>
+      </p>
+      <p class="footer__line">
+        <span class="footer__label" data-i18n="footer.addressLabel">Adresa:</span>
+        <a href="https://maps.google.com/?q=Dostalov%C3%A9+1283%2F8,+Praha+5" target="_blank" rel="noopener noreferrer" class="footer__value" data-i18n="footer.address">Dostalové 1283/8, Praha 5</a>
+      </p>
+    </div>
+
+    <!-- Справа: форма для e-mail -->
+    <div class="footer__col footer__col--form">
+      <h3 class="footer__title" data-i18n="footer.form.title">Získejte konzultaci</h3>
+
+      <form class="footer-form" id="footer-form">
+        <div class="footer-form__row">
+          <input type="email" class="footer-form__input" name="email" placeholder="Email" required>
+          <button type="submit" class="footer-form__button" aria-label="Odeslat e-mail">→</button>
+        </div>
+      </form>
+      <p class="footer-form__message" data-i18n="footer.form.success">Ozveme se vám do 24 hodin.</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <a href="https://cyber-on.net" target="_blank" rel="noopener noreferrer" class="footer__bottom-link">
+        <span class="footer__bottom-made" data-i18n="footer.madeByPrefix">Vyrobeno</span>
+        <span class="footer__bottom-brand">CyberON</span>
+      </a>
+      <a href="404.html" class="footer__bottom-link footer__bottom-link--right" data-i18n="footer.rights">Všechna Práva Vyhrazena</a>
+    </div>
+  </div>
+</footer>
+
+
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="container cookie-banner__inner">
+    <p class="cookie-banner__text" data-i18n="cookies.text">
+      Používáme soubory cookies pro zlepšení funkčnosti webu a analýzu návštěvnosti.
+    </p>
+    <div class="cookie-banner__actions">
+      <button type="button" class="cookie-banner__btn cookie-banner__btn--accept" data-i18n="cookies.accept">Souhlasím</button>
+      <a href="#" class="cookie-banner__link" data-i18n="cookies.more">Více informací</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="/source/js/i18n.js"></script>
+  <script src="/source/js/main.js"></script>
+</body>
+</html>

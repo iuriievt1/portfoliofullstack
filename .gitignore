@@ -1,9 +1,19 @@
 .DS_Store
+node_modules/
+dist/
+build/
+out/
+.next/
+.nuxt/
+coverage/
+.cache/
+.vscode/
+.idea/
+
 .env
 .env.*
-node_modules
-dist
-build
-coverage
-.next
-out
+*.log
+
+# OS / temp
+*.swp
+*.tmp

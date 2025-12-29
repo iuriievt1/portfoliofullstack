@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CyberON - IT & Digital Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="/assets/logo/web_favicon.png"/>
+  <link rel="stylesheet" href="/source/style/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo" aria-label="CyberON - Home">
+        <img src="/assets/logo/Web_logo.png" alt="CyberON logo" />
+      </a>
+      <!-- LANGUAGE SWITCHER -->
+      <div class="lang-switcher" data-lang="en">
+        <button class="lang-switcher__toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-switcher__current">EN</span>
+          <span class="lang-switcher__icon">▾</span>
+        </button>
+        <ul class="lang-switcher__menu" aria-label="Select language">
+          <li>
+            <button class="lang-switcher__option" type="button" data-lang="en">
+              EN
+            </button>
+          </li>
+          <li>
+            <button class="lang-switcher__option" type="button" data-lang="cs">
+              CZ
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="projects-marquee-section">
+  <div class="projects-marquee js-marquee">
+    <div class="projects-marquee__track js-marquee-track">
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-01.png" alt="Client 1">
+      </div>
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-02.png" alt="Client 2">
+      </div>
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-03.png" alt="Client 3">
+      </div>
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-04.png" alt="Client 4">
+      </div>
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-05.png" alt="Client 5">
+      </div>
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-06.png" alt="Client 6">
+      </div>
+      <div class="projects-marquee__item">
+        <img src="/assets/logo/projects/logos-cyber-07.png" alt="Client 7">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <main class="services">
+  <div class="services__grid">
+    <a href="services.html" class="service-card card-wide">
+      <img src="/assets/photo/main/events.JPEG" alt="" class="service-card__img" />
+      <div class="service-card__title" data-i18n="services.card1.title">
+        EVENT PRODUCTION
+      </div>
+    </a>
+
+    <a href="services.html?service=video" class="service-card card-tall">
+      <img src="/assets/photo/main/video_prod.JPEG" alt="" class="service-card__img" />
+      <div class="service-card__title" data-i18n="services.card2.title">
+        VIDEO PRODUCTION
+      </div>
+    </a>
+
+    <a href="services.html?service=design" class="service-card card-right-top">
+      <img src="/assets/photo/main/digital.JPEG" alt="" class="service-card__img" />
+      <div class="service-card__title" data-i18n="services.card3.title">
+        DESIGN &amp; IT
+      </div>
+    </a>
+
+    <a href="services.html?service=marketing" class="service-card card-right-bottom">
+      <img src="/assets/photo/main/marketing_prod.JPEG" alt="" class="service-card__img" />
+      <div class="service-card__title" data-i18n="services.card4.title">
+        MARKETING
+      </div>
+    </a>
+  </div>
+
+<div class="services__cta">
+  <a href="projects.html"
+     class="glassdock-btn"
+     data-i18n="services.button.title">
+     Explore
+  </a>
+</div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <!-- BRAND: логотип + соцсети -->
+    <div class="footer-col footer-col--brand">
+      <div class="footer-logo-wrap">
+        <img src="/assets/logo/footer_logo.png" alt="CyberON Production" class="footer-logo" />
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/cyberon_prod?igsh=bXMyZ29xaGt5dHpq" class="footer-social__link" aria-label="Instagram">
+          <img src="/assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" class="footer-social__link" aria-label="Facebook">
+          <img src="/assets/icons/facebook.png" alt="Facebook" />
+        </a>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+
+    <!-- CONTACT -->
+    <div class="footer-col footer-col--contact">
+      <div class="footer-title" data-i18n="footer.contact.title">
+        Contact
+      </div>
+      <div class="footer-contact">
+        <!-- телефон и email можно не переводить -->
+        <a href="tel:+420777956775" class="footer-link">+420 777 956 775</a>
+        <a href="mailto:info@cyber-on.net" class="footer-link">info@cyber-on.net</a>
+        <a
+          href="https://maps.google.com/?q=Hradec+25%2C+281+63+St%C5%99%C3%ADbrn%C3%A1+Skalice"
+          target="_blank"
+          rel="noopener"
+          class="footer-link"
+          data-i18n="footer.contact.address">
+          Hradec 25, 281 63 Stříbrná Skalice
+        </a>
+      </div>
+    </div>
+
+    <!-- CONSULTATION FORM -->
+    <div class="footer-col footer-col--form">
+      <div class="footer-title" data-i18n="footer.form.title">
+        Consultation?
+      </div>
+
+      <form
+        id="footer-consult-form"
+        class="footer-form"
+        autocomplete="off"
+        novalidate>
+
+        <div class="footer-form__row">
+          <input
+            type="email"
+            name="email"
+            class="footer-form__input"
+            placeholder="you@example.com"
+            data-i18n-placeholder="footer.form.placeholder"
+            required/>
+          <button
+            type="submit"
+            class="footer-form__btn"
+            aria-label="Request consultation"
+            data-i18n-aria-label="footer.form.ariaLabel">
+            →
+          </button>
+        </div>
+        <p class="footer-form__message" id="footer-consult-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <a href="privacy.html" class="footer-copy footer-copy__link" data-i18n="footer.copyright.text">
+      © 2025 CyberON. All Rights Reserved.
+    </a>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" data-cookie-banner>
+  <div class="cookie-banner__inner">
+    <div class="cookie-banner__text">
+      <h3 class="cookie-banner__title" data-i18n="cookies.title">
+        COOKIES
+      </h3>
+      <p class="cookie-banner__desc" data-i18n="cookies.description">
+        We use cookies to improve your browsing experience, analyse traffic and ensure the site runs securely. You can accept all cookies or allow only essential ones.
+      </p>
+      <a href="/privacy.html" class="cookie-banner__link" data-i18n="cookies.link">
+        Learn more about cookies
+      </a>
+    </div>
+
+    <div class="cookie-banner__actions">
+      <button
+        type="button"
+        class="cookie-banner__btn cookie-banner__btn--secondary"
+        data-cookie-essentials
+        data-i18n="cookies.essentials"
+      >
+        ESSENTIAL ONLY
+      </button>
+
+      <button
+        type="button"
+        class="cookie-banner__btn cookie-banner__btn--primary"
+        data-cookie-accept
+        data-i18n="cookies.accept"
+      >
+        ACCEPT ALL
+      </button>
+    </div>
+  </div>
+</div>
+
+  <script src="/source/js/main.js" defer></script>
+  <script src="/source/js/infinite_marquee.js"></script>
+</body>
+</html>

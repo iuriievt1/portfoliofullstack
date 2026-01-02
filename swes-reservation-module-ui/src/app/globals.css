@@ -1,0 +1,159 @@
+:root{
+  --bg0:#060817;
+  --bg1:#061a2a;
+  --card: rgba(255,255,255,.06);
+  --border: rgba(255,255,255,.12);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.64);
+  --focus: rgba(99,142,255,.55);
+}
+
+html,body{height:100%;}
+body{
+  color:var(--text);
+  background:
+    radial-gradient(1200px 700px at 15% 10%, rgba(99,142,255,.18), transparent 60%),
+    radial-gradient(900px 600px at 85% 20%, rgba(0,220,180,.14), transparent 60%),
+    radial-gradient(900px 700px at 55% 95%, rgba(160,90,255,.12), transparent 65%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+a{color:inherit;text-decoration:none;}
+a:hover{color:inherit;}
+
+.s-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  backdrop-filter: blur(10px);
+}
+.s-card:hover{
+  background: rgba(255,255,255,.075);
+  border-color: rgba(255,255,255,.18);
+}
+
+.s-pill{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.85);
+  font-size:.85rem;
+  white-space:nowrap;
+}
+
+.s-icon{
+  width:28px;height:28px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.10);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-weight:800;
+}
+
+.text-muted-2{ color: var(--muted) !important; }
+
+.form-control, .form-select{
+  background: rgba(255,255,255,.06) !important;
+  border-color: rgba(255,255,255,.14) !important;
+  color: rgba(255,255,255,.92) !important;
+}
+.form-control::placeholder{ color: rgba(255,255,255,.40) !important; }
+.form-select option{ color:#111; }
+
+.btn-outline-light{
+  border-color: rgba(255,255,255,.18) !important;
+}
+.btn-outline-light:hover{
+  border-color: rgba(255,255,255,.30) !important;
+}
+
+.table{
+  color: rgba(255,255,255,.92);
+}
+.table thead th{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(8,12,28,.92);
+  border-bottom: 1px solid rgba(255,255,255,.14);
+}
+
+.focus-ring:focus-visible{
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 16px;
+}
+
+.s-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(18, 22, 35, 0.98);
+  backdrop-filter: blur(8px);
+}
+
+.s-table {
+  --bs-table-bg: transparent;
+  --bs-table-color: rgba(255,255,255,0.92);
+  --bs-table-striped-bg: rgba(255,255,255,0.04);
+  --bs-table-hover-bg: rgba(255,255,255,0.06);
+  --bs-table-border-color: rgba(255,255,255,0.08);
+}
+
+.s-thead th {
+  background: rgba(0,0,0,0.25) !important;
+  color: rgba(255,255,255,0.88) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.10) !important;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.s-row td {
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.s-row:hover td {
+  cursor: pointer;
+}
+
+.s-modal {
+  background: rgba(18, 24, 38, 0.96);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.92);
+}
+
+.s-modal .modal-header,
+.s-modal .modal-footer {
+  border-color: rgba(255,255,255,0.10);
+}
+
+.s-kv code {
+  color: rgba(255,255,255,0.85);
+}
+
+.s-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* bootstrap btn-close is black by default — invert it for dark modal */
+.s-btn-close {
+  filter: invert(1);
+  opacity: 0.85;
+  flex: 0 0 auto;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
+.s-btn-close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 576px){
+  .table thead th{ position: static; }
+}

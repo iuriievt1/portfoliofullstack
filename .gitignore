@@ -17,3 +17,5 @@ coverage/
 # OS / temp
 *.swp
 *.tmp
+node_modules
+dist

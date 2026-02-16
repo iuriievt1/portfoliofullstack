@@ -1,0 +1,61 @@
+import type { RequestHandler } from "express";
+import jwt from "jsonwebtoken";
+import { prisma } from "../../db/prisma";
+import { HttpError } from "../../utils/httpError";
+import { env } from "../../config/env";
+import type { StaffRole } from "@prisma/client";
+
+declare global {
+  namespace Express {
+    interface Request {
+      staff?: { staffId: string; venueId: number; role: StaffRole };
+    }
+  }
+}
+
+export const STAFF_COOKIE_NAME = "sid";
+
+const JWT_STAFF_SECRET = process.env.JWT_STAFF_SECRET || "dev_staff_secret";
+
+export function setStaffCookie(res: any, token: string, maxAgeSeconds: number) {
+  res.cookie(STAFF_COOKIE_NAME, token, {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: env.NODE_ENV === "production",
+    domain: env.COOKIE_DOMAIN || undefined,
+    maxAge: maxAgeSeconds * 1000,
+    path: "/",
+  });
+}
+
+export function clearStaffCookie(res: any) {
+  res.clearCookie(STAFF_COOKIE_NAME, {
+    domain: env.COOKIE_DOMAIN || undefined,
+    path: "/",
+  });
+}
+
+export const requireStaffAuth: RequestHandler = async (req, _res, next) => {
+  try {
+    const token = (req.cookies?.[STAFF_COOKIE_NAME] as string | undefined) ?? undefined;
+    if (!token) throw new HttpError(401, "STAFF_UNAUTH", "Staff auth required");
+
+    const payload = jwt.verify(token, JWT_STAFF_SECRET) as { staffId: string; venueId: number; role: StaffRole };
+
+    const staff = await prisma.staffUser.findUnique({ where: { id: payload.staffId } });
+    if (!staff || !staff.isActive) throw new HttpError(401, "STAFF_INVALID", "Staff session invalid");
+
+    req.staff = { staffId: staff.id, venueId: staff.venueId, role: staff.role };
+    next();
+  } catch (e) {
+    next(e);
+  }
+};
+
+export function requireStaffRole(roles: StaffRole[]): RequestHandler {
+  return (req, _res, next) => {
+    if (!req.staff) return next(new HttpError(401, "STAFF_UNAUTH", "Staff auth required"));
+    if (!roles.includes(req.staff.role)) return next(new HttpError(403, "STAFF_FORBIDDEN", "Forbidden"));
+    next();
+  };
+}

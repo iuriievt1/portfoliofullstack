@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: loftn8_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: loftn8
+      POSTGRES_PASSWORD: loftn8pass
+      POSTGRES_DB: loftn8
+    volumes:
+      - loftn8_db_data:/var/lib/postgresql/data
+
+volumes:
+  loftn8_db_data:

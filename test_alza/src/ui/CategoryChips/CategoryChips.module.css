@@ -1,0 +1,28 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.chip {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.06s ease, border-color 0.12s ease, background 0.12s ease;
+}
+
+.chip:hover {
+  border-color: color-mix(in oklab, var(--border), var(--brand) 30%);
+  background: color-mix(in oklab, var(--surface), var(--brand) 6%);
+}
+
+.chip:active {
+  transform: translateY(1px);
+}

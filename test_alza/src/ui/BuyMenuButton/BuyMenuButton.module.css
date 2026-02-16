@@ -1,0 +1,56 @@
+.root {
+  display: inline-block;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 800;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.button:hover {
+  border-color: color-mix(in oklab, var(--border), var(--brand) 35%);
+}
+
+.chevron {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.menu {
+  position: fixed;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 6px;
+  z-index: 2000;
+}
+
+.openUp {
+  transform: translateY(calc(-100%));
+}
+
+.menuItem {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 10px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.menuItem:hover {
+  background: color-mix(in oklab, var(--surface), var(--brand) 10%);
+}

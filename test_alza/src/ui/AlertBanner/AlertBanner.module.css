@@ -1,0 +1,25 @@
+.banner {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 10px 0 14px;
+}
+
+.title {
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.text {
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.warning {
+  border-color: color-mix(in oklab, #f5a623, var(--border) 40%);
+}
+
+.danger {
+  border-color: color-mix(in oklab, #d0021b, var(--border) 40%);
+}

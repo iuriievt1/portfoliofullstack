@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Velora Market",
+    "slug": "velora-market-mobile",
+    "scheme": "velora-market",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F6F7FB"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "plugins": ["expo-router", "expo-localization"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "cz.velora.marketplace"
+    },
+    "android": {
+      "package": "cz.velora.marketplace"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "replace-with-eas-project-id"
+      }
+    }
+  }
+}

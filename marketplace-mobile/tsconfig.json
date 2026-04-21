@@ -1,0 +1,24 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "types": [
+      "jest",
+      "@testing-library/jest-native"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "app",
+    "src",
+    "tests",
+    "jest.setup.ts",
+    "expo-env.d.ts",
+    ".expo/types/**/*.ts"
+  ]
+}

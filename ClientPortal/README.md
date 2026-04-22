@@ -1,28 +1,16 @@
-Klientský portál pro správu složek, dokumentů a souborů.
+Client portal for managing folders, documents and files.
+Includes a web version (Next.JS) and a mobile application (Expo React Native) that use a common backend, one database and the same API.
 
-Obsahuje webovou verzi (Next.js) a mobilní aplikaci (Expo React Native), které používají společný backend, jednu databázi a stejné API.
+Main functions: login and registration admin / user roles managing folders and subfolders uploading files adding links searching filtering and sorting sharing folders notifications
 
-Hlavní funkce:
-přihlášení a registrace
-role admin / user
-správa složek a podsložek
-nahrávání souborů
-přidávání odkazů
-vyhledávání
-filtrování a řazení
-sdílení složek
-notifikace
-
-Instalace backendu:
-npm install
+Backend installation: npm install
 npx prisma generate
 npx prisma migrate dev
-npm run prisma:seed
+npm run prisma: seed
 npm run dev
 
-Spuštění mobilní aplikace:
-cd mobile
-npm install
+Mobile app launch: cd mobile 
+npm install 
 npx expo start
 
-Link na Web App: https://portal-sage-eight-65.vercel.app
+Link to Web App: https://portal-sage-eight-65.vercel.app

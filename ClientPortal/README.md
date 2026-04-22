@@ -13,10 +13,6 @@ filtrování a řazení
 sdílení složek
 notifikace
 
-Testovací přihlášení:
-Login: denisa@portal.local
-Heslo: DenisaSmidova!@567321!
-
 Instalace backendu:
 npm install
 npx prisma generate

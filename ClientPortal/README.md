@@ -28,3 +28,5 @@ Spuštění mobilní aplikace:
 cd mobile
 npm install
 npx expo start
+
+Link na Web App: https://portal-sage-eight-65.vercel.app

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #eef4f8;
+  --card: rgba(255, 255, 255, 0.88);
+  --line: #d7e0ea;
+  --ink: #182433;
+  --muted: #5d7186;
+  --brand: #0f766e;
+  --brand-soft: #d1fae5;
+  --danger: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.15), transparent 28%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 24%),
+    linear-gradient(180deg, #f8fbfd 0%, var(--bg) 100%);
+  color: var(--ink);
+}
+
+button,
+input,
+select,
+textarea {
+  outline: none;
+}
+
+.panel {
+  @apply rounded-4xl border border-white/70 bg-white/80 shadow-panel backdrop-blur-xl;
+}
+
+.field {
+  @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-2xl bg-teal-700 px-4 py-3 text-sm font-semibold text-white transition hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-danger {
+  @apply inline-flex items-center justify-center rounded-2xl bg-rose-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-rose-700 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.45);
+  border-radius: 999px;
+}

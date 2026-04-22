@@ -1,0 +1,196 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ItemType {
+  FILE
+  LINK
+}
+
+enum NotificationType {
+  FOLDER_SHARED
+}
+
+model Role {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  users     User[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id                 String                  @id @default(cuid())
+  publicId           String                  @unique
+  name               String
+  email              String                  @unique
+  passwordHash       String
+  roleId             String
+  emailVerifiedAt    DateTime?
+  consentAcceptedAt  DateTime?
+  role               Role                    @relation(fields: [roleId], references: [id], onDelete: Restrict)
+  folders            Folder[]                @relation("FolderAuthor")
+  items              FolderItem[]            @relation("ItemAuthor")
+  sentFolderShares   FolderShare[]           @relation("FolderShareSender")
+  receivedFolderShares FolderShare[]         @relation("FolderShareRecipient")
+  notifications      Notification[]
+  sentNotifications  Notification[]          @relation("NotificationSender")
+  verificationCodes  EmailVerificationCode[]
+  authSessions       AuthSession[]
+  createdAt          DateTime                @default(now())
+  updatedAt          DateTime                @updatedAt
+
+  @@index([publicId])
+  @@index([roleId])
+}
+
+model AuthSession {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  refreshTokenHash String
+  expiresAt        DateTime
+  revokedAt        DateTime?
+  lastUsedAt       DateTime?
+  deviceName       String?
+  userAgent        String?
+  ipAddress        String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([userId, expiresAt])
+  @@index([userId, revokedAt])
+}
+
+model Folder {
+  id            String         @id @default(cuid())
+  name          String
+  category      String?
+  parentId      String?
+  parent        Folder?        @relation("FolderTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children      Folder[]       @relation("FolderTree")
+  authorId      String
+  author        User           @relation("FolderAuthor", fields: [authorId], references: [id], onDelete: Restrict)
+  items         FolderItem[]
+  shares        FolderShare[]
+  notifications Notification[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([category])
+  @@index([parentId, createdAt])
+  @@index([authorId, createdAt])
+  @@index([name])
+}
+
+model FolderItem {
+  id        String   @id @default(cuid())
+  name      String
+  type      ItemType
+  folderId  String
+  folder    Folder   @relation(fields: [folderId], references: [id], onDelete: Cascade)
+  authorId  String
+  author    User     @relation("ItemAuthor", fields: [authorId], references: [id], onDelete: Restrict)
+  file      File?
+  link      Link?
+  tags      Tag[]    @relation("ItemTags")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([folderId, type, createdAt])
+  @@index([authorId, createdAt])
+  @@index([name])
+}
+
+model File {
+  id           String     @id @default(cuid())
+  itemId       String     @unique
+  item         FolderItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  originalName String
+  storedName   String
+  mimeType     String
+  size         BigInt
+  extension    String?
+  storagePath  String
+  checksum     String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([mimeType])
+  @@index([size])
+}
+
+model Link {
+  id          String     @id @default(cuid())
+  itemId      String     @unique
+  item        FolderItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  url         String     @db.Text
+  description String?    @db.Text
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Tag {
+  id        String       @id @default(cuid())
+  name      String       @unique
+  color     String?
+  items     FolderItem[] @relation("ItemTags")
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+model FolderShare {
+  id          String         @id @default(cuid())
+  folderId    String
+  folder      Folder         @relation(fields: [folderId], references: [id], onDelete: Cascade)
+  senderId    String
+  sender      User           @relation("FolderShareSender", fields: [senderId], references: [id], onDelete: Cascade)
+  recipientId String
+  recipient   User           @relation("FolderShareRecipient", fields: [recipientId], references: [id], onDelete: Cascade)
+  openedAt    DateTime?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  notifications Notification[] @relation("NotificationShare")
+
+  @@unique([folderId, recipientId])
+  @@index([recipientId, createdAt])
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  userId    String
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  senderId  String?
+  sender    User?            @relation("NotificationSender", fields: [senderId], references: [id], onDelete: SetNull)
+  type      NotificationType
+  title     String
+  message   String           @db.Text
+  folderId  String?
+  folder    Folder?          @relation(fields: [folderId], references: [id], onDelete: SetNull)
+  shareId   String?
+  share     FolderShare?     @relation("NotificationShare", fields: [shareId], references: [id], onDelete: SetNull)
+  isRead    Boolean          @default(false)
+  readAt    DateTime?
+  createdAt DateTime         @default(now())
+
+  @@index([userId, isRead, createdAt])
+}
+
+model EmailVerificationCode {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  email      String
+  codeHash   String
+  expiresAt  DateTime
+  consumedAt DateTime?
+  createdAt  DateTime @default(now())
+
+  @@index([userId, expiresAt])
+  @@index([email, expiresAt])
+}

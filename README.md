@@ -1,5 +1,7 @@
 # Portfolio
 
+> This portfolio has moved to **[github.com/iuriievt1/portfolio](https://github.com/iuriievt1/portfolio)**. All projects and updates are there now.
+
 Hi, I'm Iurii, a full-stack developer from Prague. I mostly write TypeScript: React Native and Expo for mobile, React and Next.js for the web, Node.js and NestJS on the server, PostgreSQL underneath.
 
 Every folder here is a separate project with its own README and setup steps.

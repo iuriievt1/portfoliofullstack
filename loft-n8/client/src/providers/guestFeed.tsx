@@ -1,0 +1,290 @@
+"use client";
+
+import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { api } from "@/lib/api";
+import { usePolling } from "@/lib/usePolling";
+import { useGuestEvents } from "@/lib/useGuestEvents";
+import { useSession } from "@/providers/session";
+import { useToast, type ToastKind } from "@/providers/toast";
+import { useI18n } from "@/providers/i18n";
+import { useGuestNotifications } from "@/lib/guestNotifications";
+
+type FeedTone = ToastKind;
+
+export type GuestFeedOrder = {
+  id: string;
+  status: "NEW" | "ACCEPTED" | "IN_PROGRESS" | "DELIVERED" | "CANCELLED";
+  comment: string | null;
+  createdAt: string;
+  updatedAt: string;
+  totalCzk: number;
+  step: number;
+  statusTitle: string;
+  statusDescription: string;
+  statusTone: FeedTone;
+  items: Array<{
+    id: string;
+    qty: number;
+    comment: string | null;
+    priceCzk: number;
+    totalCzk: number;
+    menuItem: { id: number; name: string; nameCs?: string | null };
+  }>;
+};
+
+export type GuestFeedCall = {
+  id: string;
+  type: "WAITER" | "HOOKAH" | "BILL" | "HELP";
+  typeLabel: string;
+  status: "NEW" | "ACKED" | "DONE";
+  message: string | null;
+  createdAt: string;
+  updatedAt: string;
+  statusTitle: string;
+  statusDescription: string;
+  statusTone: FeedTone;
+};
+
+export type GuestFeedPayment = {
+  id: string;
+  sessionId: string | null;
+  isMine: boolean;
+  method: "CARD" | "CASH";
+  methodLabel: string;
+  useLoyalty: boolean;
+  status: "PENDING" | "CONFIRMED" | "CANCELLED";
+  createdAt: string;
+  confirmedAt: string | null;
+  billTotalCzk: number | null;
+  amountCzk: number | null;
+  loyaltyAppliedCzk: number;
+  tipCzk: number;
+  items: Array<{
+    orderItemId: string;
+    menuItemId: number;
+    name: string;
+    qty: number;
+    unitPriceCzk: number;
+    totalCzk: number;
+    comment?: string;
+  }>;
+  statusTitle: string;
+  statusDescription: string;
+  statusTone: FeedTone;
+};
+
+export type GuestFeedOrderRequest = {
+  id: string;
+  status: "NEW" | "ACKED" | "DONE";
+  createdAt: string;
+  updatedAt: string;
+  statusTitle: string;
+  statusDescription: string;
+  statusTone: FeedTone;
+  items: Array<{ menuItemId: number; name: string; nameCs?: string | null; qty: number; priceCzk: number }>;
+};
+
+export type GuestFeedHistory = {
+  id: string;
+  method: "CARD" | "CASH";
+  methodLabel: string;
+  amountCzk: number;
+  tipCzk: number;
+  closedAt: string;
+  orderCount: number;
+  itemCount: number;
+  items: Array<{
+    key: string;
+    name: string;
+    qty: number;
+    totalCzk: number;
+    comment?: string;
+  }>;
+};
+
+export type GuestFeed = {
+  currentSessionId: string;
+  table: { id: number; code: string; label: string | null };
+  totals: {
+    orderedTotalCzk: number;
+    confirmedPaidCzk: number;
+    dueCzk: number;
+  };
+  loyalty: {
+    availableCzk: number;
+    pendingCzk: number;
+    nextAvailableAt: string | null;
+    cashbackPercent: number;
+  };
+  closure: {
+    billFullyPaid: boolean;
+    stayOptIn: boolean;
+    promptStay: boolean;
+  };
+  orderRequest: GuestFeedOrderRequest | null;
+  orders: GuestFeedOrder[];
+  history: GuestFeedHistory[];
+  calls: GuestFeedCall[];
+  payments: GuestFeedPayment[];
+};
+
+type GuestFeedState = {
+  feed: GuestFeed | null;
+  loading: boolean;
+  refresh: () => Promise<void>;
+};
+
+const Ctx = createContext<GuestFeedState | null>(null);
+
+// The menu needs the feed too: its "call the waiter" button shows the LIVE
+// state of the request (sent → waiter on the way), not a local timer.
+function isGuestSurface(pathname: string) {
+  return (
+    pathname === "/menu" ||
+    pathname === "/cart" ||
+    pathname === "/call" ||
+    pathname === "/profile"
+  );
+}
+
+export function GuestFeedProvider({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const { sessionReady, clearSession } = useSession();
+  const { push } = useToast();
+  const { isCz } = useI18n();
+  const [feed, setFeed] = useState<GuestFeed | null>(null);
+  const [loading, setLoading] = useState(false);
+  const inFlightRef = useRef<Promise<void> | null>(null);
+
+  const enabled = sessionReady && isGuestSurface(pathname);
+  const waitingForStaffOrder =
+    enabled &&
+    pathname === "/cart" &&
+    Boolean(feed?.orderRequest && (feed.orderRequest.status === "NEW" || feed.orderRequest.status === "ACKED")) &&
+    (feed?.orders?.length ?? 0) === 0;
+  const hasActiveOrders = Boolean(
+    feed?.orders?.some((order) => order.status === "NEW" || order.status === "ACCEPTED" || order.status === "IN_PROGRESS")
+  );
+  const hasActiveCalls = Boolean(feed?.calls?.some((call) => call.status === "NEW" || call.status === "ACKED"));
+  const hasPendingPayments = Boolean(feed?.payments?.some((payment) => payment.status === "PENDING"));
+  const hasActiveOrderRequest = Boolean(
+    feed?.orderRequest && (feed.orderRequest.status === "NEW" || feed.orderRequest.status === "ACKED")
+  );
+  const liveActivity = enabled && (hasActiveOrderRequest || hasActiveOrders || hasActiveCalls || hasPendingPayments);
+
+  const refresh = async (opts?: { silent?: boolean }) => {
+    if (!enabled) {
+      setFeed(null);
+      return;
+    }
+
+    if (inFlightRef.current) {
+      await inFlightRef.current;
+      return;
+    }
+
+    const silent = opts?.silent ?? false;
+
+    const run = (async () => {
+      if (!silent) setLoading(true);
+
+      try {
+        const next = await api<{
+          ok: true;
+          currentSessionId: string;
+          table: GuestFeed["table"];
+          totals: GuestFeed["totals"];
+          loyalty: GuestFeed["loyalty"];
+          closure?: GuestFeed["closure"];
+          orderRequest: GuestFeed["orderRequest"];
+          orders: GuestFeed["orders"];
+          history: GuestFeed["history"];
+          calls: GuestFeed["calls"];
+          payments: GuestFeed["payments"];
+        }>("/guest/feed");
+
+        const nextFeed: GuestFeed = {
+          currentSessionId: next.currentSessionId,
+          table: next.table,
+          totals: next.totals,
+          loyalty: next.loyalty,
+          closure: next.closure ?? { billFullyPaid: false, stayOptIn: false, promptStay: false },
+          orderRequest: next.orderRequest,
+          orders: next.orders,
+          history: next.history,
+          calls: next.calls,
+          payments: next.payments,
+        };
+
+        setFeed(nextFeed);
+      } catch (e: any) {
+        const message = String(e?.message ?? "");
+        const sessionExpired =
+          message.includes("Guest session is required") ||
+          message.includes("Invalid guest session token") ||
+          message.includes("Session not found or ended");
+
+        if (sessionExpired) {
+          setFeed(null);
+          clearSession({ redirect: true });
+        } else if (!silent) {
+          setFeed(null);
+        }
+      } finally {
+        if (!silent) setLoading(false);
+        inFlightRef.current = null;
+      }
+    })();
+
+    inFlightRef.current = run;
+    await run;
+  };
+
+  // SSE drives instant refreshes; polling is just a fallback for dropped
+  // connections, so the intervals can be relaxed.
+  const { tick } = usePolling(() => refresh({ silent: true }), {
+    enabled,
+    activeMs: liveActivity ? 5000 : 15000,
+    idleMs: liveActivity ? 12000 : 30000,
+    immediate: false,
+  });
+
+  // Instant updates: refresh the feed the moment the server pings this table.
+  useGuestEvents(
+    () => {
+      void refresh({ silent: true });
+    },
+    { enabled }
+  );
+
+  useEffect(() => {
+    if (!enabled) return;
+    if (!waitingForStaffOrder && !liveActivity) return;
+    void tick();
+  }, [enabled, waitingForStaffOrder, liveActivity, tick]);
+
+  useEffect(() => {
+    if (!enabled) {
+      setFeed(null);
+      return;
+    }
+
+    void refresh();
+  }, [enabled]);
+
+  // In-app notices the moment staff act: waiter on the way, order ready,
+  // payment confirmed… Shown a bit longer than a regular toast.
+  useGuestNotifications(feed, isCz, (notice) => {
+    push({ kind: notice.kind, title: notice.title, message: notice.message }, 5000);
+  });
+
+  const value = useMemo(() => ({ feed, loading, refresh }), [feed, loading]);
+  return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
+}
+
+export function useGuestFeed() {
+  const ctx = useContext(Ctx);
+  if (!ctx) throw new Error("useGuestFeed must be used within GuestFeedProvider");
+  return ctx;
+}

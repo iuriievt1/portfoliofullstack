@@ -1,0 +1,566 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Venue {
+  id                   Int                     @id @default(autoincrement())
+  name                 String
+  slug                 String                  @unique
+  isActive             Boolean                 @default(true)
+  createdAt            DateTime                @default(now())
+  updatedAt            DateTime                @updatedAt
+  loyaltyTransactions  LoyaltyTransaction[]
+  menuCategories       MenuCategory[]
+  paymentConfirmations PaymentConfirmation[]
+  pushSubscriptions    StaffPushSubscription[]
+  staffUsers           StaffUser[]
+  tables               Table[]
+  shifts               Shift[]
+  stationTickets       StationTicket[]
+  itemCancellations    OrderItemCancellation[]
+}
+
+model Table {
+  id        Int              @id @default(autoincrement())
+  venueId   Int
+  code      String           @unique
+  label     String?
+  displayName String?
+  slug      String?
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+  sessions  GuestSession[]
+  orders    Order[]
+  payments  PaymentRequest[]
+  ratings   Rating[]
+  calls     StaffCall[]
+  stationTickets    StationTicket[]
+  itemCancellations OrderItemCancellation[]
+  venue     Venue            @relation(fields: [venueId], references: [id])
+
+  @@index([venueId, code])
+  @@index([venueId, slug])
+}
+
+model Shift {
+  id                String             @id @default(cuid())
+  venueId           Int
+  status            ShiftStatus        @default(OPEN)
+  openedAt          DateTime           @default(now())
+  closedAt          DateTime?
+  openedByManagerId String
+  closedByManagerId String?
+  note              String?
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  venue             Venue              @relation(fields: [venueId], references: [id])
+  openedByManager   StaffUser          @relation("ShiftOpenedBy", fields: [openedByManagerId], references: [id])
+  closedByManager   StaffUser?         @relation("ShiftClosedBy", fields: [closedByManagerId], references: [id])
+
+  participants      ShiftParticipant[]
+  guestSessions     GuestSession[]
+  stationTickets    StationTicket[]
+
+  @@index([venueId, status])
+  @@index([venueId, openedAt])
+}
+
+model ShiftParticipant {
+  id         String         @id @default(cuid())
+  shiftId    String
+  staffId    String
+  role       StaffRole
+  joinedAt   DateTime       @default(now())
+  leftAt     DateTime?
+  isActive   Boolean        @default(true)
+  createdAt  DateTime       @default(now())
+  updatedAt  DateTime       @updatedAt
+
+  shift      Shift          @relation(fields: [shiftId], references: [id])
+  staff      StaffUser      @relation(fields: [staffId], references: [id])
+
+  @@unique([shiftId, staffId])
+  @@index([shiftId, isActive])
+  @@index([staffId, isActive])
+}
+
+model GuestSession {
+  id        String           @id @default(cuid())
+  tableId   Int
+  userId    String?
+  shiftId   String?
+  startedAt DateTime         @default(now())
+  endedAt   DateTime?
+  // After a bill is fully paid the guest is asked "stay & order more?". When
+  // they choose to stay this flips true and the post-payment auto-end timer is
+  // suspended until the next payment re-arms the prompt.
+  stayOptIn Boolean          @default(false)
+  // A waiter or manager attached this registered guest to the table by hand
+  // (the guest didn't scan): who and when — the shift report's journal.
+  boundById String?
+  boundAt   DateTime?
+  table     Table            @relation(fields: [tableId], references: [id])
+  user      User?            @relation(fields: [userId], references: [id])
+  shift     Shift?           @relation(fields: [shiftId], references: [id])
+  orders    Order[]
+  payments  PaymentRequest[]
+  ratings   Rating[]
+  calls     StaffCall[]
+
+  @@index([tableId, endedAt])
+  @@index([userId, endedAt])
+  @@index([shiftId, endedAt])
+  // Active-session-by-table lookups across a shift (dashboard /tables).
+  @@index([shiftId, endedAt, tableId])
+}
+
+model User {
+  id                 String    @id @default(cuid())
+  // Registration asks for e-mail + password only; the phone stays as an
+  // optional detail the guest can add later from their profile.
+  phone              String?   @unique
+  email              String?   @unique
+  passwordHash       String?
+  // "Sign in with Google / Apple": the provider's stable account id. A guest
+  // may have a password, a social login, or both on the same account.
+  googleSub          String?   @unique
+  appleSub           String?   @unique
+  name               String
+  // Loyalty card number shown on the guest card and, later, in Apple/Google
+  // Wallet. Assigned by a Postgres sequence, so it is unique by construction
+  // and never changes for a guest.
+  cardNumber         String    @unique @default(dbgenerated("lpad((nextval('\"User_cardNumber_seq\"'::regclass))::text, 9, '0'::text)"))
+  role               UserRole  @default(USER)
+  privacyAcceptedAt  DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  sessions             GuestSession[]
+  loyaltyTransactions  LoyaltyTransaction[]
+  orders               Order[]
+  paymentConfirmations PaymentConfirmation[]
+  pushSubscriptions    GuestPushSubscription[]
+}
+
+model OtpCode {
+  id        String    @id @default(cuid())
+  email     String
+  codeHash  String
+  expiresAt DateTime
+  usedAt    DateTime?
+  attempts  Int       @default(0)
+  createdAt DateTime  @default(now())
+
+  @@index([email, createdAt])
+}
+
+model MenuCategory {
+  id        Int         @id @default(autoincrement())
+  venueId   Int
+  name      String
+  nameCs    String?
+  sort      Int         @default(0)
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  section   MenuSection @default(DISHES)
+  venue     Venue       @relation(fields: [venueId], references: [id])
+  items     MenuItem[]
+
+  @@index([venueId, section, sort])
+}
+
+model MenuItem {
+  id          Int          @id @default(autoincrement())
+  categoryId  Int
+  name        String
+  description String?
+  // Czech translations (base name/description are English). Null → fall back to base.
+  nameCs        String?
+  descriptionCs String?
+  priceCzk    Int
+  imageUrl    String?
+  isActive    Boolean      @default(true)
+  // Only the staff see it (something punched to a dish, a rental): never in the guests' menu.
+  staffOnly   Boolean      @default(false)
+  // The station that makes it when not the one of its category (a dessert the bar serves).
+  station     MenuSection?
+  sort        Int          @default(0)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  category    MenuCategory @relation(fields: [categoryId], references: [id])
+  orderItems  OrderItem[]
+  cancellations OrderItemCancellation[]
+
+  @@index([categoryId, isActive, sort])
+}
+
+// Order.status is derived from its station tickets (see tickets.service.ts):
+// NEW until a station accepts, IN_PROGRESS while anything is being made or
+// waiting to be carried out, DELIVERED once every ticket is served.
+model Order {
+  id        String       @id @default(cuid())
+  sessionId String
+  tableId   Int
+  userId    String?
+  status    OrderStatus  @default(NEW)
+  comment   String?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  session   GuestSession @relation(fields: [sessionId], references: [id])
+  table     Table        @relation(fields: [tableId], references: [id])
+  user      User?        @relation(fields: [userId], references: [id])
+  items     OrderItem[]
+  tickets   StationTicket[]
+  itemCancellations OrderItemCancellation[]
+
+  @@index([tableId, status, createdAt])
+  @@index([sessionId, createdAt])
+}
+
+model OrderItem {
+  id         String   @id @default(cuid())
+  orderId    String
+  menuItemId Int
+  qty        Int
+  comment    String?
+  priceCzk   Int
+  // Station ticket the line was sent on. Null only for lines created before
+  // station tickets existed.
+  ticketId   String?
+  menuItem   MenuItem @relation(fields: [menuItemId], references: [id])
+  order      Order    @relation(fields: [orderId], references: [id])
+  ticket     StationTicket? @relation(fields: [ticketId], references: [id])
+
+  @@index([orderId])
+  @@index([menuItemId])
+  @@index([ticketId])
+}
+
+// One batch of lines for one station (kitchen, bar or hookah zone), created
+// every time a waiter or hookah master sends an order or an add-on.
+//   NEW → ACCEPTED (station saw it) → READY (made) → SERVED (carried out)
+// CANCELLED when the manager removed every line on it.
+model StationTicket {
+  id             String       @id @default(cuid())
+  venueId        Int
+  tableId        Int
+  orderId        String
+  shiftId        String
+  station        MenuSection
+  status         TicketStatus @default(NEW)
+  // The table had already ordered from this station during the visit.
+  isAddon        Boolean      @default(false)
+  createdById    String?
+  acceptedById   String?
+  readyById      String?
+  servedById     String?
+  createdAt      DateTime     @default(now())
+  acceptedAt     DateTime?
+  readyAt        DateTime?
+  servedAt       DateTime?
+  cancelledAt    DateTime?
+  // "Not accepted yet" reminders (every few minutes until a station accepts).
+  lastRemindedAt DateTime?
+  reminderCount  Int          @default(0)
+  // Busy hours: the station says when it will be ready (10–40 min). Empty in
+  // a normal flow — then no countdown is shown anywhere.
+  etaAt          DateTime?
+  etaMinutes     Int?
+  updatedAt      DateTime     @updatedAt
+
+  venue          Venue        @relation(fields: [venueId], references: [id])
+  table          Table        @relation(fields: [tableId], references: [id])
+  order          Order        @relation(fields: [orderId], references: [id])
+  shift          Shift        @relation(fields: [shiftId], references: [id])
+  createdBy      StaffUser?   @relation("TicketCreatedBy", fields: [createdById], references: [id])
+  acceptedBy     StaffUser?   @relation("TicketAcceptedBy", fields: [acceptedById], references: [id])
+  readyBy        StaffUser?   @relation("TicketReadyBy", fields: [readyById], references: [id])
+  servedBy       StaffUser?   @relation("TicketServedBy", fields: [servedById], references: [id])
+  items          OrderItem[]
+  cancellations  OrderItemCancellation[]
+
+  @@index([shiftId, station, status])
+  @@index([status, lastRemindedAt])
+  @@index([orderId])
+  @@index([tableId, shiftId])
+}
+
+// What the manager took off an order. The order line itself is reduced or
+// deleted (so every bill stays correct); this row keeps who, what and why.
+model OrderItemCancellation {
+  id            String         @id @default(cuid())
+  venueId       Int
+  tableId       Int
+  orderId       String
+  ticketId      String?
+  menuItemId    Int
+  name          String
+  qty           Int
+  // Unit price of the line when it was cancelled (0 for rows from before the
+  // field existed) — the shift report sums what was taken off.
+  priceCzk      Int            @default(0)
+  comment       String?
+  reason        String?
+  cancelledById String
+  createdAt     DateTime       @default(now())
+
+  venue         Venue          @relation(fields: [venueId], references: [id])
+  table         Table          @relation(fields: [tableId], references: [id])
+  order         Order          @relation(fields: [orderId], references: [id])
+  ticket        StationTicket? @relation(fields: [ticketId], references: [id])
+  menuItem      MenuItem       @relation(fields: [menuItemId], references: [id])
+  cancelledBy   StaffUser      @relation(fields: [cancelledById], references: [id])
+
+  @@index([ticketId])
+  @@index([orderId])
+  @@index([venueId, createdAt])
+}
+
+model StaffCall {
+  id        String       @id @default(cuid())
+  sessionId String
+  tableId   Int
+  type      CallType
+  message   String?
+  // For order requests: the dishes the guest picked in the menu, so staff can
+  // see the selection and place the actual order. Shape: [{ menuItemId, qty }].
+  requestedItemsJson Json?
+  status    CallStatus   @default(NEW)
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @default(now()) @updatedAt
+  session   GuestSession @relation(fields: [sessionId], references: [id])
+  table     Table        @relation(fields: [tableId], references: [id])
+
+  @@index([tableId, status, createdAt])
+  @@index([tableId, type, status])
+  @@index([sessionId, createdAt])
+  // Supports the dashboard /summary and /order-requests filters
+  // (type + status + createdAt, scoped by venue via join).
+  @@index([type, status, createdAt])
+}
+
+model PaymentRequest {
+  id                 String               @id @default(cuid())
+  sessionId          String
+  tableId            Int
+  method             PaymentMethod
+  billTotalCzk       Int                  @default(0)
+  useLoyalty         Boolean              @default(false)
+  loyaltyAppliedCzk  Int                  @default(0)
+  // Optional tip the guest adds on top of the bill. Never part of the cashback
+  // base and never counted as venue revenue.
+  tipCzk             Int                  @default(0)
+  itemsJson          Json?
+  status             PaymentStatus        @default(PENDING)
+  createdAt          DateTime             @default(now())
+  confirmedAt        DateTime?
+  confirmedByStaffId String?
+  confirmation       PaymentConfirmation?
+  confirmedByStaff   StaffUser?           @relation(fields: [confirmedByStaffId], references: [id])
+  session            GuestSession         @relation(fields: [sessionId], references: [id])
+  table              Table                @relation(fields: [tableId], references: [id])
+
+  @@index([tableId, status, createdAt])
+  @@index([sessionId, status, createdAt])
+  @@index([confirmedAt])
+  // "latest confirmed payment for table" sorts by confirmedAt.
+  @@index([tableId, status, confirmedAt])
+}
+
+model Rating {
+  id        String       @id @default(cuid())
+  sessionId String
+  tableId   Int
+  overall   Int
+  food      Int?
+  drinks    Int?
+  hookah    Int?
+  comment   String?
+  createdAt DateTime     @default(now())
+  session   GuestSession @relation(fields: [sessionId], references: [id])
+  table     Table        @relation(fields: [tableId], references: [id])
+
+  @@index([tableId, createdAt])
+  @@index([sessionId])
+}
+
+model StaffUser {
+  id                   String                  @id @default(cuid())
+  venueId              Int
+  role                 StaffRole
+  username             String                  @unique
+  passwordHash         String
+  isActive             Boolean                 @default(true)
+  createdAt            DateTime                @default(now())
+  updatedAt            DateTime                @updatedAt
+  loyaltyTxns          LoyaltyTransaction[]
+  paymentConfirmations PaymentConfirmation[]
+  paymentRequests      PaymentRequest[]
+  pushSubscriptions    StaffPushSubscription[]
+  shiftParticipants    ShiftParticipant[]
+  openedShifts         Shift[]                 @relation("ShiftOpenedBy")
+  closedShifts         Shift[]                 @relation("ShiftClosedBy")
+  ticketsCreated       StationTicket[]         @relation("TicketCreatedBy")
+  ticketsAccepted      StationTicket[]         @relation("TicketAcceptedBy")
+  ticketsReady         StationTicket[]         @relation("TicketReadyBy")
+  ticketsServed        StationTicket[]         @relation("TicketServedBy")
+  itemCancellations    OrderItemCancellation[]
+  venue                Venue                   @relation(fields: [venueId], references: [id])
+}
+
+model PaymentConfirmation {
+  id               String              @id @default(cuid())
+  paymentRequestId String              @unique
+  venueId          Int
+  staffId          String
+  userId           String?
+  method           PaymentMethod
+  billTotalCzk     Int                 @default(0)
+  amountCzk        Int
+  loyaltyAppliedCzk Int                @default(0)
+  tipCzk           Int                 @default(0)
+  itemsJson        Json?
+  createdAt        DateTime            @default(now())
+  loyaltyTxn       LoyaltyTransaction?
+  paymentRequest   PaymentRequest      @relation(fields: [paymentRequestId], references: [id])
+  staff            StaffUser           @relation(fields: [staffId], references: [id])
+  user             User?               @relation(fields: [userId], references: [id])
+  venue            Venue               @relation(fields: [venueId], references: [id])
+}
+
+model LoyaltyTransaction {
+  id                    String              @id @default(cuid())
+  venueId               Int
+  userId                String
+  staffId               String
+  paymentConfirmationId String              @unique
+  baseAmountCzk         Int
+  cashbackCzk           Int
+  availableAt           DateTime            @default(now())
+  redeemedAmountCzk     Int                 @default(0)
+  redeemedAt            DateTime?
+  redeemedInPaymentConfirmationId String?
+  createdAt             DateTime            @default(now())
+  paymentConfirmation   PaymentConfirmation @relation(fields: [paymentConfirmationId], references: [id])
+  staff                 StaffUser           @relation(fields: [staffId], references: [id])
+  user                  User                @relation(fields: [userId], references: [id])
+  venue                 Venue               @relation(fields: [venueId], references: [id])
+
+  @@index([userId, availableAt])
+  @@index([userId, createdAt])
+  @@index([venueId, createdAt])
+}
+
+model StaffPushSubscription {
+  id        String    @id @default(cuid())
+  staffId   String
+  venueId   Int
+  endpoint  String    @unique
+  p256dh    String
+  auth      String
+  userAgent String?
+  // The browser this subscription belongs to: whoever does something on a
+  // device gets no alert about it on that same device.
+  deviceId  String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  staff     StaffUser @relation(fields: [staffId], references: [id])
+  venue     Venue     @relation(fields: [venueId], references: [id])
+
+  @@index([staffId])
+  // pushToVenueRoles filters by (venueId, staffId in [...]).
+  @@index([venueId, staffId])
+}
+
+// Web-push subscription of a registered guest's browser. One row per device
+// endpoint; `lang` picks the language of the notification text.
+model GuestPushSubscription {
+  id        String   @id @default(cuid())
+  userId    String
+  endpoint  String   @unique
+  p256dh    String
+  auth      String
+  lang      String   @default("cs")
+  userAgent String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+enum UserRole {
+  USER
+  STAFF
+  ADMIN
+}
+
+// KITCHEN, BAR and HOOKAH_ZONE are the shared station iPads: they only see
+// and accept the tickets of their own station.
+enum StaffRole {
+  WAITER
+  HOOKAH
+  MANAGER
+  ADMIN
+  KITCHEN
+  BAR
+  HOOKAH_ZONE
+}
+
+enum TicketStatus {
+  NEW
+  ACCEPTED
+  READY
+  SERVED
+  CANCELLED
+}
+
+enum ShiftStatus {
+  OPEN
+  CLOSED
+}
+ 
+enum OrderStatus {
+  NEW
+  ACCEPTED
+  IN_PROGRESS
+  DELIVERED
+  CANCELLED
+}
+
+enum CallType {
+  WAITER
+  HOOKAH
+  BILL
+  HELP
+}
+
+enum CallStatus {
+  NEW
+  ACKED
+  DONE
+}
+
+enum PaymentMethod {
+  CARD
+  CASH
+}
+
+enum PaymentStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}
+
+enum MenuSection {
+  DISHES
+  DRINKS
+  HOOKAH
+}
+ 

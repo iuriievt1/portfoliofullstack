@@ -1,0 +1,252 @@
+/**
+ * LOFT№8 service worker (staff dashboard AND guest app — one origin, one SW).
+ *
+ * Every push payload carries `audience`: "staff" (default when missing, so
+ * older payloads render exactly as before) or "guest". The audience picks the
+ * landing URL, the button label and the message type posted to open pages.
+ *
+ * Handles web push on every platform that supports it:
+ *   • Android: Chrome, Edge, Samsung Internet, Brave, Opera, Firefox — works in
+ *     a normal browser tab, no install needed.
+ *   • iOS / iPadOS 16.4+: works ONLY when the app was added to the Home Screen
+ *     (Apple restriction — Safari tabs cannot receive web push at all).
+ *   • Desktop: all Chromium browsers, Firefox, Safari 16+.
+ */
+
+const VAPID_ENDPOINT = "/api/staff/push/vapid-public-key";
+const SUBSCRIBE_ENDPOINT = "/api/staff/push/subscribe";
+const GUEST_SUBSCRIBE_ENDPOINT = "/api/guest/push/subscribe";
+
+const STAFF_DEFAULT_URL = "/staff/summary";
+const GUEST_DEFAULT_URL = "/cart";
+
+function audienceOf(value) {
+  return value === "guest" ? "guest" : "staff";
+}
+
+function defaultUrlFor(audience) {
+  return audience === "guest" ? GUEST_DEFAULT_URL : STAFF_DEFAULT_URL;
+}
+
+function openLabelFor(audience, lang) {
+  if (audience === "guest") return lang === "en" ? "Open" : "Otevřít";
+  return "Открыть";
+}
+
+function messageTypeFor(audience) {
+  return audience === "guest" ? "GUEST_PUSH" : "STAFF_PUSH";
+}
+
+// Notification icons MUST be PNG — Chrome on Android silently ignores SVG and
+// falls back to the generic browser logo.
+const ICON = "/icon-192.png";
+const BADGE = "/icon-192.png";
+const DEFAULT_VIBRATE = [320, 140, 320, 140, 420];
+
+/**
+ * Safari (iPhone, iPad, Mac) has no `renotify`: a notification that replaces
+ * one with the same tag may come in silently. There a staff alert closes the
+ * previous one with its tag and comes with a tag of its own — so a reminder or
+ * a guest calling again always sounds, and nothing piles up.
+ */
+function isAppleWebKit() {
+  const ua = (self.navigator && self.navigator.userAgent) || "";
+  return /AppleWebKit/.test(ua) && !/Chrome|Chromium|CriOS|Android|Edg|Firefox|FxiOS/.test(ua);
+}
+
+async function closeNotificationsTagged(tag) {
+  try {
+    const open = await self.registration.getNotifications();
+    for (const n of open) {
+      if (n.data && n.data.tag === tag) n.close();
+    }
+  } catch {
+    // not supported — the new alert still shows
+  }
+}
+
+self.addEventListener("install", () => {
+  self.skipWaiting();
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(self.clients.claim());
+});
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+  const base64 = (base64String + padding).replace(/-/g, "+").replace(/_/g, "/");
+  const raw = self.atob(base64);
+  const output = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i += 1) output[i] = raw.charCodeAt(i);
+  return output;
+}
+
+function readPayload(event) {
+  const fallback = {
+    title: "LOFT№8",
+    body: "Новое событие",
+    url: "/staff/summary",
+    kind: "CALL_CREATED",
+  };
+
+  if (!event.data) return fallback;
+
+  try {
+    return event.data.json();
+  } catch {
+    // Some providers deliver plain text — never drop the notification for it.
+    try {
+      return { ...fallback, body: event.data.text() || fallback.body };
+    } catch {
+      return fallback;
+    }
+  }
+}
+
+self.addEventListener("push", (event) => {
+  const payload = readPayload(event);
+  const audience = audienceOf(payload.audience);
+  const lang = payload.lang === "en" ? "en" : "cs";
+
+  const title = payload.title || "LOFT№8";
+  const tag = payload.tag || `evt:${Date.now()}:${Math.random().toString(16).slice(2, 8)}`;
+  const ts = payload.ts || Date.now();
+  const url = payload.url || defaultUrlFor(audience);
+  const vibrate =
+    Array.isArray(payload.vibrate) && payload.vibrate.length > 0 ? payload.vibrate : DEFAULT_VIBRATE;
+
+  const data = {
+    audience,
+    lang,
+    url,
+    tag,
+    ts,
+    kind: payload.kind || "CALL_CREATED",
+    message: payload.message || null,
+    tableCode: payload.tableCode || null,
+    // Hookah or drinks: the bar tablet plays a hookah's own sound.
+    station: payload.station || null,
+    venueId: payload.venueId || null,
+    venueSlug: payload.venueSlug || null,
+    vibrate,
+  };
+
+  const options = {
+    body: payload.body || "",
+    data,
+    tag,
+    // renotify + a stable tag: the same event never double-alerts, but a NEW
+    // event with a different tag always beeps again.
+    renotify: payload.renotify !== false,
+    // Staff alerts stay on screen until dismissed (unchanged); guest updates
+    // behave like a normal notification and go away on their own.
+    requireInteraction:
+      audience === "guest" ? payload.requireInteraction === true : payload.requireInteraction !== false,
+    vibrate,
+    silent: false,
+    timestamp: ts,
+    badge: BADGE,
+    icon: ICON,
+    actions: [{ action: "open", title: openLabelFor(audience, lang) }],
+  };
+
+  event.waitUntil(
+    (async () => {
+      // Showing a notification is mandatory: a push handler that stays silent
+      // makes the browser display "site updated in background" and can revoke
+      // the push permission after repeated offences.
+      const soundAgain = audience === "staff" && options.renotify && isAppleWebKit();
+      if (soundAgain) await closeNotificationsTagged(tag);
+      await self.registration.showNotification(
+        title,
+        soundAgain ? { ...options, tag: `${tag}#${ts}#${Math.random().toString(16).slice(2, 6)}` } : options
+      );
+
+      const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+      for (const client of clients) {
+        client.postMessage({
+          type: messageTypeFor(audience),
+          payload: { ...data, title: payload.title, body: payload.body },
+        });
+      }
+    })()
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+
+  const data = event.notification.data || {};
+  const audience = audienceOf(data.audience);
+  const url = data.url || defaultUrlFor(audience);
+
+  event.waitUntil(
+    (async () => {
+      const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+
+      for (const client of clients) {
+        if ("focus" in client) {
+          await client.focus();
+          // `opened`: the person tapped an old notification — refresh the
+          // screen, don't play its sound again.
+          client.postMessage({ type: messageTypeFor(audience), payload: { ...data, ts: Date.now(), opened: true } });
+          if ("navigate" in client && url) {
+            try {
+              await client.navigate(url);
+            } catch {
+              // cross-origin or unsupported — focusing is enough
+            }
+          }
+          return;
+        }
+      }
+
+      if (self.clients.openWindow) await self.clients.openWindow(url);
+    })()
+  );
+});
+
+/**
+ * The browser may rotate a push subscription at any time (key rotation, storage
+ * pressure, long inactivity). Without re-subscribing here the device silently
+ * stops receiving notifications FOREVER — the single most common cause of
+ * "push worked yesterday, not today".
+ */
+self.addEventListener("pushsubscriptionchange", (event) => {
+  event.waitUntil(
+    (async () => {
+      try {
+        let subscription = event.newSubscription ?? null;
+
+        if (!subscription) {
+          const res = await fetch(VAPID_ENDPOINT, { credentials: "include" });
+          if (!res.ok) return;
+          const { publicKey } = await res.json();
+          if (!publicKey) return;
+
+          subscription = await self.registration.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: urlBase64ToUint8Array(publicKey),
+          });
+        }
+
+        const json = subscription.toJSON();
+        const body = JSON.stringify({ endpoint: json.endpoint, keys: json.keys });
+        const init = {
+          method: "POST",
+          credentials: "include",
+          headers: { "Content-Type": "application/json" },
+          body,
+        };
+
+        // The worker cannot tell whether this device belongs to a staff member
+        // or a guest, so it offers the new subscription to both endpoints; the
+        // one without a matching session cookie simply answers 401.
+        await Promise.allSettled([fetch(SUBSCRIBE_ENDPOINT, init), fetch(GUEST_SUBSCRIBE_ENDPOINT, init)]);
+      } catch {
+        // Best effort — the app re-validates the subscription on every launch.
+      }
+    })()
+  );
+});

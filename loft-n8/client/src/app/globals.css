@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  /* Loft tokens — Midnight Ember (FORCE DARK, warm) */
+  --bg: #0a0907;              /* warm charcoal near-black */
+  --panel: rgba(255, 255, 255, 0.05);
+  --panel2: rgba(255, 255, 255, 0.09);
+  --border: rgba(255, 255, 255, 0.09);
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --muted2: rgba(255, 255, 255, 0.52);
+  --radius: 18px;
+
+  /* Signature accent — warm gold / amber */
+  --gold: #e3b86b;
+  --gold-deep: #c79a45;
+
+  --background: var(--bg);
+  --foreground: var(--text);
+
+  color-scheme: dark;
+}
+
+/* Tailwind v4 theme tokens */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Exposes utilities: text-gold, bg-gold/10, border-gold/25, etc. */
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+
+  --font-sans: var(--font-manrope);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html,
+body {
+  height: 100%;
+  /* Kill double-tap-to-zoom everywhere; scrolling and taps are unaffected. */
+  touch-action: manipulation;
+}
+
+body {
+  /* Single, very soft warm glow at the very top — no visible bands/lines. */
+  background: radial-gradient(1100px 520px at 50% -30%, rgba(227,184,107,0.07), transparent 62%),
+              var(--bg);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+ * Staff screens: keep content clear of the iPhone status bar / notch and the
+ * home indicator when the app is installed (black-translucent status bar,
+ * viewport-fit=cover). Elsewhere env() is 0 and the plain padding applies.
+ */
+.staff-safe {
+  padding-top: max(1rem, calc(env(safe-area-inset-top) + 0.5rem));
+  padding-right: max(1rem, env(safe-area-inset-right));
+  padding-bottom: max(2.5rem, calc(env(safe-area-inset-bottom) + 1rem));
+  padding-left: max(1rem, env(safe-area-inset-left));
+}
+
+/* Full-screen staff overlays and bottom sheets: same idea, one edge each. */
+.staff-safe-top {
+  padding-top: max(1rem, calc(env(safe-area-inset-top) + 0.5rem));
+}
+.staff-safe-bottom {
+  padding-bottom: max(1.5rem, calc(env(safe-area-inset-bottom) + 0.75rem));
+}
+.staff-sheet-bottom {
+  padding-bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1rem));
+}

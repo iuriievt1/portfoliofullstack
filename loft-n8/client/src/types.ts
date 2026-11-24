@@ -1,0 +1,102 @@
+export type MenuItem = {
+  id: number;
+  name: string;
+  nameCs?: string | null;
+  description?: string | null;
+  descriptionCs?: string | null;
+  priceCzk: number;
+  imageUrl?: string | null;
+};
+
+export type MenuSection = "DISHES" | "DRINKS" | "HOOKAH";
+
+export type MenuCategory = {
+  id: number;
+  name: string;
+  nameCs?: string | null;
+  sort: number;
+  section: MenuSection;
+  items: MenuItem[];
+};
+
+export type MenuResponse = {
+  venue: { id: number; name: string; slug: string };
+  categories: MenuCategory[];
+};
+
+export type CartItem = {
+  menuItemId: number;
+  name: string;
+  priceCzk: number;
+  qty: number;
+  comment?: string;
+};
+
+export type GuestUser = {
+  id: string;
+  name: string;
+  email: string | null;
+  /** Optional — registration never asks for it. */
+  phone: string | null;
+  /** Loyalty card number, assigned once at registration. */
+  cardNumber: string;
+  role: string;
+};
+
+export type AuthMeResponse = { authenticated: false } | { authenticated: true; user: GuestUser };
+
+export type AccountReceipt = {
+  id: string;
+  venue: { id: number; slug: string; name: string };
+  method: "CARD" | "CASH";
+  methodLabel: string;
+  amountCzk: number;
+  billTotalCzk: number;
+  loyaltyAppliedCzk: number;
+  tipCzk: number;
+  cashbackEarnedCzk: number;
+  closedAt: string;
+  itemCount: number;
+  items: Array<{
+    key: string;
+    name: string;
+    qty: number;
+    totalCzk: number;
+    comment?: string;
+  }>;
+};
+
+export type AccountLoyaltyEntry = {
+  id: string;
+  venue: { id: number; slug: string; name: string };
+  createdAt: string;
+  availableAt: string;
+  baseAmountCzk: number;
+  cashbackCzk: number;
+  redeemedAmountCzk: number;
+  remainingCzk: number;
+  status: "available" | "pending" | "redeemed" | "partial";
+};
+
+export type AccountOverviewResponse = {
+  ok: true;
+  user: {
+    id: string;
+    name: string;
+    /** Empty string when the guest never gave a number. */
+    phone: string;
+    email: string;
+    cardNumber: string;
+    role: string;
+    privacyAcceptedAt: string | null;
+    createdAt: string;
+  };
+  loyalty: {
+    availableCzk: number;
+    pendingCzk: number;
+    nextAvailableAt: string | null;
+    cashbackPercent: number;
+    history: AccountLoyaltyEntry[];
+  };
+  receipts: AccountReceipt[];
+};

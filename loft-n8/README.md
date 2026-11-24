@@ -1,85 +1,52 @@
-# Loft N8 — Restaurant Ordering & Operations Platform
+# Loft N8
 
-QR ordering for guests and an operations app for staff, built for a restaurant and hookah lounge group with three venues in Prague.
+Ordering and operations app for a restaurant and hookah lounge with three venues in Prague. I built it together with the owner.
 
-## What it does
+## How it works
 
-**Guests** scan the QR code on the table and get the menu of that venue:
+A guest scans the QR code on the table, opens the menu of that venue and sends an order. From the phone they can call the waiter or the hookah master, ask for the bill, pay only for their own items when the table splits the bill, rate the visit and collect loyalty points. Sign-in is a one-time code by email, or Google / Apple.
 
-- order from the menu (with translations), add comments, follow the order live
-- call the waiter or the hookah master, ask for the bill
-- pay for their own items: the bill can be split per item between guests at one table
-- rate the visit, collect loyalty points, get push notifications
-- sign in with a one-time email code or with Google / Apple
+The staff have their own app. Each order is split into tickets for the kitchen, the bar and the hookah zone, and every station sees only its own tickets on a shared iPad. Waiters and managers see the tables, open orders and calls live, confirm payments, and at closing the manager gets a shift report to check against the card terminal and the cash drawer. There are seven staff roles, and the menu is managed in the app.
 
-**Staff** work in a separate app on phones and shared iPads:
+## Tech
 
-- shifts and table overview, live dashboard of open orders and calls
-- every order is split into tickets for the kitchen, the bar and the hookah zone; each station sees only its own tickets (`new → accepted → ready → served`)
-- cancellations, payment confirmation, attaching guests to a table
-- shift report at closing, reconciled with the POS terminal and the cash drawer
-- menu administration, seven staff roles: waiter, hookah master, manager, admin, kitchen, bar, hookah zone
+- `client/` — Next.js 16, React 19, Tailwind CSS 4. Installable as an app, with separate manifests for guests and staff.
+- `server/` — Express 5 and TypeScript, Prisma, PostgreSQL 16.
+- Live updates go over Server-Sent Events, notifications over Web Push.
+- Separate JWT secrets for guests, users and staff, bcrypt for staff passwords, Zod validation, rate limiting. Staff see guests' contacts masked.
+- Production runs on Docker Compose behind Caddy. Migrations run when the server container starts.
 
-## Architecture
+## Run it locally
 
-```text
-                 ┌──────────────────────────┐
-  guests ──────▶ │  client  (Next.js PWA)   │ ── /api/* ──┐
-  staff  ──────▶ │  guest app + staff app   │             │
-                 └──────────────────────────┘             ▼
-                                               ┌─────────────────────┐      ┌────────────┐
-                                               │ server (Express 5)  │ ───▶ │ PostgreSQL │
-                                               │ REST + SSE + Push   │      │  (Prisma)  │
-                                               └─────────────────────┘      └────────────┘
-  production: Caddy ─▶ client:3000, /api ─▶ server:4000   (Docker Compose)
-```
-
-- **client/** — Next.js 16 (App Router), React 19, Tailwind CSS 4, installable PWA with separate manifests for guests and staff
-- **server/** — Express 5 + TypeScript REST API, Prisma ORM, PostgreSQL 16
-- **live updates** — Server-Sent Events for the guest order view and the staff dashboard
-- **notifications** — Web Push (VAPID) for guests and staff
-- **deploy** — Docker Compose with Caddy as the reverse proxy; migrations run on container start
-
-## Security
-
-- separate JWT secrets for users, guest sessions and staff
-- one-time email codes, bcrypt for staff passwords, Google / Apple ID tokens verified on the server
-- role checks on every staff route, request validation with Zod, rate limiting
-- staff see guests' contacts masked (`iu•••@gmail.com`, `••• 517`)
-
-## Run locally
-
-Requirements: Node.js 20+, Docker.
+You need Node.js 20+ and Docker.
 
 ```bash
-# database
 docker run -d --name loftn8-db -p 5432:5432 \
   -e POSTGRES_USER=loftn8 -e POSTGRES_PASSWORD=loftn8 -e POSTGRES_DB=loftn8 postgres:16
 
-# server — http://localhost:4000
 cd server
 npm ci
-cp .env.example .env        # set DATABASE_URL=postgresql://loftn8:loftn8@localhost:5432/loftn8
-                            # FRONTEND_ORIGIN=http://localhost:3000 and the JWT secrets
+cp .env.example .env
+# in .env: DATABASE_URL=postgresql://loftn8:loftn8@localhost:5432/loftn8,
+# FRONTEND_ORIGIN=http://localhost:3000 and three JWT secrets
 npx prisma migrate deploy
-npm run prisma:seed         # venues, tables, menu and staff accounts
+npm run prisma:seed
 npm run dev
 
-# client — http://localhost:3000
 cd ../client
 npm ci
 npm run dev
 ```
 
-The client proxies `/api/*` to `http://localhost:4000` in development (`client/next.config.ts`).
+The server runs on http://localhost:4000, the app on http://localhost:3000. In development the client sends `/api/*` to the server.
 
-## Run with Docker Compose
+## Run it with Docker Compose
 
 ```bash
-cp .env.example .env                              # POSTGRES_PASSWORD
-cp server/.env.docker.example server/.env.docker  # secrets, SMTP, VAPID keys
+cp .env.example .env
+cp server/.env.docker.example server/.env.docker
 docker compose up -d --build
-docker compose exec server npm run prisma:seed    # first run only
+docker compose exec server npm run prisma:seed   # first run only
 ```
 
-The app is then served on port 80 through Caddy.
+Fill in the password, secrets, SMTP and VAPID keys in both files first. The app is then on port 80.

@@ -1,23 +1,27 @@
-# Full-Stack Portfolio — Iurii Evteev
+# Portfolio
 
-Senior full-stack developer in Prague. TypeScript across the stack: React Native / Expo, React / Next.js, Node.js / NestJS, PostgreSQL.
+Hi, I'm Iurii, a full-stack developer from Prague. I mostly write TypeScript: React Native and Expo for mobile, React and Next.js for the web, Node.js and NestJS on the server, PostgreSQL underneath.
 
-Each folder is a standalone project with its own README and setup instructions.
+Every folder here is a separate project with its own README and setup steps.
 
-## Projects in this repository
+## What's inside
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [Loft N8](./loft-n8) | QR ordering for guests and an operations app for staff, built for a restaurant group with three venues: station tickets for kitchen and bar, split bills, shift reports, live updates and push notifications | Next.js 16, React 19, Tailwind 4, Express 5, Prisma, PostgreSQL, SSE, Web Push, Docker, Caddy |
-| [OTPBank](./otpbank) | Digital banking platform: customer web app, admin and support backoffice, double-entry ledger, idempotent transfers, RBAC and audit trail | Next.js, NestJS, Prisma, PostgreSQL, Redis, BullMQ |
-| [VYBE](./vybe_v1) | Geo-social platform for Prague: live posts with photos around real places, crowd and noise levels, post expiration | NestJS, Prisma, PostgreSQL, Next.js, Tailwind |
-| [Client Portal](./ClientPortal) | Portal for folders, documents and files with a web and a mobile client on one API: roles, sharing, search, notifications | Next.js, Expo React Native, Prisma |
-| [Arctic Home](./artcitcgrp) | Website of a home construction and design company | HTML, CSS, JavaScript |
+**[loft-n8](./loft-n8)** — ordering system for a restaurant and hookah lounge with three venues in Prague. Guests order from the table through a QR code, and the staff get each order split for the kitchen, the bar and the hookah zone. Next.js, Express, Prisma, PostgreSQL, Docker and Caddy.
 
-## Commercial work (private code)
+**[otpbank](./otpbank)** — a banking app I built for my portfolio: customer app, backoffice for admins and support, double-entry ledger and transfers that can't go through twice. Next.js, NestJS, Prisma, PostgreSQL, Redis.
 
-The code of these projects belongs to clients, so it is not in this repository. I am happy to walk through the architecture on a call.
+**[vybe_v1](./vybe_v1)** — MVP of a geo-social app for Prague. People post what's going on at a place right now, with photos, how crowded and how loud it is. NestJS, Next.js, PostgreSQL.
 
-- **Clinical Platform** — mobile app for hospital nurses: wound photos on a body map and scanned documents go straight into the hospital image archive. React Native / Expo, NestJS API and worker, PostgreSQL; DICOM delivery to PACS, FHIR clinical record, sign-in through Active Directory, offline queue, device approval.
-- **Wildberries Marketplace** — multi-vendor marketplace for Czechia and the EU, in progress: seller portal with ARES / VIES company checks, product catalog with variants and EAN, admin with moderation, mobile app. NestJS, Prisma, PostgreSQL, Redis, S3, Next.js, Expo.
-- **Streaming Platform** — live TV and video on demand for phones and tablets: Bitmovin player with DRM, TV guide, content rails. React Native / Expo, built in a product team.
+**[ClientPortal](./ClientPortal)** — portal for folders, documents and files, with a web app and a mobile app on the same API. Next.js, Expo, Prisma.
+
+**[artcitcgrp](./artcitcgrp)** — website for a home construction and design company. Plain HTML, CSS and JavaScript.
+
+## Work I can't share here
+
+Some of my best work is client code, so it isn't public:
+
+- a hospital app for nurses that sends wound photos and scanned documents straight into the hospital's image archive (React Native, NestJS, DICOM, FHIR)
+- a Wildberries-style marketplace for Czechia and the EU, still in progress (NestJS, Next.js, Expo)
+- a live TV and video-on-demand app for phones and tablets (React Native, Bitmovin player with DRM)
+
+If you'd like to see how they're built, I'm happy to walk you through them on a call.
